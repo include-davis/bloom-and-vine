@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Italiana&display=swap');
+
+#barElm{
+    display: flex;
+    background-color: purple;
+    justify-content: center;
+    align-items: center;
+}
+.servImg{
+    width: 223px;
+    height: 140px;
+}
+.servHeader{
+    font-family: 'Italiana';
+    font-style: Regular;
+    font-size: 32px;
+    line-height: 40px;
+    line-height: 106%;
+    align-self: left;
+    vertical-align: Top;
+    letter-spacing: 1%;
+    color: rgba(252, 249, 234, 1);
+    position: absolute;
+}
