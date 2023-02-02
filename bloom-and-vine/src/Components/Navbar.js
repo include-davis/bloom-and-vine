@@ -1,11 +1,17 @@
 import './Navbar.css';
 
+
 function Navbar() {
   return (
     <div className="Navbar">
-      <navbar className='nav'>
-        .
-      </navbar>
+      <div className='Logo'>
+        <a href='/' classname='logo-press'>
+          Bloom & Vine
+        </a>
+      </div>
+      <li className='Links'>
+        
+      </li>
     </div>
   );
 }

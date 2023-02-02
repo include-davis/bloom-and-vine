@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css?family=Italiana');
+
+.Navbar {
+  position: relative;
+  width: 1573px;
+  height: 112px;
+  background: #A28598;
+}
+
+.Logo {
+
+  /* Bloom & Vine */
+  width: 316px;
+  height: 23px;
+
+  padding-top: 48px;
+  padding-left: 56px;
+  font-family: 'Italiana';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 57px;
+  line-height: 23px;
+/* identical to box height, or 40% */
+
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.04em;
+
+  color: #FFFDF1;
+
+/* border: 1px solid #FFFDF1; */
+
+/* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+
+  
+
+}
