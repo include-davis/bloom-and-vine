@@ -1,18 +1,55 @@
 @import url('https://fonts.googleapis.com/css?family=Italiana');
+@import url('https://fonts.googleapis.com/css?family=Cormorant Garamond'  );
 
 .Navbar {
-  position: relative;
-  width: 1573px;
+  position: fixed;
+  width: 100%;
   height: 112px;
   background: #A28598;
 }
 
 .Logo {
+  position: fixed;
+}
 
+.Navbar ul li a {
+  width: 62px;
+  height: 23px;
+
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 700px; 
+  font-size: 25px;
+  line-height: 23px;
+
+  color: #FFFDF1;
+  text-decoration: none;
+  
+}
+
+.Navbar ul {
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0 100px;
+  display: inline-flex;
+  float: right;
+  
+  
+}
+
+.Navbar ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 50px 0 100px;
+  height: 0px;
+}
+
+.Logo .main-logo{
+  text-decoration: none;
   /* Bloom & Vine */
   width: 316px;
   height: 23px;
-
   padding-top: 48px;
   padding-left: 56px;
   font-family: 'Italiana';
@@ -20,22 +57,19 @@
   font-weight: 400;
   font-size: 57px;
   line-height: 23px;
-/* identical to box height, or 40% */
-
+  
   display: flex;
   align-items: center;
   letter-spacing: -0.04em;
 
   color: #FFFDF1;
 
-/* border: 1px solid #FFFDF1; */
-
-/* Inside auto layout */
-
   flex: none;
   order: 0;
   flex-grow: 0;
+}
 
+.Navbar ul li:hover {
+  text-decoration: underline;
   
-
 }
