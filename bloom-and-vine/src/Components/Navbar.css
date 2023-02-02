@@ -41,8 +41,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 60px 50px 0 100px;
+  padding: 60px 35px 0 100px;
   height: 0px;
+  transition: transform 0.5s;
 }
 
 .Logo .main-logo{
@@ -64,12 +65,20 @@
 
   color: #FFFDF1;
 
+
   flex: none;
   order: 0;
   flex-grow: 0;
+  transition: 0.8s;
+}
+
+.Logo .main-logo:hover {
+  transform: scale(1.03);
 }
 
 .Navbar ul li:hover {
   text-decoration: underline;
+  transform: translateY(-2px);
   
+
 }
