@@ -108,22 +108,94 @@
   height: 50px;
 }
 
-/* .images {
-  width: 0;
-} */
+.Footer .Facebook {
+  position: relative;
+  float: right;
+  bottom: 40px;
+  right: 400px;
 
-.Facebook {
-  
 }
-
 .Instagram {
-  
+  position: relative;
+  float: right;
+  bottom: 40px;
+  right: 375px;
+
 }
 
 .Mail {
+  position: relative;
+  float: right;
+  bottom: 40px;
+  right: 350px;
   
 }
 
 .Pinterest {
-  
+  position: relative;
+  float: right;
+  bottom: 40px;
+  right: 325px;
+}
+
+.des1 {
+  position: relative;
+  float: right;
+  width: 200px;
+  height: 22px;
+
+  font-family: 'Cormorant Garamond';
+  font-style: lighter;
+  font-weight: 200;
+  font-size: 17px;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.02em;
+  right: 215px;
+  bottom: 20px;
+
+  color: #FFFDF1;
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.des2 {
+  position: relative;
+  float: right;
+  width: 200px;
+  height: 22px;
+
+  font-family: 'Cormorant Garamond';
+  font-style: lighter;
+  font-weight: 200;
+  font-size: 17px;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.02em;
+  left: 3px;
+  /* bottom: 20px; */
+
+  color: #FFFDF1;
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.heart {
+  position: relative;
+  float: right; 
+  right: 2px;
+  bottom: 3px;
+}
+
+.Socials {
+  position: relative;
+  left: 30px;
 }
