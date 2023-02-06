@@ -2,14 +2,15 @@
 @import url('https://fonts.googleapis.com/css?family=Cormorant Garamond'  );
 
 .Navbar {
-  position: fixed;
+  position: relative;
   width: 100%;
   height: 112px;
   background: #A28598;
+  top: 0;
 }
 
 .Logo {
-  position: fixed;
+  position: absolute;
 }
 
 .Navbar ul li a {
@@ -33,15 +34,13 @@
   padding: 0 100px;
   display: inline-flex;
   float: right;
-  
-  
 }
 
 .Navbar ul li {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 60px 35px 0 100px;
+  padding: 60px 30px 0 50px;
   height: 0px;
   transition: transform 0.5s;
 }
@@ -79,6 +78,5 @@
 .Navbar ul li:hover {
   text-decoration: underline;
   transform: translateY(-2px);
-  
 
 }
