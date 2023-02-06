@@ -33,6 +33,21 @@ function Footer() {
             <a href='/contact'>Contact</a>
           </li>
         </ul>
+        
+        <div className='images'>
+        <div className='Pinterest'>
+          <img src="https://cdn.discordapp.com/attachments/767939191962599478/1072037199161335918/image.png"></img>
+        </div>
+        <div className='Mail'>
+          <img src="https://cdn.discordapp.com/attachments/767939191962599478/1072037099768905748/image.png"></img>
+        </div>
+        <div className='Instagram'>
+          <img src="https://cdn.discordapp.com/attachments/767939191962599478/1072036993854353469/image.png"></img>
+        </div>
+        <div className='Facebook'>
+          <img src="https://cdn.discordapp.com/attachments/767939191962599478/1072036913491484712/image.png"></img>
+        </div>
+        </div>
         <div class="push"></div>
       </div>
       <footer class="footer"></footer>

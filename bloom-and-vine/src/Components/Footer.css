@@ -46,14 +46,16 @@
   width: 366.63px;
   height: 75px;
   left: 0px;
-  top: 71px;
+  top: 90px;
 
   font-family: 'Cormorant Garamond';
   font-style: normal;
-  font-weight: lighter;
+  font-weight: 400;
   font-size: 23px;
-  line-height: 100%;
+  line-height: 25px;
   text-align: left;
+  letter-spacing: 0.2px;
+  
   /* or 25px */
 
   /* display: inline-flex; */
@@ -68,7 +70,7 @@
   position: relative;
   list-style-type: none;
   margin: 0 auto;
-  padding: 0 300px;
+  padding: 0 600px;
   display: inline-flex;
   float: right;
 }
@@ -105,3 +107,38 @@
 .push {
   height: 50px;
 }
+
+/* .images {
+  width: 0;
+} */
+
+.Facebook {
+  width: 10px;
+  height: 10px;
+  float: right;
+  padding-right: 45px;
+}
+
+.Instagram {
+  width: 20px;
+  height: 20px;
+  float: right;
+  padding-right: 50px;
+}
+
+.Mail {
+  width: 20px;
+  height: 16px;
+  float: right;
+  padding-right: 50px;
+}
+
+.Pinterest {
+  width: 17.97px;
+  height: 23px;
+  float: right;
+  padding-right: 65px;
+}
+
+
+/* im so in love with you jay stinky im happy to be yours */
