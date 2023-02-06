@@ -2,18 +2,21 @@
 @import url('https://fonts.googleapis.com/css?family=Cormorant Garamond'  );
 
 .Footer {
-  /* position:fixed; */
-  /* bottom: 0; */
   width: 100%;
   height: 237px;
   background: #A28598;
-  min-height: 100%;
-
-  /* Equal to height of footer */
-  /* But also accounting for potential margin-bottom of last child */
-  margin-bottom: -50px;
-
+  
+  /* min-height: 100%; */
 }
+
+#wrap { 
+  min-height:100%;
+  height:auto !important;
+  height:100%;    
+  margin: 0 auto -158px;  /* Bottom value must = footer height */
+  }
+
+.pagefooter, .push { width:100%; height:158px; position:relative; bottom:0; }
 
 .Footer .Logo {
   /* position: absolute; */
@@ -98,14 +101,6 @@
   color: #FFFDF1;
   text-decoration: none;
   
-}
-
-.wrapper {
-  
-}
-.footer,
-.push {
-  height: 50px;
 }
 
 .Footer .Facebook {
@@ -199,3 +194,4 @@
   position: relative;
   left: 30px;
 }
+

@@ -8,23 +8,6 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-    
-      <p>test</p>
-      <p>test</p>
-      <p>test</p>
-      <p>test</p>
-
-      <p>test</p><p>test</p>
-      <p>test</p>
-
-      <p>test</p><p>test</p>
-      <p>test</p>
-
-      <p>test</p>
-      <p>test</p>
-      <p>test</p>
-      
-      
 
       <Footer/>
     </div>

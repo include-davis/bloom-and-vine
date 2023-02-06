@@ -94,14 +94,10 @@ function Footer() {
           <pre>
           <p className='des2'>by<b> #include</b> @ <b>Davis</b> </p>
           </pre>
-
         </div>
-
-        
-        </div>
-        <div class="push"></div>
-      
-      <footer class="footer"></footer>
+      <div className='push'></div>
+      </div>
+      <div className='pagefooter'></div>
     </div>
     
   );
