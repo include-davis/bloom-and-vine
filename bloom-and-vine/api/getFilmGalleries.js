@@ -1,5 +1,7 @@
 import axios from "axios"
 
+const dataType = "film-galleries"
+
 function getImgUrl(img) {
     if (img.large) {
         return img.large.url
@@ -14,7 +16,7 @@ function getImgUrl(img) {
 
 export default async function handler(req, res) {
     try {
-        const body = await axios.get(`${process.env.STRAPI_BASE_URL}/wedding-events?populate=*`, {
+        const body = await axios.get(`${process.env.STRAPI_BASE_URL}/${dataType}?populate=*`, {
             headers: {
                 Authorization:
                 `Bearer ${process.env.STRAPI_ADMIN_KEY}`,
