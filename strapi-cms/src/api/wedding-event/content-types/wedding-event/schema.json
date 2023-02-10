@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "wedding_events",
+  "info": {
+    "singularName": "wedding-event",
+    "pluralName": "wedding-events",
+    "displayName": "Wedding Event",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Date": {
+      "type": "date"
+    },
+    "Description": {
+      "type": "text"
+    },
+    "Images": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  }
+}
