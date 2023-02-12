@@ -12,6 +12,7 @@
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.7.0",
     "react-scripts": "^5.0.1",
+    "strapi": "^3.6.11",
     "vercel": "^28.15.3",
     "web-vitals": "^2.1.4"
   },
