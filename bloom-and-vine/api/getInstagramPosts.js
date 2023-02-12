@@ -8,10 +8,9 @@ export default async function handler(req, res) {
 
     switch(method) {
         case 'GET':
-            const url = 'https://graph.instagram.com/me/media'
-            const fields = 'id, caption, media_type, media_url, thumbnail_url, permalink, timestamp, username'
+            // Need to figure out token retrieval & refreshing
             const searchLimit = 10
-            const query = `${url}?fields=${fields}&limit=${searchLimit}&access_token=${process.env.USER_TOKEN}`
+            const query = `${process.env.QUERY_URL}?fields=${process.env.QUERY_FIELDS}&limit=${searchLimit}&access_token=${process.env.USER_TOKEN}`
         
             const options = {
                 method: 'GET',
@@ -23,10 +22,11 @@ export default async function handler(req, res) {
         
             const posts = await axios.get(query, options)
             .then(res => {
+                const posts = res.data.data
                 return ({
                     success: true,
-                    data: res.data.data.map(post => {
-                        return({
+                    data: posts.map(post => {
+                        return {
                             'user': post.username,
                             'caption': post.caption,
                             'urls': {
@@ -39,7 +39,7 @@ export default async function handler(req, res) {
                                 'createdAt': post.timestamp,
                                 'id': post.id,
                             },
-                        })
+                        }
                     })
                 })
             })
@@ -53,7 +53,7 @@ export default async function handler(req, res) {
                 })
             })
 
-            res.send(posts)
+            res.json(posts)
             break
 
         default:

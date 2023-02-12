@@ -5,7 +5,8 @@ export default async function handler(req, res) {
 
     switch(method) {
         case 'GET':
-            const gallery = await axios.get(`http://localhost:1337/api/wedding-events/1?populate=*`)
+            // Replace local host with hosting domain
+            const gallery = await axios.get(`http://localhost:1337/api/flower-galleries/1?populate=*`)
             .then(res => {
                 const attributes = res.data.attributes
                 return({
@@ -42,8 +43,15 @@ export default async function handler(req, res) {
                     'publishedAt': attributes.publishedAt
                 })
             })
+            .catch(err => {
+                return({
+                    success: false,
+                    status: err.response?.status,
+                    statusText: err.response?.statusText
+                })
+            })
 
-            res.send(gallery)
+            res.json(gallery)
             break
 
         default:
