@@ -1,0 +1,28 @@
+.review-container {
+    position: relative;
+    padding: 100px;
+}
+
+.review-text {
+
+    font-family: 'Cormorant Garamond';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 61px;
+    text-align: center;
+
+    color: #000000;
+}
+
+.review-user {
+    
+    font-family: Comorant Garamond;
+    font-style: italic;
+    font-weight: lighter;
+    font-size: 34px;
+    line-height: 61px;
+    text-align: center;
+
+    color: #000000;
+}

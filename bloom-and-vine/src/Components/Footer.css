@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css?family=Italiana');
+@import url('https://fonts.googleapis.com/css?family=Cormorant Garamond');
+
+.Footer {
+  width: 100%;
+  height: 237px;
+  background: #A28598;
+  
+  /* min-height: 100%; */
+}
+
+#wrap { 
+  min-height:100%;
+  height:auto !important;
+  height:100%;    
+  margin: 0 auto -158px;  /* Bottom value must = footer height */
+  }
+
+.pagefooter, .push { width:100%; height:158px; position:relative; bottom:0; }
+
+.Footer .Logo {
+  /* position: absolute; */
+  /* Bloom & Vine */
+  width: 316px;
+  height: 64px;
+  padding-top: 48px;
+  padding-left: 56px;
+  font-family: 'Italiana';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 57px;
+  line-height: 23px;
+  
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.04em;
+
+  color: #FFFDF1;
+
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  transition: 0.8s;
+}
+
+.Footer .Description {
+  position: relative;
+  width: 366.63px;
+  height: 75px;
+  left: 0px;
+  top: 90px;
+
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 23px;
+  line-height: 25px;
+  text-align: left;
+  letter-spacing: 0.2px;
+  
+  /* or 25px */
+
+  /* display: inline-flex; */
+  align-items: center;
+  color: #FFFDF1;
+  padding-top: 30px;
+  padding-left: 56px;
+
+}
+
+.Footer ul {
+  position: relative;
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0 600px;
+  display: inline-flex;
+  float: right;
+}
+
+.Footer ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 30px 0 50px;
+  height: 0px;
+  transition: transform 0.5s;
+  
+}
+
+.Footer ul li a {
+  width: 62px;
+  height: 23px;
+
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 700px; 
+  font-size: 25px;
+  line-height: 23px;
+
+  color: #FFFDF1;
+  text-decoration: none;
+  
+}
+
+.Footer .Facebook {
+  position: relative;
+  float: right;
+  bottom: 40px;
+  right: 400px;
+
+}
+.Instagram {
+  position: relative;
+  float: right;
+  bottom: 40px;
+  right: 375px;
+
+}
+
+.Mail {
+  position: relative;
+  float: right;
+  bottom: 40px;
+  right: 350px;
+  
+}
+
+.Pinterest {
+  position: relative;
+  float: right;
+  bottom: 40px;
+  right: 325px;
+}
+
+.des1 {
+  position: relative;
+  float: right;
+  width: 200px;
+  height: 22px;
+
+  font-family: 'Cormorant Garamond';
+  font-style: lighter;
+  font-weight: 200;
+  font-size: 17px;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.02em;
+  right: 215px;
+  bottom: 20px;
+
+  color: #FFFDF1;
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.des2 {
+  position: relative;
+  float: right;
+  width: 200px;
+  height: 22px;
+
+  font-family: 'Cormorant Garamond';
+  font-style: lighter;
+  font-weight: 200;
+  font-size: 17px;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.02em;
+  left: 3px;
+  /* bottom: 20px; */
+
+  color: #FFFDF1;
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.heart {
+  position: relative;
+  float: right; 
+  right: 2px;
+  bottom: 3px;
+}
+
+.Socials {
+  position: relative;
+  left: 30px;
+}
+

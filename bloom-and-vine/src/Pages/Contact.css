@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css?family=Italiana');
+@import url('https://fonts.googleapis.com/css?family=Cormorant Garamond');
+
+
+* {
+  
+}
+
+.Contact {
+  font-family: 'Italiana';
+}
+
+
+
+.Leftside-Screen {
+  background: #FAF1EF;
+  width: 800px;
+  height: 1542px;
+  display: flex;
+}
+
+.contact-image {
+  
+  width: 534px;
+  position: relative;
+  top: 50px;
+  left: 65px;
+}
+
+.lets-talk {
+
+  position: relative;
+  top: 875px;
+  right: 405px;
+
+  
+  /* font-style: normal; */
+  font-weight: 800;
+  font-size: 25px;
+  text-align: left;
+  line-height: 65px;
+  white-space: nowrap;
+  /* or 144% */
+  
+  letter-spacing: -0.04em;
+  
+  color: #000000;
+  
+}
+
+.socials-contact {
+  position: relative;
+}
+
+.socials-contact .Facebook-contact {
+  float: left;
+}
