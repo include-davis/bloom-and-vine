@@ -8,11 +8,65 @@
 
 .Contact {
   font-family: 'Italiana';
+  flex-wrap: nowrap;
+  /* display: table; */
 }
 
+.Rightside-Screen {
+  /* background: lightpink; */
+  /* float: left; */
+  width: 1120px;
+  height: 1542px; 
+  position: relative;
+  display: flex;
+}
 
+.form-wrapper {
+  display: block;
+  text-align: left;
+  margin-left: 250px;
+  line-height: 80px;
+  font-weight: 700;
+  font-size: 24px;
+  padding-top: 150px;
+}
+
+input[type=text], select, textarea {
+  font-family: 'Italiana';
+  display: block;
+  width: 622px;
+  height: 55px;
+  border: 2px solid #000000;
+  border-radius: 10px;
+}
+
+input[type-text], textarea {
+
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  /* background: #FAF1EF;
+  border-radius: 10px;
+  width: 255.2px;
+  height: 88.12px; */
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
 
 .Leftside-Screen {
+  float: left;
+  position: relative;
   background: #FAF1EF;
   width: 800px;
   height: 1542px;
@@ -32,8 +86,6 @@
   position: relative;
   top: 875px;
   right: 405px;
-
-  
   /* font-style: normal; */
   font-weight: 800;
   font-size: 25px;
@@ -45,13 +97,29 @@
   letter-spacing: -0.04em;
   
   color: #000000;
+}
+
+.Contact ul {
+  position: relative;
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+  display: inline-flex;
   
 }
 
-.socials-contact {
-  position: relative;
+.Contact ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: left;
+  padding: 0px 20px 0px 0px;
+  transition: transform 0.5s;
+  
 }
 
-.socials-contact .Facebook-contact {
-  float: left;
+.Contact ul li a {
+  width: 62px;
+  height: 23px;
+  line-height: 23px;
+  text-decoration: none;
 }
