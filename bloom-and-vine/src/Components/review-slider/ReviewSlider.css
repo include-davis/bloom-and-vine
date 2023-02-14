@@ -1,0 +1,18 @@
+button {
+    border: none;
+    cursor: pointer;
+    appearance: none;
+    background-color: inherit;
+    transition: 0.5s
+}
+
+button:hover {
+    transform: scale(1.2);
+}
+
+.review-bar {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

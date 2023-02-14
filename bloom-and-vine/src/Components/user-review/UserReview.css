@@ -26,3 +26,15 @@
 
     color: #000000;
 }
+
+.review-dot-display {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+.review-dot > *:last-child {
+    padding-right: 16px;
+}
