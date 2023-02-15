@@ -77,6 +77,6 @@
 
 .Navbar ul li:hover {
   text-decoration: underline;
+  text-decoration-color: white;
   transform: translateY(-2px);
-
 }
