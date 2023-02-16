@@ -50,20 +50,16 @@ export default function ReviewBar() {
     // Maybe implement automatic transition scrolling
     // Still need to implement dot display somehow...
     return (
-        <ul className='review-bar'>
-            <li >
-                <button onClick={e => onClickHandler(e, 'back')}>
-                    <img className='back-button' src={BackArrow} />
-                </button>
-            </li>
-            <li id='onDisplayReview'>
+        <div className='review-slider'>
+            <button id='backward-button' onClick={e => onClickHandler(e, 'back')}>
+                <img className='back-button' src={BackArrow} />
+            </button>
+            <div id='current-review-display'>
                 {curReview}
-            </li>
-            <li>
-                <button onClick={e => onClickHandler(e, 'forward')}>
-                    <img className='forward-button' src={ForwardArrow} />
-                </button>
-            </li>
-        </ul>
+            </div>
+            <button id='forward-button' onClick={e => onClickHandler(e, 'forward')}>
+                <img className='forward-button' src={ForwardArrow} />
+            </button>
+        </div>
     )
 }

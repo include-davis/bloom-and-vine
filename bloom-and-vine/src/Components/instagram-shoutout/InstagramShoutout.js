@@ -8,7 +8,7 @@ export default function InstagramSlider () {
     }
 
     return (
-        <div>
+        <div className='instagram-text-display'>
             <p className='instagram-shoutout'>Check us out on Instagram!</p>
             <button className='instagram-tag' onClick={InstagramHandler}>@bloomandvine</button>
         </div>
