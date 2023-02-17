@@ -1,6 +1,6 @@
 import axios from "axios"
 
-const dataType = "flower-galleries"
+const dataType = "party-galleries"
 
 function getImgUrl(img) {
     if (img.large) {
@@ -52,9 +52,12 @@ export default async function handler(req, res) {
         }
     } catch(error) {
         res.json({
-            message: error.message,
-            code: error.code,
-            status: error.status,
+            success: false,
+            error: {
+                message: error.message,
+                code: error.code,
+                status: error.status,
+            }
         })
     }
 }
