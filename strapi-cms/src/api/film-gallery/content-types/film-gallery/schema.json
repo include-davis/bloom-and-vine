@@ -1,11 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "wedding_events",
+  "collectionName": "film_galleries",
   "info": {
-    "singularName": "wedding-event",
-    "pluralName": "wedding-events",
-    "displayName": "Wedding Event",
-    "description": ""
+    "singularName": "film-gallery",
+    "pluralName": "film-galleries",
+    "displayName": "Film Gallery"
   },
   "options": {
     "draftAndPublish": true
@@ -15,22 +14,21 @@
     "Title": {
       "type": "string"
     },
+    "Description": {
+      "type": "richtext"
+    },
     "Date": {
       "type": "date"
     },
-    "Description": {
-      "type": "text"
-    },
     "Images": {
-      "type": "media",
-      "multiple": true,
-      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ]
+      ],
+      "type": "media",
+      "multiple": true
     }
   }
 }
