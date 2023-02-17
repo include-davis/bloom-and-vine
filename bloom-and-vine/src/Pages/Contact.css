@@ -9,13 +9,14 @@
 .Contact {
   font-family: 'Italiana';
   flex-wrap: nowrap;
+  margin: 0 auto;
   /* display: table; */
 }
 
 .Rightside-Screen {
   /* background: lightpink; */
   /* float: right; */
-  width: 920px;
+  width: auto;
   height: 1542px; 
   position: relative;
   display: flex;
@@ -27,7 +28,7 @@
   float: left;
   position: relative;
   background: #FAF1EF;
-  width: 800px;
+  width: auto;
   height: 1542px;
   display: flex;
   margin-left: auto;
@@ -51,10 +52,30 @@ input[type=text], select, textarea {
   height: 55px;
   border: 2px solid #000000;
   border-radius: 10px;
+  font-size: 24px;
+  font-weight: bold;
 }
 
-input[type-text], textarea {
+input[type=date] {
+  font-family: 'Italiana';
+  display: block;
+  width: 622px;
+  height: 55px;
+  border: 2px solid #000000;
+  border-radius: 10px;
+  font-size: 24px;
+  font-weight: bold;
 
+}
+
+::placeholder {
+  text-decoration-color: grey;
+}
+
+
+textarea {
+  width: 622px;
+  height: 300px;
 }
 
 /* Style the submit button with a specific background color etc */
@@ -78,7 +99,8 @@ input[type=submit] {
 /* When moving the mouse over the submit button, add a darker green color */
 input[type=submit]:hover {
   cursor: pointer;
-  text-decoration-color: white;
+  text-decoration-color: lightgrey;
+  color: white;
   transform: translateY(-4px);
 }
 

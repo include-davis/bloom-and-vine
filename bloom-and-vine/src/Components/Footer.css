@@ -3,24 +3,11 @@
 
 .Footer {
   position: relative;
-  width: 100%;
-  /* min-height: calc(100vh - 237px); */
+  width: auto;
   height: 237px;
   background: #A28598;
-  /* padding-top: 8vh; */
-  
 }
 
-/* .wrapper {
-  padding-bottom: 237px;
-}
-
-.push {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 237px;
-} */
 
 .Footer .Logo {
   position: relative;

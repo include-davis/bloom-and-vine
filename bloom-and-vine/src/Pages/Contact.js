@@ -90,13 +90,13 @@ function Contact() {
           <label for="phone">Phone *</label>
           <input type="text" id="phone" name="phone"></input>
           <label for="date">Date of Event</label>
-          <input type="text" id="email" name="email" ></input>
-          <label for="country">Date of Event</label>
+          <input type="date" id="email" name="email" ></input>
+          {/* <label for="country">Date of Event</label>
           <select id="country" name="country" placeholder='mm/dd/yyyy'>
             <option value="n/a"></option>
             <option value="n/a"></option>
             <option value="n/a"></option>
-          </select>
+          </select> */}
 
           <label for="country">Subject</label>
           <select id="country" name="country">
@@ -108,9 +108,9 @@ function Contact() {
 
           
 
-          <label for="subject">Meessage</label>
-          <textarea id="subject" name="subject" placeholder="Write something.."></textarea>
-          <input type="submit" value="SEND"></input>
+          <label for="subject">Message</label>
+          <textarea ></textarea>
+          <input type="submit" maxlength="4" size="4" value="SEND"></input>
           
           </form>
 
