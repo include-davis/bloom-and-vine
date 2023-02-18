@@ -1,5 +1,6 @@
 import Navbar from '../Components/Navbar'
 import ReviewSlider from '../Components/review-slider/ReviewSlider';
+import RedirectImages from '../Components/redirect-images/RedirectDisplay';
 import InstagramShoutout from '../Components/instagram-shoutout/InstagramShoutout';
 import InstagramPosts from '../Components/instagram-posts/InstagramPosts';
 import displayImg from './images/DISPLAY-60.jpg'
@@ -25,7 +26,7 @@ function Homepage() {
       </div>
 
       <div className='redirect-display'>
-        <h1>Redirect Images</h1>
+        <RedirectImages />
       </div>
 
       <div className='instagram-display'>

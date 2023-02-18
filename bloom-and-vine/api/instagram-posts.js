@@ -1,4 +1,4 @@
-import * as axios from 'axios'
+import axios from 'axios'
 
 const searchLimit = 10
 const QUERY_FIELDS = 'id, username, caption, media_type, media_url, thumbnail_url, permalink, timestamp'
@@ -53,8 +53,9 @@ export default async function handler(req, res) {
                 return ({
                     success: false,
                     error: {
-                        status: err.response?.status || "Error fetching Instagram data.",
-                        statusText: err.response?.statusText || null,
+                        message: err.message,
+                        code: err.code,
+                        status: err.status,
                     }
                 })
             })
