@@ -93,7 +93,7 @@ input[type=submit] {
   line-height: 42px;
   top: 100px;
   left: 375px;
-  transition: 0.6s;
+  transition: 0.4s;
 }
 
 /* When moving the mouse over the submit button, add a darker green color */
@@ -101,7 +101,7 @@ input[type=submit]:hover {
   cursor: pointer;
   text-decoration-color: lightgrey;
   color: white;
-  transform: translateY(-4px);
+  /* transform: translateY(-4px); */
 }
 
 /* Add a background color and some padding around the form */
@@ -157,9 +157,48 @@ input[type=submit]:hover {
   
 }
 
+.Contact ul li:hover {
+  transform: translateY(-4px);
+}
+
 .Contact ul li a {
   width: 62px;
   height: 23px;
   line-height: 23px;
   text-decoration: none;
+}
+
+html {
+  scroll-behavior:smooth;
+}
+body {
+  position: relative;
+}
+.section {
+  height: 100vh;
+  background: #dedede;
+  margin-bottom: 20px;
+  font-size: 100px;
+}
+
+.scroll-container {
+  position: absolute;
+  top: 0;
+  right:0;
+  /* left: 0; */
+  height: 100%;
+}
+
+.scroll-container:before {
+  content: '';
+  display: block;
+  height: 205vh;
+  pointer-events: none;
+}
+
+.scroll-container a {
+  position: sticky;
+  top: 88vh;
+  /* cursor: pointer; */
+  font-size: 20px;
 }

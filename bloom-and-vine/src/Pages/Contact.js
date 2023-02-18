@@ -1,10 +1,13 @@
+import React from 'react'
 import './Contact.css';
 import contact from './images/contact-image.png'
+import { FaArrowAltCircleUp } from "react-icons/fa";
+
 
 function Contact() {
   return (
     <div className="Contact">
-
+      <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
       <div className='Leftside-Screen'>
         
         <div className='contact-image'>
@@ -70,7 +73,7 @@ function Contact() {
                     12.2899 9.87431 9.04869 9.49851 6.6765C9.12272 4.3278 5.41177 4.6801 5.22387 8.1327C5.12992 9.89423 5.64664 10.4109 
                     5.24736 12.1725C4.61321 14.9909 2.68727 20.7452 4.04952 23C6.04592 22.0605 7.03237 16.4236 7.50211 15.719Z" fill="black"/>
                 </svg>
-
+              
               </div>
             </a>
           </li>
@@ -117,9 +120,14 @@ function Contact() {
           
         </div>
       </div>
-
+      <div class="scroll-container">
+        <a href="#top"><FaArrowAltCircleUp />  </a>
+      </div>
+      
     </div>
   );
 }
+
+
 
 export default Contact;

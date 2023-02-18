@@ -1,4 +1,6 @@
+import React, { useState, useEffect } from 'react';
 import './App.css';
+import { FaHeart } from "react-icons/fa";
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 import Navbar from './Components/Navbar';
 import Footer from './Components/Footer';
@@ -10,32 +12,6 @@ function App() {
       <Navbar />
 
       <Contact />
-
-      {/* <p>test</p>
-      <p>test</p>
-      <p>test</p>
-      <p>test</p>
-      <p>test</p>
-      <p>test</p>
-      <p>test</p>
-      <p>test</p>
-      <p>test</p>
-      <p>test</p>
-      <p>test</p>
-      <p>test</p>
-      <p>test</p>
-      <p>test</p>
-      <p>test</p>
-      <p>test</p>
-      <p>test</p>
-      <p>test</p>
-      <p>test</p>
-      <p>test</p>
-      <p>test</p>
-      <p>test</p>
-      <p>test</p>
-      <p>test</p>
-      <p>test</p> */}
 
       <Footer/>
     </div>
