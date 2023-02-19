@@ -6,14 +6,14 @@
     flex-wrap: nowrap;
     gap: 103px;
 
-    margin: 169px;
+    margin: 116px 0px 153px 0px;
 
 }
 
 .image-background {
     position: relative;
-    width: 257px;
-    height: 276px;
+    min-width: 257px;
+    min-height: 276px;
 
     background: #A28598;
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
@@ -24,7 +24,7 @@
     position: absolute;
     width: 129px;
     height: 50px;
-    margin: 0px 15px 5px 0;
+    margin: 0px 15px 5px 0px;
     bottom: 0;
     right: 0;
 

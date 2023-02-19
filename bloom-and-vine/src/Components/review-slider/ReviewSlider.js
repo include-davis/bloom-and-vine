@@ -26,6 +26,14 @@ const userReviews = [
         'user': 'lucy'
     },
   ].map((userReview, index) => <UserReview review={userReview} curReview={index} totalReviews={5} />)
+
+
+// Auto scrolling reviews?
+// const autoScroll = () => {
+//     setTimeout(() => {
+//         index < userReviews.length - 1 ? setIndex(index => index + 1) : setIndex(0)
+//     }, 5000)
+// }
   
 export default function ReviewBar() {
     const [curReview, setCurReview] = useState(userReviews[0])
@@ -48,7 +56,7 @@ export default function ReviewBar() {
     }
 
     // Maybe implement automatic transition scrolling
-    // Still need to implement dot display somehow...
+    // Dot display very scuffed... maybe change it up
     return (
         <div className='review-slider'>
             <button id='backward-button' onClick={e => onClickHandler(e, 'back')}>

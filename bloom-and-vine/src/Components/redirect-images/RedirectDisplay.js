@@ -3,12 +3,6 @@ import GalleryImg from './images/gallery.jpg'
 import ServicesImg from './images/services.jpg'
 import AboutImg from './images/about.jpg'
 import ContactImg from './images/contact.jpg'
-
-import Gallery from '../../Pages/Gallery'
-import Services from '../../Pages/Services'
-import About from '../../Pages/About'
-import Contact from '../../Pages/Contact'
-
 import './RedirectDisplay.css'
 
 export default function RedirectImages() {

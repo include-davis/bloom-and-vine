@@ -10,7 +10,7 @@ body {
 }
 
 .front-image {
-    width: 100%;
+    max-width: 100%;
     height: auto;
     object-fit: cover;
 }
@@ -27,8 +27,8 @@ body {
 
 .front-text {
     position: absolute;
-    width: 573px;
-    height: 73px;
+    min-width: 573px;
+    min-height: 73px;
     left: 48px;
     top: 24px;
 

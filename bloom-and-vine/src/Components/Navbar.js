@@ -1,4 +1,5 @@
 import './Navbar.css';
+import React from 'react'
 
 
 function Navbar() {
@@ -11,7 +12,7 @@ function Navbar() {
       </div>
       <ul className='directory'>
         <li>
-          <a href='/home'>Home</a>
+          <a href='/'>Home</a>
         </li>
         <li>
           <a href='/gallery'>Gallery</a>

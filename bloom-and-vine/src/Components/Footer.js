@@ -1,4 +1,5 @@
 import './Footer.css';
+import React from 'react'
 
 function Footer() {
   return (
@@ -95,7 +96,7 @@ function Footer() {
           <p className='des2'>by<b> #include</b> @ <b>Davis</b> </p>
           </pre>
         </div>
-      <div className='push'></div>
+      <footer className='push'></footer>
       </div>
       <div className='pagefooter'></div>
     </div>
