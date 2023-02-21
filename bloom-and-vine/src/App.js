@@ -13,7 +13,7 @@ function App() {
         <Route exact path='/gallery' element={<Gallery />} />
         <Route exact path='/about' element={<About />} />
         <Route exact path='/contact' element={<Contact />} />
-        <Route path="*" element={<div>error</div>} />
+        <Route path="*" element={<div>Error</div>} />
       </Routes>
     </div>
   );

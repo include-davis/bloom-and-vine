@@ -13,13 +13,14 @@ const options = {
 const QUERY_URL = "http://localhost:3000/api/instagram-posts"
 
 export default function InstagramPosts () {
-    const [posts, setPosts] = useState(null)
+    const [posts, setPosts] = useState({})
 
     useEffect(() => {
         async function fetchPostData() {
             const postData = await axios.get(QUERY_URL, options).then(res => res.data)
             setPosts(postData)
         }
+        
         fetchPostData()
     }, [])
 

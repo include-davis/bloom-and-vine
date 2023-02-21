@@ -1,0 +1,11 @@
+.image-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 103px;
+
+    margin: 116px 0px 153px 0px;
+
+}

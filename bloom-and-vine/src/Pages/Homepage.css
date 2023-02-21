@@ -7,12 +7,14 @@ body {
 
 .front-display {
     position: relative;
+    
 }
 
 .front-image {
     max-width: 100%;
     height: auto;
     object-fit: cover;
+    
 }
 
 .front-text-container {
