@@ -1,6 +1,5 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import './App.css';
-import { FaHeart } from "react-icons/fa";
 import { BrowserRouter as Router, Routes, Route} from "react-router-dom"
 import Navbar from './Components/Navbar';
 import Footer from './Components/Footer';
