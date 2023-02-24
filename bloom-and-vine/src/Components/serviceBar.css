@@ -5,7 +5,7 @@
     background-color: rgba(162, 133, 152, 0.34);
     justify-content: center;
     align-items: center;
-    width: 1573px;
+    width: 100vw;
     height: 175px;
 }
 #barElm{
@@ -15,8 +15,8 @@
     margin: 15px;
 }
 .servImg{
-    width: 223px;
-    height: 140px;
+    width: 14vw;
+    height: auto;
 }
 .servHeader{
     font-family: 'Italiana';
