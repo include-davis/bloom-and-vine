@@ -1,6 +1,4 @@
 import "./carousel.css"
-import React, { useState, useEffect } from 'react';
-
 import wedding from "../Pages/serviceImages/weddings.png"
 import rentals from "../Pages/serviceImages/rentals.png"
 import funerals from "../Pages/serviceImages/funerals.png"
@@ -8,24 +6,23 @@ import classes from "../Pages/serviceImages/classes.png"
 import parties from "../Pages/serviceImages/parties.png"
 import customOrder from "../Pages/serviceImages/customOrder.png"
 
-const ServicesCarousel = () =>{
+const ServicesCarousel = (props) =>{
 
-    const [index, setIndex] = useState(0);
     // index goes from 0 - 5 to represent 5 images
 
     function previousImage() {
-        let newIndex = index - 1;
+        let newIndex = props.index - 1;
         if (newIndex < 0) {
             newIndex = 5;
         }
-        setIndex(newIndex);
+        props.setIndex(newIndex);
     }
     function nextImage() {
-        let newIndex = index + 1;
+        let newIndex = props.index + 1;
         if (newIndex > 5) {
             newIndex = 0;
         }
-        setIndex(newIndex);
+        props.setIndex(newIndex);
     }
     
     var images = [
@@ -68,7 +65,7 @@ const ServicesCarousel = () =>{
                         <div id = "contactButton">Contact Us</div>
                     </div>
 
-                        <img id = "actualImg"src= {images[index].src} alt= {images[index].description} ></img>
+                        <img id = "actualImg"src= {images[props.index].src} alt= {images[props.index].description} ></img>
                     <div className="arrow" onClick= {nextImage} >&gt;</div>
                 </div>
                 

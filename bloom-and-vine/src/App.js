@@ -1,14 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
 import { BrowserRouter, Routes, Route } from "react-router-dom"
-import ServiceBarList from './Components/serviceBarList';
-import ServicesCarousel from './Components/carousel';
+import Services from './Pages/Services';
 
 function App() {
   return (
     <div className="App">
-      <ServiceBarList/>
-      <ServicesCarousel/>
+     <Services/>
     </div>
   );
 }
