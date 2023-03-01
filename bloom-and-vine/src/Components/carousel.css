@@ -12,8 +12,8 @@
     height: 80%; 
   }
   #actualImg{
-    width: 615px;
-    height: 90%; 
+    width: 39vw;
+    height: 75%; 
   }
   .arrow {
     font-size: 2em;
@@ -25,29 +25,31 @@
     justify-content: space-around;
     background-color: rgb(250,242,239);
     width: 100vw;
-    height: 65vh;
+    height: 671px;
   }
   #texts{
     background: rgba(162, 133, 152, 1);
-    width: 615px;
-    height: 90%; 
+    width: 39vw;
+    height: 75%; 
+
   }
   #servTitle{
     margin-left: 9%;
     color:rgba(252, 249, 234, 1);
-    font-family: Cormorant Garamond;
+    font-family: "Cormorant Garamond";
     font-size: 3em;
     font-weight: 700;
     line-height: 40px;
     letter-spacing: 0.01em;
     text-align: left;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
   .servDesc{
     margin-left: 9%;
     width: 84%;
     color: rgba(252, 249, 234, 1);
-    font-family: Cormorant Garamond;
-    font-size: 1.3vw;
+    font-family: "Cormorant Garamond";
+    font-size: 1.188em;
     font-weight: 700;
     line-height: 40px;
     letter-spacing: 0.01em;
@@ -57,8 +59,8 @@
       display: flex;
       background-color: rgba(252, 249, 234, 1);
       color: rgba(162, 133, 152, 1);
-      font-family: Cormorant Garamond;
-      font-size: 20px;
+      font-family: "Cormorant Garamond";
+      font-size: 1.25em;
       font-weight: 700;
       width: 27%;
       height: 11%;
@@ -66,4 +68,5 @@
       justify-content: center;
       align-items: center;
       margin-left: 9%;
+      font-style: bold;
   }

@@ -73,7 +73,6 @@ const ServicesCarousel = () =>{
                 </div>
                 
             </div>
-
         </div>
         
     )
