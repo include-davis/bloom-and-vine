@@ -65,7 +65,7 @@ const ServicesCarousel = () =>{
                         <h1 id ="servTitle">Wedding Services</h1>
                         <p className ="servDesc">Need a hand on your special day? We offer a variety of wedding services ranging from making beautiful bouquets to DIYing wedding centerpieces! Our flowers are sourced from local farms and are hand chosen to cater to you and your vision. You can count on us to make your wedding unforgettable. Let’s get in touch!</p>
                         <p className ="servDesc">Recommended Vendors: Blossom Farm Vintage Rentals</p>
-                        <p>contact us</p>
+                        <div id = "contactButton">Contact Us</div>
                     </div>
 
                         <img id = "actualImg"src= {images[index].src} alt= {images[index].description} ></img>

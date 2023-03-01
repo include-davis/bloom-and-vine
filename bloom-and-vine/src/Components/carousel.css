@@ -13,7 +13,7 @@
   }
   #actualImg{
     width: 615px;
-    height: 80%; 
+    height: 90%; 
   }
   .arrow {
     font-size: 2em;
@@ -30,13 +30,13 @@
   #texts{
     background: rgba(162, 133, 152, 1);
     width: 615px;
-    height: 80%; 
+    height: 90%; 
   }
   #servTitle{
     margin-left: 9%;
     color:rgba(252, 249, 234, 1);
     font-family: Cormorant Garamond;
-    font-size: 3vw;
+    font-size: 3em;
     font-weight: 700;
     line-height: 40px;
     letter-spacing: 0.01em;
@@ -52,4 +52,18 @@
     line-height: 40px;
     letter-spacing: 0.01em;
     text-align: left;
+  }
+  #contactButton{
+      display: flex;
+      background-color: rgba(252, 249, 234, 1);
+      color: rgba(162, 133, 152, 1);
+      font-family: Cormorant Garamond;
+      font-size: 20px;
+      font-weight: 700;
+      width: 27%;
+      height: 11%;
+      border-radius: 10px;
+      justify-content: center;
+      align-items: center;
+      margin-left: 9%;
   }
