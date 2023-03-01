@@ -27,26 +27,32 @@ const ServicesCarousel = (props) =>{
     
     var images = [
         {
+          service: "Wedding Services",
           src: wedding,
-          description: "first img description words words words words words words words words words words words words words words words words words words words words words words words words words words "
+          description: "Need a hand on your special day? We offer a variety of wedding services ranging from making beautiful bouquets to DIYing wedding centerpieces! Our flowers are sourced from local farms and are hand chosen to cater to you and your vision. You can count on us to make your wedding unforgettable. Let’s get in touch!"
         },
         {
+          service: "Rentals",
           src: rentals,
           description: "2nd img words words words words words words words words words words words words words words words words words words words words words words words words words words words words "
         },
         {
+          service: "Funerals",
           src: funerals,
           description: "3rd img words words words words words words words words words words words words words words words words words words words words words words "
         },
         {
+          service: "Classes",
           src: classes,
           description: "4th img words words words words words words words words words words words words words words words words words words words words words words "
         },
         {
+          service: "Parties",
           src: parties,
           description: "5th img words words words words words words words words words words words words words words words words words words words words words words "
         },
         {
+          service: "Custom Orders",
           src: customOrder,
           description: "6th img words words words words words words words words words words words words words words words words words words words words words words "
         }
@@ -59,13 +65,13 @@ const ServicesCarousel = (props) =>{
                     <div className="arrow" onClick= {previousImage} >&lt;</div>
 
                     <div id ="texts">
-                        <h1 id ="servTitle">Wedding Services</h1>
-                        <p className ="servDesc">Need a hand on your special day? We offer a variety of wedding services ranging from making beautiful bouquets to DIYing wedding centerpieces! Our flowers are sourced from local farms and are hand chosen to cater to you and your vision. You can count on us to make your wedding unforgettable. Let’s get in touch!</p>
+                        <h1 id ="servTitle">{images[props.index].service}</h1>
+                        <p className ="servDesc">{images[props.index].description}</p>
                         <p className ="servDesc">Recommended Vendors: Blossom Farm Vintage Rentals</p>
                         <div id = "contactButton">Contact Us</div>
                     </div>
 
-                        <img id = "actualImg"src= {images[props.index].src} alt= {images[props.index].description} ></img>
+                        <img id = "actualImg" src= {images[props.index].src} alt= {images[props.index].description} ></img>
                     <div className="arrow" onClick= {nextImage} >&gt;</div>
                 </div>
                 
