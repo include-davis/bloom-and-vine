@@ -2,18 +2,6 @@ import axios from "axios"
 
 const dataType = "wedding-galleries"
 
-function getImgUrl(img) {
-    if (img.large) {
-        return img.large.url
-    } else if (img.medium) {
-        return img.medium.url
-    } else if (img.small) {
-        return img.medium.url
-    } else {
-        return img.thumbnail.url
-    }
-}
-
 export default async function handler(req, res) {
     try {
 
@@ -36,7 +24,7 @@ export default async function handler(req, res) {
                         description: eventAtts.Description,
                         images: eventAtts.Images.data.map((img) => {
                             return {
-                                urlTest: getImgUrl(img.attributes.formats),
+                                url: img.attributes.url,
                                 altText: img.attributes.alternativeText,
                             }
                         }),
