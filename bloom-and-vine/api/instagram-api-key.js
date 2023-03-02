@@ -30,7 +30,6 @@ export default async function handler(req, res) {
                 })
                 if (body.data.data) {
                     const key = body.data.data.attributes.key
-                    console.log(key)
                     res.json({
                         key
                     })

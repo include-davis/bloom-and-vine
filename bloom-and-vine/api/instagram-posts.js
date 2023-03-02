@@ -5,7 +5,6 @@ const QUERY_FIELDS = 'id, username, caption, media_type, media_url, thumbnail_ur
 
 async function getAPIKey() {
     const API_KEY = await axios.get(`http://${process.env.VERCEL_URL}/api/instagram-api-key`).then(data => data.data.key)
-    console.log(API_KEY)
     return API_KEY
 }
 
