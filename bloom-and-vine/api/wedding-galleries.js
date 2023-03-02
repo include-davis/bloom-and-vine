@@ -16,6 +16,8 @@ function getImgUrl(img) {
 
 export default async function handler(req, res) {
     try {
+
+        console.log(`${process.env.STRAPI_BASE_URL}/${dataType}?populate=*`)
         const body = await axios.get(`${process.env.STRAPI_BASE_URL}/${dataType}?populate=*`, {
             headers: {
                 Authorization:
