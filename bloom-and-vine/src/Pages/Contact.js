@@ -120,9 +120,9 @@ function Contact() {
           
         </div>
       </div>
-      <div class="scroll-container">
+      {/* <div class="scroll-container">
         <a href="#top"><FaArrowAltCircleUp />  </a>
-      </div>
+      </div> */}
       
     </div>
   );
