@@ -1,20 +1,20 @@
 import Navbar from '../Components/Navbar'
 import Footer from '../Components/Footer'
 import ReviewSlider from '../Components/review-slider/ReviewSlider';
-import RedirectDisplay from '../Components/redirect-display/RedirectDisplay';
+import RedirectImages from '../Components/redirect-images/RedirectDisplay';
 import InstagramShoutout from '../Components/instagram-shoutout/InstagramShoutout';
 import InstagramPosts from '../Components/instagram-posts/InstagramPosts';
 import displayImg from './images/DISPLAY-60.jpg'
 import './Homepage.css';
 
 function Homepage() {
+  // Create custom hook to return the current review displayed
 
   return (
     <div className="Homepage">
       <Navbar />
 
       <div className='front-display'>
-      
         <img className="front-image" src={displayImg}/>
         <div className='front-text-container'>
           <p className='front-text'>Bloom & Vine</p>
@@ -27,14 +27,14 @@ function Homepage() {
       </div>
 
       <div className='redirect-display'>
-        <RedirectDisplay />
+        <RedirectImages />
       </div>
 
       <div className='instagram-display'>
         <InstagramShoutout />
         <InstagramPosts />
       </div>
-
+      
       <Footer />
     </div>
   );

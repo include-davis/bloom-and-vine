@@ -2,7 +2,6 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     align-items: center;
     padding: 100px;
 }
@@ -41,5 +40,8 @@
     align-items: center;
     justify-content: center;
     flex-wrap: nowrap;
-    gap: 16px;
+}
+
+.review-dot > *:last-child {
+    padding-right: 16px;
 }
