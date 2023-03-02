@@ -6,14 +6,13 @@
     flex-wrap: nowrap;
     gap: 103px;
 
-    margin: 116px 0px 153px 0px;
-
+    margin: 116px 0px 153px 50px;
 }
 
 .image-background {
     position: relative;
-    min-width: 257px;
-    min-height: 276px;
+    min-width: 16vw;
+    min-height: 256px;
 
     background: #A28598;
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
@@ -32,7 +31,7 @@
     font-style: normal;
     font-weight: 700;
     font-size: 35px;
-    line-height: 42px;
+    line-height: 42.39px;
     text-align: right;
 
     color: #FCF9EA;
@@ -43,8 +42,8 @@
 .image-redirect {
     position: absolute;
     object-fit: cover;
-    width: 256px;
-    height: 276px;
+    width: 16vw;
+    height: 256px;
     top: -72px;
     left: -42px;
 

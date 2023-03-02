@@ -4,7 +4,7 @@ export default function InstagramSlider () {
     const InstagramHandler = (e) => {
         e.preventDefault()
     
-        location.href = 'https://instagram.com'
+        //location.href = 'https://instagram.com'
     }
 
     return (
