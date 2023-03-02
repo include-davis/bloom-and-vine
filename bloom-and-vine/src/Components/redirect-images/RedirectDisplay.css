@@ -8,6 +8,7 @@
 
     margin: 116px 0px 153px 0px;
 }
+
 .image-background {
     position: relative;
     min-width: 16vw;
@@ -43,7 +44,6 @@
     object-fit: cover;
     width: 16vw;
     height: 256px;
-
     top: -72px;
     left: -42px;
 
