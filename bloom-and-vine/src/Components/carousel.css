@@ -3,8 +3,8 @@
 .container {
     display: flex;
     justify-content: center;
-    height: 56vh; 
     text-align: left;
+    margin-bottom: 0px;
 
   }
   #image {
@@ -13,6 +13,7 @@
   }
   #actualImg{
     width: 39vw;
+    max-width: 615px;
     height: 75%; 
   }
   .arrow {
@@ -30,6 +31,7 @@
   #texts{
     background: rgba(162, 133, 152, 1);
     width: 39vw;
+    max-width: 615px;
     height: 75%; 
 
   }
