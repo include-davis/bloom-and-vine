@@ -22,6 +22,7 @@
 .servImg{
     width: 14vw;
     height: auto;
+    max-width: 223px;
 }
 .servHeader{
     font-family: 'Italiana';
