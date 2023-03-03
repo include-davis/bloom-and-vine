@@ -4,7 +4,7 @@ const searchLimit = 10
 const QUERY_FIELDS = 'id, username, caption, media_type, media_url, thumbnail_url, permalink, timestamp'
 
 async function getAPIKey() {
-    const API_KEY = await axios.get(`http://${process.env.VERCEL_URL}/api/instagram-api-key`).then(data => data.data.key)
+    const API_KEY = await axios.get(`${process.env.VERCEL_URL}/api/instagram-api-key`).then(data => data.data.key)
     return API_KEY
 }
 
@@ -13,10 +13,9 @@ export default async function handler(req, res) {
 
     switch(method) {
         case 'GET':
-            // Need to figure out token retrieval & refreshing
             const USER_TOKEN = await getAPIKey();
             
-            const query = `${process.env.QUERY_URL}?fields=${QUERY_FIELDS}&limit=${searchLimit}&access_token=${USER_TOKEN}`
+            const query = `${process.env.INSTAGRAM_URL}/me/media?fields=${QUERY_FIELDS}&limit=${searchLimit}&access_token=${USER_TOKEN}`
         
             const options = {
                 method: 'GET',

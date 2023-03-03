@@ -10,22 +10,24 @@ const options = {
     }
 }
 
-const QUERY_URL = "http://localhost:3000/api/instagram-posts"
+const QUERY_URL = `${process.env.VERCEL_URL}/api/instagram-posts`
+console.log(process.env.INSTAGRAM_URL)
+// async function fetchPostData() {
+//     const postData = await axios.get(QUERY_URL, options).then(res => res.data)
+//     setPosts(postData)
+// }
+// fetchPostData()
 
 export default function InstagramPosts () {
     const [posts, setPosts] = useState(null)
 
     useEffect(() => {
-        async function fetchPostData() {
-            const postData = await axios.get(QUERY_URL, options).then(res => res.data)
-            setPosts(postData)
-        }
-        fetchPostData()
     }, [])
 
     return (
         <div>
             <h1>POSTS</h1>
+            {posts}
         </div>
     )
 };

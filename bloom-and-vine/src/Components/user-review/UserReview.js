@@ -28,12 +28,12 @@ export default function UserReview(props) {
 
     return (
         <div className='review-container'>
-            <p className='review-text'>
-                "{review.message}"
-            </p>
-            <p className='review-user'>
+            <div className='review-text'>
+                {review.message}
+            </div>
+            <div className='review-user'>
                 - {review.user}
-            </p>
+            </div>
             <ul className='review-dot-display'>
                 {dot_display}
             </ul>

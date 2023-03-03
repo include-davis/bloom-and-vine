@@ -3,13 +3,15 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     padding: 100px;
     padding-right: 0px;
     padding-left: 0px;
+    height: 445px;
 }
 
 .review-text {
-    height: 80px;
+    height: auto;
     width: 1200px;
     margin: 25px;
     
@@ -20,6 +22,10 @@
     line-height: 61px;
     text-align: center;
     color: #000000;
+}
+
+span {
+    align-self: flex-end;
 }
 
 .review-user {

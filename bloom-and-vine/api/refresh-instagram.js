@@ -1,7 +1,7 @@
 import axios from 'axios'
 
-const requestUrl = `http://${process.env.VERCEL_URL}/api/instagram-api-key`
-const refreshURL = `https://graph.instagram.com/refresh_access_token?grant_type=ig_refresh_token`
+const requestUrl = `${process.env.VERCEL_URL}/api/instagram-api-key`
+const refreshURL = `${process.env.INSTAGRAM_URL}/refresh_access_token?grant_type=ig_refresh_token`
 
 const headers = {
     headers: {
