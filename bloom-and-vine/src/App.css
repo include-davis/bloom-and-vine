@@ -4,7 +4,7 @@ html {
 
 .App {
   text-align: center;
-  min-height: calc(100vh - 400px);
+  min-height: calc(100vh - 100px)
 }
 
 .App-logo {

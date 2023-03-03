@@ -7,7 +7,7 @@ import { FaArrowAltCircleUp } from "react-icons/fa";
 function Contact() {
   return (
     <div className="Contact">
-      <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+      {/* <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script> */}
       <div className='Leftside-Screen'>
         
         <div className='contact-image'>
@@ -120,9 +120,9 @@ function Contact() {
           
         </div>
       </div>
-      <div class="scroll-container">
+      {/* <div class="scroll-container">
         <a href="#top"><FaArrowAltCircleUp />  </a>
-      </div>
+      </div> */}
       
     </div>
   );
