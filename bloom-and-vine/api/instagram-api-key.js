@@ -22,7 +22,7 @@ export default async function handler(req, res) {
     try {
         switch (method) {
             case 'GET':
-                body = await axios.get(`${process.env.STRAPI_BASE_URL}/${dataType}`, {
+                body = await axios.get(`${process.env.STRAPI_BASE_URL}/api/${dataType}`, {
                     headers: {
                         Authorization:
                         `Bearer ${process.env.STRAPI_ADMIN_KEY}`,
