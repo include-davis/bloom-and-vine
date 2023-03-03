@@ -15,6 +15,9 @@
     width: 1200px;
     margin: 25px;
     
+    /* align-self: flex-end; */
+    /* width: fit-content; */
+    
     font-family: 'Cormorant Garamond';
     font-style: normal;
     font-weight: 700;

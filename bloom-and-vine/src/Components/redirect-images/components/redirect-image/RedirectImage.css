@@ -1,0 +1,46 @@
+.image-background {
+    position: relative;
+    min-width: 257px;
+    min-height: 276px;
+
+    background: #A28598;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+.image-text {
+    position: absolute;
+    width: 129px;
+    height: 50px;
+    margin: 0px 15px 5px 0px;
+    bottom: 0;
+    right: 0;
+
+    font-family: 'Cormorant Garamond';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 42px;
+    text-align: right;
+
+    color: #FCF9EA;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.image-redirect {
+    position: absolute;
+    object-fit: cover;
+    width: 256px;
+    max-height: 276px;
+    top: -72px;
+    left: -42px;
+
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.image-redirect:hover{
+    transform: scale(1.15);
+}

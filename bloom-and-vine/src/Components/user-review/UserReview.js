@@ -25,7 +25,6 @@ export default function UserReview(props) {
         }
     }
 
-
     return (
         <div className='review-container'>
             <div className='review-text'>
