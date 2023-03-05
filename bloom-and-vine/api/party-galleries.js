@@ -4,7 +4,7 @@ const dataType = "party-galleries"
 
 export default async function handler(req, res) {
     try {
-        const body = await axios.get(`${process.env.STRAPI_BASE_URL}/${dataType}?populate=*`, {
+        const body = await axios.get(`${process.env.STRAPI_BASE_URL}/api/${dataType}?populate=*`, {
             headers: {
                 Authorization:
                 `Bearer ${process.env.STRAPI_ADMIN_KEY}`,
@@ -22,7 +22,7 @@ export default async function handler(req, res) {
                         description: eventAtts.Description,
                         images: eventAtts.Images.data.map((img) => {
                             return {
-                                url: img.attributes.url,
+                                url: `${process.env.STRAPI_BASE_URL}${img.attributes.url}`,
                                 altText: img.attributes.alternativeText,
                             }
                         }),

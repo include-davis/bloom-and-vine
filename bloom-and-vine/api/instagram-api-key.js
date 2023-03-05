@@ -22,7 +22,7 @@ export default async function handler(req, res) {
     try {
         switch (method) {
             case 'GET':
-                body = await axios.get(`${process.env.STRAPI_BASE_URL}/${dataType}`, {
+                body = await axios.get(`${process.env.STRAPI_BASE_URL}/api/${dataType}`, {
                     headers: {
                         Authorization:
                         `Bearer ${process.env.STRAPI_ADMIN_KEY}`,
@@ -49,7 +49,7 @@ export default async function handler(req, res) {
                         error: "no key specified",
                     })
                 }
-                body = await axios.put(`${process.env.STRAPI_BASE_URL}/${dataType}`, { data: { key } } , headers)
+                body = await axios.put(`${process.env.STRAPI_BASE_URL}/api/${dataType}`, { data: { key } } , headers)
                 if (body.data.data) {
                     const key = body.data.data.attributes.key
                     res.json({
