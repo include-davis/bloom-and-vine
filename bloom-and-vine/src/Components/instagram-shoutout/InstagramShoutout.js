@@ -1,6 +1,6 @@
 import './InstagramShoutout.css'
 
-export default function InstagramSlider () {
+export default function InstagramShoutout () {
     const InstagramHandler = (e) => {
         e.preventDefault()
     
@@ -8,7 +8,7 @@ export default function InstagramSlider () {
     }
 
     return (
-        <div className='instagram-text-display'>
+        <div className='instagram-shoutout-container'>
             <p className='instagram-shoutout'>Check us out on Instagram!</p>
             <button className='instagram-tag' onClick={InstagramHandler}>@bloomandvine</button>
         </div>

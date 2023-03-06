@@ -21,16 +21,15 @@
 
 .image-text {
     position: absolute;
-    width: 100%;
+    width: fit-content;
     bottom: 0;
     right: 0;
-    margin: 0px 15px 10px 0px;
+    margin: 0px 0.4em 0.25em 0px;
 
     font-family: 'Cormorant Garamond';
     font-style: normal;
     font-weight: 700;
-    font-size: 35px;
-    line-height: 42px;
+    font-size: 2vw;
     text-align: right;
 
     color: #FCF9EA;
@@ -52,5 +51,5 @@
 }
 
 .image-redirect:hover{
-    transform: scale(1.15);
+    transform: scale(1.1);
 }

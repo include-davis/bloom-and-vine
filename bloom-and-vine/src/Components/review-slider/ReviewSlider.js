@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import UserReview from '../user-review/UserReview'
+import UserReview from './components/user-review/UserReview'
 import ForwardArrow from './logos/forward_arrow.png'
 import BackArrow from './logos/back_arrow.png'
 import './ReviewSlider.css'
@@ -62,7 +62,7 @@ export default function ReviewBar() {
             <button id='backward-button' onClick={e => onClickHandler(e, 'back')}>
                 <img className='back-button' src={BackArrow} />
             </button>
-            <div id='current-review-display'>
+            <div className='current-review-display'>
                 {curReview}
             </div>
             <button id='forward-button' onClick={e => onClickHandler(e, 'forward')}>

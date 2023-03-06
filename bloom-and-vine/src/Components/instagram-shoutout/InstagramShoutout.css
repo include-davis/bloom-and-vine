@@ -1,3 +1,12 @@
+.instagram-shoutout-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: fit-content;
+}
+
 .instagram-shoutout {
     position: relative;
     
@@ -6,30 +15,26 @@
     font-weight: 700;
     font-size: 50px;
     line-height: 80px;
-    margin-bottom: 24px;
-
-    /* or 133% */
     text-align: center;
-    /* text-decoration: none; */
+    
+    height: 100%;
+    margin: 0 0 2% 0;
 
     color: #000000;
 }
 
 .instagram-tag {
     position: relative;
-    /* width: 314px; */
-    min-height: 62px;
+    height: 100%;
+    padding: 0.2em 0.3em;
 
     font-family: 'Cormorant Garamond';
     font-style: italic;
-    font-weight: normal;
-    font-size: 34px;
-    line-height: 40px;
-    padding: 0.5rem;
-    margin: 0px 0px 25px 0px;
-
+    font-weight: bold;
+    font-size: 3rem;
     text-align: center;
     text-decoration: none;
+    line-height: 40px;
 
     border: 1px rgba(220, 204, 209, 1) solid;
     border-radius: 15px;

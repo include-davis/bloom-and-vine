@@ -19,7 +19,6 @@ function Homepage() {
         <div className='front-text-container'>
           <p className='front-text'>Bloom & Vine</p>
         </div>
-
       </div>
 
       <div className='review-display'>
@@ -30,8 +29,11 @@ function Homepage() {
         <RedirectImages />
       </div>
 
-      <div className='instagram-display'>
+      <div className='instagram-shoutout-display'>
         <InstagramShoutout />
+      </div>
+      
+      <div className='instagram-posts-display'>
         <InstagramPosts />
       </div>
       
