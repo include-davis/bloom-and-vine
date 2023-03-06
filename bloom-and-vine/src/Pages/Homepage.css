@@ -68,9 +68,8 @@ body {
     justify-content: center;
     text-align: center;
     flex-wrap: nowrap;
-    gap: 103px;
 
     width: 100%;
     max-width: 1980px;
-    /* margin: 116px 0px 153px 0px; */
+    margin: 46px 0px 73px 0px;
 }

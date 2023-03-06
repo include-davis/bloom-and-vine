@@ -21,11 +21,10 @@
 
 .image-text {
     position: absolute;
-    width: 129px;
-    height: 50px;
-    margin: 0px 15px 5px 0px;
+    width: 100%;
     bottom: 0;
     right: 0;
+    margin: 0px 15px 10px 0px;
 
     font-family: 'Cormorant Garamond';
     font-style: normal;
