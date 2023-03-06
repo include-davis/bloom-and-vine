@@ -49,14 +49,7 @@ export default async function handler(req, res) {
                 })
             })
             .catch(err => {
-                return ({
-                    success: false,
-                    error: {
-                        message: err.message,
-                        code: err.code,
-                        status: err.status,
-                    }
-                })
+                return (err)
             })
 
             res.json(posts)

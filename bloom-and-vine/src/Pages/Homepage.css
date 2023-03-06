@@ -1,6 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Italiana');
 @import url('https://fonts.googleapis.com/css?family=Cormorant Garamond');
 
+.Homepage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 body {
     background-color: #FAF1EF;
 }
@@ -53,4 +59,18 @@ body {
     text-shadow: 0px 0px 0px white; */
 
     /* border: 1px solid #FFFDF1; */
+}
+
+.redirect-display {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: nowrap;
+    gap: 103px;
+
+    width: 100%;
+    max-width: 1980px;
+    /* margin: 116px 0px 153px 0px; */
 }

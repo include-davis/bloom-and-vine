@@ -7,12 +7,12 @@
     padding: 100px;
     padding-right: 0px;
     padding-left: 0px;
-    height: 445px;
+    height: 27.813rem;
 }
 
 .review-text {
     height: auto;
-    width: 1200px;
+    width: 50vw;
     margin: 25px;
     
     /* align-self: flex-end; */

@@ -1,8 +1,19 @@
+.redirect-img-container {
+    position: relative;
+    width: 19%;
+    aspect-ratio: 0.9;
+
+    margin-left: 1.9%;
+    margin-right: 1.9%;
+}
+
 .image-background {
     position: relative;
-    min-width: 257px;
-    min-height: 276px;
-
+    width: 86%;
+    height: 79.37%;
+    
+    margin-left: 14%;
+    margin-top: 20.63%;
     background: #A28598;
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
@@ -31,10 +42,10 @@
 .image-redirect {
     position: absolute;
     object-fit: cover;
-    width: 256px;
-    max-height: 276px;
-    top: -72px;
-    left: -42px;
+    width: 86%;
+    height: 79.37%;
+    top: 0;
+    left: 0;
 
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     border-radius: 10px;

@@ -25,7 +25,7 @@ const userReviews = [
         'message': "5/5 stars. She is worth the money!",
         'user': 'lucy'
     },
-  ].map((userReview, index) => <UserReview review={userReview} curReview={index} totalReviews={5} />)
+  ].map((userReview, index) => <UserReview review={userReview} curReview={index} key={index} totalReviews={5} />)
 
 
 // Auto scrolling reviews?

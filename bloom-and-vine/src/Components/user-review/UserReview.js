@@ -10,7 +10,7 @@ export default function UserReview(props) {
     for (let i = 0; i < totalReviews; i++) {
         if (i !== curReview) {
             dot_display.push(
-                <li className='review-dot'>
+                <li className='review-dot' key={i}>
                     <img src={WhiteCircle}/>
                 </li>
             )
@@ -18,7 +18,7 @@ export default function UserReview(props) {
 
         else {
             dot_display.push(
-                <li className='review-dot'>
+                <li className='review-dot' key={i}>
                     <img src={PurpleCircle}/>
                 </li>
             )

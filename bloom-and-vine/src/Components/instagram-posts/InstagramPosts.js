@@ -10,10 +10,11 @@ const options = {
     }
 }
 
-const QUERY_URL = `http://127.0.0.1:3000/api/instagram-posts`
+const QUERY_URL = `/api/instagram-posts`
+// console.log(process.env.NEXT_PUBLIC_VERCEL_URL)
 async function fetchPostData() {
     const postData = await axios.get(QUERY_URL, options).then(res => res.data)
-    // console.log(postData)
+    console.log(postData)
     setPosts(postData)
 }
 fetchPostData();
