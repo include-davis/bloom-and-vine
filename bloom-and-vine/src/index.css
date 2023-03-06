@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
 code {
@@ -16,7 +17,7 @@ html, body, #full, #someid {
   height: 100%;
   width: 100vw;
   margin: 0;
-  overflow-x: hidden;
+  
 }
 
 #header {

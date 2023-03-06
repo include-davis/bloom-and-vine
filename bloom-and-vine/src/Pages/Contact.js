@@ -114,9 +114,9 @@ function Contact() {
           
         </div>
       </div>
-      {/* <div class="scroll-container">
-        <a href="#top"><FaArrowAltCircleUp />  </a>
-      </div> */}
+      <div class="scroll-container">
+      <a href="#top"><FaArrowAltCircleUp /></a>
+      </div>
       
     </div>
   );

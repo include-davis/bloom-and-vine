@@ -31,14 +31,18 @@
   width: 50vw;
   height: 1542px;
   display: flex;
-  margin-left: auto;
-  margin-right: auto;
+  /* margin-left: auto; */
+  /* margin-right: auto; */
 }
 
 .form-wrapper {
+  position: relative;
+  width: 100%;
   text-align: left;
-  margin-left: 250px;
+  left: 12vw;
+  float: right;
   line-height: 80px;
+
   font-weight: 700;
   font-size: 24px;
   padding-top: 150px;
@@ -48,6 +52,7 @@ input[type=text], select, textarea {
   font-family: 'Italiana';
   display: block;
   width: 622px;
+  max-width: 622px;
   height: 55px;
   border: 2px solid #000000;
   border-radius: 10px;
@@ -81,7 +86,7 @@ input[type=submit] {
   position: relative;
   width: 255.2px;
   height: 88.12px;
-  background: #FAF1EF;
+  background: #A28598;
   border: none;
   border-radius: 10px;
   font-family: 'Italiana';
@@ -182,23 +187,12 @@ body {
 }
 
 .scroll-container {
-  position: absolute;
-  top: 0;
-  right:0;
+  position: fixed;
+  background: blue;
+  top: 5;
+  height: 0;
+  width: 0;
+  right: 30px;
   /* left: 0; */
-  height: 100%;
-}
-
-.scroll-container:before {
-  content: '';
-  display: block;
-  height: 205vh;
-  pointer-events: none;
-}
-
-.scroll-container a {
-  position: sticky;
-  top: 88vh;
-  /* cursor: pointer; */
-  font-size: 20px;
+  /* height: 100%; */
 }

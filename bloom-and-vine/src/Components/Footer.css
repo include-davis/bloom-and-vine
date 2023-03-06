@@ -34,7 +34,7 @@
   letter-spacing: -0.04em;
 
   color: #FFFDF1;
-  transition: 0.8s;
+  transition: 0.3s;
 }
 
 .Footer .Description {
@@ -42,6 +42,8 @@
   width: 320px;
   height: 75px;
   left: 0px;
+  transition: 0.4s;
+
   /* top: 90px; */
 
   font-family: 'Cormorant Garamond';
@@ -169,6 +171,8 @@
   flex: none;
   order: 0;
   flex-grow: 0;
+  transition: 0.4s;
+
 }
 
 .des2 {
@@ -183,17 +187,12 @@
   font-size: 17px;
   line-height: 22px;
   display: flex;
-  align-items: center;
   letter-spacing: -0.02em;
   left: 3px;
-  /* bottom: 20px; */
-
   color: #FFFDF1;
-  /* Inside auto layout */
 
-  flex: none;
-  order: 0;
-  flex-grow: 0;
+  transition: 0.4s;
+
 }
 
 .heart {
@@ -201,11 +200,81 @@
   float: right; 
   right: 15px;
   bottom: 3px;
+  transition: 0.4s;
+
 }
 
 .Socials {
   position: relative;
-  left: 30px;
+  left: 70px;
   bottom: 100px;
+}
+
+@media(max-width: 1750px) {
+  .Footer ul {
+    padding: 0 400px; 
+  }
+  .Socials {
+    left: 150px;
+  }
+}
+
+@media(max-width: 1520px) {
+  .Footer ul {
+    padding: 0 300px; 
+  }
+  .Socials {
+    left: 250px;
+  }
+}
+
+@media(max-width: 1420px) {
+  .Footer .Logo {
+    position: relative;
+    padding-top: 38px;
+    /* padding-left: 50vw; */
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+  }
+  .Footer .Description {
+    position: relative;
+    width: 540px;
+    height: 75px;
+    justify-content: center;
+    text-align: center;
+    color: #FFFDF1;
+    padding-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+  
+  }
+  .Footer ul {
+    display: none;
+  }
+  .des1 {
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+    top: 80px;
+    align-items: center;
+  }
+  .des2 {
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+    top: 80px;
+    align-items: center;
+  }
+  .heart {
+    left: 37vw; 
+    /* justify-content: center; */
+    float: none;
+    top: 42px;
+
+  }
+  
 }
 
