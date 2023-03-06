@@ -5,13 +5,16 @@
 .Footer {
   display: flex;
   position: relative;
-  width: 100%;
+  width: 100vw;
   height: 237px;
-
+  margin: 0;
   background: #A28598;
   flex-direction: column;
 }
 
+.wrapper {
+  background: #A28598;
+}
 
 .Footer .Logo {
   position: relative;

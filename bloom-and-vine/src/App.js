@@ -13,29 +13,6 @@ function App() {
       <Routes>
         <Route exact path='/Contact' element={< Contact />}></Route>
       </Routes>
-{/* 
-    
-      <p>test</p>
-      <p>test</p>
-      <p>test</p>
-      <p>test</p>
-      <p>test</p>
-      <p>test</p>
-      <p>test</p>
-      <p>test</p>
-      <p>test</p>
-      <p>test</p>
-      <p>test</p>
-      <p>test</p>
-      <p>test</p>
-      <p>test</p>
-      <p>test</p>
-      <p>test</p>
-      <p>test</p>
-      <p>test</p>
-      <p>test</p>
-      <p>test</p>
-      <p>test</p> */}
       <Footer/>
 
       </Router>

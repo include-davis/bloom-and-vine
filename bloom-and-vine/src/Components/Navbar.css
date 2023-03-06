@@ -3,10 +3,11 @@
 
 .Navbar {
   position: relative;
-  width: auto;
+  width: 100vw;
   height: 112px;
   background: #A28598;
   top: 0;
+  margin: 0;
 }
 
 .Logo {

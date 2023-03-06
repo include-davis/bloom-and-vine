@@ -94,12 +94,6 @@ function Contact() {
           <input type="text" id="phone" name="phone"></input>
           <label for="date">Date of Event</label>
           <input type="date" id="email" name="email" ></input>
-          {/* <label for="country">Date of Event</label>
-          <select id="country" name="country" placeholder='mm/dd/yyyy'>
-            <option value="n/a"></option>
-            <option value="n/a"></option>
-            <option value="n/a"></option>
-          </select> */}
 
           <label for="country">Subject</label>
           <select id="country" name="country">

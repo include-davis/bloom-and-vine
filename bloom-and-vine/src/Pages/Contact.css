@@ -5,7 +5,7 @@
   font-family: 'Italiana';
   flex-wrap: nowrap;
   margin: 0 auto;
-  width: auto;
+  width: 100vw;
   height: 100vh;
 
   /* min-height: 100%; */
@@ -15,7 +15,7 @@
 .Rightside-Screen {
   /* background: lightpink; */
   /* float: right; */
-  width: auto;
+  width: 50vw;
   /* height: 1542px;  */
   position: relative;
   display: flex;
@@ -28,7 +28,7 @@
   float: left;
   position: relative;
   background: #FAF1EF;
-  width: auto;
+  width: 50vw;
   height: 1542px;
   display: flex;
   margin-left: auto;
