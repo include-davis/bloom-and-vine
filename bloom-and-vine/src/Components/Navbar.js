@@ -1,5 +1,6 @@
-import './Navbar.css';
-import React from 'react'
+import './Navbar.css'
+import mobile from '../Pages/images/b&v.png'
+import React from 'react';
 
 function Navbar() {
   return (
@@ -9,6 +10,12 @@ function Navbar() {
           Bloom & Vine
         </a>
       </div>
+      <div className='mobile-logo'>
+        <a href='/home' className='main-mobile-logo'>
+          <img src={mobile} alt='Bloom & Vine' />
+        </a>
+      </div>
+
       <ul className='directory'>
         <li>
           <a href='/home'>Home</a>

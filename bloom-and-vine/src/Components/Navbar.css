@@ -14,6 +14,57 @@
   position: absolute;
 }
 
+.Logo .main-logo{
+  text-decoration: none;
+  /* Bloom & Vine */
+  width: 316px;
+  height: 23px;
+  padding-top: 48px;
+  padding-left: 56px;
+  font-family: 'Italiana';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 57px;
+  line-height: 23px;
+  
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.04em;
+  color: #FFFDF1;
+  transition: 0.8s;
+}
+
+.Logo .main-logo:hover {
+  transform: scale(1.03);
+}
+
+.mobile-logo {
+  position: relative;
+}
+
+.main-mobile-logo{
+  text-decoration: none;
+  /* Bloom & Vine */
+  width: fit-content;
+  height: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 56px;
+  justify-content: center;
+  display: none;
+  align-items: center;
+  padding-top: 1em;
+  transition: 0.8s;
+}
+
+.main-mobile-logo img {
+  width: 70px;
+}
+
+.Logo .mobile-main-logo:hover {
+  transform: scale(1.03);
+}
+
 .Navbar ul li a {
   width: 62px;
   height: 23px;
@@ -46,36 +97,6 @@
   transition: transform 0.5s;
 }
 
-.Logo .main-logo{
-  text-decoration: none;
-  /* Bloom & Vine */
-  width: 316px;
-  height: 23px;
-  padding-top: 48px;
-  padding-left: 56px;
-  font-family: 'Italiana';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 57px;
-  line-height: 23px;
-  
-  display: flex;
-  align-items: center;
-  letter-spacing: -0.04em;
-
-  color: #FFFDF1;
-
-
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-  transition: 0.8s;
-}
-
-.Logo .main-logo:hover {
-  transform: scale(1.03);
-}
-
 .Navbar ul li:hover {
   text-decoration: underline;
   text-decoration-color: white;
@@ -85,5 +106,11 @@
 @media (max-width: 1200px) {
   .Navbar ul {
     display: none;
+  }
+  .Navbar .Logo {
+    display: none;
+  }
+  .Navbar .main-mobile-logo {
+    display: flex;
   }
 }
