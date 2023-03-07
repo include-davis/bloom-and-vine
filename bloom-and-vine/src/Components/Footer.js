@@ -81,8 +81,8 @@ function Footer() {
               </svg>
             </div>
           </a>
-          <p className='des1'>Designed & Developed with</p>
-          <svg className='heart' width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+         
+          <p className='des1'>  Designed & Developed with <svg className='heart' width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M15.6301 3.4575C15.247 3.07425 14.7922 2.77023 14.2916 2.56281C13.791 2.35539 13.2545 
             2.24863 12.7126 2.24863C12.1707 2.24863 11.6342 2.35539 11.1336 2.56281C10.633 2.77023 
             10.1782 3.07425 9.79509 3.4575L9.00009 4.2525L8.20509 3.4575C7.43132 2.68373 6.38186 2.24903 
@@ -91,10 +91,13 @@ function Footer() {
             10.0875L15.6301 9.2925C16.0133 8.90943 16.3174 8.45461 16.5248 7.95402C16.7322 7.45342 16.839 6.91687 
             16.839 6.375C16.839 5.83313 16.7322 5.29658 16.5248 4.79598C16.3174 4.29539 16.0133 3.84057 15.6301 
             3.4575Z" fill="#FFFDF1"/>
-          </svg>
-          <pre>
-          <p className='des2'>by<b> #include</b> @ <b>Davis</b> </p>
-          </pre>
+          </svg> 
+          
+           by <strong>#include </strong> @ <strong>Davis </strong> 
+           
+          </p>
+         
+          
         </div>
      
       </div>

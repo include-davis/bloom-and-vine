@@ -81,3 +81,9 @@
   text-decoration-color: white;
   transform: translateY(-2px);
 }
+
+@media (max-width: 1200px) {
+  .Navbar ul {
+    display: none;
+  }
+}
