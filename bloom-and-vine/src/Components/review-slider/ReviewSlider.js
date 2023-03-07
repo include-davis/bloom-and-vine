@@ -47,12 +47,14 @@ function getReviewDots(total) {
 }
 
 function setCurrentDot(index) {
-    const prevIndex = index != 0 ? index : userReviews.length;
     const curIndex = index + 1 <= userReviews.length ? index + 1 : 1;
-    const prevDot = document.querySelector(`.review-dot:nth-child(${prevIndex})`)
+    const inactiveDots = document.querySelectorAll(`.review-dot:not(:nth-child(${curIndex}))`)
     const curDot = document.querySelector(`.review-dot:nth-child(${curIndex})`)
 
-    prevDot.style.backgroundColor = "#D9D9D9";
+    for (let i = 0; i < inactiveDots.length; i++) {
+        inactiveDots[i].style.backgroundColor = "#D9D9D9";
+    }
+
     curDot.style.backgroundColor = "#A28598";
 }
 
