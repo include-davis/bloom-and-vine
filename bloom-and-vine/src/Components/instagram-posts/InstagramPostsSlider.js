@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react'
 import axios from 'axios';
 import InstagramPost from './components/InstagramPost';
-import ForwardArrow from './logos/forward_arrow.png'
-import BackArrow from './logos/back_arrow.png'
+import ForwardArrow from '../../Images/forward_arrow.png'
+import BackArrow from '../../Images/back_arrow.png'
 import './InstagramPostsSlider.css'
 
 const options = {
@@ -19,8 +19,7 @@ export default function InstagramPostsSlider () {
     const [posts, setPosts] = useState([])
     const [curPosts, setCurPosts] = useState([])
     const [index, setIndex] = useState(null)
-    
-    
+
     useEffect(() => {
         async function fetchPostData() {
             let postData = await axios.get(QUERY_URL, options).then(res => res.data.data)
@@ -46,7 +45,6 @@ export default function InstagramPostsSlider () {
 
     }, [index])
 
-    // Logic: Click left or right --> Increment/Decrement Index --> Display different review
     const onClickHandler = (e, button) => {
         e.preventDefault();
     

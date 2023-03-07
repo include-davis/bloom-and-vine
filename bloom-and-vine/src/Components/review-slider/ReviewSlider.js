@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import UserReview from './components/user-review/UserReview'
-import ForwardArrow from './logos/forward_arrow.png'
-import BackArrow from './logos/back_arrow.png'
+import ForwardArrow from '../../Images/forward_arrow.png'
+import BackArrow from '../../Images/back_arrow.png'
 import './ReviewSlider.css'
 
 const userReviews = [
@@ -51,7 +51,7 @@ function setCurrentDot(index) {
     const curIndex = index + 1 <= userReviews.length ? index + 1 : 1;
     const prevDot = document.querySelector(`.review-dot:nth-child(${prevIndex})`)
     const curDot = document.querySelector(`.review-dot:nth-child(${curIndex})`)
-    
+
     prevDot.style.backgroundColor = "#D9D9D9";
     curDot.style.backgroundColor = "#A28598";
 }

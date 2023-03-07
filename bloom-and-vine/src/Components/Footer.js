@@ -98,7 +98,6 @@ function Footer() {
         </div>
      
       </div>
-      <div className='pagefooter'></div>
     </div>
     
   );

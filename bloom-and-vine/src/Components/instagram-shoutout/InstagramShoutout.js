@@ -3,7 +3,8 @@ import './InstagramShoutout.css'
 export default function InstagramShoutout () {
     const InstagramHandler = (e) => {
         e.preventDefault()
-    
+        
+        // Insert url for Bloom & Vine IG page
         //location.href = 'https://instagram.com'
     }
 

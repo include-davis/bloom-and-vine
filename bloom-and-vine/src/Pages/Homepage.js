@@ -4,11 +4,10 @@ import ReviewSlider from '../Components/review-slider/ReviewSlider';
 import RedirectImages from '../Components/redirect-images/RedirectDisplay';
 import InstagramShoutout from '../Components/instagram-shoutout/InstagramShoutout';
 import InstagramPostsSlider from '../Components/instagram-posts/InstagramPostsSlider';
-import displayImg from './images/DISPLAY-60.jpg'
+import displayImg from '../Images/DISPLAY-60.jpg'
 import './Homepage.css';
 
 function Homepage() {
-  // Create custom hook to return the current review displayed
 
   return (
     <div className="Homepage">

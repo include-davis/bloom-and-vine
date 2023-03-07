@@ -1,5 +1,3 @@
-import PurpleCircle from './logos/purple_circle.png'
-import WhiteCircle from './logos/white_circle.png'
 import './UserReview.css'
 
 export default function UserReview(props) {
