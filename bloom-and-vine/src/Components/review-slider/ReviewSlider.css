@@ -3,7 +3,7 @@
     cursor: pointer;
     appearance: none;
     background-color: inherit;
-    transition: 0.5s
+    transition: 0.5s;
 }
 
 .forward-review-button:hover, .backward-review-button:hover {
