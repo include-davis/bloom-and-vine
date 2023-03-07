@@ -3,7 +3,7 @@ import Footer from '../Components/Footer'
 import ReviewSlider from '../Components/review-slider/ReviewSlider';
 import RedirectImages from '../Components/redirect-images/RedirectDisplay';
 import InstagramShoutout from '../Components/instagram-shoutout/InstagramShoutout';
-import InstagramPosts from '../Components/instagram-posts/InstagramPosts';
+import InstagramPostsSlider from '../Components/instagram-posts/InstagramPostsSlider';
 import displayImg from './images/DISPLAY-60.jpg'
 import './Homepage.css';
 
@@ -34,7 +34,7 @@ function Homepage() {
       </div>
       
       <div className='instagram-posts-display'>
-        <InstagramPosts />
+        <InstagramPostsSlider />
       </div>
       
       <Footer />

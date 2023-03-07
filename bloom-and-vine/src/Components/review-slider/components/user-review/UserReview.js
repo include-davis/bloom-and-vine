@@ -3,27 +3,7 @@ import WhiteCircle from './logos/white_circle.png'
 import './UserReview.css'
 
 export default function UserReview(props) {
-    const { review, curReview, totalReviews } = props;
-
-    let dot_display = []
-
-    for (let i = 0; i < totalReviews; i++) {
-        if (i !== curReview) {
-            dot_display.push(
-                <li className='review-dot' key={i}>
-                    <img src={WhiteCircle}/>
-                </li>
-            )
-        }
-
-        else {
-            dot_display.push(
-                <li className='review-dot' key={i}>
-                    <img src={PurpleCircle}/>
-                </li>
-            )
-        }
-    }
+    const { review } = props;
 
     return (
         <div className='review-container'>
@@ -33,9 +13,6 @@ export default function UserReview(props) {
             <div className='review-user'>
                 - {review.user}
             </div>
-            <ul className='review-dot-display'>
-                {dot_display}
-            </ul>
         </div>
     )
 }

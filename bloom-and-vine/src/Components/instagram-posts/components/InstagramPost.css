@@ -1,0 +1,17 @@
+.curPost {
+    margin: 0 0.25% 0 0.25%;
+    width: 100%;
+    aspect-ratio: 1;
+}
+
+.postImg {
+    object-fit: cover;
+    width: 100%;
+    aspect-ratio: 1;
+    transition: ease-in 0.4s;
+}
+
+.postImg:hover {
+    filter: brightness(75%);
+    cursor: pointer;
+}

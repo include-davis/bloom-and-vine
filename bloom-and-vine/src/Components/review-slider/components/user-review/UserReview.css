@@ -1,14 +1,3 @@
-.review-container {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-    height: 100%;
-    margin: 0 7.44em 0 7.44em;
-}
-
 .review-text {
     height: fit-content;
     width: 50vw;
@@ -34,16 +23,4 @@
     text-align: center;
 
     color: #747474;
-}
-
-.review-dot-display {
-    list-style-type: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: nowrap;
-}
-
-.review-dot > *:last-child {
-    padding-right: 16px;
 }

@@ -8,7 +8,7 @@ import './RedirectDisplay.css'
 export default function RedirectDisplay() {
     // Could turn each image into a separate component
     return (
-        <div className='image-container'>
+        <div className='redirect-image-container'>
             <RedirectImage redirect={'Gallery'} img={GalleryImg} />
             <RedirectImage redirect={'Services'} img={ServicesImg} />
             <RedirectImage redirect={'About'} img={AboutImg} />

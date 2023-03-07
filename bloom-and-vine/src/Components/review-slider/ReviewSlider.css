@@ -1,4 +1,4 @@
-button {
+.forward-review-button, .backward-review-button {
     border: none;
     cursor: pointer;
     appearance: none;
@@ -6,7 +6,7 @@ button {
     transition: 0.5s
 }
 
-button:hover {
+.forward-review-button:hover, .backward-review-button:hover {
     transform: scale(1.2);
 }
 
@@ -21,5 +21,26 @@ button:hover {
 }
 
 .current-review-display {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
     height: 100%;
+    margin: 0 7.44em 0 7.44em;
+}
+
+.review-dots {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    margin: 2% 0 0 0;
+}
+.review-dot {
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    background-color: #D9D9D9;
+    margin: 0 8px 0 8px;
 }

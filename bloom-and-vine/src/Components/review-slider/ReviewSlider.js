@@ -25,7 +25,7 @@ const userReviews = [
         'message': "5/5 stars. She is worth the money!",
         'user': 'lucy'
     },
-  ].map((userReview, index) => <UserReview review={userReview} curReview={index} key={index} totalReviews={5} />)
+  ].map((userReview) => <UserReview review={userReview} />)
 
 
 // Auto scrolling reviews?
@@ -34,15 +34,40 @@ const userReviews = [
 //         index < userReviews.length - 1 ? setIndex(index => index + 1) : setIndex(0)
 //     }, 5000)
 // }
-  
+
+function getReviewDots(total) {
+    let dot_display = []
+    for (let i = 0; i < total; i++) {
+        dot_display.push(
+            <div className='review-dot' key={i}></div>
+        )
+    }
+
+    return dot_display
+}
+
+function setCurrentDot(index) {
+    const prevIndex = index != 0 ? index : userReviews.length;
+    const curIndex = index + 1 <= userReviews.length ? index + 1 : 1;
+    const prevDot = document.querySelector(`.review-dot:nth-child(${prevIndex})`)
+    const curDot = document.querySelector(`.review-dot:nth-child(${curIndex})`)
+    
+    prevDot.style.backgroundColor = "#D9D9D9";
+    curDot.style.backgroundColor = "#A28598";
+}
+
 export default function ReviewBar() {
     const [curReview, setCurReview] = useState(userReviews[0])
     const [index, setIndex] = useState(0)
     
+    const reviewDots = getReviewDots(userReviews.length)
+        
     useEffect(() => {
+        setCurrentDot(index)
         setCurReview(userReviews[index])
     }, [index])
-    
+        
+
     // Logic: Click left or right --> Increment/Decrement Index --> Display different review
     const onClickHandler = (e, button) => {
         e.preventDefault();
@@ -55,17 +80,18 @@ export default function ReviewBar() {
         }
     }
 
-    // Maybe implement automatic transition scrolling
-    // Dot display very scuffed... maybe change it up
     return (
         <div className='review-slider'>
-            <button id='backward-button' onClick={e => onClickHandler(e, 'back')}>
+            <button className='backward-review-button' onClick={e => onClickHandler(e, 'back')}>
                 <img className='back-button' src={BackArrow} />
             </button>
             <div className='current-review-display'>
                 {curReview}
+                <div className='review-dots'>
+                    {reviewDots}
+                </div>
             </div>
-            <button id='forward-button' onClick={e => onClickHandler(e, 'forward')}>
+            <button className='forward-review-button' onClick={e => onClickHandler(e, 'forward')}>
                 <img className='forward-button' src={ForwardArrow} />
             </button>
         </div>
