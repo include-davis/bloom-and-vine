@@ -8,13 +8,16 @@
 
   }
   #image {
-    width: 615px;
-    height: 80%; 
-  }
-  #actualImg{
     width: 39vw;
     max-width: 615px;
-    height: 75%; 
+    height: 39vw; 
+    max-height: 503px;
+  }
+  #actualImg{
+    width: 42vw;
+    max-width: 615px;
+    height: 39vw; 
+    max-height: 503px;
   }
   .arrow {
     font-size: 2em;
@@ -26,15 +29,18 @@
     justify-content: space-around;
     background-color: rgb(250,242,239);
     width: 100vw;
-    height: 671px;
+    height: 50vw;
+    max-height: 671px;
   }
   #texts{
     background: rgba(162, 133, 152, 1);
-    width: 39vw;
+    width: 42vw;
     max-width: 615px;
-    height: 75%; 
-
+    height: 39vw; 
+    max-height: 503px;
+    overflow: scroll;
   }
+  
   #servTitle{
     margin-left: 9%;
     color:rgba(252, 249, 234, 1);

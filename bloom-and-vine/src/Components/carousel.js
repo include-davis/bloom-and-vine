@@ -66,7 +66,8 @@ const ServicesCarousel = (props) =>{
 
                     <div id ="texts">
                         <h1 id ="servTitle">{images[props.index].service}</h1>
-                        <p className ="servDesc">{images[props.index].description}</p>
+                          <p className ="servDesc">{images[props.index].description}</p>
+                  
                         <p className ="servDesc">Recommended Vendors: Blossom Farm Vintage Rentals</p>
                         <div id = "contactButton">Contact Us</div>
                     </div>
