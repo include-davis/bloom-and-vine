@@ -16,21 +16,21 @@ function MobileNav() {
         <div className={`dropdown-menu ${open? 'active' : 'inactive'}`} >
           <ul>
             <li>
-              <a href='/home' target='_blank'>Home</a>
+              <a href='/home'>Home</a>
             </li>
 
             <li>
-              <a href='/gallery' target='_blank'>Gallery</a>
+              <a href='/gallery'>Gallery</a>
             </li>
             
             <li>
-              <a href='/services' target='_blank'>Services</a>
+              <a href='/services'>Services</a>
             </li>
             <li>
-              <a href='/about' target='_blank'>About</a>
+              <a href='/about'>About</a>
             </li>
             <li>
-              <a href='/contact' target='_blank'>Contact</a> 
+              <a href='/contact'>Contact</a> 
             </li>
           </ul>
         </div>

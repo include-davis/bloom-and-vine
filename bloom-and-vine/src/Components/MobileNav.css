@@ -4,16 +4,17 @@
 
 :root {
   --speed: 500ms;
+  /* height: fit-content; */
 }
 
 .dropdown-menu{
+  height: fit-content;
   position: absolute;
   top: 100px;
-  /* right: 20px; */
-  background-color: #fff;
+  /* background-color: #fff; */
   border-radius: var(--border-radius);
-  padding: 10px 20px;
-  width: 200px;
+
+  /* width: 200px; */
 }
 
 .dropdown-menu::before{
@@ -32,6 +33,7 @@
   visibility: visible;
   transform: translateY(0);
   transition: var(--speed) ease;
+  width: 100vw;
 }
 
 .dropdown-menu.inactive{
@@ -42,12 +44,13 @@
 }
 
 .menu-trigger img{
+  height: fit-content;
   position: absolute;
-  top: 20px;
+  top: 1.8em;
   /* right: 20px; */
   height: 60px;
   width: 60px;
-  left: 10px;
+  left: 2em;
   border-radius: 50%;
   overflow: hidden;
   cursor: pointer;
@@ -57,9 +60,17 @@
 
 .dropdown-menu ul li{
   display: block;
-  padding: 10px  0;
+  padding: 10px 0;
   border-top: 1px solid rgba(0, 0, 0, 0.05);
   background: #A28598;
+  left: 10px;
+  width: 100vw;
+
+}
+
+ul {
+  margin: 0 auto;
+  padding: 0;
 }
 
 .dropdown-menu ul li:hover a{
@@ -74,11 +85,13 @@
 
 .dropdownItem{
   display: flex;
-  margin: 10px auto;
+  margin: 0 auto;
+  width: 100vw;
+
 }
 
 .dropdownItem a{
-  max-width: 100px;
-  margin-left: 10px;
+  /* max-width: 100px; */
+  /* margin-left: 10px; */
   transition: var(--speed);
 }

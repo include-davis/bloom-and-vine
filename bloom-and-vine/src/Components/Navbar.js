@@ -6,31 +6,31 @@ function Navbar() {
   return (
     <nav className="Navbar">
       <div className='Logo'>
-        <a href='/home' className='main-logo'>
+        <a href='/Home' className='main-logo'>
           Bloom & Vine
         </a>
       </div>
       <div className='mobile-logo'>
-        <a href='/home' className='main-mobile-logo'>
+        <a href='/Home' className='main-mobile-logo'>
           <img src={mobile} alt='Bloom & Vine' />
         </a>
       </div>
 
       <ul className='directory'>
         <li>
-          <a href='/home'>Home</a>
+          <a href='/Home'>Home</a>
         </li>
         <li>
-          <a href='/gallery'>Gallery</a>
+          <a href='/Gallery'>Gallery</a>
         </li>
         <li>
-          <a href='/services'>Services</a>
+          <a href='/Services'>Services</a>
           </li>
         <li>
-          <a href='/about'>About</a>
+          <a href='/About'>About</a>
         </li>
         <li>
-          <a href='/contact'>Contact</a>
+          <a href='/Contact'>Contact</a>
         </li>
       </ul>
     </nav>
