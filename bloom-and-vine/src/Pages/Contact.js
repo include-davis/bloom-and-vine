@@ -1,6 +1,6 @@
 import React from 'react'
 import './Contact.css';
-import contact from './images/contact-image.png'
+import contact from '../Images/contact-image.png'
 import { FaArrowAltCircleUp } from "react-icons/fa";
 
 

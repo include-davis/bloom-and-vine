@@ -2,6 +2,7 @@ import './Navbar.css'
 import mobile from '../Pages/images/b&v.png'
 import React from 'react';
 
+
 function Navbar() {
   return (
     <nav className="Navbar">
