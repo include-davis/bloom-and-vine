@@ -1,22 +1,23 @@
 import './MobileNav.css'
 import menu from '../Images/menu.png'
+import uparrow from '../Images/uparrow.png'
+import downarrow from '../Images/downarrow.png'
+
 import React, {useState, useEffect, useRef} from 'react';
 
 function MobileNav() {
 
   const [open, setOpen] = useState(false);
   const [subopen, setSubOpen] = useState(false);
+  const [subopen2, setSubOpen2] = useState(false);
 
+  
 
   return (
     <div className="MobileNav">
       <div className='menu-container'>
         <div className='menu-trigger' onClick={()=>{setOpen(!open)}}>
           <img src={menu} alt='test'></img>
-        </div>
-
-        <div className='sub-menu-trigger' onClick={()=>{setSubOpen(!subopen)}}>
-          <img alt='test'></img>
         </div>
 
         <div className={`dropdown-menu ${open? 'active' : 'inactive'}`} >
@@ -26,6 +27,9 @@ function MobileNav() {
             </li>
             <li className='main-category'>
                 <a href='/gallery'>Gallery</a>
+                <div className='sub-menu-trigger' onClick={()=>{setSubOpen(!subopen)}  }>
+                  <img src={downarrow} alt='test'></img>
+                </div>
               </li>
             <div className={`gallery-menu ${subopen? 'active' : 'inactive'}`} >
               
@@ -42,10 +46,14 @@ function MobileNav() {
                 <a href='/gallery/Flowers'>Films</a>
               </li>
             </div>
-            <div className={`services-menu ${open? 'active' : 'inactive'}`} >
-              <li className='main-category'>
+            <li className='main-category'>
                 <a href='/services'>Services</a>
-              </li>
+                <div className='sub-menu-trigger2' onClick={()=>{setSubOpen2(!subopen2)}}>
+                  <img src={downarrow} alt='test2'></img>
+                </div>
+            </li>
+            <div className={`services-menu ${subopen2? 'active' : 'inactive'}`} >
+              
               <li className='subcategory'>
                 <a href='/services/Wedding'>Wedding</a>
               </li>

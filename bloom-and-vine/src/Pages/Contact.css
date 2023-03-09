@@ -25,6 +25,7 @@
 }
 
 .Leftside-Screen {
+  top: 3em;
   float: left;
   position: relative;
   background: #FAF1EF;

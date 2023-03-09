@@ -21,8 +21,39 @@
 
 .sub-menu-trigger {
   cursor: pointer;
-  position: absolute;
+  padding-right: 6em;
+  float: right;
+  width: fit-content;
   top: 10px;
+}
+
+.sub-menu-trigger img {
+  width: 30px;
+}
+
+
+
+.sub-menu-trigger.inactive{
+  transform: translateY(-20px);
+  transition: var(--speed) ease;
+}
+
+.sub-menu-trigger.active {
+  transform: translateY(10px);
+  transition: var(--speed) ease;
+
+}
+
+.sub-menu-trigger2 {
+  cursor: pointer;
+  padding-right: 6em;
+  float: right;
+  width: fit-content;
+  top: 10px;
+}
+
+.sub-menu-trigger2 img {
+  width: 30px;
 }
 
 .gallery-menu::before{
@@ -36,6 +67,39 @@
   transform: rotate(45deg);
 }
 
+.services-menu.active{
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  transition: var(--speed) ease;
+  width: 100vw;
+}
+
+.services-menu.active img{
+  transform: rotate(180deg);
+}
+
+.services-menu.inactive{
+  opacity: 0;
+  height: 0;
+  visibility: hidden;
+  transform: translateY(-20px);
+  transition: var(--speed) ease;
+}
+
+.services-menu::before{
+  content: '';
+  position: absolute;
+  top: -5px;
+  right: 20px;
+  height: 20px;
+  width: 20px;
+  background: var(--secondary-bg);
+  transition: var(--speed) ease;
+
+  transform: rotate(45deg);
+}
+
 .gallery-menu.active{
   opacity: 1;
   visibility: visible;
@@ -45,9 +109,14 @@
   /* height: 100vmin; */
 }
 
+.gallery-menu.active img {
+  transform: rotate(180deg);
+}
+
 .gallery-menu.inactive{
   opacity: 0;
   visibility: hidden;
+  height: 0;
   transform: translateY(-20px);
   transition: var(--speed) ease;
 }
