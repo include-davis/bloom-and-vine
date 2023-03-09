@@ -78,6 +78,7 @@
       align-items: center;
       margin-left: 9%;
       font-style: bold;
+      text-decoration: none;
   }
   #recom{
     display: flex;
