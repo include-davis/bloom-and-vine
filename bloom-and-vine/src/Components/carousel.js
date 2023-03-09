@@ -1,3 +1,5 @@
+import { BrowserRouter as Router, Route, NavLink } from 'react-router-dom'
+
 import "./carousel.css"
 import wedding from "../Pages/serviceImages/weddings.png"
 import rentals from "../Pages/serviceImages/rentals.png"
@@ -70,7 +72,10 @@ const ServicesCarousel = (props) =>{
                   
                           <p className ="servDesc"> <em> Recommended Vendors:</em> <u>Blossom Farm Vintage Rentals</u> </p>
                         
-                        <div id = "contactButton">Contact Us</div>
+                        <NavLink to="Contact">
+                          <div id = "contactButton">Contact Us</div>
+                        </NavLink>
+                        
                     </div>
 
                         <img id = "actualImg" src= {images[props.index].src} alt= {images[props.index].description} ></img>
