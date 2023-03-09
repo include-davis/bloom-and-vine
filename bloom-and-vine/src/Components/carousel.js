@@ -72,7 +72,7 @@ const ServicesCarousel = (props) =>{
                   
                           <p className ="servDesc"> <em> Recommended Vendors:</em> <u>Blossom Farm Vintage Rentals</u> </p>
                         
-                        <NavLink to="Contact">
+                        <NavLink to="/Contact">
                           <div id = "contactButton">Contact Us</div>
                         </NavLink>
                         
