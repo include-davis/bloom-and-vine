@@ -7,7 +7,7 @@ function MobileNav() {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="App">
+    <div className="MobileNav">
       <div className='menu-container'>
         <div className='menu-trigger' onClick={()=>{setOpen(!open)}}>
           <img src={menu} alt='test'></img>

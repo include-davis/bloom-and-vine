@@ -1,6 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Italiana');
 @import url('https://fonts.googleapis.com/css?family=Cormorant Garamond'  );
 
+@media(min-width: 1200px) {
+  .MobileNav {
+    /* display: none; */
+  }
+}
+
 .Navbar {
   position: relative;
   width: 100vw;
@@ -111,6 +117,9 @@
     display: none;
   }
   .Navbar .main-mobile-logo {
+    display: flex;
+  }
+  .MobileNav {
     display: flex;
   }
 }
