@@ -39,7 +39,7 @@ function Footer() {
           <a href='https://pinterest.com' target='_blank'>
             <div className='Pinterest'>
               <svg width="18" height="23" viewBox="0 0 18 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.50211 15.719C8.23021 15.7425 8.88785 16.7055 
+                <path fillRule="evenodd" clipRule="evenodd" d="M7.50211 15.719C8.23021 15.7425 8.88785 16.7055 
                 10.8138 16.7055C14.4308 16.729 16.9204 13.9575 17.6955 10.317C20.3965 -2.29555 2.00615 -3.30549 
                 0.127182 7.07578C-0.319072 9.51843 0.409027 12.3369 2.31148 13.2529C3.76767 13.9575 3.86162 11.9376 
                 3.41537 11.0686C1.44246 7.2167 3.81465 3.74062 6.91494 2.75416C9.82733 1.81468 11.8942 2.58976 13.4678 
@@ -54,9 +54,9 @@ function Footer() {
             <div className='Mail'>
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z" 
-                stroke="#FFFDF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                stroke="#FFFDF1" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                 <path d="M22 6L12 13L2 6" 
-                stroke="#FFFDF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                stroke="#FFFDF1" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
               </svg>
             </div>
           </a>
@@ -64,11 +64,11 @@ function Footer() {
             <div className='Instagram'>
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M17 2H7C4.23858 2 2 4.23858 2 7V17C2 19.7614 4.23858 22 7 22H17C19.7614 22 22 19.7614 22 17V7C22 4.23858 19.7614 2 17 2Z" 
-                stroke="#FFFDF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                stroke="#FFFDF1" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                 <path d="M16 11.37C16.1234 12.2022 15.9812 13.0522 15.5937 13.799C15.2062 14.5458 14.5931 15.1514 13.8416 15.5297C13.0901 15.9079 12.2384 16.0396 11.4077 15.9059C10.5771 15.7723 9.80971 15.3801 9.21479 14.7852C8.61987 14.1902 8.22768 13.4229 8.09402 12.5922C7.96035 11.7616 8.09202 10.9099 8.47028 10.1584C8.84854 9.40685 9.45414 8.79374 10.2009 8.40624C10.9477 8.01874 11.7977 7.87659 12.63 8C13.4789 8.12588 14.2648 8.52146 14.8716 9.12831C15.4785 9.73515 15.8741 10.5211 16 11.37Z" 
-                stroke="#FFFDF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                stroke="#FFFDF1" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                 <path d="M17.5 6.5H17.51" 
-                stroke="#FFFDF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                stroke="#FFFDF1" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
               </svg>
             </div>
           </a>
@@ -77,7 +77,7 @@ function Footer() {
               <svg width="13" height="22" viewBox="0 0 13 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M12 1H9C7.67392 1 6.40215 1.52678 5.46447 2.46447C4.52678 3.40215 4 4.67392 4 
                 6V9H1V13H4V21H8V13H11L12 9H8V6C8 5.73478 8.10536 5.48043 8.29289 5.29289C8.48043 5.10536 8.73478 5 9 5H12V1Z" 
-                stroke="#FFFDF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                stroke="#FFFDF1" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
               </svg>
             </div>
           </a>
@@ -98,7 +98,6 @@ function Footer() {
         </div>
      
       </div>
-      <div className='pagefooter'></div>
     </div>
     
   );

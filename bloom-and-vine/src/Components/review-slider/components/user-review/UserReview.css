@@ -1,0 +1,36 @@
+.review-text {
+    height: fit-content;
+    width: 50vw;
+    padding: 0 0 2.3% 0;
+
+    font-family: 'Cormorant Garamond';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.58vw;
+    line-height: 3.93vw;
+    text-align: center;
+    color: #000000;
+}
+
+.review-user {
+    margin: 10px;
+
+    font-family: Comorant Garamond;
+    font-style: italic;
+    font-weight: lighter;
+    font-size: 1.95vw;
+    line-height: 2.26vw;
+    text-align: center;
+    
+    color: #747474;
+}
+
+/* @media screen and (max-width: 1200px) {
+    .review-text {
+        font-size: 16px;
+    }
+
+    .review-user {
+        font-size: 16px;
+    }
+} */

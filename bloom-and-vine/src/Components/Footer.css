@@ -5,11 +5,12 @@
 .Footer {
   display: flex;
   position: relative;
-  width: 100%;
+  width: 100vw;
   height: 237px;
 
   background: #A28598;
   flex-direction: column;
+  overflow: hidden;
 }
 
 
