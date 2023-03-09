@@ -39,7 +39,14 @@
     height: auto;
     margin-bottom: 20px;
 }
-
+#bottomText{
+    font-family: 'Cormorant Garamond';
+    font-size: 1.125;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: center;
+}
 #bottomButtons{
     display: flex;
     flex-direction: row;

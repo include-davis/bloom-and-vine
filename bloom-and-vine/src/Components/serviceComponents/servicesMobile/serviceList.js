@@ -27,7 +27,7 @@ function ServiceList() {
             <ServiceSquare img = {parties} name="Name"/>
             <ServiceSquare img = {customOrder} name="Name"/>
 
-            <p>Interested in booking for an event?</p>
+            <p id = "bottomText">Interested in booking for an event?</p>
             <div id = "bottomButtons">
                 <NavLink id = "contactButtonM"to="/Contact">
                     <div >Contact Us</div>
