@@ -21,16 +21,16 @@
     font-size: 1.95vw;
     line-height: 2.26vw;
     text-align: center;
-    
+
     color: #747474;
 }
 
-/* @media screen and (max-width: 1200px) {
-    .review-text {
-        font-size: 16px;
+@media screen and (max-width: 1200px) {
+    /* .review-text {
+        font-size: 2.68vw;
     }
 
     .review-user {
-        font-size: 16px;
-    }
-} */
+        font-size: 1.95vw;
+    } */
+}
