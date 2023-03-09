@@ -9,6 +9,11 @@ import funerals from "../../../Images/funerals.png"
 import classes from "../../../Images/classes.png"
 import parties from "../../../Images/parties.png"
 import customOrder from "../../../Images/customOrder.png"
+import arrow from "../../../Images/upArrow.png"
+
+function scrollToTop(){
+    window.scrollTo(0, 0);
+}
 
 function ServiceList() {
   
@@ -23,11 +28,11 @@ function ServiceList() {
             <ServiceSquare img = {customOrder} name="Name"/>
 
             <p>Interested in booking for an event?</p>
-            <div>
+            <div id = "bottomButtons">
                 <NavLink id = "contactButtonM"to="/Contact">
                     <div >Contact Us</div>
                 </NavLink>
-                <p>Image here</p>
+                <img onClick= {scrollToTop} id = "arrowButton" src={arrow}  />
             </div>
         </div>
     );

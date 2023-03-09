@@ -4,7 +4,6 @@
 #mobileView{
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 #mobileHeader{
     font-family: 'Italiana';
@@ -41,6 +40,17 @@
     margin-bottom: 20px;
 }
 
+#bottomButtons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+#arrowButton{
+    width: 44.17px;
+    position: absolute;
+    margin-left: 80vw;
+}
 #contactButtonM{
     display: flex;
     background-color: rgba(162, 133, 152, 1);
