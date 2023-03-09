@@ -6,6 +6,10 @@
     transition: 0.5s;
 }
 
+.back-button, .forward-button {
+    height: 3.31vw;
+}
+
 .forward-review-button:hover, .backward-review-button:hover {
     transform: scale(1.2);
 }
@@ -38,9 +42,21 @@
     margin: 2% 0 0 0;
 }
 .review-dot {
-    width: 1em;
-    height: 1em;
+    width: 1vw;
+    height: 1vw;
     border-radius: 50%;
     background-color: #D9D9D9;
-    margin: 0 0.5em 0 0.5em;
+    margin: 0 0.5vw 0 0.5vw;
 }
+
+
+/* @media screen and (max-width: 1200px) {
+    .review-dot {
+        width: 0.5em;
+        height: 0.5em;
+    }
+
+    .current-review-display {
+        margin: 0 2em 0 2em;
+    }
+} */
