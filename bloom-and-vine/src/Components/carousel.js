@@ -1,3 +1,4 @@
+import React from 'react'
 import "./carousel.css"
 import wedding from "../Images/weddings.png"
 import rentals from "../Images/rentals.png"

@@ -1,3 +1,4 @@
+import React from 'react'
 import "./serviceBar.css"
 
 function ServiceBarElm(props){

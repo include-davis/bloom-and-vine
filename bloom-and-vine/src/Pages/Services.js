@@ -1,4 +1,3 @@
-import React from 'react'
 import './Services.css';
 import ServiceBarList from '../Components/serviceBarList';
 import ServicesCarousel from '../Components/carousel';

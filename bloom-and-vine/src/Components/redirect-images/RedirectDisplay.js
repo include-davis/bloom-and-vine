@@ -1,3 +1,4 @@
+import React from 'react'
 import RedirectImage from './components/redirect-image/RedirectImage'
 import GalleryImg from '../../Images/gallery.jpg'
 import ServicesImg from '../../Images/services.jpg'

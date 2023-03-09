@@ -1,3 +1,4 @@
+import React from 'react'
 import "./serviceBar.css"
 
 import ServiceBarElm from "./serviceBarElements";

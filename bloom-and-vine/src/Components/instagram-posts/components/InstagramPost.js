@@ -1,3 +1,4 @@
+import React from 'react'
 import './InstagramPost.css'
 
 export default function InstagramPost(props) {
@@ -11,7 +12,7 @@ export default function InstagramPost(props) {
     function onClickHandler(e) {
         e.preventDefault();
 
-        location.href = permalink;
+        // location.href = permalink;
     }
 
     return (

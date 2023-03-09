@@ -1,3 +1,4 @@
+import React from 'react'
 import './InstagramShoutout.css'
 
 export default function InstagramShoutout () {

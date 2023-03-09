@@ -16,7 +16,6 @@ function Homepage() {
 
   return (
     <div className="Homepage">
-      <Navbar />
 
       <div className='front-display'>
         <img className="front-image" src={displayImg}/>
@@ -40,8 +39,7 @@ function Homepage() {
       <div className='instagram-posts-display'>
         <InstagramPostsSlider />
       </div>
-      
-      <Footer />
+
     </div>
   );
 }

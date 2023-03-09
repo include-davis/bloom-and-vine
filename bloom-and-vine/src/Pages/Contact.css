@@ -16,12 +16,12 @@
   /* background: lightpink; */
   /* float: right; */
   width: 50vw;
-  /* height: 1542px;  */
+  height: 100em;
   position: relative;
   display: flex;
   margin-left: auto;
   margin-right: auto;
-  
+  background: white;
 }
 
 .Leftside-Screen {

@@ -1,3 +1,4 @@
+import React from 'react'
 import { useState, useEffect } from 'react'
 import UserReview from './components/user-review/UserReview'
 import ForwardArrow from '../../Images/forward_arrow.png'

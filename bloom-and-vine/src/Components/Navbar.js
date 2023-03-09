@@ -1,5 +1,5 @@
 import './Navbar.css'
-import mobile from '../Pages/images/b&v.png'
+import mobile from '../Images/b&v.png'
 import React from 'react';
 
 
