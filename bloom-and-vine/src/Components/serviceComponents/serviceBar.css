@@ -16,7 +16,7 @@
 }
 #barElm:hover{
     cursor: pointer;
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 .servImg{
     width: 14vw;
