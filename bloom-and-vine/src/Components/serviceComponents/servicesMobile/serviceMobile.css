@@ -92,7 +92,9 @@
     width: 9.95px;
     margin-right: 80vw;
 }
-#bruh2{
+
+#bottomContent{
     display: flex;
+    flex-direction: column;
     align-items: center;
 }

@@ -1,4 +1,6 @@
 import "./serviceMobile.css";
+import { BrowserRouter as Router, Route, NavLink } from 'react-router-dom'
+
 import backArrow from "../../../Images/back2.png"
 
 function ServiceDisplayMobile(props) {
@@ -16,9 +18,17 @@ function ServiceDisplayMobile(props) {
                 <h1 id = "topTitle">{props.service}</h1>
             </div>
 
-            
+
             <img className= "servImgM" src={props.image} />
-            <p>{props.description}</p>
+
+            <div id = "bottomContent">
+                <p>{props.description}</p>
+
+                <NavLink id = "contactButtonM"to="/Contact">
+                    <div >Contact Us</div>
+                </NavLink>
+            </div>
+
         </div>
         
     );
