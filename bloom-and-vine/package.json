@@ -13,6 +13,7 @@
     "react-icons": "^4.7.1",
     "react-router-dom": "^6.7.0",
     "react-scripts": "5.0.1",
+    "vercel": "^28.16.15",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
