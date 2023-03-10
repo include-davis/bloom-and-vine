@@ -6,8 +6,11 @@
   --speed: 500ms;
 }
 
+
+
 .MobileNav {
-  /* display: flex; */
+  /* display: none; */
+  /* visibility: none; */
   width: 100%;
   height:100%;
 }
@@ -150,6 +153,7 @@
 }
 
 .menu-trigger img{
+  display: none;
   height: fit-content;
   position: absolute;
   top: 1.8em;
@@ -230,4 +234,10 @@ ul {
   /* max-width: 100px; */
   /* margin-left: 10px; */
   transition: var(--speed);
+}
+
+@media(max-width: 1200px) {
+  .menu-trigger img {
+    display: flex;
+  }
 }
