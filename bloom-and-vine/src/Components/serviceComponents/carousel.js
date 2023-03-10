@@ -67,11 +67,12 @@ const ServicesCarousel = (props) =>{
                     <div className="arrow" onClick= {previousImage} >&lt;</div>
 
                     <div id ="texts">
-                        <h1 id ="servTitle">{images[props.index].service}</h1>
-                        <p className ="servDesc">{images[props.index].description}</p>
-                  
-                          <p className ="servDesc"> <em> Recommended Vendors:</em> <u>Blossom Farm Vintage Rentals</u> </p>
-                        
+                          <h1 id ="servTitle">{images[props.index].service}</h1>
+
+                          <div id = "scrollText">
+                            <p className ="servDesc">{images[props.index].description}</p>
+                            <p className ="servDesc"> <em> Recommended Vendors:</em> <u>Blossom Farm Vintage Rentals</u> </p>
+                          </div>
                         <NavLink id = "contactButton"to="/Contact">
                           <div >Contact Us</div>
                         </NavLink>
