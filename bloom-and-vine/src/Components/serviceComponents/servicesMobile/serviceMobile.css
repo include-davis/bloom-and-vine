@@ -74,5 +74,25 @@
     font-style: bold;
     text-decoration: none;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-
+}
+#topContent{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+#topTitle{
+   margin: 0px;
+   position: absolute;
+}
+#backArrow{
+    height: 17.37px;
+    width: 9.95px;
+    margin-right: 80vw;
+}
+#bruh2{
+    display: flex;
+    align-items: center;
 }

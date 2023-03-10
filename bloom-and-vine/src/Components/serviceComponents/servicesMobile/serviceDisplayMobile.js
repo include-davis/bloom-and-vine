@@ -1,4 +1,5 @@
 import "./serviceMobile.css";
+import backArrow from "../../../Images/back2.png"
 
 function ServiceDisplayMobile(props) {
 
@@ -8,10 +9,14 @@ function ServiceDisplayMobile(props) {
 
     return (
         <div>
-            <div onClick = {returnToList}>
-                arrow here woo
+            <div id = "topContent">
+                <div onClick = {returnToList}>
+                    <img id ="backArrow" src={backArrow} />
+                </div>
+                <h1 id = "topTitle">{props.service}</h1>
             </div>
-            <h1>{props.ServiceDisplayMobile}</h1>
+
+            
             <img className= "servImgM" src={props.image} />
             <p>{props.description}</p>
         </div>

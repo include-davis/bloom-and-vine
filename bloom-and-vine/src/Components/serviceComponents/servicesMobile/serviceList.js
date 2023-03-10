@@ -20,12 +20,12 @@ function ServiceList(props) {
     return (
         <div id ="mobileView">
             <h1 id="mobileHeader">Services</h1>
-            <ServiceSquare setTo = {1} setCurrentRender ={props.setCurrentRender} img = {wedding} name="Name"/>
-            <ServiceSquare setTo = {2} setCurrentRender ={props.setCurrentRender} img = {rentals} name="Name"/>
-            <ServiceSquare setTo = {3}setCurrentRender ={props.setCurrentRender} img = {funerals} name="Name"/>
-            <ServiceSquare setTo = {4} setCurrentRender ={props.setCurrentRender} img = {classes} name="Name"/>
-            <ServiceSquare setTo = {5} setCurrentRender ={props.setCurrentRender} img = {parties} name="Name"/>
-            <ServiceSquare setTo = {6} setCurrentRender ={props.setCurrentRender} img = {customOrder} name="Name"/>
+            <ServiceSquare setTo = {1} setCurrentRender ={props.setCurrentRender} img = {wedding} name="Weddings"/>
+            <ServiceSquare setTo = {2} setCurrentRender ={props.setCurrentRender} img = {rentals} name="Rentals"/>
+            <ServiceSquare setTo = {3}setCurrentRender ={props.setCurrentRender} img = {funerals} name="Funerals"/>
+            <ServiceSquare setTo = {4} setCurrentRender ={props.setCurrentRender} img = {classes} name="Classes"/>
+            <ServiceSquare setTo = {5} setCurrentRender ={props.setCurrentRender} img = {parties} name="Parties"/>
+            <ServiceSquare setTo = {6} setCurrentRender ={props.setCurrentRender} img = {customOrder} name="Custom Order"/>
 
             <p id = "bottomText">Interested in booking for an event?</p>
             <div id = "bottomButtons">

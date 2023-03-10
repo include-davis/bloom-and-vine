@@ -17,7 +17,7 @@ function ServicesMobile() {
   
     var images = [
         {
-          service: "Wedding Services",
+          service: "Weddings",
           src: wedding,
           description: "Need a hand on your special day? We offer a variety of wedding services ranging from making beautiful bouquets to DIYing wedding centerpieces! Our flowers are sourced from local farms and are hand chosen to cater to you and your vision. You can count on us to make your wedding unforgettable. Let’s get in touch!"
         },
