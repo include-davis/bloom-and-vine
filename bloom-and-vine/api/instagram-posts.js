@@ -1,6 +1,6 @@
-import * as axios from 'axios'
+import axios from 'axios'
 
-const searchLimit = 10
+const SEARCH_LIMIT = 10
 const QUERY_FIELDS = 'id, username, caption, media_type, media_url, thumbnail_url, permalink, timestamp'
 
 async function getAPIKey() {
@@ -13,10 +13,9 @@ export default async function handler(req, res) {
 
     switch(method) {
         case 'GET':
-            // Need to figure out token retrieval & refreshing
             const USER_TOKEN = await getAPIKey();
             
-            const query = `${process.env.QUERY_URL}?fields=${QUERY_FIELDS}&limit=${searchLimit}&access_token=${USER_TOKEN}`
+            const query = `${process.env.INSTAGRAM_URL}/me/media?fields=${QUERY_FIELDS}&limit=${SEARCH_LIMIT}&access_token=${USER_TOKEN}`
         
             const options = {
                 method: 'GET',
@@ -50,13 +49,7 @@ export default async function handler(req, res) {
                 })
             })
             .catch(err => {
-                return ({
-                    success: false,
-                    error: {
-                        status: err.response?.status || "Error fetching Instagram data.",
-                        statusText: err.response?.statusText || null,
-                    }
-                })
+                return (err)
             })
 
             res.json(posts)
