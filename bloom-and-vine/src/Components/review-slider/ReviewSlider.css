@@ -50,10 +50,10 @@
 }
 
 
-@media screen and (max-width: 1200px) {
-    /* .back-button, .forward-button {
+@media screen and (max-width: 1080px) {
+    .back-button, .forward-button {
         height: 6.62vw;
-    } */
+    }
 
     .review-dot {
         width: 1.25vw;
@@ -61,7 +61,7 @@
     }
 
     .current-review-display {
-        margin: 0 3.72vw 0 3.72vw;
+        margin: 5.66vw 3.72vw 0 3.72vw;
     }
 
 }

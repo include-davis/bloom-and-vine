@@ -5,7 +5,7 @@
   font-family: 'Italiana';
   flex-wrap: nowrap;
   margin: 0 auto;
-  width: auto;
+  width: 100vw;
   height: 100vh;
 
   /* min-height: 100%; */
@@ -15,7 +15,7 @@
 .Rightside-Screen {
   /* background: lightpink; */
   /* float: right; */
-  width: auto;
+  width: 50vw;
   /* height: 1542px;  */
   position: relative;
   display: flex;
@@ -28,38 +28,46 @@
   float: left;
   position: relative;
   background: #FAF1EF;
-  width: auto;
+  width: 50vw;
   height: 1542px;
   display: flex;
-  margin-left: auto;
-  margin-right: auto;
+  /* margin-left: auto; */
+  /* margin-right: auto; */
 }
 
 .form-wrapper {
+  position: relative;
+  width: 100%;
   text-align: left;
-  margin-left: 250px;
-  line-height: 80px;
+  left: 12vw;
+  height: fit-content;
+  line-height: 70px;
+
   font-weight: 700;
-  font-size: 24px;
-  padding-top: 150px;
+  font-size: 20px;
+  padding-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 input[type=text], select, textarea {
   font-family: 'Italiana';
   display: block;
-  width: 622px;
-  height: 55px;
+  width: 522px;
+
+  height: 35px;
   border: 2px solid #000000;
   border-radius: 10px;
-  font-size: 24px;
+  font-size: 16px;
   font-weight: bold;
 }
 
 input[type=date] {
   font-family: 'Italiana';
   display: block;
-  width: 622px;
-  height: 55px;
+  width: 522px;
+  height: 35px;
+
   border: 2px solid #000000;
   border-radius: 10px;
   font-size: 24px;
@@ -72,25 +80,25 @@ input[type=date] {
 }
 
 textarea {
-  width: 622px;
+  width: 522px;
   height: 300px;
 }
 
 /* Style the submit button with a specific background color etc */
 input[type=submit] {
   position: relative;
-  width: 255.2px;
-  height: 88.12px;
-  background: #FAF1EF;
+  width: 205.2px;
+  height: 68.12px;
+  background: #A28598;
   border: none;
   border-radius: 10px;
   font-family: 'Italiana';
   font-style: normal;
   font-weight: 700;
-  font-size: 32px;
+  font-size: 30px;
   line-height: 42px;
   top: 100px;
-  left: 375px;
+  left: 330px;
   transition: 0.4s;
 }
 
@@ -100,6 +108,12 @@ input[type=submit]:hover {
   text-decoration-color: lightgrey;
   color: white;
   /* transform: translateY(-4px); */
+}
+
+#email {
+  width: 522px;
+  height: 35px;
+  font-size: 20px;
 }
 
 /* Add a background color and some padding around the form */
@@ -113,28 +127,28 @@ input[type=submit]:hover {
 
 .contact-image {
   
-  width: 534px;
+  width: 350px;
   position: relative;
-  top: 50px;
-  left: 65px;
+  top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 70px;
 }
 
 .lets-talk {
-
+  width: auto;
+  margin-right: 11em;
+  margin-left: 4.5em;
   position: relative;
-  top: 875px;
-  right: 405px;
-  /* font-style: normal; */
+  margin-top: 600px;
+  right: 300px;
+  height: fit-content;
+
   font-weight: 800;
-  font-size: 25px;
+  font-size: 17px;
   text-align: left;
+
   line-height: 65px;
-  white-space: nowrap;
-  /* or 144% */
-  height: auto;
-  max-height: 400px;
-  
-  letter-spacing: -0.04em;
   
   color: #000000;
 }
@@ -182,23 +196,10 @@ body {
 }
 
 .scroll-container {
-  position: absolute;
-  top: 0;
-  right:0;
-  /* left: 0; */
-  height: 100%;
-}
-
-.scroll-container:before {
-  content: '';
-  display: block;
-  height: 205vh;
-  pointer-events: none;
-}
-
-.scroll-container a {
-  position: sticky;
-  top: 88vh;
-  /* cursor: pointer; */
-  font-size: 20px;
+  position: fixed;
+  background: blue;
+  top: 5;
+  height: 0;
+  width: 0;
+  right: 30px;
 }

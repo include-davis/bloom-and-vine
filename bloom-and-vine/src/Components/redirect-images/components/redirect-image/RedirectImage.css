@@ -1,4 +1,4 @@
-.img-container {
+.image-container {
     position: relative;
     width: 19%;
     aspect-ratio: 0.9;
@@ -21,7 +21,7 @@
 
 .image-text {
     position: absolute;
-    width: fit-content;
+    width: 100%;
     bottom: 0;
     right: 0;
     margin: 0px 0.4em 0.25em 0px;
@@ -52,4 +52,32 @@
 
 .image-redirect:hover{
     transform: scale(1.1);
+}
+
+@media screen and (max-width: 1080px) {
+    .image-container {
+        width: 100%;
+        height: 25vh;
+    }
+    
+    .image-background {
+        width: 100%;
+        height: 80%;
+        margin-top: 1.63%;
+        margin-left: 0;
+    }
+
+    .image-text {
+        font-size: 2.6vh;
+        text-align: center;
+        margin: 0 0 0.298vh 0;
+    }
+
+    .image-redirect {
+        width: 100%;
+        height: 69.69%;
+
+        filter: none;
+        border-radius: 0;
+    }
 }

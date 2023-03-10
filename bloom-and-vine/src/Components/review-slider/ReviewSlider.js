@@ -6,24 +6,24 @@ import './ReviewSlider.css'
 
 const userReviews = [
     {
-        'message': "Such an exquisite day! Flowers were perfection.",
+        'message': `"Such an exquisite day! Flowers were perfection."`,
         'user': "tanweddingsandevents"
     },
     {
-        'message': "Amazing designer! Would work with again.",
-        'user': 'lovelydove'
+        'message': `"You are just consistently turning out stunning work! Your talent fountain overfloweth!!!!"`,
+        'user': 'Julie A. Anderson'
     },
     {
-        'message': "Great planning and overall fun to work with!",
-        'user': 'daniel'
+        'message': `"Honestly, the most beautiful arrangement and you could not have been more helpful!"`,
+        'user': 'Lauren Deal'
     },
     {
-        'message': "I really loved the decorations for the wedding. It was amazing working with her.",
-        'user': 'rachel'
+        'message': `"Working with you has been the easiest part of planning our wedding!"`,
+        'user': 'Cynthia Racquel'
     },
     {
-        'message': "5/5 stars. She is worth the money!",
-        'user': 'lucy'
+        'message': `"Such a beautiful color palette and such an awesome vendor team!"`,
+        'user': 'kendall_melissa_events'
     },
   ].map((userReview) => <UserReview review={userReview} />)
 
