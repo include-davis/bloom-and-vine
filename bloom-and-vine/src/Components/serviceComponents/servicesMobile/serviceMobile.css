@@ -4,6 +4,7 @@
 #mobileView{
     display: flex;
     flex-direction: column;
+    background-color: rgb(250,243,241);
 }
 #mobileHeader{
     font-family: 'Italiana';

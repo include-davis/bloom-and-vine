@@ -15,17 +15,17 @@ function scrollToTop(){
     window.scrollTo(0, 0);
 }
 
-function ServiceList() {
+function ServiceList(props) {
   
     return (
         <div id ="mobileView">
             <h1 id="mobileHeader">Services</h1>
-            <ServiceSquare img = {wedding} name="Name"/>
-            <ServiceSquare img = {rentals} name="Name"/>
-            <ServiceSquare img = {funerals} name="Name"/>
-            <ServiceSquare img = {classes} name="Name"/>
-            <ServiceSquare img = {parties} name="Name"/>
-            <ServiceSquare img = {customOrder} name="Name"/>
+            <ServiceSquare setTo = {1} setCurrentRender ={props.setCurrentRender} img = {wedding} name="Name"/>
+            <ServiceSquare setTo = {2} setCurrentRender ={props.setCurrentRender} img = {rentals} name="Name"/>
+            <ServiceSquare setTo = {3}setCurrentRender ={props.setCurrentRender} img = {funerals} name="Name"/>
+            <ServiceSquare setTo = {4} setCurrentRender ={props.setCurrentRender} img = {classes} name="Name"/>
+            <ServiceSquare setTo = {5} setCurrentRender ={props.setCurrentRender} img = {parties} name="Name"/>
+            <ServiceSquare setTo = {6} setCurrentRender ={props.setCurrentRender} img = {customOrder} name="Name"/>
 
             <p id = "bottomText">Interested in booking for an event?</p>
             <div id = "bottomButtons">
