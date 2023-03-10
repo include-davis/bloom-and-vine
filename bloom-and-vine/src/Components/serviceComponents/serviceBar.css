@@ -7,6 +7,7 @@
     align-items: center;
     width: 100vw;
     height: 175px;
+    background-color: rgb(221,204,209);
 }
 #barElm{
     display: flex;
@@ -55,14 +56,20 @@
     font-size: 1.425em;
     }
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1025px) {
     .servHeader{
     font-size: 1.525em;
     }
     .servHeader2{
-        font-size: 1.325em;
+        font-size: 1.225em;
     }
 }
 
-@media screen and (max-width: 915px) {
-  }
+@media screen and (max-width: 770px) {
+    .servHeader{
+        font-size: 1.325em;
+        }
+        .servHeader2{
+            font-size: 1em;
+        }
+}

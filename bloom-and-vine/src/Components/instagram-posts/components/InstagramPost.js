@@ -11,7 +11,7 @@ export default function InstagramPost(props) {
     function onClickHandler(e) {
         e.preventDefault();
 
-        location.href = permalink;
+        // location.href = permalink;
     }
 
     return (

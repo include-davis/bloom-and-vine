@@ -11,7 +11,7 @@ function Services() {
   const [index, setIndex] = useState(0);
   const width = window.innerWidth;
 
-  if(width > 970){
+  if(width > 500){
     return (
       <div className="Services">
         <Navbar/>

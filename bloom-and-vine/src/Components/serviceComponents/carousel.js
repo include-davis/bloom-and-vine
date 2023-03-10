@@ -62,7 +62,7 @@ const ServicesCarousel = (props) =>{
 
     return(
         <div>
-            <div className="container">
+            <div className="containerServ">
                 <div className="description">
                     <div className="arrow" onClick= {previousImage} >&lt;</div>
 
