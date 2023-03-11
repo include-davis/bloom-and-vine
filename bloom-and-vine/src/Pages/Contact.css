@@ -16,7 +16,7 @@
   /* background: lightpink; */
   /* float: right; */
   width: 50vw;
-  height: 100em;
+  height: 85em;
   position: relative;
   display: flex;
   margin-left: auto;
@@ -30,7 +30,7 @@
   position: relative;
   background: #FAF1EF;
   width: 50vw;
-  height: 1542px;
+  height: 85em;
   display: flex;
   /* margin-left: auto; */
   /* margin-right: auto; */
@@ -68,7 +68,7 @@ input[type=date] {
   display: block;
   width: 522px;
   height: 35px;
-
+  padding-left: 0.5em;
   border: 2px solid #000000;
   border-radius: 10px;
   font-size: 24px;
