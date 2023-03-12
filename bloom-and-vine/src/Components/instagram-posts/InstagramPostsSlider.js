@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import axios from 'axios';
-import InstagramPost from './components/InstagramPost';
+import InstagramPost from './Components/InstagramPost';
 import ForwardArrow from '../../Images/forward_arrow.png'
 import BackArrow from '../../Images/back_arrow.png'
 import './InstagramPostsSlider.css'
