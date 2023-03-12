@@ -1,12 +1,12 @@
 import { BrowserRouter as Router, Route, NavLink } from 'react-router-dom'
 
 import "./carousel.css"
-import wedding from "../../Images/weddings.png"
-import rentals from "../../Images/rentals.png"
-import funerals from "../../Images/funerals.png"
-import classes from "../../Images/classes.png"
-import parties from "../../Images/parties.png"
-import customOrder from "../../Images/customOrder.png"
+import wedding from "../../../Images/weddings.png"
+import rentals from "../../../Images/rentals.png"
+import funerals from "../../../Images/funerals.png"
+import classes from "../../../Images/classes.png"
+import parties from "../../../Images/parties.png"
+import customOrder from "../../../Images/customOrder.png"
 
 const ServicesCarousel = (props) =>{
 

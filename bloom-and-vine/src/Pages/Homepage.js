@@ -13,36 +13,6 @@ import './Homepage.css';
 
 function Homepage() {
 
-  return (
-    <div className="Homepage">
-      <Navbar />
-
-      <div className='front-display'>
-        <img className="front-image" src={displayImg}/>
-        <div className='front-text-container'>
-          <p className='front-text'>Bloom & Vine</p>
-        </div>
-      </div>
-
-      <div className='review-display'>
-        <ReviewSlider />
-      </div>
-
-      <div className='redirect-display'>
-        <RedirectImages />
-      </div>
-
-      <div className='instagram-shoutout-display'>
-        <InstagramShoutout />
-      </div>
-      
-      <div className='instagram-posts-display'>
-        <InstagramPostsSlider />
-      </div>
-      
-      <Footer />
-    </div>
-  );
 }
 
 export default Homepage;

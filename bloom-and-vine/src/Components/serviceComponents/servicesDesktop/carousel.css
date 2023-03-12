@@ -108,10 +108,10 @@
 
 #scrollText::-webkit-scrollbar-thumb {
     border-radius: 8px;
-    background-color: rgba(0, 0, 0, .5);
+    background-color: #634F5D;
 }
 #scrollText::-webkit-scrollbar-track {
-  background-color: rgba(68, 78, 68, 0.993);
+  background-color: #7B6174;
   border-radius: 8px;
 
 }

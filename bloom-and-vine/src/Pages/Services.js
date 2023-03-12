@@ -1,6 +1,6 @@
 import './Services.css';
-import ServiceBarList from '../Components/serviceComponents/serviceBarList';
-import ServicesCarousel from '../Components/serviceComponents/carousel';
+import ServiceBarList from '../Components/serviceComponents/servicesDesktop/serviceBarList';
+import ServicesCarousel from '../Components/serviceComponents/servicesDesktop/carousel';
 import ServicesMobile from '../Components/serviceComponents/servicesMobile/servicesMobile';
 
 import React, { useState, useEffect } from 'react';
