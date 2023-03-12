@@ -13,8 +13,8 @@ import './gallerySlider.css'
 export default function GallerySlider (props) {
 
     return (
-        <div>
-            testing!
-        </div>
+			<div>
+					testing!
+			</div>
     );
 }

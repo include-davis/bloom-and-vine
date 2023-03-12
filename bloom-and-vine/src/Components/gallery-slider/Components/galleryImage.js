@@ -11,8 +11,8 @@ import './galleryImage.css'
 export default function GalleryImage (props) {
     
     return (
-        <div>
-            image stuff here!
-        </div>
+			<div>
+					image stuff here!
+			</div>
     )
 }
