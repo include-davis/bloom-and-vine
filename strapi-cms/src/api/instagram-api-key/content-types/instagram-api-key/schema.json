@@ -1,0 +1,18 @@
+{
+  "kind": "singleType",
+  "collectionName": "instagram_api_keys",
+  "info": {
+    "singularName": "instagram-api-key",
+    "pluralName": "instagram-api-keys",
+    "displayName": "Instagram Api Key"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "key": {
+      "type": "string"
+    }
+  }
+}
