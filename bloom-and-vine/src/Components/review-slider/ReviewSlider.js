@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import UserReview from './Components/user-review/UserReview'
+import UserReview from './components/user-review/UserReview'
 import ForwardArrow from '../../Images/forward_arrow.png'
 import BackArrow from '../../Images/back_arrow.png'
 import './ReviewSlider.css'

@@ -1,9 +1,9 @@
 import Navbar from '../Components/Navbar'
 import Footer from '../Components/Footer'
-import ReviewSlider from '../Components/Review-Slider/ReviewSlider';
-import RedirectImages from '../Components/Redirect-Images/RedirectDisplay';
-import InstagramShoutout from '../Components/Instagram-Shoutout/InstagramShoutout';
-import InstagramPostsSlider from '../Components/Instagram-Posts/InstagramPostsSlider';
+import ReviewSlider from '../Components/review-slider/ReviewSlider';
+import RedirectImages from '../Components/redirect-images/RedirectDisplay';
+import InstagramShoutout from '../Components/instagram-shoutout/InstagramShoutout';
+import InstagramPostsSlider from '../Components/instagram-posts/InstagramPostsSlider';
 import displayImg from '../Images/DISPLAY-60_cropped.jpg'
 import './Homepage.css';
 

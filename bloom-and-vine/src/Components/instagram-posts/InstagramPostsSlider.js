@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import axios from 'axios';
-import InstagramPost from './Components/InstagramPost';
+import InstagramPost from './components/InstagramPost';
 import ForwardArrow from '../../Images/forward_arrow.png'
 import BackArrow from '../../Images/back_arrow.png'
 import './InstagramPostsSlider.css'
@@ -24,7 +24,9 @@ export default function InstagramPostsSlider () {
         async function fetchPostData() {
             let postData = await axios.get(QUERY_URL, options).then(res => res.data.data)
             postData = postData.map((post, index)  => {
-                return (<InstagramPost data={post} key={index} />);
+                return (
+                    <InstagramPost data={post} key={index} />
+                );
             })
             setPosts(postData);
             setIndex(0);

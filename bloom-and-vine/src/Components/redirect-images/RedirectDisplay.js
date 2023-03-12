@@ -1,4 +1,4 @@
-import RedirectImage from './Components/redirect-image/RedirectImage'
+import RedirectImage from './components/redirect-image/RedirectImage'
 import GalleryImg from '../../Images/gallery.jpg'
 import ServicesImg from '../../Images/services.jpg'
 import AboutImg from '../../Images/about.jpg'
