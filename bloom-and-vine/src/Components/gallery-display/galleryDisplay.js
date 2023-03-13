@@ -10,6 +10,6 @@ export default function GalleryDisplay (props) {
     return (
 	    <div>
 			  BUTTONS!
-		  </div>
+      </div>
     )
 }
