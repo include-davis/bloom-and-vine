@@ -53,7 +53,7 @@ export default function InstagramPostsSlider () {
         if (button === 'forward') {
             index < posts.length - 1 ? setIndex(index => index + 1) : setIndex(0)
         }
-        else if (button == 'back') {
+        else if (button === 'back') {
             index > 0 ? setIndex(index => index - 1) : setIndex(posts.length - 1)
         }
     }

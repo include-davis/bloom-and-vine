@@ -77,7 +77,7 @@ export default function ReviewBar() {
         if (button === 'forward') {
             index < userReviews.length - 1 ? setIndex(index => index + 1) : setIndex(0)
         }
-        else if (button == 'back') {
+        else if (button === 'back') {
             index > 0 ? setIndex(index => index - 1) : setIndex(userReviews.length - 1)
         }
     }

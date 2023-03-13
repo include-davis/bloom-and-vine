@@ -18,14 +18,14 @@ function Homepage() {
       <Navbar />
 
       <div className='front-display'>
-        <img className="front-image" src={displayImg}/>
-        <div className='front-text-container'>
-          <p className='front-text'>Bloom & Vine</p>
-        </div>
+		<img className="front-image" src={displayImg}/>
+		<div className='front-text-container'>
+			<p className='front-text'>Bloom & Vine</p>
+		</div>
       </div>
 
       <div className='review-display'>
-        <ReviewSlider />
+    	<ReviewSlider />
       </div>
 
       <div className='redirect-display'>
