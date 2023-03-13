@@ -10,7 +10,7 @@ function Gallery() {
 			<NavBar />
 
 			<div className="gallery-display">
-				<GalleryDisplay />
+			  <GalleryDisplay />
 			</div>
 
 			<div className="contact-display">
