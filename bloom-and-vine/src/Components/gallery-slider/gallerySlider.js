@@ -17,9 +17,9 @@ import BackArrow from '../../Images/back_arrow.png'
 export default function GallerySlider (props) {
 
     return (
-			<div>
-					testing!
-			</div>
+		<div>
+            testing!
+		</div>
     );
 }
 

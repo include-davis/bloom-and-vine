@@ -7,17 +7,17 @@ import './Gallery.css';
 function Gallery() {
   return (
     <div className="Gallery">
-			<NavBar />
+		<NavBar />
 
-			<div className="gallery-display">
-				<GalleryDisplay />
-			</div>
+		<div className="gallery-display">
+			<GalleryDisplay />
+		</div>
 
-			<div className="contact-display">
-				<ContactDisplay />
-			</div>
+		<div className="contact-display">
+			<ContactDisplay />
+		</div>
 
-			<Footer />
+		<Footer />
     </div>
   );
 }
