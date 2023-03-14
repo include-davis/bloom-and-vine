@@ -88,7 +88,7 @@ function Contact() {
           <form className='form-wrapper'>
           <label for="name">Name *</label>
           <input type="text" id="name" name="name"></input>
-          <label for="email">Last Name *</label>
+          <label for="name">Last Name *</label>
           <input type="text" id="email" name="email"></input>
           <label for="phone">Phone *</label>
           <input type="text" id="phone" name="phone"></input>

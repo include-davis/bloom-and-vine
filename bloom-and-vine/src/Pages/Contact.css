@@ -1,22 +1,20 @@
 @import url('https://fonts.googleapis.com/css?family=Italiana');
 @import url('https://fonts.googleapis.com/css?family=Cormorant Garamond');
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap");
 
 .Contact {
+  flex-shrink: 1;
   font-family: 'Italiana';
   flex-wrap: nowrap;
   margin: 0 auto;
   width: 100vw;
   height: 100vh;
-
-  /* min-height: 100%; */
-  /* display: table; */
 }
 
 .Rightside-Screen {
-  /* background: lightpink; */
-  /* float: right; */
+  flex-wrap: wrap;
   width: 50vw;
-  height: 100em;
+  height: 80em;
   position: relative;
   display: flex;
   margin-left: auto;
@@ -25,55 +23,53 @@
 }
 
 .Leftside-Screen {
+  /* flex-shrink: 1; */
   top: 3em;
   float: left;
   position: relative;
   background: #FAF1EF;
   width: 50vw;
-  height: 1542px;
+  height: 80em;
   display: flex;
-  /* margin-left: auto; */
-  /* margin-right: auto; */
 }
 
 .form-wrapper {
   position: relative;
-  width: 100%;
+  max-width: 90%;
+  width: 30vw;
   text-align: left;
-  left: 12vw;
+  left: 10vw;
+  margin-left: 10em;
   height: fit-content;
   line-height: 70px;
-
   font-weight: 700;
   font-size: 20px;
   padding-top: 50px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
 }
 
 input[type=text], select, textarea {
+  width: inherit;
   font-family: 'Italiana';
-  display: block;
-  width: 522px;
-
+  display: flex;
   height: 35px;
   border: 2px solid #000000;
   border-radius: 10px;
   font-size: 16px;
   font-weight: bold;
+  padding-left: 0.5em;
 }
 
 input[type=date] {
   font-family: 'Italiana';
   display: block;
-  width: 522px;
+  padding-left: 0.5em;
+  width: inherit;
   height: 35px;
-
   border: 2px solid #000000;
   border-radius: 10px;
-  font-size: 24px;
-  font-weight: bold;
-
+  font-size: 16px;
+  font-weight: 600;
 }
 
 ::placeholder {
@@ -81,7 +77,7 @@ input[type=date] {
 }
 
 textarea {
-  width: 522px;
+  width: inherit;
   height: 300px;
 }
 
@@ -111,12 +107,6 @@ input[type=submit]:hover {
   /* transform: translateY(-4px); */
 }
 
-#email {
-  width: 522px;
-  height: 35px;
-  font-size: 20px;
-}
-
 /* Add a background color and some padding around the form */
 .container {
   border-radius: 5px;
@@ -125,12 +115,15 @@ input[type=submit]:hover {
 }
 
 .contact-image {
-  width: 350px;
   position: relative;
   top: 20px;
-  margin-left: auto;
-  margin-right: auto;
-  left: 70px;
+  margin-left: 1vw;
+  margin-right: 1vw;
+  left: 4em;
+}
+
+.contact-image img {
+  width: 30vw;
 }
 
 .lets-talk {
@@ -141,13 +134,10 @@ input[type=submit]:hover {
   margin-top: 600px;
   right: 300px;
   height: fit-content;
-
   font-weight: 800;
   font-size: 17px;
   text-align: left;
-
   line-height: 65px;
-  
   color: #000000;
 }
 

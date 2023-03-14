@@ -1,5 +1,7 @@
 html {
   scroll-behavior: smooth;
+  height: fit-content;
+  /* overflow-y: hidden; */
 }
 
 .App {

@@ -50,10 +50,8 @@
   height: fit-content;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 56px;
-  justify-content: center;
+  padding-left: 1.5em;
   display: none;
-  align-items: center;
   padding-top: 1em;
   transition: 0.8s;
 }
@@ -116,8 +114,6 @@
   }
   .MobileNav {
     display: flex;
-
-    /* visibility: visible; */
   }
 
 }

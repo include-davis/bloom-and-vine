@@ -7,7 +7,7 @@
   position: relative;
   width: 100vw;
   margin: 0;
-  height: 237px;
+  height: 15em;
   background: #A28598;
   flex-direction: column;
   overflow: hidden;
@@ -37,16 +37,12 @@
   color: #FFFDF1;
   transition: 0.3s;
 }
-
 .Footer .Description {
   position: relative;
   width: 320px;
   height: 75px;
   left: 0px;
   transition: 0.4s;
-
-  /* top: 90px; */
-
   font-family: 'Cormorant Garamond';
   font-style: normal;
   font-weight: 400;
@@ -54,13 +50,10 @@
   line-height: 25px;
   text-align: left;
   letter-spacing: -0.01em;
-  
   color: #FFFDF1;
   padding-top: 30px;
   padding-left: 56px;
-
 }
-
 .Footer ul {
   position: relative;
   list-style-type: none;
@@ -70,7 +63,6 @@
   float: right;
   bottom: 100px;
 }
-
 .Footer ul li {
   justify-content: space-between;
   align-items: center;
@@ -78,12 +70,10 @@
   height: 0px;
   transition: transform 0.5s;
   font-weight: 400px; 
-  
 }
-
 .Footer ul li a {
   width: 62px;
-  height: 23px;
+  height: fit-content;
 
   font-family: 'Cormorant Garamond';
   font-style: normal;
@@ -110,7 +100,6 @@
 
 .Facebook:hover {
   transform: translateY(-5px);
-
 }
 
 .Instagram {
@@ -154,21 +143,29 @@
   float: right;
   width: 16em;
   height: fit-content;
-
   font-family: 'Cormorant Garamond';
   font-style: lighter;
   font-size: 17px;
   line-height: 22px;
-  /* display: flex; */
   align-items: center;
   letter-spacing: -0.01em;
   right: 7.6em;
   /* bottom: 20px; */
-
   color: #FFFDF1;
-  display:flexbox;
   transition: 0.4s;
-  word-wrap: break-word;
+  /* word-wrap: break-word; */
+}
+
+.Socials img {
+  width: 20px;
+}
+
+.Socials .Facebook img {
+  width: 12px;
+}
+
+.Socials .Pinterest img {
+  width: 16px;
 }
 
 .Socials {
@@ -200,58 +197,75 @@
 }
 
 @media(max-width: 1420px) {
+  .wrapper {
+    padding-top: 1.5em;
+  }
   .Footer .Logo {
+    font-size: 4.1vh;
+    width: fit-content;
     position: relative;
-    padding-top: 38px;
-    /* padding-left: 50vw; */
-    margin-left: auto;
-    margin-right: auto;
+    padding-top: 0.2em;
+    margin: auto;
+    padding-right: 5vw;
     justify-content: center;
   }
   .Footer .Description {
     position: relative;
-    width: 540px;
+    max-width: 24em;
+    width: fit-content;
     height: 75px;
-    justify-content: center;
+    justify-content: left;
     text-align: center;
     color: #FFFDF1;
     padding-top: 5px;
-    margin-left: auto;
-    margin-right: auto;
-  
+    margin: auto;
+
+    padding-right: 5vw;
+    font-size: 2.1vh;
   }
   .Footer ul {
     display: none;
-
+    
   }
   .Footer .Socials {
-    top: 5px;
-    margin-left: auto;
-    margin-right: auto;
+    max-width: 25em;
+    width: 90%;
+    height: fit-content;
+    top: 1em;
+    margin: auto; 
     float: none;
-    width: fit-content;
+    justify-content: center;
     position: relative;
-
+    padding-right: 3em;
 
   }
   .Footer ul {
     display: none;
   }
-  
   .des1 {
-    width: fit-content;
-    margin-left: auto;
-    margin-right: auto;
     right: 13.1em;
+    justify-content: center;
+    
     float: none;
-    /* top: 110px; */
     white-space: pre;
+    width: fit-content;
+    /* font-size: 1.3vw; */
+    text-align: left;
+    margin: auto;
   }
   .heart {
     left: 37vw; 
     float: none;
     top: 42px;
   }
-  
-}
 
+  .Socials .social-media img {
+    padding-left: 1.1em;
+    margin: auto;
+  }
+  .Socials img {
+    padding-top: 0.5em; 
+
+    margin: auto;
+  }
+}
