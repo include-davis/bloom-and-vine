@@ -185,7 +185,6 @@ body {
 
 .scroll-container {
   position: fixed;
-  background: blue;
   top: 5;
   height: 0;
   width: 0;
