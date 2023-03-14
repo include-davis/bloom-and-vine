@@ -7,8 +7,8 @@
   font-family: 'Italiana';
   flex-wrap: nowrap;
   margin: 0 auto;
-  width: 100vw;
-  height: 100vh;
+  width: fit-content;
+  height: fit-content;
 }
 
 .Rightside-Screen {
@@ -23,8 +23,6 @@
 }
 
 .Leftside-Screen {
-  /* flex-shrink: 1; */
-  top: 3em;
   float: left;
   position: relative;
   background: #FAF1EF;
@@ -116,29 +114,30 @@ input[type=submit]:hover {
 
 .contact-image {
   position: relative;
-  top: 20px;
-  margin-left: 1vw;
-  margin-right: 1vw;
-  left: 4em;
+  padding-top: 5em;
+  float: none;
+  height: fit-content;
+  text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
 .contact-image img {
-  width: 30vw;
+  width: 60%; 
+  margin: 0 auto;
+  display: block;
 }
 
 .lets-talk {
-  width: auto;
-  margin-right: 11em;
-  margin-left: 4.5em;
-  position: relative;
-  margin-top: 600px;
-  right: 300px;
+  width: 60%;
+  margin: 0 auto;
   height: fit-content;
   font-weight: 800;
   font-size: 17px;
   text-align: left;
   line-height: 65px;
   color: #000000;
+  padding-top: 3em;
 }
 
 .Contact ul {
@@ -189,4 +188,58 @@ body {
   height: 0;
   width: 0;
   right: 30px;
+}
+
+hr {
+  display: none;
+}
+
+@media (max-width: 900px) {
+
+  .Leftside-Screen {
+    padding-top: 0;
+    width: 100vw;
+    height: fit-content;
+  }
+  .Rightside-Screen {
+    width: 100vw;
+    height: fit-content;
+    background: #FAF1EF;
+  }
+  .contact-image {
+    padding-top: 0;
+    width: fit-content;
+
+  }
+  .contact-image img {
+    overflow: hidden;
+    width: 100vw;
+    height: 35em;
+    object-fit: cover;
+  }
+  .lets-talk {
+    text-align: center;
+    width: fit-content;
+    height: fit-content;
+    padding-top: 1em;
+    padding-bottom: 2em;
+  }
+  hr {  
+    display: flex;
+    width: 80vw;
+    border-top: 2px solid darkgrey;
+  }
+
+  input[type=text], select, textarea {
+    width: 280%;
+    font-family: 'Italiana';
+    display: flex;
+    height: 35px;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    padding-left: 0.5em;
+  }
+  
 }

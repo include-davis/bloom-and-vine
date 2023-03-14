@@ -9,9 +9,9 @@ function Contact() {
     <div className="Contact">
 
       <div className='Leftside-Screen'>
-        
+        <div className='contact-wrapper'>
         <div className='contact-image'>
-          <img className='contact-image' src={contact} alt='null' />
+          <img src={contact} alt='null' />
 
         </div>
 
@@ -77,11 +77,14 @@ function Contact() {
               </div>
             </a>
           </li>
-        </ul>
+          </ul>
           </div>
+        </div>
         </div>
 
       </div>
+      
+      <hr/>
 
       <div className='Rightside-Screen'>
         <div >
