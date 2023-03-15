@@ -232,14 +232,13 @@ hr {
 
   input[type=text], select, textarea {
     width: 280%;
-    font-family: 'Italiana';
-    display: flex;
-    height: 35px;
-    border: 2px solid #000000;
-    border-radius: 10px;
-    font-size: 16px;
-    font-weight: bold;
-    padding-left: 0.5em;
+  }
+   select {
+    width: 287%;
+  }
+  input[type=date] {
+    width: 280%;
+    
   }
   
 }

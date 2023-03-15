@@ -98,8 +98,8 @@ function Contact() {
           <label for="date">Date of Event</label>
           <input type="date" id="email" name="email" ></input>
 
-          <label for="country">Subject</label>
-          <select id="country" name="country">
+          <label for="subject">Subject</label>
+          <select id="subject" name="subject">
             <option value="n/a"></option>
             <option value="sub1">Subject 1</option>
             <option value="sub2">Subject 2</option>
