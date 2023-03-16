@@ -1,6 +1,7 @@
-import React from 'react'
+import React from 'react';
 import './Contact.css';
-import contact from '../Images/contact-image.png'
+import contact from '../Images/contact-image.png';
+import scrollarrow from '../Images/scrollarrow.png';
 import { FaArrowAltCircleUp } from "react-icons/fa";
 
 
@@ -89,42 +90,40 @@ function Contact() {
       <div className='Rightside-Screen'>
         <div >
           <form className='form-wrapper'>
-          <label for="name">Name *</label>
-          <input type="text" id="name" name="name"></input>
-          <label for="name">Last Name *</label>
-          <input type="text" id="email" name="email"></input>
-          <label for="phone">Phone *</label>
-          <input type="text" id="phone" name="phone"></input>
-          <label for="date">Date of Event</label>
-          <input type="date" id="email" name="email" ></input>
+            <label for="name">Name *</label>
+            <input type="text" id="name" name="name"></input>
+            <label for="name">Last Name *</label>
+            <input type="text" id="email" name="email"></input>
+            <label for="phone">Phone *</label>
+            <input type="text" id="phone" name="phone"></input>
+            <label for="date">Date of Event</label>
+            <input type="date" id="email" name="email" ></input>
 
-          <label for="subject">Subject</label>
-          <select id="subject" name="subject">
-            <option value="n/a"></option>
-            <option value="sub1">Subject 1</option>
-            <option value="sub2">Subject 2</option>
-            <option value="sub3">Subject 3</option>
-          </select>
-
-          
-
-          <label for="subject">Message</label>
-          <textarea ></textarea>
-          <input type="submit" maxlength="4" size="4" value="SEND"></input>
+            <label for="subject">Subject</label>
+            <select id="subject" name="subject">
+              <option value="n/a"></option>
+              <option value="sub1">Subject 1</option>
+              <option value="sub2">Subject 2</option>
+              <option value="sub3">Subject 3</option>
+            </select>
+            <label for="subject">Message</label>
+            <textarea placeholder='Type message here'></textarea>
+            <input type="submit" maxlength="4" size="4" value="Send"></input>
           
           </form>
 
           
         </div>
+        <div class="scroll-container">
+        <a href="#top">
+          <img src={scrollarrow}></img>
+        </a>
+        </div>
       </div>
-      <div class="scroll-container">
-      <a href="#top"><FaArrowAltCircleUp /></a>
-      </div>
+      
       
     </div>
   );
 }
-
-
 
 export default Contact;

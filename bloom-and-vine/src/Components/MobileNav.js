@@ -11,8 +11,6 @@ function MobileNav() {
   const [subopen, setSubOpen] = useState(false);
   const [subopen2, setSubOpen2] = useState(false);
 
-  
-
   return (
     <div className="MobileNav">
       <div className='menu-container'>

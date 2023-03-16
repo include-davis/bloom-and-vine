@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Italiana');
 @import url('https://fonts.googleapis.com/css?family=Cormorant Garamond'  );
 
-
 .Navbar {
   position: relative;
   width: 100vw;
@@ -10,14 +9,11 @@
   top: 0;
   margin: 0;
 }
-
 .Logo {
   position: absolute;
 }
-
 .Logo .main-logo{
   text-decoration: none;
-  /* Bloom & Vine */
   width: 316px;
   height: 23px;
   padding-top: 48px;
@@ -27,25 +23,20 @@
   font-weight: 400;
   font-size: 57px;
   line-height: 23px;
-  
   display: flex;
   align-items: center;
   letter-spacing: -0.04em;
   color: #FFFDF1;
   transition: 0.8s;
 }
-
 .Logo .main-logo:hover {
   transform: scale(1.03);
 }
-
 .mobile-logo {
   position: relative;
 }
-
 .main-mobile-logo{
   text-decoration: none;
-  /* Bloom & Vine */
   width: fit-content;
   height: fit-content;
   margin-left: auto;
@@ -55,15 +46,12 @@
   padding-top: 1em;
   transition: 0.8s;
 }
-
 .main-mobile-logo img {
   width: 70px;
 }
-
 .Logo .mobile-main-logo:hover {
   transform: scale(1.03);
 }
-
 .Navbar ul li a {
   width: 62px;
   height: 23px;

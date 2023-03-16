@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Italiana');
 @import url('https://fonts.googleapis.com/css?family=Cormorant Garamond');
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&display=swap');
 
 .Contact {
   flex-shrink: 1;
@@ -10,108 +11,95 @@
   width: fit-content;
   height: fit-content;
 }
-
 .Rightside-Screen {
   flex-wrap: wrap;
   width: 50vw;
-  height: 80em;
+  height: 83em;
   position: relative;
   display: flex;
   margin-left: auto;
   margin-right: auto;
   background: white;
 }
-
 .Leftside-Screen {
   float: left;
   position: relative;
   background: #FAF1EF;
   width: 50vw;
-  height: 80em;
+  height: 83em;
   display: flex;
 }
-
 .form-wrapper {
+  font-family: 'Cormorant Garamond', serif;;
   position: relative;
   max-width: 90%;
   width: 30vw;
   text-align: left;
   left: 10vw;
-  margin-left: 10em;
   height: fit-content;
   line-height: 70px;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 22px;
   padding-top: 50px;
   margin: auto;
 }
-
 input[type=text], select, textarea {
   width: inherit;
-  font-family: 'Italiana';
+  font-family: 'Cormorant Garamond', serif;
   display: flex;
-  height: 35px;
+  height: 2.3em;
   border: 2px solid #000000;
   border-radius: 10px;
-  font-size: 16px;
-  font-weight: bold;
+  font-size: 20px;
+  font-weight: 300;
   padding-left: 0.5em;
+  box-sizing:border-box
 }
-
 input[type=date] {
-  font-family: 'Italiana';
+  font-family: 'Cormorant Garamond', serif;
   display: block;
   padding-left: 0.5em;
   width: inherit;
-  height: 35px;
+  height: 2.3em;
   border: 2px solid #000000;
   border-radius: 10px;
-  font-size: 16px;
-  font-weight: 600;
+  font-size: 20px;
+  font-weight: 300;
+  box-sizing:border-box
 }
-
 ::placeholder {
-  text-decoration-color: grey;
+  text-decoration-color: lightgrey;
 }
-
 textarea {
   width: inherit;
-  height: 300px;
+  height: 19em;
 }
-
-/* Style the submit button with a specific background color etc */
 input[type=submit] {
   position: relative;
-  width: 205.2px;
-  height: 68.12px;
+  width: 6.2em;
+  height: 2.5em;
   background: #A28598;
+  color: white;
   border: none;
   border-radius: 10px;
   font-family: 'Italiana';
-  font-style: normal;
-  font-weight: 700;
+  font-weight: 300;
   font-size: 30px;
   line-height: 42px;
-  top: 100px;
-  left: 330px;
+  top: 3em;
+  float: right;
+  left: 1.1em;
   transition: 0.4s;
+  box-shadow: 5px 5px 5px grey;
 }
 
 /* When moving the mouse over the submit button, add a darker green color */
 input[type=submit]:hover {
   cursor: pointer;
-  text-decoration-color: lightgrey;
-  color: white;
-  /* transform: translateY(-4px); */
+  color: black;
+  font-weight: 700;
+  transform: translateY(-2px);
 }
-
-/* Add a background color and some padding around the form */
-.container {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
-}
-
 .contact-image {
   position: relative;
   padding-top: 5em;
@@ -121,41 +109,36 @@ input[type=submit]:hover {
   display: flex;
   justify-content: center;
 }
-
 .contact-image img {
   width: 60%; 
   margin: 0 auto;
   display: block;
 }
-
 .lets-talk {
   width: 60%;
   margin: 0 auto;
   height: fit-content;
-  font-weight: 800;
-  font-size: 17px;
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 300;
+  font-size: 24px;
   text-align: left;
-  line-height: 65px;
+  line-height: 2em;
   color: #000000;
-  padding-top: 3em;
+  padding-top: 2em;
 }
-
 .Contact ul {
   position: relative;
   list-style-type: none;
   margin: 0 auto;
   padding: 0;
   display: inline-flex;
-  
 }
-
 .Contact ul li {
   display: flex;
   justify-content: space-between;
   align-items: left;
   padding: 0px 20px 0px 0px;
   transition: transform 0.5s;
-  
 }
 
 .Contact ul li:hover {
@@ -181,21 +164,26 @@ body {
   margin-bottom: 20px;
   font-size: 100px;
 }
-
 .scroll-container {
   position: fixed;
-  top: 5;
-  height: 0;
-  width: 0;
-  right: 30px;
+  bottom: 2em;
+  right: 1em;
+  transition: 0.3s;
+  z-index: 999;
+  width: fit-content;
+  height: fit-content;
 }
-
+.scroll-container:hover {
+  transform: translateY(-3px);
+}
+.scroll-container img {
+  width: 4vw;
+}
 hr {
   display: none;
 }
 
 @media (max-width: 900px) {
-
   .Leftside-Screen {
     padding-top: 0;
     width: 100vw;
@@ -209,7 +197,6 @@ hr {
   .contact-image {
     padding-top: 0;
     width: fit-content;
-
   }
   .contact-image img {
     overflow: hidden;
@@ -221,7 +208,7 @@ hr {
     text-align: center;
     width: fit-content;
     height: fit-content;
-    padding-top: 1em;
+    padding-top: 2em;
     padding-bottom: 2em;
   }
   hr {  
@@ -229,16 +216,32 @@ hr {
     width: 80vw;
     border-top: 2px solid darkgrey;
   }
-
-  input[type=text], select, textarea {
-    width: 280%;
+  .form-wrapper {
+    max-width: 100%;
+    left: 15vw;
+    width: 70vw;
   }
-   select {
-    width: 287%;
+  textarea {
+    height: 11em;
   }
-  input[type=date] {
-    width: 280%;
+  input[type=submit] {
+    position:static;
+    display: block;
+    float: none;
+    margin: 0 auto; 
+    margin-top: 2em;
+    margin-bottom: 2em;
+    text-align: center;
+    /* left: 1.1em; */
+  }
+  .scroll-container {
+    right: 0;
     
+  }
+  .scroll-container img {
+    width: 8vw;
+    float: right;
+    margin: auto;
   }
   
 }

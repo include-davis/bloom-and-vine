@@ -229,15 +229,15 @@
   }
   .Footer .Socials {
     max-width: 25em;
-    width: 90%;
+    width: 100%;
     height: fit-content;
     top: 1em;
-    margin: auto; 
+    margin: 0 auto; 
     float: none;
-    justify-content: center;
-    position: relative;
-    padding-right: 3em;
+    
 
+    /* padding-right: 3em; */
+    padding-top: 1em;
   }
   .Footer ul {
     display: none;
@@ -245,13 +245,11 @@
   .des1 {
     right: 13.1em;
     justify-content: center;
-    
     float: none;
     white-space: pre;
     width: fit-content;
-    /* font-size: 1.3vw; */
     text-align: left;
-    margin: auto;
+    margin: 0 auto;
   }
   .heart {
     left: 37vw; 
@@ -261,7 +259,8 @@
 
   .Socials .social-media img {
     padding-left: 1.1em;
-    margin: auto;
+    padding-top: 1em;
+    /* margin: auto; */
   }
   .Socials img {
     padding-top: 0.5em; 
