@@ -22,7 +22,7 @@ function scrollToTop(){
 function ServiceList(props) {
   
     return (
-        <div id ="mobileView">
+        <div className ="mobileView">
             <h1 id="mobileHeader">Services</h1>
             <ServiceSquare setTo = {1} setCurrentRender ={props.setCurrentRender} img = {wedding} name="Weddings"/>
             <ServiceSquare setTo = {2} setCurrentRender ={props.setCurrentRender} img = {rentals} name="Rentals"/>

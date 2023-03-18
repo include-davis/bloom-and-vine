@@ -10,7 +10,7 @@ function ServiceDisplayMobile(props) {
     }
 
     return (
-        <div>
+        <div className = "mobileView">
             <div id = "topContent">
                 <div onClick = {returnToList}>
                     <img id ="backArrow" src={backArrow} />
@@ -22,7 +22,7 @@ function ServiceDisplayMobile(props) {
             <img className= "servImgM" src={props.image} />
 
             <div id = "bottomContent">
-                <p>{props.description}</p>
+                <p id = "mobileServDesc">{props.description}</p>
 
                 <NavLink id = "contactButtonM"to="/Contact">
                     <div >Contact Us</div>
