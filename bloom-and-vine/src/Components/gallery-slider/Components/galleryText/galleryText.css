@@ -1,0 +1,18 @@
+.gallery-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.gallery-title {
+    
+}
+
+.gallery-date {
+
+}
+
+.gallery-desc {
+
+}

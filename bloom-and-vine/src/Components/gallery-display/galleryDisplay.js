@@ -1,3 +1,7 @@
+import { useState, useEffect } from 'react'
+import axios from 'axios'
+
+import GalleryEvents from '../gallery-slider/galleryEvents'
 import './galleryDisplay.css'
 
 /*
@@ -5,11 +9,58 @@ import './galleryDisplay.css'
     2) Create Gallery Buttons (flexbox: row; align-items: center; Add margins)
     3) Have onClick event handler to render different gallery display by passing gallery type through props
 */
+const options = {
+    method: 'GET',
+    headers: {
+        'Content-Type': 'application/json',
+    },
+}
 
-export default function GalleryDisplay (props) {
+async function getData(category) {
+    const QUERY = `/api/${category}`
+    const resData = await axios.get(QUERY, options).then(res => {
+        return (res.data.data ? res.data.data : []);
+    });
+
+    return resData
+}
+
+const galleryCategories = [
+    'wedding-galleries', 
+    'party-galleries', 
+    'flower-galleries', 
+    'film-galleries',
+]
+
+export default function GalleryDisplay () {
+    const [gallery, setGallery] = useState(null)
+    const [galleryIndex, setGalleryIndex] = useState(0);
+    
+    useEffect(() => {
+        Promise.all(galleryCategories.map(async (category) => {
+            return (getData(category));
+        })).then((res) => {
+            setGallery(res)
+        });
+    }, [])
+
     return (
-	    <div>
-			BUTTONS!
+	    <div className='gallery-display-container'>
+            <div className='gallery-buttons-container'>
+                <button className='gallery-buttons' onClick={() => setGalleryIndex(0)}>
+                    Weddings
+                </button>
+                <button className='gallery-buttons' onClick={() => setGalleryIndex(1)}>
+                    Parties
+                </button>
+                <button className='gallery-buttons' onClick={() => setGalleryIndex(2)}>
+                    Flowers
+                </button>
+                <button className='gallery-buttons' onClick={() => setGalleryIndex(3)}>
+                    Films
+                </button>
+            </div>
+			{gallery && <GalleryEvents data={gallery[galleryIndex]} />}
         </div>
     )
 }
