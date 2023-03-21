@@ -1,36 +1,55 @@
+.review-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .review-text {
     height: fit-content;
-    width: 50vw;
+    width: 85%;
     padding: 0 0 2.3% 0;
 
     font-family: 'Cormorant Garamond';
     font-style: normal;
-    font-weight: 700;
-    font-size: 2.58vw;
-    line-height: 3.93vw;
+    font-size: 2.98vw;
+    line-height: 150%;
     text-align: center;
     color: #000000;
 }
 
 .review-user {
-    margin: 10px;
+    margin: 1vh;
 
-    font-family: Comorant Garamond;
+    font-family: 'Old Standard TT';
     font-style: italic;
     font-weight: lighter;
-    font-size: 1.95vw;
+    font-size: 2.15vw;
     line-height: 2.26vw;
     text-align: center;
 
     color: #747474;
 }
 
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1024px) {
     .review-text {
-        font-size: 3.38vw;
+        width: 100%;
+        font-size: 3.35vw;
     }
 
     .review-user {
-        font-size: 2.55vw;
+        width: 100%;
+        font-size: 2.5vw;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .review-text {
+        width: 100%;
+        font-size: 4.65vw;
+    }
+
+    .review-user {
+        width: 100%;
+        font-size: 4.15vw;
     }
 }

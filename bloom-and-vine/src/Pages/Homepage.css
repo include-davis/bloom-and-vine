@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Italiana');
-@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&family=Old+Standard+TT&display=swap");
 
 body {
     background-color: #FAF1EF;
@@ -13,14 +14,12 @@ body {
 
 .front-display {
     position: relative;
+    height: auto
 }
 
-/*
-    Fix height to display Company Title on load
-*/
 .front-image {
-    width: 100vw;
-    height: auto;
+    width: 100%;
+    height: 100%;
     aspect-ratio: 2.2;
     object-fit: cover;
 }
@@ -68,7 +67,7 @@ body {
 /* Change height to vw? */
 .review-display {
     width: 100%;
-    height: 9.77vw;
+    height: 100%;
     
     max-width: 123.75em;
     margin: 6% 0 4% 0;
@@ -103,8 +102,21 @@ body {
     margin: 2.5% 0 3.63% 0;
 }
 
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 480px) {
+    .front-display{
+        height: 15em;
+    }
+
+    .front-text {
+        font-size: 7.67vw;
+    }
+
     .review-display {
-        margin: 6% 0 9% 0;
+        height: 14.79vh;
+        margin: 9% 0 9% 0;
+    }
+
+    .instagram-shoutout-display {
+        margin: 0;
     }
 }

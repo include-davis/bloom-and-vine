@@ -54,9 +54,19 @@
     transform: scale(1.1);
 }
 
-@media screen and (max-width: 1080px) {
+.image-redirect:active {
+    filter: brightness(85%);
+}
+
+@media screen and (max-width: 1024px) {
+    .image-text {
+        font-size: 2.25vw;
+    }
+}
+
+@media screen and (max-width: 480px) {
     .image-container {
-        width: 100%;
+        width: 97.5%;
         height: 25vh;
     }
     
@@ -65,12 +75,14 @@
         height: 80%;
         margin-top: 1.63%;
         margin-left: 0;
+
+        box-shadow: 0 0.25em 0 rgba(0, 0, 0, 0.25);
     }
 
     .image-text {
-        font-size: 2.6vh;
+        font-size: 4.25vw;
         text-align: center;
-        margin: 0 0 0.298vh 0;
+        margin: 0 0 1.35% 0;
     }
 
     .image-redirect {
@@ -78,6 +90,7 @@
         height: 69.69%;
 
         filter: none;
-        border-radius: 0;
+        object-position: 100% 33%;
+        border-radius: 0.625em 0.625em 0 0;
     }
 }

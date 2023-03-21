@@ -7,7 +7,7 @@
 }
 
 .back-button, .forward-button {
-    height: 3.31vw;
+    height: 5.26vw;
 }
 
 .forward-review-button:hover, .backward-review-button:hover {
@@ -32,7 +32,7 @@
     justify-content: center;
 
     height: 100%;
-    margin: 0 7.44vw 0 7.44vw;
+    width: 66%;
 }
 
 .review-dots {
@@ -49,19 +49,27 @@
     margin: 0 0.5vw 0 0.5vw;
 }
 
-
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1024px) {
     .back-button, .forward-button {
-        height: 6.62vw;
+        height: 4.67vw;
     }
 
     .review-dot {
-        width: 1.25vw;
-        height: 1.25vw;
+        width: 1.33vw;
+        height: 1.33vw;
+    }
+    
+}
+
+@media screen and (max-width: 480px) {
+    .back-button, .forward-button {
+        height: 9.31vw;
     }
 
-    .current-review-display {
-        margin: 5.66vw 3.72vw 0 3.72vw;
-    }
+    .review-dot {
+        width: 2.5vw;
+        height: 2.5vw;
 
+        margin: 0 0.89vw 0 0.89vw;
+    }
 }

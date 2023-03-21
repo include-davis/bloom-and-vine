@@ -27,14 +27,6 @@ const userReviews = [
     },
   ].map((userReview) => <UserReview review={userReview} />)
 
-
-// Auto scrolling reviews?
-// const autoScroll = () => {
-//     setTimeout(() => {
-//         index < userReviews.length - 1 ? setIndex(index => index + 1) : setIndex(0)
-//     }, 5000)
-// }
-
 function getReviewDots(total) {
     let dot_display = []
     for (let i = 0; i < total; i++) {
