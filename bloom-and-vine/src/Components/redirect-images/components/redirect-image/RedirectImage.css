@@ -67,7 +67,7 @@
 @media screen and (max-width: 480px) {
     .image-container {
         width: 97.5%;
-        height: 25vh;
+        aspect-ratio: 1.45;
     }
     
     .image-background {
