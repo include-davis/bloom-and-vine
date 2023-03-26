@@ -15,3 +15,28 @@
     height: 321px;
     object-fit: cover
 }
+
+/* 
+
+Used for testing the image components all together
+
+#test{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    overflow: hidden; 
+}
+
+Displays the 5 images that you pass in
+
+<div id = "test">
+    <TertiaryImage img = {<yourImgUrl>} />
+    <SecondaryImage img = {<yourImgUrl>} />
+    <PrimaryImage img = {<yourImgUrl>} />
+    <SecondaryImage img = {<yourImgUrl>} />
+    <TertiaryImage img = {<yourImgUrl>} />
+</div>
+            
+*/
