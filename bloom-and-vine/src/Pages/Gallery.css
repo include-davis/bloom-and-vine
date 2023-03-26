@@ -1,0 +1,9 @@
+.Gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gallery-display {
+    width: 100%;
+}
