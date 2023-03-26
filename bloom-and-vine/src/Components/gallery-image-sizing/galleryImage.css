@@ -1,0 +1,17 @@
+#primaryImage{
+    height: 448px;
+    width: auto;
+    max-width: 43vw;
+}
+#secondaryImage{
+    opacity: 0.5;
+    width: 16vw;
+    height: 375px;
+    object-fit: cover
+}
+#tertiaryImage{
+    opacity: 0.5;
+    width: 14vw;
+    height: 321px;
+    object-fit: cover
+}

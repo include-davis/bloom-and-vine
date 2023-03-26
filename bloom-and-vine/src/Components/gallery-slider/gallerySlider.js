@@ -14,6 +14,7 @@ import BackArrow from '../../Images/back_arrow.png'
     4) Figure out which elements to apply primary, secondary, or background class
 */
 
+
 export default function GallerySlider (props) {
 
     return (
@@ -22,7 +23,45 @@ export default function GallerySlider (props) {
 		</div>
     );
 }
+function UserReview(props) {
+    const { review } = props;
 
+    return (
+        <div className='review-container'>
+            <div className='review-text'>
+                {review.message}
+            </div>
+            <div className='review-user'>
+                - {review.user}
+            </div>
+        </div>
+    )
+}
+
+const userReviews = [
+    {
+        'message': `"Such an exquisite day! Flowers were perfection."`,
+        'user': "tanweddingsandevents"
+    },
+    {
+        'message': `"You are just consistently turning out stunning work! Your talent fountain overfloweth!!!!"`,
+        'user': 'Julie A. Anderson'
+    },
+    {
+        'message': `"Honestly, the most beautiful arrangement and you could not have been more helpful!"`,
+        'user': 'Lauren Deal'
+    },
+    {
+        'message': `"Working with you has been the easiest part of planning our wedding!"`,
+        'user': 'Cynthia Racquel'
+    },
+    {
+        'message': `"Such a beautiful color palette and such an awesome vendor team!"`,
+        'user': 'kendall_melissa_events'
+    },
+  ].map((userReview) => <UserReview review={userReview} />)
+
+  
 function getReviewDots(total) {
     let dot_display = []
     for (let i = 0; i < total; i++) {
@@ -46,7 +85,7 @@ function setCurrentDot(index) {
     curDot.style.backgroundColor = "#A28598";
 }
 
-export default function ReviewBar() {
+function ReviewBar() {
     const [curReview, setCurReview] = useState(userReviews[0])
     const [index, setIndex] = useState(0)
     
