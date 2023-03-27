@@ -8,6 +8,7 @@
   background: #A28598;
   top: 0;
   margin: 0;
+  overflow: hidden;
 }
 .Logo {
   position: absolute;

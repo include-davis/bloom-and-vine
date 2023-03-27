@@ -21,6 +21,7 @@
   position: relative;
   /* Bloom & Vine */
   width: 316px;
+  align-items: center;
   height: 24px;
   padding-top: 48px;
   padding-left: 56px;
@@ -141,19 +142,17 @@
 .des1, .des1 b {
   position: relative;
   float: right;
-  width: 16em;
+  width: 13em;
   height: fit-content;
   font-family: 'Cormorant Garamond';
   font-style: lighter;
   font-size: 17px;
   line-height: 22px;
   align-items: center;
-  letter-spacing: -0.01em;
   right: 7.6em;
-  /* bottom: 20px; */
   color: #FFFDF1;
   transition: 0.4s;
-  /* word-wrap: break-word; */
+  bottom: 6em;
 }
 
 .Socials img {
@@ -170,8 +169,8 @@
 
 .Socials {
   position: relative;
-  left: 70px;
-  bottom: 100px;
+  left: 3em;
+  bottom: 6em;
 }
 
 .heart {
@@ -185,6 +184,9 @@
   .Socials {
     left: 150px;
   }
+  .des1 {
+    right: 1.8em;
+  }
 }
 
 @media(max-width: 1520px) {
@@ -192,79 +194,87 @@
     padding: 0 300px; 
   }
   .Socials {
-    left: 250px;
+    left: 200px;
+  }
+  .des1 {
+    left: 1em;
   }
 }
 
 @media(max-width: 1420px) {
   .wrapper {
     padding-top: 1.5em;
+    text-align: center;
   }
   .Footer .Logo {
     font-size: 4.1vh;
     width: fit-content;
     position: relative;
-    padding-top: 0.2em;
-    margin: auto;
-    padding-right: 5vw;
-    justify-content: center;
+    padding: 0;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
   }
   .Footer .Description {
     position: relative;
+    width: 90%;
     max-width: 24em;
-    width: fit-content;
     height: 75px;
     justify-content: left;
     text-align: center;
     color: #FFFDF1;
     padding-top: 5px;
     margin: auto;
-
-    padding-right: 5vw;
+    padding-left: 0;
     font-size: 2.1vh;
   }
   .Footer ul {
     display: none;
-    
   }
   .Footer .Socials {
-    max-width: 25em;
-    width: 100%;
+    width: fit-content;
     height: fit-content;
     top: 1em;
     margin: 0 auto; 
-    float: none;
-    
-
-    /* padding-right: 3em; */
     padding-top: 1em;
+    left: 0;
+    /* padding-right: 1em; */
+  }
+  .Footer .Socials img {
+    padding: 1em 1em;
   }
   .Footer ul {
     display: none;
   }
+  .Facebook, .Pinterest, .Instagram, .Mail {
+    right: 0;
+    left: 0;
+  }
   .des1 {
-    right: 13.1em;
-    justify-content: center;
     float: none;
-    white-space: pre;
-    width: fit-content;
-    text-align: left;
-    margin: 0 auto;
+    max-width: 24em;
+    width: 90%;
+    overflow: hidden;
+    white-space:normal;
+    width: auto;
+    height: 75px;
+    margin: auto;
+    margin-top: 7em;
+    right: 0;
+    left: 0;
   }
   .heart {
     left: 37vw; 
     float: none;
     top: 42px;
   }
-
-  .Socials .social-media img {
+  
+  .Socials img {
     padding-left: 1.1em;
     padding-top: 1em;
-    /* margin: auto; */
   }
   .Socials img {
     padding-top: 0.5em; 
-
     margin: auto;
   }
 }

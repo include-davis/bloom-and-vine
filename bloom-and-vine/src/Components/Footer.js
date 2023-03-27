@@ -11,7 +11,7 @@ function Footer() {
       <div className='wrapper'>
 
         <div className='Logo'>
-          Bloom & Vine
+          <p>Bloom & Vine</p>
         </div>
 
         <p className='Description'>
@@ -39,7 +39,8 @@ function Footer() {
         </ul>
 
         <div className='Socials'>
-          <div className='social-media'>
+
+        
           <a href='https://pinterest.com' target='_blank'>
             <div className='Pinterest'>
               <img src={pinterest} alt='null' />
@@ -63,6 +64,7 @@ function Footer() {
             </div>
           </a>
           </div>
+
           <p className='des1'>  Designed & Developed with <svg className='heart' width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M15.6301 3.4575C15.247 3.07425 14.7922 2.77023 14.2916 2.56281C13.791 2.35539 13.2545 
             2.24863 12.7126 2.24863C12.1707 2.24863 11.6342 2.35539 11.1336 2.56281C10.633 2.77023 
@@ -79,7 +81,7 @@ function Footer() {
           </p>
          
           
-        </div>
+        
      
       </div>
     </div>
