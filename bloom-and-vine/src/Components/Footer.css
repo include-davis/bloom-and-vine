@@ -207,7 +207,7 @@
     text-align: center;
   }
   .Footer .Logo {
-    font-size: 4.1vh;
+    font-size: 2.8em;
     width: fit-content;
     position: relative;
     padding: 0;
@@ -228,7 +228,7 @@
     padding-top: 5px;
     margin: auto;
     padding-left: 0;
-    font-size: 2.1vh;
+    font-size: 1.4em;
   }
   .Footer ul {
     display: none;
@@ -283,9 +283,21 @@
 
 @media (max-width: 900px) {
   .Footer .Description {
-    font-size: 1.8vh;
+    font-size: 1.2em;
   }
   .Footer .des1 {
     font-size: 13px;  
+  }
+}
+
+@media (max-width: 600px) {
+  .Footer .Description {
+    font-size: 1.2em;
+  }
+}
+
+@media (max-width: 300px) {
+  .Footer .Description {
+    font-size: 1em;
   }
 }
