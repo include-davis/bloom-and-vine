@@ -14,6 +14,7 @@ function MobileNav() {
   return (
     <div className="MobileNav">
       <div className='menu-container'>
+
         <div className='menu-trigger' onClick={()=>{setOpen(!open)}}>
           <img src={menu} alt='test'></img>
         </div>
@@ -26,7 +27,7 @@ function MobileNav() {
             <li className='main-category'>
                 <a href='/gallery'>Gallery</a>
                 <div className='sub-menu-trigger' onClick={()=>{setSubOpen(!subopen)}  }>
-                  <img src={downarrow} alt='test'></img>
+                  <img src={subopen? uparrow : downarrow} alt='test'></img>
                 </div>
               </li>
             <div className={`gallery-menu ${subopen? 'active' : 'inactive'}`} >
@@ -47,7 +48,7 @@ function MobileNav() {
             <li className='main-category'>
                 <a href='/services'>Services</a>
                 <div className='sub-menu-trigger2' onClick={()=>{setSubOpen2(!subopen2)}}>
-                  <img src={downarrow} alt='test2'></img>
+                  <img src={subopen? uparrow : downarrow} alt='test2'></img>
                 </div>
             </li>
             <div className={`services-menu ${subopen2? 'active' : 'inactive'}`} >
@@ -81,6 +82,8 @@ function MobileNav() {
             </li>
           </ul>
         </div>
+
+        
       </div>
     </div>
   );

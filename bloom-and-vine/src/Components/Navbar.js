@@ -34,6 +34,13 @@ function Navbar() {
           <a href='/Contact'>Contact</a>
         </li>
       </ul>
+
+      <div className='Contact-Button'>
+          <a href='/Contact'>
+            Contact
+            </a>
+      </div>
+
     </nav>
   );
 }

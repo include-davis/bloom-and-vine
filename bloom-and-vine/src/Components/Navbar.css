@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Italiana');
-@import url('https://fonts.googleapis.com/css?family=Cormorant Garamond'  );
+@import url('https://fonts.googleapis.com/css?family=Cormorant Garamond');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&display=swap');
 
 .Navbar {
   position: relative;
@@ -42,13 +43,13 @@
   height: fit-content;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 1.5em;
   display: none;
   padding-top: 1em;
   transition: 0.8s;
+
 }
 .main-mobile-logo img {
-  width: 70px;
+  width: 4em;
 }
 .Logo .mobile-main-logo:hover {
   transform: scale(1.03);
@@ -91,6 +92,39 @@
   transform: translateY(-2px);
 }
 
+.Navbar .Contact-Button {
+  display: none;
+  position: relative;
+  line-height: 42px;
+
+  float: right;
+  max-width: 7em;
+  width: 20vw;
+  right: 1em;
+  bottom: 3.7em;
+
+  background: white;
+  border: none;
+  border-radius: 10px;
+
+  justify-content: center;
+  
+  transition: 0.4s;
+  box-shadow: 0 8px 8px -4px  rgb(69, 69, 69);
+}
+
+.Navbar .Contact-Button:hover {
+  transform: translateY(-4px);
+}
+
+.Navbar .Contact-Button a {
+  font-family: 'Cormorant Garamond';
+  font-weight: 700;
+  
+  font-size: min(1.7em, 5vw);
+  color: #A28598;
+}
+
 @media (max-width: 1200px) {
   .Navbar ul {
     display: none;
@@ -102,6 +136,9 @@
     display: flex;
   }
   .MobileNav {
+    display: flex;
+  }
+  .Navbar .Contact-Button {
     display: flex;
   }
 

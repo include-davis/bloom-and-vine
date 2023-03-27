@@ -173,6 +173,7 @@ body {
   z-index: 999;
   width: fit-content;
   height: fit-content;
+  overflow: hidden;
 }
 .scroll-container:hover {
   transform: translateY(-3px);
@@ -233,7 +234,7 @@ hr {
     margin-top: 2em;
     margin-bottom: 2em;
     text-align: center;
-    /* left: 1.1em; */
+    font-weight: 700;
   }
   .scroll-container {
     right: 0;
