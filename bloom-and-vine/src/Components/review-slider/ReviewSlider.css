@@ -51,13 +51,15 @@
 
 @media screen and (max-width: 2560px) {
     .current-review-display {
-        width: 100%;
+        width: 63%;
+        min-height: 16.14vw;
     }
 }
 
 @media screen and (max-width: 1440px) {
     .current-review-display {
         width: 71%;
+        min-height: 17.11vw;
     }
 }
 
