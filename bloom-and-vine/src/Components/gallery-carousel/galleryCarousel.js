@@ -102,16 +102,30 @@ import './galleryCarousel.css'
         background: Index 3 (pic 4)
 */
 
+function createGalleryDots(amount) {
+    let dots = [];
+    for (let i = 0; i < amount; i++) {
+        dots.push(
+            <span className='gallery-dot'></span>
+        )
+    }
+
+    return dots;
+}
+
 
 function GallerySlider (props) {
     const [primaryImgIndex, setPrimaryImgIndex] = useState(0);
     const images = props.data.images;
 
+    const galleryDotDisplay = createGalleryDots(images.length);
+    /* Edit to change colors properly */
+
     function onGalleryClickHandler(e, button) {
         e.preventDefault();
 
         if (button === 'left') {
-            primaryImgIndex - 1 >= 0 ? setPrimaryImgIndex(prevIndex => prevIndex - 1) : setPrimaryImgIndex(4);
+            primaryImgIndex - 1 >= 0 ? setPrimaryImgIndex(prevIndex => prevIndex - 1) : setPrimaryImgIndex(images.length - 1);
         }
     
         if (button === 'right') {
@@ -121,41 +135,46 @@ function GallerySlider (props) {
     
     return (
         <div className='gallery-slider-container'>
-            <button className='gallery-event-left-button' onClick={e => onGalleryClickHandler(e, 'left')}>
-                Left
-            </button>
-           <GalleryImage 
-                src={images[primaryImgIndex - 2 < 0 ? images.length - 2 + primaryImgIndex: primaryImgIndex - 2].url} 
-                altText={images[primaryImgIndex - 2 < 0 ? images.length - 2 + primaryImgIndex: primaryImgIndex - 2].altText} 
-                imgClass={'gallery-tertiary-image'} 
-            />
+            <div className='gallery-slider'>
+                <button className='gallery-event-left-button' onClick={e => onGalleryClickHandler(e, 'left')}>
+                    Left
+                </button>
+                <GalleryImage 
+                        src={images[primaryImgIndex - 2 < 0 ? images.length - 2 + primaryImgIndex: primaryImgIndex - 2].url} 
+                        altText={images[primaryImgIndex - 2 < 0 ? images.length - 2 + primaryImgIndex: primaryImgIndex - 2].altText} 
+                        imgClass={'gallery-tertiary-image'} 
+                    />
 
-           <GalleryImage 
-                src={images[primaryImgIndex - 1 < 0 ? images.length - 1 + primaryImgIndex: primaryImgIndex - 1].url} 
-                altText={images[primaryImgIndex - 1 < 0 ? images.length - 1 + primaryImgIndex: primaryImgIndex - 1].altText} 
-                imgClass={'gallery-secondary-image'} 
-            />
+                <GalleryImage 
+                        src={images[primaryImgIndex - 1 < 0 ? images.length - 1 + primaryImgIndex: primaryImgIndex - 1].url} 
+                        altText={images[primaryImgIndex - 1 < 0 ? images.length - 1 + primaryImgIndex: primaryImgIndex - 1].altText} 
+                        imgClass={'gallery-secondary-image'} 
+                    />
 
-           <GalleryImage 
-                src={images[primaryImgIndex].url} 
-                altText={images[primaryImgIndex].altText} 
-                imgClass={'gallery-primary-image'} 
-            />
-           
-           <GalleryImage 
-                src={images[primaryImgIndex + 1 > images.length - 1 ? primaryImgIndex + 1 - images.length : primaryImgIndex + 1].url} 
-                altText={images[primaryImgIndex + 1 > images.length - 1 ? primaryImgIndex + 1 - images.length : primaryImgIndex + 1].altText} 
-                imgClass={'gallery-secondary-image'} 
-            />
+                <GalleryImage 
+                        src={images[primaryImgIndex].url} 
+                        altText={images[primaryImgIndex].altText} 
+                        imgClass={'gallery-primary-image'} 
+                    />
+                
+                <GalleryImage 
+                        src={images[primaryImgIndex + 1 > images.length - 1 ? primaryImgIndex + 1 - images.length : primaryImgIndex + 1].url} 
+                        altText={images[primaryImgIndex + 1 > images.length - 1 ? primaryImgIndex + 1 - images.length : primaryImgIndex + 1].altText} 
+                        imgClass={'gallery-secondary-image'} 
+                    />
 
-           <GalleryImage 
-                src={images[primaryImgIndex + 2 > images.length - 1 ? primaryImgIndex + 2 - images.length : primaryImgIndex + 2].url} 
-                altText={images[primaryImgIndex + 2 > images.length - 1 ? primaryImgIndex + 2 - images.length : primaryImgIndex + 2].altText} 
-                imgClass={'gallery-tertiary-image'} 
-            />
-           <button className='gallery-event-right-button' onClick={e => onGalleryClickHandler(e, 'right')}>
-                Right
-           </button>
+                <GalleryImage 
+                        src={images[primaryImgIndex + 2 > images.length - 1 ? primaryImgIndex + 2 - images.length : primaryImgIndex + 2].url} 
+                        altText={images[primaryImgIndex + 2 > images.length - 1 ? primaryImgIndex + 2 - images.length : primaryImgIndex + 2].altText} 
+                        imgClass={'gallery-tertiary-image'} 
+                    />
+                <button className='gallery-event-right-button' onClick={e => onGalleryClickHandler(e, 'right')}>
+                        Right
+                </button>
+            </div>
+            <div className='current-gallery-image-dots'>
+
+            </div>
         </div>
     )
 }
@@ -165,12 +184,12 @@ export default function GalleryCarousel(props) {
 
     return (
         <div className='gallery-carousel-container'>
-            <div className='gallery-carousel-one'>
+            <div className='upper-gallery-carousel'>
                 {data[0] && <GalleryInfo data={data[0]} />}
                 {data[0] && <GallerySlider data={data[0]} />}
             </div>
             {/* Divider here */}
-            <div className='gallery-carousel-two'>
+            <div className='lower-gallery-carousel'>
                 {data[1] && <GalleryInfo data={data[1]} />}
                 {data[1] && <GallerySlider data={data[1]} />}
             </div>
