@@ -6,7 +6,7 @@
 
 .review-text {
     height: fit-content;
-    width: 85%;
+    width: 100%;
     padding: 0 0 2.3% 0;
 
     font-family: 'Cormorant Garamond';
@@ -33,7 +33,6 @@
 
 @media screen and (max-width: 1024px) {
     .review-text {
-        width: 100%;
         font-size: 3.35vw;
     }
 
@@ -45,7 +44,7 @@
 
 @media screen and (max-width: 480px) {
     .review-text {
-        width: 100%;
+        width: 85%;
         font-size: 4.65vw;
     }
 

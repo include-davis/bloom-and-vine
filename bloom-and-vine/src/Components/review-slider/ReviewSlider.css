@@ -32,7 +32,7 @@
     justify-content: center;
 
     height: 100%;
-    width: 66%;
+    width: 100%;
 }
 
 .review-dots {
@@ -49,6 +49,18 @@
     margin: 0 0.5vw 0 0.5vw;
 }
 
+@media screen and (max-width: 2560px) {
+    .current-review-display {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .current-review-display {
+        width: 71%;
+    }
+}
+
 @media screen and (max-width: 1024px) {
     .back-button, .forward-button {
         height: 4.67vw;
@@ -57,6 +69,10 @@
     .review-dot {
         width: 1.33vw;
         height: 1.33vw;
+    }
+
+    .current-review-display {
+        width: 66%;
     }
     
 }
@@ -71,5 +87,9 @@
         height: 2.5vw;
 
         margin: 0 0.89vw 0 0.89vw;
+    }
+    
+    .current-review-display {
+        width: 66%;
     }
 }
