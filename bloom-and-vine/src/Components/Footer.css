@@ -243,7 +243,14 @@
     padding-bottom: 0.5em;
   }
   .Footer .Socials img {
-    padding: 1em 1em;
+    padding: 0 3em;
+    width: 30px
+  }
+  .Socials .Facebook img {
+    width: 16px;
+  }
+  .Socials .Pinterest img {
+    width: 20px;
   }
   .Footer ul {
     display: none;
@@ -270,11 +277,7 @@
     float: none;
     top: 42px;
   }
-  
-  .Socials img {
-    padding-left: 1.1em;
-    padding-top: 1em;
-  }
+
   .Socials img {
     padding-top: 0.5em; 
     margin: auto;
@@ -283,7 +286,7 @@
 
 @media (max-width: 900px) {
   .Footer .Description {
-    font-size: 1.2em;
+    font-size: 1.3em;
   }
   .Footer .des1 {
     font-size: 13px;  
@@ -292,7 +295,14 @@
 
 @media (max-width: 600px) {
   .Footer .Description {
-    font-size: 1.2em;
+    font-size: 1.1em;
+    width: 95%;
+  }
+  .Footer .Socials img {
+    padding: 1em 1.5em;
+  }
+  .des1 {
+    padding-top: 1em;
   }
 }
 

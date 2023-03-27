@@ -11,6 +11,7 @@
   width: fit-content;
   height: fit-content;
   overflow: hidden;
+  display: flex;
 }
 .Rightside-Screen {
   flex-wrap: wrap;
@@ -33,7 +34,7 @@
 .form-wrapper {
   font-family: 'Cormorant Garamond', serif;;
   position: relative;
-  max-width: 90%;
+  max-width: 100%;
   width: 30vw;
   text-align: left;
   left: 10vw;
@@ -54,7 +55,7 @@ input[type=text], select, textarea {
   font-size: 20px;
   font-weight: 300;
   padding-left: 0.5em;
-  box-sizing:border-box
+  box-sizing: border-box
 }
 input[type=date] {
   font-family: 'Cormorant Garamond', serif;
@@ -89,7 +90,6 @@ input[type=submit] {
   line-height: 42px;
   top: 3em;
   float: right;
-  left: 1.1em;
   transition: 0.4s;
   box-shadow: 5px 5px 5px grey;
 }
@@ -186,6 +186,9 @@ hr {
 }
 
 @media (max-width: 900px) {
+  .Contact {
+    display: block;
+  }
   .Leftside-Screen {
     padding-top: 0;
     width: 100vw;
@@ -226,6 +229,11 @@ hr {
   textarea {
     height: 11em;
   }
+
+  .form-wrapper {
+    padding-top: 25px;
+    line-height: 60px;
+  }
   input[type=submit] {
     position:static;
     display: block;
@@ -235,6 +243,11 @@ hr {
     margin-bottom: 2em;
     text-align: center;
     font-weight: 700;
+  }
+  input[type=text], input[type=date], select, textarea {
+    background: none;
+    border-radius: 5px;
+    border: 3px solid #000000;
   }
   .scroll-container {
     right: 0;
