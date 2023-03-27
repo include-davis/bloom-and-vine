@@ -1,10 +1,12 @@
-import './galleryText.css'
+import './galleryInfo.css'
 
-export default function GalleryText (props) {
-    const { title, date, desc } = props;
+export default function GalleryInfo (props) {
+    const title = props.data.title;
+    const date = props.data.date;
+    const desc = props.data.description;
 
     return (
-        <div className='gallery-text'>
+        <div className='gallery-info'>
             <div className='gallery-title'>
                 {title}
             </div>

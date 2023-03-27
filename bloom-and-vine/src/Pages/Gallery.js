@@ -9,7 +9,9 @@ function Gallery() {
     <div className="Gallery">
 		<NavBar />
 
-		<GalleryDisplay/>
+		<div className='gallery-display'>
+			<GalleryDisplay/>
+		</div>
 		
 		<div className="contact-display">
 			<ContactDisplay />

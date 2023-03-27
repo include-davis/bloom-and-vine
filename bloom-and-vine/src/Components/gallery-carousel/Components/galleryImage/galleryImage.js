@@ -10,9 +10,9 @@ import './galleryImage.css'
 */
 
 export default function GalleryImage (props) {
-    const { src, altText } = props;
+    const { src, altText, imgClass } = props;
 
     return (
-        <img className="gallery-image" src={src} alt={altText} />
+        <img className={imgClass} src={src} alt={altText} />
     );
 }

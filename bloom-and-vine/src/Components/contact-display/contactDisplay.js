@@ -3,10 +3,6 @@ import './contactDisplay.css'
 import { BrowserRouter as Router, Route, NavLink } from 'react-router-dom'
 import arrow from "../../Images/upArrow.png"
 
-import PrimaryImage from '../gallery-image-sizing/primaryImage';
-import SecondaryImage from '../gallery-image-sizing/secondaryImage';
-import TertiaryImage from '../gallery-image-sizing/tertiaryImage';
-
 import Wedding from '../../Images/weddingPrimary.png'
 import Wedding2 from '../../Images/weddingSecondary.png'
 

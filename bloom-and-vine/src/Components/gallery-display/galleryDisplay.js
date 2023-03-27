@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import axios from 'axios'
 
-import GalleryEvents from '../gallery-slider/galleryEvents'
+import GalleryCarousel from '../gallery-carousel/galleryCarousel'
 import './galleryDisplay.css'
 
 /*
@@ -60,7 +60,7 @@ export default function GalleryDisplay () {
                     Films
                 </button>
             </div>
-			{gallery && <GalleryEvents data={gallery[galleryIndex]} />}
+			{gallery && <GalleryCarousel data={gallery[galleryIndex]} />}
         </div>
     )
 }
