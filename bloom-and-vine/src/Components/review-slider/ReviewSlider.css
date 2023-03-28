@@ -35,7 +35,7 @@
     width: 100%;
 }
 
-.review-dot-container {
+.review-dots {
     display: flex;
     flex-direction: row;
     text-align: center;
@@ -47,14 +47,9 @@
     border-radius: 50%;
     background-color: #D9D9D9;
     margin: 0 0.5vw 0 0.5vw;
-    transition: 0.5s;
 }
 
-.review-dot:hover {
-    transform: scale(1.2);
-}
-
-@media screen and (max-width: 2559px) {
+@media screen and (max-width: 2560px) {
     .current-review-display {
         width: 63%;
         min-height: 16.14vw;
