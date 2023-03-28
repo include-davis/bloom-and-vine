@@ -9,9 +9,19 @@ import GalleryDisplayMobile from '../Components/gallery-display-mobile/galleryDi
 function Gallery() {
 	const width = window.innerWidth;
 
+
+	{/*
+	For testing, I return the mobile version of the gallery page 
+	when at 500 pixel width or less
+	
+	*/}
 	if (width <= 500){
 		return(
-			<GalleryDisplayMobile/>
+			<div>
+				<NavBar/>
+				<GalleryDisplayMobile/>
+				<Footer/>
+			</div>	
 		)
 	}
 	else{
