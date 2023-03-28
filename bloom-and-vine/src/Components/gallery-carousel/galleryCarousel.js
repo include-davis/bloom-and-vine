@@ -109,7 +109,6 @@ function GallerySlider (props) {
     const images = props.data.images;
     const level = props.level;
     
-    // console.log(galleryDots)
     function getGalleryDots(total, setCurImgDot) {
         let dot_display = [];
         for (let i = 0; i < total; i++) {
