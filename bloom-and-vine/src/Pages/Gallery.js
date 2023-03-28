@@ -4,22 +4,33 @@ import ContactDisplay from '../Components/contact-display/contactDisplay'
 import Footer from '../Components/Footer'
 import './Gallery.css';
 
+import GalleryDisplayMobile from '../Components/gallery-display-mobile/galleryDisplayMobile';
+
 function Gallery() {
-  return (
-    <div className="Gallery">
-		<NavBar />
+	const width = window.innerWidth;
 
-		<div className='gallery-display'>
-			<GalleryDisplay/>
-		</div>
-		
-		<div className="contact-display">
-			<ContactDisplay />
-		</div>
+	if (width <= 500){
+		return(
+			<GalleryDisplayMobile/>
+		)
+	}
+	else{
+		return (
+			<div className="Gallery">
+				<NavBar />
 
-		<Footer />
-    </div>
-  );
+				<div className='gallery-display'>
+					<GalleryDisplay/>
+				</div>
+				
+				<div className="contact-display">
+					<ContactDisplay />
+				</div>
+
+				<Footer />
+			</div>
+		);
+	}
 }
 
 export default Gallery;
