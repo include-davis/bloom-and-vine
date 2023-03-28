@@ -46,17 +46,17 @@ export default function GalleryDisplay () {
 
     return (
 	    <div className='gallery-display-container'>
-            <div className='gallery-buttons-container'>
-                <button className='gallery-buttons' onClick={() => setGalleryIndex(0)}>
+            <div className='gallery-category-container'>
+                <button className='gallery-category' onClick={() => setGalleryIndex(0)}>
                     Weddings
                 </button>
-                <button className='gallery-buttons' onClick={() => setGalleryIndex(1)}>
+                <button className='gallery-category' onClick={() => setGalleryIndex(1)}>
                     Parties
                 </button>
-                <button className='gallery-buttons' onClick={() => setGalleryIndex(2)}>
+                <button className='gallery-category' onClick={() => setGalleryIndex(2)}>
                     Flowers
                 </button>
-                <button className='gallery-buttons' onClick={() => setGalleryIndex(3)}>
+                <button className='gallery-category' onClick={() => setGalleryIndex(3)}>
                     Films
                 </button>
             </div>

@@ -1,8 +1,8 @@
-import { useState, useEffect, useRef } from 'react';
-import axios from 'axios';
-
+import { useEffect, useState } from 'react';
 import GalleryImage from './Components/galleryImage/galleryImage';
 import GalleryInfo from './Components/galleryInfo/galleryInfo';
+import ForwardArrow from '../../Images/forward_arrow.png'
+import BackArrow from '../../Images/back_arrow.png'
 import './galleryCarousel.css'
 
 // Use Homepage's IG Slider for reference
@@ -102,24 +102,38 @@ import './galleryCarousel.css'
         background: Index 3 (pic 4)
 */
 
-function createGalleryDots(amount) {
-    let dots = [];
-    for (let i = 0; i < amount; i++) {
-        dots.push(
-            <span className='gallery-dot'></span>
-        )
-    }
-
-    return dots;
-}
 
 
 function GallerySlider (props) {
     const [primaryImgIndex, setPrimaryImgIndex] = useState(0);
     const images = props.data.images;
-
-    const galleryDotDisplay = createGalleryDots(images.length);
-    /* Edit to change colors properly */
+    const level = props.level;
+    
+    // console.log(galleryDots)
+    function getGalleryDots(total, setCurImgDot) {
+        let dot_display = [];
+        for (let i = 0; i < total; i++) {
+            dot_display.push(
+                <div className={`gallery-dot-${level}`} key={i} onClick={() => setCurImgDot(i)}></div>
+                );
+            }
+            
+            return dot_display;
+        }
+        
+        function setCurrentDot(index, images) {
+            const curIndex = index + 1 <= images.length ? index + 1 : 1;
+            const inactiveDots = document.querySelectorAll(`.gallery-dot-${level}:not(:nth-child(${curIndex}))`)
+            const curDot = document.querySelector(`.gallery-dot-${level}:nth-child(${curIndex})`)
+            
+            for (let i = 0; i < inactiveDots.length; i++) {
+                inactiveDots[i].style.backgroundColor = "#D9D9D9";
+            }
+            
+            curDot.style.backgroundColor = "#A28598";
+        }
+        
+    const galleryDots = getGalleryDots(images.length, setPrimaryImgIndex);
 
     function onGalleryClickHandler(e, button) {
         e.preventDefault();
@@ -132,12 +146,17 @@ function GallerySlider (props) {
             primaryImgIndex + 1 < images.length ? setPrimaryImgIndex(prevIndex => prevIndex + 1) : setPrimaryImgIndex(0);
         }
     }
+
+    useEffect(() => {
+        setCurrentDot(primaryImgIndex, images);
+    }, [primaryImgIndex])
+    
     
     return (
         <div className='gallery-slider-container'>
             <div className='gallery-slider'>
-                <button className='gallery-event-left-button' onClick={e => onGalleryClickHandler(e, 'left')}>
-                    Left
+                <button className='gallery-event-button back-button' onClick={e => onGalleryClickHandler(e, 'left')}>
+                    <img className='button-image' src={BackArrow} />
                 </button>
                 <GalleryImage 
                         src={images[primaryImgIndex - 2 < 0 ? images.length - 2 + primaryImgIndex: primaryImgIndex - 2].url} 
@@ -168,12 +187,12 @@ function GallerySlider (props) {
                         altText={images[primaryImgIndex + 2 > images.length - 1 ? primaryImgIndex + 2 - images.length : primaryImgIndex + 2].altText} 
                         imgClass={'gallery-tertiary-image'} 
                     />
-                <button className='gallery-event-right-button' onClick={e => onGalleryClickHandler(e, 'right')}>
-                        Right
+                <button className='gallery-event-button forward-button' onClick={e => onGalleryClickHandler(e, 'right')}>
+                    <img className='button-image' src={ForwardArrow} />
                 </button>
             </div>
             <div className='current-gallery-image-dots'>
-
+                {galleryDots}
             </div>
         </div>
     )
@@ -185,14 +204,15 @@ export default function GalleryCarousel(props) {
     return (
         <div className='gallery-carousel-container'>
             <div className='upper-gallery-carousel'>
-                {data[0] && <GalleryInfo data={data[0]} />}
-                {data[0] && <GallerySlider data={data[0]} />}
+                {data[0] && <GalleryInfo data={data[0]} level={'upper'} />}
+                {data[0] && <GallerySlider data={data[0]} level={'upper'} />}
             </div>
-            {/* Divider here */}
+            <div className='divider' />
             <div className='lower-gallery-carousel'>
-                {data[1] && <GalleryInfo data={data[1]} />}
-                {data[1] && <GallerySlider data={data[1]} />}
+                {data[1] && <GalleryInfo data={data[1]} level={'lower'} />}
+                {data[1] && <GallerySlider data={data[1]} level={'lower'} />}
             </div>
+            <div className='divider' />
         </div>
     )
 }

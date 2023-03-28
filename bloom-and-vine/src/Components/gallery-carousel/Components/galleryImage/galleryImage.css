@@ -19,6 +19,7 @@
 }
 
 .gallery-tertiary-image {
+    position: relative;
     opacity: 0.5;
     width: 14vw;
     height: 321px;

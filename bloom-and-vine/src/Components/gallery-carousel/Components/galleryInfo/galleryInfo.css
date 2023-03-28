@@ -5,14 +5,22 @@
     justify-content: center;
 }
 
+.upper {
+    margin: 3.72em 0 3.83em 0;
+}
+
+.lower {
+    margin: 3.33em 0 3.83em 0;
+}
+
 .gallery-title {
-    
+    font-family: 'Italiana';
 }
 
 .gallery-date {
-
+    font-family: 'Cormorant Garamond';
 }
 
 .gallery-desc {
-
+    font-family: 'Cormorant Garamond';
 }
