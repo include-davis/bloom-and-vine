@@ -4,19 +4,16 @@
 
 .gallery-category-container {
     width: 100%;
-
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-
     gap: 6.66em;
 }
 
 .gallery-category {
     background: none;
     border: none;
-
     font-family: 'Cormorant Garamond';
     font-style: normal;
     font-size: 2.5em;
@@ -37,4 +34,35 @@
 .inactive {
     font-weight: 500;
     opacity: 0.35;
+}
+
+
+
+/*
+
+Added media queries to adjust the sizing of the gallery category texts and spacing
+Allows the page to look more consistent when on smaller screens like tablet
+*/
+@media screen and (max-width: 835px) {
+    .gallery-category-container{
+        gap: 4.66em;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .gallery-category {
+        font-size: 2em;
+    }
+    .gallery-category-container{
+        gap: 3.66em;
+    }
+}
+    
+@media screen and (max-width: 600px) {
+    .gallery-category {
+        font-size: 1.8em;
+    }
+    .gallery-category-container{
+        gap: 2em;
+    }
 }

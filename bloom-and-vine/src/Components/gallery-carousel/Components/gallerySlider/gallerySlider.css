@@ -3,7 +3,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-
+    gap: 2vw;
     height: 100%;
 }
 
@@ -27,11 +27,11 @@
 }
 
 .back-button {
-    left: 15.76vw;
+    left: 1.5vw;
 }
 
 .forward-button {
-    right: 15.76vw;
+    right: 1.5vw;
 }
 
 .current-gallery-image-dots {
