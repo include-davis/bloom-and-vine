@@ -71,7 +71,7 @@ export default function GalleryDisplayMobile () {
 
 
     // returns the two carousels to be displayed when the user wants to view a set of images based on category
-    if(displayPictures){
+    if (displayPictures) {
         return(
             <div>
                 <div id = "topContent">
@@ -90,7 +90,7 @@ export default function GalleryDisplayMobile () {
         )
     }
     // returns the list of categories that the user can click on to learn more about
-    else{
+    else {
         return(
             <div >
                 <h1 id = "GallMobHeader">Gallery</h1>

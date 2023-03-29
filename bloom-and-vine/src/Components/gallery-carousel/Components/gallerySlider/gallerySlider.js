@@ -54,7 +54,7 @@ export default function GallerySlider (props) {
     
 
     /*the mobile view displays only three gallery images as opposed to the usual 5, but it still works with 5 images at a time */
-    if(width <= 500){
+    if (width <= 500){
         return (
             <div className='gallery-slider-container'>
                 <div className='gallery-slider'>
@@ -65,19 +65,25 @@ export default function GallerySlider (props) {
                     <GalleryImage 
                             src={images[primaryImgIndex - 1 < 0 ? images.length - 1 + primaryImgIndex: primaryImgIndex - 1].url} 
                             altText={images[primaryImgIndex - 1 < 0 ? images.length - 1 + primaryImgIndex: primaryImgIndex - 1].altText} 
-                            imgClass={'gallery-secondary-image-mobile'} 
+                            imgClass={'gallery-secondary-image-mobile'}
+                            index={primaryImgIndex - 1 < 0 ? images.length - 1 + primaryImgIndex: primaryImgIndex - 1}
+                            setIndex={setPrimaryImgIndex} 
                         />
 
                     <GalleryImage 
                             src={images[primaryImgIndex].url} 
                             altText={images[primaryImgIndex].altText} 
-                            imgClass={'gallery-primary-image-mobile'} 
+                            imgClass={'gallery-primary-image-mobile'}
+                            index={primaryImgIndex} 
+                            setIndex={setPrimaryImgIndex} 
                         />
                     
                     <GalleryImage 
                             src={images[primaryImgIndex + 1 > images.length - 1 ? primaryImgIndex + 1 - images.length : primaryImgIndex + 1].url} 
                             altText={images[primaryImgIndex + 1 > images.length - 1 ? primaryImgIndex + 1 - images.length : primaryImgIndex + 1].altText} 
-                            imgClass={'gallery-secondary-image-mobile'} 
+                            imgClass={'gallery-secondary-image-mobile'}
+                            index={primaryImgIndex + 1 > images.length - 1 ? primaryImgIndex + 1 - images.length : primaryImgIndex + 1}
+                            setIndex={setPrimaryImgIndex} 
                         />
 
                     <button className='gallery-event-button forward-button' onClick={e => onGalleryClickHandlerMemoized(e, 'right')}>
@@ -101,31 +107,41 @@ export default function GallerySlider (props) {
                     <GalleryImage 
                             src={images[primaryImgIndex - 2 < 0 ? images.length - 2 + primaryImgIndex: primaryImgIndex - 2].url} 
                             altText={images[primaryImgIndex - 2 < 0 ? images.length - 2 + primaryImgIndex: primaryImgIndex - 2].altText} 
-                            imgClass={'gallery-tertiary-image'} 
+                            imgClass={'gallery-tertiary-image'}
+                            index={primaryImgIndex - 2 < 0 ? images.length - 2 + primaryImgIndex: primaryImgIndex - 2}
+                            setIndex={setPrimaryImgIndex}  
                         />
 
                     <GalleryImage 
                             src={images[primaryImgIndex - 1 < 0 ? images.length - 1 + primaryImgIndex: primaryImgIndex - 1].url} 
                             altText={images[primaryImgIndex - 1 < 0 ? images.length - 1 + primaryImgIndex: primaryImgIndex - 1].altText} 
-                            imgClass={'gallery-secondary-image'} 
+                            imgClass={'gallery-secondary-image'}
+                            index={primaryImgIndex - 1 < 0 ? images.length - 1 + primaryImgIndex: primaryImgIndex - 1}
+                            setIndex={setPrimaryImgIndex} 
                         />
 
                     <GalleryImage 
                             src={images[primaryImgIndex].url} 
                             altText={images[primaryImgIndex].altText} 
-                            imgClass={'gallery-primary-image'} 
+                            imgClass={'gallery-primary-image'}
+                            index={primaryImgIndex}
+                            setIndex={setPrimaryImgIndex}  
                         />
                     
                     <GalleryImage 
                             src={images[primaryImgIndex + 1 > images.length - 1 ? primaryImgIndex + 1 - images.length : primaryImgIndex + 1].url} 
                             altText={images[primaryImgIndex + 1 > images.length - 1 ? primaryImgIndex + 1 - images.length : primaryImgIndex + 1].altText} 
-                            imgClass={'gallery-secondary-image'} 
+                            imgClass={'gallery-secondary-image'}
+                            index={primaryImgIndex + 1 > images.length - 1 ? primaryImgIndex + 1 - images.length : primaryImgIndex + 1}
+                            setIndex={setPrimaryImgIndex}  
                         />
 
                     <GalleryImage 
                             src={images[primaryImgIndex + 2 > images.length - 1 ? primaryImgIndex + 2 - images.length : primaryImgIndex + 2].url} 
                             altText={images[primaryImgIndex + 2 > images.length - 1 ? primaryImgIndex + 2 - images.length : primaryImgIndex + 2].altText} 
-                            imgClass={'gallery-tertiary-image'} 
+                            imgClass={'gallery-tertiary-image'}
+                            index={primaryImgIndex + 2 > images.length - 1 ? primaryImgIndex + 2 - images.length : primaryImgIndex + 2} 
+                            setIndex={setPrimaryImgIndex} 
                         />
                     <button className='gallery-event-button forward-button' onClick={e => onGalleryClickHandlerMemoized(e, 'right')}>
                         <img className='button-image' src={ForwardArrow} />

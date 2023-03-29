@@ -12,15 +12,14 @@
 }
 
 .gallery-secondary-image {
-    opacity: 0.5;
+    filter: opacity(0.5);
     width: 16vw;
     height: 375px;
     object-fit: cover
 }
 
 .gallery-tertiary-image {
-    position: relative;
-    opacity: 0.5;
+    filter: opacity(0.5);
     width: 14vw;
     height: 321px;
     object-fit: cover
@@ -37,7 +36,7 @@
 }
 
 .gallery-secondary-image-mobile {
-    opacity: 0.5;
+    filter: opacity(0.5);
     width: 16vw;
     height: 173px;
     object-fit: cover
