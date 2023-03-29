@@ -6,7 +6,7 @@ import arrow from "../../Images/upArrow.png"
 import Wedding from '../../Images/weddingPrimary.png'
 import Wedding2 from '../../Images/weddingSecondary.png'
 
-function scrollToTop(){
+function scrollToTop() {
     window.scrollTo({
         top: 0,
         left: 0,

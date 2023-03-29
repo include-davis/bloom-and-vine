@@ -1,5 +1,5 @@
-import { useState, useEffect } from 'react';
-import GalleryImage from '../galleryImage/galleryImage';
+import { useState, useEffect, useCallback } from 'react';
+import GalleryImage from './components/galleryImage/galleryImage';
 import BackArrow from '../../../../Images/back_arrow.png'
 import ForwardArrow from '../../../../Images/forward_arrow.png'
 import './gallerySlider.css'
@@ -15,42 +15,41 @@ function getGalleryDots(total, setCurImgDot, level) {
         return dot_display;
     }
     
-function setCurrentDot(index, images, level) {
-    const curIndex = index + 1 <= images.length ? index + 1 : 1;
-    const inactiveDots = document.querySelectorAll(`.gallery-dot-${level}:not(:nth-child(${curIndex}))`)
-    const curDot = document.querySelector(`.gallery-dot-${level}:nth-child(${curIndex})`)
     
-    for (let i = 0; i < inactiveDots.length; i++) {
-        inactiveDots[i].style.backgroundColor = "#D9D9D9";
-    }
-    
-    curDot.style.backgroundColor = "#A28598";
-}
-
 export default function GallerySlider (props) {
     const [primaryImgIndex, setPrimaryImgIndex] = useState(0);
     const images = props.data.images;
     const level = props.level;
     
     const galleryDots = getGalleryDots(images.length, setPrimaryImgIndex, level);
-
-
     const width = window.innerWidth;
 
-    function onGalleryClickHandler(e, button) {
+    const onGalleryClickHandlerMemoized = useCallback((e, button) => {
         e.preventDefault();
-
+        
         if (button === 'left') {
             primaryImgIndex - 1 >= 0 ? setPrimaryImgIndex(prevIndex => prevIndex - 1) : setPrimaryImgIndex(images.length - 1);
         }
-    
+        
         if (button === 'right') {
             primaryImgIndex + 1 < images.length ? setPrimaryImgIndex(prevIndex => prevIndex + 1) : setPrimaryImgIndex(0);
         }
-    }
+    }, [primaryImgIndex]);
+
+    const setCurrentDotMemoized = useCallback((index, images, level) => {
+        const curIndex = index + 1 <= images.length ? index + 1 : 1;
+        const inactiveDots = document.querySelectorAll(`.gallery-dot-${level}:not(:nth-child(${curIndex}))`)
+        const curDot = document.querySelector(`.gallery-dot-${level}:nth-child(${curIndex})`)
+        
+        for (let i = 0; i < inactiveDots.length; i++) {
+            inactiveDots[i].style.backgroundColor = "#D9D9D9";
+        }
+        
+        curDot.style.backgroundColor = "#A28598";
+    }, [primaryImgIndex]);
 
     useEffect(() => {
-        setCurrentDot(primaryImgIndex, images, level);
+        setCurrentDotMemoized(primaryImgIndex, images, level);
     }, [primaryImgIndex])
     
 
@@ -59,7 +58,7 @@ export default function GallerySlider (props) {
         return (
             <div className='gallery-slider-container'>
                 <div className='gallery-slider'>
-                    <button className='gallery-event-button back-button' onClick={e => onGalleryClickHandler(e, 'left')}>
+                    <button className='gallery-event-button back-button' onClick={e => onGalleryClickHandlerMemoized(e, 'left')}>
                         <img className='button-image' src={BackArrow} />
                     </button>
 
@@ -81,7 +80,7 @@ export default function GallerySlider (props) {
                             imgClass={'gallery-secondary-image-mobile'} 
                         />
 
-                    <button className='gallery-event-button forward-button' onClick={e => onGalleryClickHandler(e, 'right')}>
+                    <button className='gallery-event-button forward-button' onClick={e => onGalleryClickHandlerMemoized(e, 'right')}>
                         <img className='button-image' src={ForwardArrow} />
                     </button>
                 </div>
@@ -92,11 +91,11 @@ export default function GallerySlider (props) {
         )
     }
     /*below is the default return for the desktop view */
-    else{
+    else {
         return (
             <div className='gallery-slider-container'>
                 <div className='gallery-slider'>
-                    <button className='gallery-event-button back-button' onClick={e => onGalleryClickHandler(e, 'left')}>
+                    <button className='gallery-event-button back-button' onClick={e => onGalleryClickHandlerMemoized(e, 'left')}>
                         <img className='button-image' src={BackArrow} />
                     </button>
                     <GalleryImage 
@@ -128,7 +127,7 @@ export default function GallerySlider (props) {
                             altText={images[primaryImgIndex + 2 > images.length - 1 ? primaryImgIndex + 2 - images.length : primaryImgIndex + 2].altText} 
                             imgClass={'gallery-tertiary-image'} 
                         />
-                    <button className='gallery-event-button forward-button' onClick={e => onGalleryClickHandler(e, 'right')}>
+                    <button className='gallery-event-button forward-button' onClick={e => onGalleryClickHandlerMemoized(e, 'right')}>
                         <img className='button-image' src={ForwardArrow} />
                     </button>
                 </div>

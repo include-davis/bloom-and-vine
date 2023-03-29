@@ -1,3 +1,4 @@
+import { useMemo } from 'react'
 import GalleryInfo from './Components/galleryInfo/galleryInfo';
 import GallerySlider from './Components/gallerySlider/gallerySlider';
 import './galleryCarousel.css';
@@ -18,12 +19,12 @@ export default function GalleryCarousel(props) {
         <div className='gallery-carousel-container'>
             <div className='upper-gallery-carousel'>
                 {data[0] && <GalleryInfo data={data[0]} level={'upper'} />}
-                {data[0] && <GallerySlider data={data[0]} level={'upper'} />}
+                {data[0] && useMemo(() => {return (<GallerySlider data={data[0]} level={'upper'} />)}, [data[0]])}
             </div>
             <div className='divider' />
             <div className='lower-gallery-carousel'>
                 {data[1] && <GalleryInfo data={data[1]} level={'lower'} />}
-                {data[1] && <GallerySlider data={data[1]} level={'lower'} />}
+                {data[1] && useMemo(() => {return (<GallerySlider data={data[1]} level={'lower'} />)}, [data[1]])}
             </div>
             <div className='divider' />
         </div>

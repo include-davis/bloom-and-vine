@@ -1,16 +1,17 @@
-#GallMobHeader{
-font-family: 'Italiana';
-font-style: normal;
-font-weight: 400;
-font-size: 40px;
-line-height: 47px;
-color: #000000;
-text-align: left;
-margin-left: 21px;
-margin-bottom: 24px;
-margin-top: 24px;
+#GallMobHeader {
+    font-family: 'Italiana';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 47px;
+    color: #000000;
+    text-align: left;
+    margin-left: 21px;
+    margin-bottom: 24px;
+    margin-top: 24px;
 }
-#categoryList{
+
+#categoryList {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -26,12 +27,14 @@ Most of these classes were taken from the desktop view of the carousel
     justify-content: center;
     margin-bottom: 20px;
 }
-.categoryImg{
+
+.categoryImg {
     width: 100vw;
     height: 260px;
     filter: brightness(60%);
 }
-.categoryText{
+
+.categoryText {
     position: absolute;
     font-family: 'Cormorant Garamond';
     font-style: normal;
