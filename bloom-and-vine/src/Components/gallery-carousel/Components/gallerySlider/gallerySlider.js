@@ -15,7 +15,6 @@ function getGalleryDots(total, setCurImgDot, level) {
         return dot_display;
     }
     
-    
 export default function GallerySlider (props) {
     const [primaryImgIndex, setPrimaryImgIndex] = useState(0);
     const images = props.data.images;
@@ -49,9 +48,12 @@ export default function GallerySlider (props) {
     }, [primaryImgIndex]);
 
     useEffect(() => {
+        setPrimaryImgIndex(0);
+    }, [props.data])
+
+    useEffect(() => {
         setCurrentDotMemoized(primaryImgIndex, images, level);
     }, [primaryImgIndex])
-    
 
     /*the mobile view displays only three gallery images as opposed to the usual 5, but it still works with 5 images at a time */
     if (width <= 500){
