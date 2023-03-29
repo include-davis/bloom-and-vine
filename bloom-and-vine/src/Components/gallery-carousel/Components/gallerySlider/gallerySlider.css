@@ -5,6 +5,7 @@
     justify-content: center;
     gap: 2vw;
     height: 100%;
+    overflow: hidden
 }
 
 .gallery-info {
@@ -58,4 +59,10 @@
 
 .gallery-dot-lower:hover {
     transform: scale(1.2);
+}
+
+@media screen and (max-width: 500px) {
+    .gallery-slider {
+        gap: 4vw;
+    }
 }

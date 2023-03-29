@@ -19,7 +19,11 @@ function Gallery() {
 		return(
 			<div>
 				<NavBar/>
+
 				<GalleryDisplayMobile/>
+
+				<ContactDisplay />
+
 				<Footer/>
 			</div>	
 		)
