@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useMemo } from 'react'
 import axios from 'axios'
 
 import wedding from '../../Images/weddingPrimary.png'
@@ -70,6 +70,9 @@ export default function GalleryDisplayMobile () {
     }
 
 
+    const upperCarousel = useMemo(() => {return (gallery && <GallerySlider data={gallery[galleryIndex][0]} level={'upper'} />)}, [gallery]);
+    const lowerCarousel = useMemo(() => {return (gallery && <GallerySlider data={gallery[galleryIndex][1]} level={'lower'} />)}, [gallery]);
+
     // returns the two carousels to be displayed when the user wants to view a set of images based on category
     if (displayPictures) {
         return(
@@ -82,10 +85,10 @@ export default function GalleryDisplayMobile () {
                 </div>
 
                 {gallery && <GalleryInfo data={gallery[galleryIndex][0]} level={'upper'} />}
-                {gallery && <GallerySlider data={gallery[galleryIndex][0]} level={'upper'} />}
+                {gallery && upperCarousel}
 
-                {gallery && <GalleryInfo data={gallery[galleryIndex][0]} level={'upper'} />}
-                {gallery && <GallerySlider data={gallery[galleryIndex][0]} level={'lower'} />}
+                {gallery && <GalleryInfo data={gallery[galleryIndex][1]} level={'upper'} />}
+                {gallery && lowerCarousel}
             </div>
         )
     }
