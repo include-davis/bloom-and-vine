@@ -26,10 +26,10 @@ async function getData(category) {
 }
 
 function GalleryCategorySelect (props) {
-    return(
+    return (
         <div className = "categoryBox">
            <img className = "categoryImg" src={props.src} alt={props.text} />
-           <h2 className = "categoryText"  >{props.text}</h2>
+           <h2 className = "categoryText"> {props.text} </h2>
         </div>
     )
 }
