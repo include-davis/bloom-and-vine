@@ -33,7 +33,7 @@
 
 .inactive {
     font-weight: 500;
-    opacity: 0.35;
+    filter: opacity(0.35);
 }
 
 
