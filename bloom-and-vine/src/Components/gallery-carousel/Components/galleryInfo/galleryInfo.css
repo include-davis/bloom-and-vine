@@ -32,4 +32,31 @@
     font-family: 'Cormorant Garamond';
     font-size: 1.57em;
     font-weight: 500;
+    text-align: center;
+}
+
+
+/*adjusted sizing, widths, and spacing for texts to be displayed on mobile  */
+@media screen and (max-width: 500px) {
+    .upper {
+        margin: 1.72em 0 2em 0;
+    }
+    .gallery-title {
+        font-size: 2.5em;
+        width: 78vw;
+        text-align:left;
+    }
+    .gallery-date {
+        width: 78vw;
+        text-align:left;
+        font-size: 1.125em;
+        color: rgba(0, 0, 0, 0.5);
+    }
+    .gallery-desc {
+        width: 78vw;
+        text-align: left;
+        font-size: 1.125em;
+        height: 64px;
+        line-height: 22px;
+    }
 }
