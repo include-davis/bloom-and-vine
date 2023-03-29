@@ -18,20 +18,17 @@ function Gallery() {
 	if (width <= 500){
 		return(
 			<div>
-				<NavBar/>
 
 				<GalleryDisplayMobile/>
 
 				<ContactDisplay />
 
-				<Footer/>
 			</div>	
 		)
 	}
 	else{
 		return (
 			<div className="Gallery">
-				<NavBar />
 
 				<div className='gallery-display'>
 					<GalleryDisplay/>
@@ -41,7 +38,6 @@ function Gallery() {
 					<ContactDisplay />
 				</div>
 
-				<Footer />
 			</div>
 		);
 	}
