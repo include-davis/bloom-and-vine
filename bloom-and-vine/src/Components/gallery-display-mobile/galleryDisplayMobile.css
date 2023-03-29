@@ -24,7 +24,8 @@ margin-top: 24px;
 }
 .categoryImg{
     width: 100vw;
-    filter: brightness(60%)
+    height: 260px;
+    filter: brightness(60%);
 }
 .categoryText{
     position: absolute;

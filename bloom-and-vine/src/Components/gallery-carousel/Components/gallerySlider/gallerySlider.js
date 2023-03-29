@@ -34,6 +34,9 @@ export default function GallerySlider (props) {
     
     const galleryDots = getGalleryDots(images.length, setPrimaryImgIndex, level);
 
+
+    const width = window.innerWidth;
+
     function onGalleryClickHandler(e, button) {
         e.preventDefault();
 
@@ -50,49 +53,89 @@ export default function GallerySlider (props) {
         setCurrentDot(primaryImgIndex, images, level);
     }, [primaryImgIndex])
     
-    
-    return (
-        <div className='gallery-slider-container'>
-            <div className='gallery-slider'>
-                <button className='gallery-event-button back-button' onClick={e => onGalleryClickHandler(e, 'left')}>
-                    <img className='button-image' src={BackArrow} />
-                </button>
-                <GalleryImage 
-                        src={images[primaryImgIndex - 2 < 0 ? images.length - 2 + primaryImgIndex: primaryImgIndex - 2].url} 
-                        altText={images[primaryImgIndex - 2 < 0 ? images.length - 2 + primaryImgIndex: primaryImgIndex - 2].altText} 
-                        imgClass={'gallery-tertiary-image'} 
-                    />
 
-                <GalleryImage 
-                        src={images[primaryImgIndex - 1 < 0 ? images.length - 1 + primaryImgIndex: primaryImgIndex - 1].url} 
-                        altText={images[primaryImgIndex - 1 < 0 ? images.length - 1 + primaryImgIndex: primaryImgIndex - 1].altText} 
-                        imgClass={'gallery-secondary-image'} 
-                    />
+    /*the mobile view displays only three gallery images as opposed to the usual 5, but it still works with 5 images at a time */
+    if(width <= 500){
+        return (
+            <div className='gallery-slider-container'>
+                <div className='gallery-slider'>
+                    <button className='gallery-event-button back-button' onClick={e => onGalleryClickHandler(e, 'left')}>
+                        <img className='button-image' src={BackArrow} />
+                    </button>
 
-                <GalleryImage 
-                        src={images[primaryImgIndex].url} 
-                        altText={images[primaryImgIndex].altText} 
-                        imgClass={'gallery-primary-image'} 
-                    />
-                
-                <GalleryImage 
-                        src={images[primaryImgIndex + 1 > images.length - 1 ? primaryImgIndex + 1 - images.length : primaryImgIndex + 1].url} 
-                        altText={images[primaryImgIndex + 1 > images.length - 1 ? primaryImgIndex + 1 - images.length : primaryImgIndex + 1].altText} 
-                        imgClass={'gallery-secondary-image'} 
-                    />
+                    <GalleryImage 
+                            src={images[primaryImgIndex - 1 < 0 ? images.length - 1 + primaryImgIndex: primaryImgIndex - 1].url} 
+                            altText={images[primaryImgIndex - 1 < 0 ? images.length - 1 + primaryImgIndex: primaryImgIndex - 1].altText} 
+                            imgClass={'gallery-secondary-image-mobile'} 
+                        />
 
-                <GalleryImage 
-                        src={images[primaryImgIndex + 2 > images.length - 1 ? primaryImgIndex + 2 - images.length : primaryImgIndex + 2].url} 
-                        altText={images[primaryImgIndex + 2 > images.length - 1 ? primaryImgIndex + 2 - images.length : primaryImgIndex + 2].altText} 
-                        imgClass={'gallery-tertiary-image'} 
-                    />
-                <button className='gallery-event-button forward-button' onClick={e => onGalleryClickHandler(e, 'right')}>
-                    <img className='button-image' src={ForwardArrow} />
-                </button>
+                    <GalleryImage 
+                            src={images[primaryImgIndex].url} 
+                            altText={images[primaryImgIndex].altText} 
+                            imgClass={'gallery-primary-image-mobile'} 
+                        />
+                    
+                    <GalleryImage 
+                            src={images[primaryImgIndex + 1 > images.length - 1 ? primaryImgIndex + 1 - images.length : primaryImgIndex + 1].url} 
+                            altText={images[primaryImgIndex + 1 > images.length - 1 ? primaryImgIndex + 1 - images.length : primaryImgIndex + 1].altText} 
+                            imgClass={'gallery-secondary-image-mobile'} 
+                        />
+
+                    <button className='gallery-event-button forward-button' onClick={e => onGalleryClickHandler(e, 'right')}>
+                        <img className='button-image' src={ForwardArrow} />
+                    </button>
+                </div>
+                <div className='current-gallery-image-dots'>
+                    {galleryDots}
+                </div>
             </div>
-            <div className='current-gallery-image-dots'>
-                {galleryDots}
+        )
+    }
+    /*below is the default return for the desktop view */
+    else{
+        return (
+            <div className='gallery-slider-container'>
+                <div className='gallery-slider'>
+                    <button className='gallery-event-button back-button' onClick={e => onGalleryClickHandler(e, 'left')}>
+                        <img className='button-image' src={BackArrow} />
+                    </button>
+                    <GalleryImage 
+                            src={images[primaryImgIndex - 2 < 0 ? images.length - 2 + primaryImgIndex: primaryImgIndex - 2].url} 
+                            altText={images[primaryImgIndex - 2 < 0 ? images.length - 2 + primaryImgIndex: primaryImgIndex - 2].altText} 
+                            imgClass={'gallery-tertiary-image'} 
+                        />
+
+                    <GalleryImage 
+                            src={images[primaryImgIndex - 1 < 0 ? images.length - 1 + primaryImgIndex: primaryImgIndex - 1].url} 
+                            altText={images[primaryImgIndex - 1 < 0 ? images.length - 1 + primaryImgIndex: primaryImgIndex - 1].altText} 
+                            imgClass={'gallery-secondary-image'} 
+                        />
+
+                    <GalleryImage 
+                            src={images[primaryImgIndex].url} 
+                            altText={images[primaryImgIndex].altText} 
+                            imgClass={'gallery-primary-image'} 
+                        />
+                    
+                    <GalleryImage 
+                            src={images[primaryImgIndex + 1 > images.length - 1 ? primaryImgIndex + 1 - images.length : primaryImgIndex + 1].url} 
+                            altText={images[primaryImgIndex + 1 > images.length - 1 ? primaryImgIndex + 1 - images.length : primaryImgIndex + 1].altText} 
+                            imgClass={'gallery-secondary-image'} 
+                        />
+
+                    <GalleryImage 
+                            src={images[primaryImgIndex + 2 > images.length - 1 ? primaryImgIndex + 2 - images.length : primaryImgIndex + 2].url} 
+                            altText={images[primaryImgIndex + 2 > images.length - 1 ? primaryImgIndex + 2 - images.length : primaryImgIndex + 2].altText} 
+                            imgClass={'gallery-tertiary-image'} 
+                        />
+                    <button className='gallery-event-button forward-button' onClick={e => onGalleryClickHandler(e, 'right')}>
+                        <img className='button-image' src={ForwardArrow} />
+                    </button>
+                </div>
+                <div className='current-gallery-image-dots'>
+                    {galleryDots}
+                </div>
             </div>
-        </div>
-    )
+        )
+    }
 }

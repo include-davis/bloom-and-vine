@@ -25,3 +25,20 @@
     height: 321px;
     object-fit: cover
 }
+
+
+
+.gallery-primary-image-mobile {
+    height: 206px;
+    object-fit: cover;
+    width: auto;
+    min-width: 80vw
+}
+
+.gallery-secondary-image-mobile {
+    opacity: 0.5;
+    width: 16vw;
+    height: 173px;
+    object-fit: cover
+}
+

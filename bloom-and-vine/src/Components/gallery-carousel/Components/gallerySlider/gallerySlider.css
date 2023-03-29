@@ -59,3 +59,9 @@
 .gallery-dot-lower:hover {
     transform: scale(1.2);
 }
+
+@media screen and (max-width: 600px) {
+    .gallery-slider {
+        gap: 4vw;
+    }
+}

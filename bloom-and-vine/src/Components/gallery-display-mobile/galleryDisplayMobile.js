@@ -4,7 +4,7 @@ import axios from 'axios'
 
 
 import wedding from '../../Images/weddingPrimary.png'
-import ContactDisplay from '../contact-display/contactDisplay'
+import GallerySlider from '../gallery-carousel/Components/gallerySlider/gallerySlider'
 
 import './galleryDisplayMobile.css'
 
@@ -25,6 +25,13 @@ async function getData(category) {
     return resData
 }
 
+const galleryCategories = [
+    'wedding-galleries', 
+    'party-galleries', 
+    'flower-galleries', 
+    'film-galleries',
+]
+
 function GalleryCategorySelect (props) {
     return(
         <div className = "categoryBox">
@@ -36,16 +43,30 @@ function GalleryCategorySelect (props) {
 
 
 export default function GalleryDisplayMobile () {
+    const [gallery, setGallery] = useState(null)
+    const [galleryIndex, setGalleryIndex] = useState(0);
+    
+    useEffect(() => {
+        Promise.all(galleryCategories.map(async (category) => {
+            return (getData(category));
+        })).then((res) => {
+            setGallery(res)
+        });
+    }, [])
+
     return(
         <div >
+            
             <h1 id = "GallMobHeader" >Gallery</h1>
             <div id = "categoryList">
-                <GalleryCategorySelect src = {wedding} text = "Weddings"/>
-                <GalleryCategorySelect src = {wedding} text = "Parties"/>
-                <GalleryCategorySelect src = {wedding} text = "Flowers"/>
-                <GalleryCategorySelect src = {wedding} text = "Films"/>
+                <GalleryCategorySelect src = {wedding} text = "Weddings" onClick={() => setGalleryIndex(0)} />
+                <GalleryCategorySelect src = {wedding} text = "Parties" onClick={() => setGalleryIndex(1)} />
+                <GalleryCategorySelect src = {wedding} text = "Flowers" onClick={() => setGalleryIndex(2)} />
+                <GalleryCategorySelect src = {wedding} text = "Films" onClick={() => setGalleryIndex(3)} />
             </div>
-            <ContactDisplay/>
+            {gallery && <GallerySlider data={gallery[galleryIndex][0]} level={'upper'} />}
+            {gallery && <GallerySlider data={gallery[galleryIndex][1]} level={'lower'} />}
+            
         </div>
 
 
