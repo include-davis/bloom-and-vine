@@ -13,6 +13,6 @@ export default function GalleryImage (props) {
     const { src, altText, imgClass, index, setIndex } = props;
 
     return (
-        <img className={imgClass} src={src} alt={altText} onClick={() => setIndex(index)} />
+        <img className={imgClass} src={src} alt={altText} onClick={() => setIndex(index)} loading='eager' />
     );
 }
