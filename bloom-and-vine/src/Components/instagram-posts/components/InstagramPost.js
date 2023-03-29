@@ -8,7 +8,7 @@ export default function InstagramPost(props) {
     const mediaURL = data.urls.mediaURL;
     const id = data.postInfo.id;
 
-    function onClickHandler(e) {
+    function onPostClickHandler(e) {
         e.preventDefault();
 
         location.href = permalink;
@@ -16,7 +16,7 @@ export default function InstagramPost(props) {
 
     return (
         <div className='curPost'>
-            <img className='postImg' src={mediaURL} loading='eager' onClick={onClickHandler}/>
+            <img className='postImg' src={mediaURL} loading='eager' onClick={onPostClickHandler}/>
         </div>
     );
 }
