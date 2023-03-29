@@ -16,6 +16,10 @@ margin-top: 24px;
     align-items: center;
     justify-content: center;
 }
+
+/*
+Most of these classes were taken from the desktop view of the carousel
+*/
 .categoryBox{
     display: flex;
     align-items: center;
@@ -38,4 +42,32 @@ margin-top: 24px;
     text-decoration-line: underline;
     color: #FFFFFF;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+/* 
+the following IDs are taken from my services mobile page to style 
+the backarrow button and other elements.
+*/
+#topContent{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    font-family: "Cormorant Garamond";
+    font-weight: 700;
+    font-size: 1.1em;
+    text-align: center;
+}
+#topTitle{
+   margin: 0px;
+   position: absolute;
+   margin-bottom: 8px;
+}
+#backArrow{
+    height: 20px;
+    width: 9.95px;
+    margin-right: 80vw;
 }
