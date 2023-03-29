@@ -17,8 +17,8 @@ export default function GalleryCarousel(props) {
     return (
         <div className='gallery-carousel-container'>
             <div className='upper-gallery-carousel'>
-                {data[3] && <GalleryInfo data={data[3]} level={'upper'} />}
-                {data[3] && <GallerySlider data={data[3]} level={'upper'} />}
+                {data[0] && <GalleryInfo data={data[0]} level={'upper'} />}
+                {data[0] && <GallerySlider data={data[0]} level={'upper'} />}
             </div>
             <div className='divider' />
             <div className='lower-gallery-carousel'>

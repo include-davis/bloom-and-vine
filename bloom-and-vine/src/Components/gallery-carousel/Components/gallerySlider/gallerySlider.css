@@ -5,6 +5,7 @@
     justify-content: center;
     gap: 2vw;
     height: 100%;
+    overflow: hidden
 }
 
 .gallery-info {
