@@ -30,8 +30,6 @@ const galleryCategories = [
     'film-galleries',
 ]
 
-
-
 export default function GalleryDisplayMobile () {
     const [gallery, setGallery] = useState(null)
     const [galleryIndex, setGalleryIndex] = useState(0);

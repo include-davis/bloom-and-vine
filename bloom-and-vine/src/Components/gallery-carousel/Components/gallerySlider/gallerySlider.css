@@ -61,7 +61,7 @@
     transform: scale(1.2);
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 500px) {
     .gallery-slider {
         gap: 4vw;
     }
