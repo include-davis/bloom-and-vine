@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Italiana');
-@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&family=Old+Standard+TT&display=swap");
 
 body {
     background-color: #FAF1EF;
@@ -13,14 +14,13 @@ body {
 
 .front-display {
     position: relative;
+    height: auto
 }
 
-/*
-    Fix height to display Company Title on load
-*/
 .front-image {
-    width: 100vw;
-    height: auto;
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 2.2;
     object-fit: cover;
 }
 
@@ -63,11 +63,14 @@ body {
     /* border: 1px solid #FFFDF1; */
 }
 
+
+/* Change height to vw? */
 .review-display {
     width: 100%;
     height: 100%;
+    
     max-width: 123.75em;
-    margin: 6% 0 3% 0;
+    margin: 6% 0 4% 0;
 }
 
 .redirect-display {
@@ -80,7 +83,7 @@ body {
 
     width: 100%;
     max-width: 123.75em;
-    margin: 3% 0 3% 0;
+    margin: 3% 0 1% 0;
 }
 
 .instagram-shoutout-display {
@@ -96,5 +99,30 @@ body {
 
 .instagram-posts-display {
     width: 100%;
-    margin: 2% 0 3.63% 0;
+    margin: 2.5% 0 3.63% 0;
+}
+
+@media screen and (max-width: 1024px) {
+    .review-display {
+        height: 13.53vw;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .front-display{
+        height: 15em;
+    }
+
+    .front-text {
+        font-size: 7.67vw;
+    }
+
+    .review-display {
+        height: 35.39vw;
+        margin: 9% 0 9% 0;
+    }
+
+    .instagram-shoutout-display {
+        margin: 0;
+    }
 }

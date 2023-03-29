@@ -7,7 +7,6 @@ import ContactImg from '../../Images/contact.jpg'
 import './RedirectDisplay.css'
 
 export default function RedirectDisplay() {
-    // Could turn each image into a separate component
     return (
         <div className='redirect-image-container'>
             <RedirectImage redirect={'Gallery'} img={GalleryImg} />

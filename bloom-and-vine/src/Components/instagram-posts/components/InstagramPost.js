@@ -18,9 +18,6 @@ export default function InstagramPost(props) {
     return (
         <div className='curPost'>
             <img className='postImg' src={mediaURL} loading='eager' onClick={onClickHandler}/>
-            {/* <div className='postCaption'>
-                {id}
-            </div> */}
         </div>
     );
 }

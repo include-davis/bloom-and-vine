@@ -10,7 +10,7 @@ import './Homepage.css';
 
 // Put equal spacing between img, reviews, & instagram shoutout (DONE)
 
-// Indication that redirect has been clicked (darkened image)
+// Indication that redirect has been clicked (darkened image) for mobile (done?)
 
 function Homepage() {
 
@@ -20,7 +20,7 @@ function Homepage() {
       <div className='front-display'>
         <img className="front-image" src={displayImg}/>
         <div className='front-text-container'>
-          <p className='front-text'>Bloom & Vine</p>
+            <p className='front-text'>Bloom & Vine</p>
         </div>
       </div>
 

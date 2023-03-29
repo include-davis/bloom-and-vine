@@ -25,7 +25,9 @@ export default function InstagramPostsSlider () {
         async function fetchPostData() {
             let postData = await axios.get(QUERY_URL, options).then(res => res.data.data)
             postData = postData.map((post, index)  => {
-                return (<InstagramPost data={post} key={index} />);
+                return (
+                    <InstagramPost data={post} key={index} />
+                );
             })
             setPosts(postData);
             setIndex(0);
@@ -52,7 +54,7 @@ export default function InstagramPostsSlider () {
         if (button === 'forward') {
             index < posts.length - 1 ? setIndex(index => index + 1) : setIndex(0)
         }
-        else if (button == 'back') {
+        else if (button === 'back') {
             index > 0 ? setIndex(index => index - 1) : setIndex(posts.length - 1)
         }
     }

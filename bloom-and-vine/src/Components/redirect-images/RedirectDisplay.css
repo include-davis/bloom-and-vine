@@ -4,3 +4,11 @@
     justify-content: center;
     width: 100%;
 }
+
+@media screen and (max-width: 480px) {
+    .redirect-image-container {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+}

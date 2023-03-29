@@ -24,7 +24,7 @@
 .instagram-tag {
     position: relative;
     height: 100%;
-    padding: 0.2em 0.3em;
+    padding: 1.3% 2%;
 
     font-family: 'Cormorant Garamond';
     font-style: italic;
@@ -45,4 +45,33 @@
 .instagram-tag:hover {
     transform: scale(1.1);
     cursor: pointer;
+}
+
+.instagram-tag:active {
+    filter: brightness(75%);
+    color: #A28598;
+}
+
+@media screen and (max-width: 1024px) {
+    .instagram-shoutout {
+        width: 100%;
+        font-size: 4.33vw;
+    }
+
+    .instagram-tag {
+        font-size: 3.87vw;
+        padding: 2.2% 2.9%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .instagram-shoutout {
+        width: 100%;
+        font-size: 6.78vw;
+    }
+
+    .instagram-tag {
+        font-size: 5.33vw;
+        padding: 3% 2% 3% 2%;
+    }
 }

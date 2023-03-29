@@ -7,44 +7,36 @@ import './ReviewSlider.css'
 
 const userReviews = [
     {
-        'message': "Such an exquisite day! Flowers were perfection.",
+        'message': `"Such an exquisite day! Flowers were perfection."`,
         'user': "tanweddingsandevents"
     },
     {
-        'message': "Amazing designer! Would work with again.",
-        'user': 'lovelydove'
+        'message': `"You are just consistently turning out stunning work! Your talent fountain overfloweth!!!!"`,
+        'user': 'Julie A. Anderson'
     },
     {
-        'message': "Great planning and overall fun to work with!",
-        'user': 'daniel'
+        'message': `"Honestly, the most beautiful arrangement and you could not have been more helpful!"`,
+        'user': 'Lauren Deal'
     },
     {
-        'message': "I really loved the decorations for the wedding. It was amazing working with her.",
-        'user': 'rachel'
+        'message': `"Working with you has been the easiest part of planning our wedding!"`,
+        'user': 'Cynthia Racquel'
     },
     {
-        'message': "5/5 stars. She is worth the money!",
-        'user': 'lucy'
+        'message': `"Such a beautiful color palette and such an awesome vendor team!"`,
+        'user': 'kendall_melissa_events'
     },
   ].map((userReview) => <UserReview review={userReview} />)
 
-
-// Auto scrolling reviews?
-// const autoScroll = () => {
-//     setTimeout(() => {
-//         index < userReviews.length - 1 ? setIndex(index => index + 1) : setIndex(0)
-//     }, 5000)
-// }
-
-function getReviewDots(total) {
-    let dot_display = []
+function getReviewDots(total, setCurReviewDot) {
+    let dot_display = [];
     for (let i = 0; i < total; i++) {
         dot_display.push(
-            <div className='review-dot' key={i}></div>
-        )
+            <div className='review-dot' key={i} onClick={() => setCurReviewDot(i)}></div>
+        );
     }
 
-    return dot_display
+    return dot_display;
 }
 
 function setCurrentDot(index) {
@@ -59,44 +51,57 @@ function setCurrentDot(index) {
     curDot.style.backgroundColor = "#A28598";
 }
 
-export default function ReviewBar() {
-    const [curReview, setCurReview] = useState(userReviews[0])
-    const [index, setIndex] = useState(0)
-    
-    const reviewDots = getReviewDots(userReviews.length)
-        
-    useEffect(() => {
-        setCurrentDot(index)
-        setCurReview(userReviews[index])
-    }, [index])
-        
+// Autoscroll Settings: Interval (Delay between each scroll in ms // 1000ms = 1s)
+const autoScroll = false;
+const autoScrollInterval = 3500;
+
+export default function ReviewSlider() {
+    const [curReviewIndex, setCurReviewIndex] = useState(0);
+    const reviewDots = getReviewDots(userReviews.length, setCurReviewIndex);
 
     // Logic: Click left or right --> Increment/Decrement Index --> Display different review
-    const onClickHandler = (e, button) => {
+    const reviewButtonHandler = (e, button) => {
         e.preventDefault();
     
         if (button === 'forward') {
-            index < userReviews.length - 1 ? setIndex(index => index + 1) : setIndex(0)
+            curReviewIndex < userReviews.length - 1 ? setCurReviewIndex(prevIndex => prevIndex + 1) : setCurReviewIndex(0);
         }
-        else if (button == 'back') {
-            index > 0 ? setIndex(index => index - 1) : setIndex(userReviews.length - 1)
+        else if (button === 'back') {
+            curReviewIndex > 0 ? setCurReviewIndex(prevIndex => prevIndex - 1) : setCurReviewIndex(userReviews.length - 1);
         }
     }
+    
+    // AUTOSCROLLER - Will not be paused by button presses
+    const autoScrollRight = () => {
+        setCurReviewIndex((prevIndex) => (prevIndex + 1 < userReviews.length ? prevIndex + 1 : 0));
+    };
+
+    useEffect(() => {
+        if (!autoScroll) {
+            return;
+        }
+        const slideInterval = setInterval(autoScrollRight, autoScrollInterval);
+        return () => clearInterval(slideInterval);
+    }, []);
+
+    useEffect(() => {
+        setCurrentDot(curReviewIndex);
+    }, [curReviewIndex]);
 
     return (
         <div className='review-slider'>
-            <button className='backward-review-button' onClick={e => onClickHandler(e, 'back')}>
+            <button className='backward-review-button' onClick={e => reviewButtonHandler(e, 'back')}>
                 <img className='back-button' src={BackArrow} />
             </button>
             <div className='current-review-display'>
-                {curReview}
-                <div className='review-dots'>
+                {userReviews[curReviewIndex]}
+                <div className='review-dot-container'>
                     {reviewDots}
                 </div>
             </div>
-            <button className='forward-review-button' onClick={e => onClickHandler(e, 'forward')}>
+            <button className='forward-review-button' onClick={e => reviewButtonHandler(e, 'forward')}>
                 <img className='forward-button' src={ForwardArrow} />
             </button>
         </div>
-    )
+    );
 }

@@ -7,7 +7,7 @@
 }
 
 .back-button, .forward-button {
-    height: 3.31vw;
+    height: 5.26vw;
 }
 
 .forward-review-button:hover, .backward-review-button:hover {
@@ -32,10 +32,10 @@
     justify-content: center;
 
     height: 100%;
-    margin: 0 7.44em 0 7.44em;
+    width: 100%;
 }
 
-.review-dots {
+.review-dot-container {
     display: flex;
     flex-direction: row;
     text-align: center;
@@ -47,16 +47,56 @@
     border-radius: 50%;
     background-color: #D9D9D9;
     margin: 0 0.5vw 0 0.5vw;
+    transition: 0.5s;
 }
 
+.review-dot:hover {
+    transform: scale(1.2);
+}
 
-/* @media screen and (max-width: 1200px) {
+@media screen and (max-width: 2559px) {
+    .current-review-display {
+        width: 63%;
+        min-height: 16.14vw;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .current-review-display {
+        width: 71%;
+        min-height: 17.11vw;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .back-button, .forward-button {
+        height: 4.67vw;
+    }
+
     .review-dot {
-        width: 0.5em;
-        height: 0.5em;
+        width: 1.33vw;
+        height: 1.33vw;
     }
 
     .current-review-display {
-        margin: 0 2em 0 2em;
+        width: 66%;
     }
-} */
+    
+}
+
+@media screen and (max-width: 480px) {
+    .back-button, .forward-button {
+        height: 9.31vw;
+    }
+
+    .review-dot {
+        width: 2.5vw;
+        height: 2.5vw;
+
+        margin: 0 0.89vw 0 0.89vw;
+    }
+    
+    .current-review-display {
+        width: 66%;
+    }
+}

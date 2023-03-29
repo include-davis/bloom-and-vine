@@ -6,7 +6,7 @@ export default function RedirectImage(props) {
     const { redirect, img } = props;
 
     return (
-        <div className='img-container'>
+        <div className='image-container'>
             <div className='image-background' id={redirect.toLowerCase()}>
                 <p className='image-text'>
                     {redirect}
