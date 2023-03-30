@@ -48,7 +48,7 @@ function MobileNav() {
             <li className='main-category'>
                 <a href='/services'>Services</a>
                 <div className='sub-menu-trigger2' onClick={()=>{setSubOpen2(!subopen2)}}>
-                  <img src={subopen? uparrow : downarrow} alt='test2'></img>
+                  <img src={subopen2? uparrow : downarrow} alt='test2'></img>
                 </div>
             </li>
             <div className={`services-menu ${subopen2? 'active' : 'inactive'}`} >

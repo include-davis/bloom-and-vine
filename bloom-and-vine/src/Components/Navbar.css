@@ -125,7 +125,7 @@
   color: #A28598;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 900px) {
   .Navbar ul {
     display: none;
   }
@@ -140,6 +140,10 @@
   }
   .Navbar .Contact-Button {
     display: flex;
+  }
+  .Navbar ul li:hover {
+    text-decoration: none;
+    transform: translateY(0px);
   }
 
 }

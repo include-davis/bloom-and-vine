@@ -182,7 +182,6 @@
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
-  color: black;
   text-align: left;
   padding-left: 4em;
   transition: var(--speed);
@@ -195,18 +194,19 @@
 a {
   text-decoration: none;
   transition: var(--speed) ease;
-
 }
 
 ul {
   margin: 0 auto;
   padding: 0;
   transition: var(--speed) ease;
+}
 
+.active {
+  text-decoration: none;
 }
 
 .dropdown-menu ul li:hover a{
-  text-decoration: underline;
   cursor: pointer;
 }
 
@@ -230,7 +230,7 @@ ul {
   
 }
 
-@media(max-width: 1200px) {
+@media(max-width: 900px) {
   .menu-trigger img {
     display: flex;
   }
