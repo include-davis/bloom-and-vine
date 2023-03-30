@@ -12,7 +12,6 @@
 
     object-fit: cover;
     aspect-ratio: 1;
-    transition: ease-in 0.4s;
 }
 
 .postImg:hover {
@@ -21,16 +20,26 @@
 }
 
 @media screen and (max-width: 480px) {
+
+    .curPost:nth-child(1) {
+        height: 33vw;
+        width: 17.5%;
+        filter: opacity(0.3);
+        transition: 0.7s ease-in;
+    }
+
     .curPost:nth-child(2) {
         height: 52vw;
         width: 52vw;
 
         margin: 0 6.1vw 0 6.1vw;
+        transition: 1.2s cubic-bezier(.17,.67,.7,.69);
     }
 
-    .curPost:not(:nth-child(2)) {
+    .curPost:nth-child(3) {
         height: 33vw;
-        width: 24vw;
+        width: 17.5%;
         filter: opacity(0.3);
+        transition: 0.7s ease-out;
     }
 }
