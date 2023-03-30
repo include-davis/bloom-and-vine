@@ -125,4 +125,8 @@ body {
     .instagram-shoutout-display {
         margin: 0;
     }
+
+    .instagram-posts-display {
+        margin: 6.71vw 0 6.71vw 0;
+    }
 }

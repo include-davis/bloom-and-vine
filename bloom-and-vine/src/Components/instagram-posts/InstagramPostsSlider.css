@@ -25,3 +25,28 @@
 .forward-posts-button:hover, .backward-posts-button:hover {
     transform: scale(1.2);
 }
+
+
+@media screen and (max-width: 480px) {
+    .instagram-posts-container {
+        height: 57.3vw;
+    }
+
+    .current-posts-display {
+        height: 100%;
+    }
+
+   .backward-posts-button {
+        position: absolute;
+        left: 1.5vw;
+
+        filter: opacity(150%);
+        z-index: 1;
+    }
+
+   .forward-posts-button {
+        position: absolute;
+        filter: opacity(150%);
+        right: 1.5vw;
+    }
+}

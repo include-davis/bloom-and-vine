@@ -15,21 +15,22 @@
     transition: ease-in 0.4s;
 }
 
-/* Testing overlay on img */
-/* .postCaption {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 20%;
-    padding: 50% 0 0 25%;
-    text-align: center;
-    font-size: 1.875em;
-    color: green;
-
-    visibility: hidden;
-} */
-
 .postImg:hover {
     filter: brightness(75%);
     cursor: pointer;
+}
+
+@media screen and (max-width: 480px) {
+    .curPost:nth-child(2) {
+        height: 52vw;
+        width: 52vw;
+
+        margin: 0 6.1vw 0 6.1vw;
+    }
+
+    .curPost:not(:nth-child(2)) {
+        height: 33vw;
+        width: 24vw;
+        filter: opacity(0.3);
+    }
 }
