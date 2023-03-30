@@ -16,13 +16,10 @@ function About(props) {
 
             {/* Introduction: Hello */}
             <section className="introCont">
-                {/* <div className="introImg"> */}
                 <img className="introImg" src={bekah} alt="" />
-                {/* </div> */}
                 <div className="introText">
-                    {/* TODO: export highlight rect */}
                     <div className="highlightCont introHighlightCont">
-                        <h2 className="highlight introHighlight">
+                        <h2 className="highlightText introHighlight">
                             Hello! I'm Bekah Tsai,
                         </h2>
                     </div>
@@ -31,6 +28,9 @@ function About(props) {
                         passion for combining florals to make your event
                         unforgettable.
                     </p>
+                    <p className="mobileDesc">
+                        I’m a trained biologist turned floral designer with a passion for combining florals to make your event unforgettable. From weddings to showers to funerals, I am happy to provide complimentary consultations, where I can get to know you and thoroughly understand your vision.
+                    </p>
                 </div>
             </section>
 
@@ -38,11 +38,14 @@ function About(props) {
             <section className="loveCont">
                 <img className="brideFlowersMobile" src={brideFlowers} alt="" />
                 <div className="loveText">
-                    {/* TODO: export highlight rect */}
                     <div className="highlightCont loveHighlightCont">
-                        <h2 className="highlight loveHighlight">I love...</h2>
+                        <h2 className="highlightText loveHighlight">I love...</h2>
                     </div>
                     <p className="desc">
+                        Using texture and unusual design elements to elevate my
+                        flower combinations.
+                    </p>
+                    <p className="mobileDesc">
                         Using texture and unusual design elements to elevate my
                         flower combinations.
                     </p>
@@ -65,9 +68,8 @@ function About(props) {
                     <img className="couple" src={couple} alt="" />
                 </div>
                 <div className="believeText">
-                    {/* TODO: export highlight rect */}
                     <div className="highlightCont believeHighlightCont">
-                        <h2 className="highlight believeHighlight">
+                        <h2 className="highlightText believeHighlight">
                             I believe in...
                         </h2>
                     </div>
@@ -76,6 +78,9 @@ function About(props) {
                         event. From weddings to showers to funerals, I am happy
                         to provide complimentary consultations, where I can get
                         to know you and thoroughly understand your vision.
+                    </p>
+                    <p className="mobileDesc">
+                        Focusing all of my creative attention on you and your event.
                     </p>
                 </div>
             </section>
