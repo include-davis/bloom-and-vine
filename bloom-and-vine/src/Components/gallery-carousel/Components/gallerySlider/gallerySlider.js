@@ -15,8 +15,26 @@ function getGalleryDots(total, setCurImgDot, level) {
         return dot_display;
     }
     
+let drag = 0;
+
 export default function GallerySlider (props) {
     if (!props.data) return;
+
+    const mouseDownCoords = (e) => {
+        drag = e.clientX;
+    };
+
+    const checkIfDrag = (e) => {
+        const mouseUp = e.clientX;
+        console.log(mouseUp)
+        if (mouseUp < drag + 5) {
+            primaryImgIndex + 1 < images.length ? setPrimaryImgIndex(prevIndex => prevIndex + 1) : setPrimaryImgIndex(0);
+        }
+        
+        else if (mouseUp > drag - 5) {
+            primaryImgIndex - 1 >= 0 ? setPrimaryImgIndex(prevIndex => prevIndex - 1) : setPrimaryImgIndex(images.length - 1);
+        }
+    };
 
     const [primaryImgIndex, setPrimaryImgIndex] = useState(0);
     const images = props.data.images;
@@ -103,7 +121,7 @@ export default function GallerySlider (props) {
     /*below is the default return for the desktop view */
     else {
         return (
-            <div className='gallery-slider-container'>
+            <div className='gallery-slider-container' onMouseDown={mouseDownCoords} onMouseUp={checkIfDrag}>
                 <div className='gallery-slider'>
                     <button className='gallery-event-button back-button' onClick={e => onGalleryClickHandlerMemoized(e, 'left')}>
                         <img className='button-image' src={BackArrow} />
@@ -113,8 +131,9 @@ export default function GallerySlider (props) {
                             altText={images[primaryImgIndex - 2 < 0 ? images.length - 2 + primaryImgIndex: primaryImgIndex - 2].altText} 
                             imgClass={'gallery-tertiary-image'}
                             index={primaryImgIndex - 2 < 0 ? images.length - 2 + primaryImgIndex: primaryImgIndex - 2}
-                            setIndex={setPrimaryImgIndex}  
-                        />
+                            setIndex={setPrimaryImgIndex}
+                    
+                    />
 
                     <GalleryImage 
                             src={images[primaryImgIndex - 1 < 0 ? images.length - 1 + primaryImgIndex: primaryImgIndex - 1].url} 
@@ -122,7 +141,7 @@ export default function GallerySlider (props) {
                             imgClass={'gallery-secondary-image'}
                             index={primaryImgIndex - 1 < 0 ? images.length - 1 + primaryImgIndex: primaryImgIndex - 1}
                             setIndex={setPrimaryImgIndex} 
-                        />
+                    />
 
                     <GalleryImage 
                             src={images[primaryImgIndex].url} 
@@ -130,7 +149,7 @@ export default function GallerySlider (props) {
                             imgClass={'gallery-primary-image'}
                             index={primaryImgIndex}
                             setIndex={setPrimaryImgIndex}  
-                        />
+                    />
                     
                     <GalleryImage 
                             src={images[primaryImgIndex + 1 > images.length - 1 ? primaryImgIndex + 1 - images.length : primaryImgIndex + 1].url} 
@@ -138,7 +157,7 @@ export default function GallerySlider (props) {
                             imgClass={'gallery-secondary-image'}
                             index={primaryImgIndex + 1 > images.length - 1 ? primaryImgIndex + 1 - images.length : primaryImgIndex + 1}
                             setIndex={setPrimaryImgIndex}  
-                        />
+                    />
 
                     <GalleryImage 
                             src={images[primaryImgIndex + 2 > images.length - 1 ? primaryImgIndex + 2 - images.length : primaryImgIndex + 2].url} 
@@ -146,7 +165,7 @@ export default function GallerySlider (props) {
                             imgClass={'gallery-tertiary-image'}
                             index={primaryImgIndex + 2 > images.length - 1 ? primaryImgIndex + 2 - images.length : primaryImgIndex + 2} 
                             setIndex={setPrimaryImgIndex} 
-                        />
+                    />
                     <button className='gallery-event-button forward-button' onClick={e => onGalleryClickHandlerMemoized(e, 'right')}>
                         <img className='button-image' src={ForwardArrow} />
                     </button>
