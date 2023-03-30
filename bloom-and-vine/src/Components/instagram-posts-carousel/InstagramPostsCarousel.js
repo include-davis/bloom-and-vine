@@ -36,12 +36,12 @@ export default function InstagramPostsCarousel (props) {
 
         // Swipe left
         if (displacement > 5) {
-            centerPostIndex < curPosts.length - 1 ? setCenterPostIndex(index => index + 1) : null;
+            centerPostIndex < curPosts.length - 1 ? setCenterPostIndex(index => index + 1) : setCenterPostIndex(0)
         }
         
         // Swipe right
         if (displacement < -5) {
-            centerPostIndex > 0 ? setCenterPostIndex(index => index - 1) : null;
+            centerPostIndex > 0 ? setCenterPostIndex(index => index - 1) : setCenterPostIndex(curPosts.length - 1)
         }
     }
 
@@ -64,9 +64,9 @@ export default function InstagramPostsCarousel (props) {
                 </button>
                 <div className='current-posts-wrapper' onTouchStart={touchStartHandler} onTouchMove={touchMoveHandler} onTouchEnd={touchEndHandler}>
                     <div className='current-posts-content' style={{ transform: `translateX(-${centerPostIndex * (100 / postsDisplayed)}%)` }}>
-                        {curPosts[curPosts.length - 1]}
+                        {window.innerWidth <= 480 && curPosts[curPosts.length - 1]}
                         {curPosts}
-                        {curPosts[0]}
+                        {window.innerWidth <= 480 && curPosts[0]}
                     </div>
                 </div>
                 <button className='forward-posts-button' onClick={e => onClickHandler(e, 'forward')}>
