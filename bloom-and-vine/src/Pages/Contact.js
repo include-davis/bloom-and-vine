@@ -14,7 +14,7 @@ function Contact() {
   // function sendEmail(e) {
   //   e.preventDefault();    //This is important, i'm not sure why, but the email won't send without it
 
-    emailjs.sendForm('service_w183yib', 'template_20fsmva', e.target, 'G6qLhG0KxlxRAH5ZE')
+    emailjs.sendForm('service_w183yib', 'template_20fsmva', form.current, 'G6qLhG0KxlxRAH5ZE')
       .then((result) => {
           console.log(result.text);
           window.location.reload()  //This is if you still want the page to reload (since e.preventDefault() cancelled that behavior) 
@@ -22,8 +22,6 @@ function Contact() {
           console.log(error.text);
       });
   }
-
-
 
   return (
     <div className="Contact">
