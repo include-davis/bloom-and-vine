@@ -29,16 +29,7 @@ function Homepage() {
 	useEffect(() => {
 		async function fetchPostData() {
 			const data = await axios.get(QUERY_URL, options).then(res => res.data.data)
-			const curPosts = data.map((post, index) => {
-				return (
-					<div className='curPost' key={index}>
-						<a href={post.urls.permalink}>
-							<img className='postImg' src={post.urls.mediaURL} loading='eager'/>
-						</a>
-					</div>
-				)
-			})
-		setPostData(curPosts);
+		setPostData(data);
 		}
 		fetchPostData();
 	}, [])

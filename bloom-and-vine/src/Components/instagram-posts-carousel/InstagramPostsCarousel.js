@@ -3,10 +3,21 @@ import ForwardArrow from '../../Images/forward_arrow.png'
 import BackArrow from '../../Images/back_arrow.png'
 import './InstagramPostsCarousel.css'
 
+const postsDisplayed = 3;
+
 export default function InstagramPostsCarousel (props) {
     const [centerPostIndex, setCenterPostIndex] = useState(0)
     const [touchStart, setTouchStart] = useState(null)
-    const curPosts = props.data;
+    const [touchEnd, setTouchEnd] = useState(null)
+    const curPosts = props.data.map((post, index) => {
+        return (
+            <div className='curPost' key={index}>
+                <a className={`${window.innerWidth <= 480 ? index === centerPostIndex ? 'active' : 'inactive' : ''}`}href={post.urls.permalink}>
+                    <img className='postImg' src={post.urls.mediaURL} loading='eager'/>
+                </a>
+            </div>
+        )
+    })
     
     function touchStartHandler(e) {
         const position = e.touches[0].clientX
@@ -14,19 +25,22 @@ export default function InstagramPostsCarousel (props) {
     }
 
     function touchMoveHandler(e) {
-        const touchDown = touchStart;
-        if (!touchDown) return;
+        if (!touchStart) return;
 
         const currentTouch = e.touches[0].clientX;
-        const diff = touchDown - currentTouch;
+        setTouchEnd(currentTouch)
+    }
+
+    function touchEndHandler(e) {
+        const displacement = touchStart - touchEnd;
 
         // Swipe left
-        if (diff > 150) {
-            centerPostIndex < curPosts.length - 3 ? setCenterPostIndex(index => index + 1) : null;
+        if (displacement > 5) {
+            centerPostIndex < curPosts.length - 1 ? setCenterPostIndex(index => index + 1) : null;
         }
         
         // Swipe right
-        if (diff < -150) {
+        if (displacement < -5) {
             centerPostIndex > 0 ? setCenterPostIndex(index => index - 1) : null;
         }
     }
@@ -35,10 +49,10 @@ export default function InstagramPostsCarousel (props) {
         e.preventDefault();
     
         if (button === 'forward') {
-            centerPostIndex < curPosts.length - 3 ? setCenterPostIndex(index => index + 1) : setCenterPostIndex(0);
+            centerPostIndex < curPosts.length - postsDisplayed ? setCenterPostIndex(index => index + 1) : setCenterPostIndex(0);
         }
         else if (button === 'back') {
-            centerPostIndex > 2 ? setCenterPostIndex(index => index - 1) : setCenterPostIndex(curPosts.length - 3);
+            centerPostIndex > postsDisplayed - 1 ? setCenterPostIndex(index => index - 1) : setCenterPostIndex(curPosts.length - postsDisplayed);
         }
     }
 
@@ -48,9 +62,11 @@ export default function InstagramPostsCarousel (props) {
                 <button className='backward-posts-button' onClick={e => onClickHandler(e, 'back')}>
                     <img className='back-button' src={BackArrow} />
                 </button>
-                <div className='current-posts-wrapper' onTouchStart={touchStartHandler} onTouchMove={touchMoveHandler}>
-                    <div className='current-posts-content' style={{ transform: `translateX(-${centerPostIndex * (100 / 3)}%)` }}>
+                <div className='current-posts-wrapper' onTouchStart={touchStartHandler} onTouchMove={touchMoveHandler} onTouchEnd={touchEndHandler}>
+                    <div className='current-posts-content' style={{ transform: `translateX(-${centerPostIndex * (100 / postsDisplayed)}%)` }}>
+                        {curPosts[curPosts.length - 1]}
                         {curPosts}
+                        {curPosts[0]}
                     </div>
                 </div>
                 <button className='forward-posts-button' onClick={e => onClickHandler(e, 'forward')}>

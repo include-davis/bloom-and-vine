@@ -16,7 +16,7 @@
     flex-direction: row;
     width: 100%;
 
-    transition: all 250ms linear;
+    transition: all 350ms linear;
 }
 
 .current-posts-content > * {
@@ -58,6 +58,24 @@
     .current-posts-display {
         width: 100%;
         height: 100%;
+    }
+    
+    .curPost {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .active {
+        height: 110%;
+    }
+
+    .inactive {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 75%;
+        filter: opacity(0.3);
     }
 
    .backward-posts-button, .forward-posts-button {
