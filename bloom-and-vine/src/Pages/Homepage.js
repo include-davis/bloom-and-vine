@@ -40,36 +40,36 @@ function Homepage() {
 		fetchPostData();
 	}, [])
 
-  return (
-	<div className="Homepage">
-		<Navbar />
+	return (
+		<div className="Homepage">
+			<Navbar />
 
-		<div className='front-display'>
-			<img className="front-image" src={displayImg}/>
-			<div className='front-text-container'>
-				<p className='front-text'>Bloom & Vine</p>
+			<div className='front-display'>
+				<img className="front-image" src={displayImg}/>
+				<div className='front-text-container'>
+					<p className='front-text'>Bloom & Vine</p>
+				</div>
 			</div>
-		</div>
 
-		<div className='review-display'>
-			<ReviewSlider />
-		</div>
+			<div className='review-display'>
+				<ReviewSlider />
+			</div>
 
-		<div className='redirect-display'>
-			<RedirectImages />
-		</div>
+			<div className='redirect-display'>
+				<RedirectImages />
+			</div>
 
-		<div className='instagram-shoutout-display'>
-			<InstagramShoutout />
+			<div className='instagram-shoutout-display'>
+				<InstagramShoutout />
+			</div>
+		
+			<div className='instagram-posts-display'>
+				{postData && <InstagramPostsCarousel data={postData} />}
+			</div>
+		
+			<Footer />
 		</div>
-	  
-		<div className='instagram-posts-display'>
-			{postData && <InstagramPostsCarousel data={postData} />}
-		</div>
-	  
-	  	<Footer />
-	</div>
-  );
+  	);
 }
 
 export default Homepage;
