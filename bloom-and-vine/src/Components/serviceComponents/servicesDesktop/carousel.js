@@ -7,6 +7,8 @@ import funerals from "../../../Images/funerals.png"
 import classes from "../../../Images/classes.png"
 import parties from "../../../Images/parties.png"
 import customOrder from "../../../Images/customOrder.png"
+import rightArrow from "../../../Images/blackRightArrow.svg"
+import leftArrow from "../../../Images/blackLeftArrow.svg"
 
 const ServicesCarousel = (props) =>{
 
@@ -64,7 +66,7 @@ const ServicesCarousel = (props) =>{
         <div>
             <div className="containerServ">
                 <div className="description">
-                    <div className="arrow" onClick= {previousImage} >&lt;</div>
+                    <img className="arrow" src={leftArrow} onClick= {previousImage} />
 
                     <div id ="texts">
                           <h1 id ="servTitle">{images[props.index].service}</h1>
@@ -80,7 +82,7 @@ const ServicesCarousel = (props) =>{
                     </div>
 
                         <img id = "actualImg" src= {images[props.index].src} alt= {images[props.index].description} ></img>
-                    <div className="arrow" onClick= {nextImage} >&gt;</div>
+                    <img className="arrow" src={rightArrow} onClick= {nextImage} />
                 </div>
                 
             </div>
