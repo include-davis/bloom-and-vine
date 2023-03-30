@@ -1,336 +1,217 @@
+/*  class for h2 */
+/*  class for regular text */
 
 /* latin */
 @font-face {
-    font-family: 'Italiana';
+    font-family: "Italiana";
     font-style: normal;
-    font-weight: 400;
-    src: url(https://fonts.gstatic.com/s/italiana/v16/QldNNTtLsx4E__B0XQmWaXx0xKVu.woff2) format('woff2');
-    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-  }
-
-  /* latin */
-@font-face {
-    font-family: 'Cormorant Garamond';
-    font-style: normal;
-    font-weight: 400;
-    src: url(https://fonts.gstatic.com/s/cormorantgaramond/v16/co3bmX5slCNuHLi8bLeY9MK7whWMhyjYqXtKky2F7g.woff2) format('woff2');
-    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-  }
-  .final-header {
- position: relative;
-  width: 100%; 
-  /* 2328, 154 */
-  height: 154px;
-  left: 0px;
-  top: 0px;
-  border: none;
-  margin: 0; padding: 0;
-  background: #A28598;
-  }
-
-
-.bloom-logo {
-
-    /* width: 316px;
-    height: 23px; */
-    
-    width: 500px;
-    height: 23px;
-    
-    
-    
-    font-family: 'Italiana';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 57px;
-    line-height: 23px;
-    /* identical to box height, or 40% */
-    
-    display: flex;
-    align-items: center;
-    letter-spacing: -0.04em;
-    
-    color: #FFFDF1;
-    
-    /* border: 1px solid #FFFDF1; */
-    
-    /* Inside auto layout */
-    
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-    }
-    
-    
-  
-
- .get-to-know-me {
-   position: relative;
-   width: 60vw;
-   left: 20%;
-   top: 105px;
-   
-   font-family: 'Italiana';
-   font-style: normal;
-   font-weight: 600;
-   font-size: 128px;
-   line-height: 151px;
-   text-align: center;
-   
-   color: #000000;
-   
-   /* border: 0.5px solid #000000; */
-   }
- 
- .Outline1 {
- position: absolute; 
- width: 615px;
- height: 90px;
- left: 1433px;
- top: 574px;
- 
- background: #A28598;
- }
- 
- .trained {
- position: absolute;
- width: 631px;
- height: 232px;
- left: 1433px;
- top: 688px;
- text-align: left;
- 
- font-family: 'Cormorant Garamond'; 
- font-style: normal;
- font-weight: 530;
- font-size: 48px;
- line-height: 58px;
- 
- color: #000000;
- }
- 
- .hello{
- /* position: absolute; */
- width: 631px;
- height: 62px;
- left: 1449px;
- top: 580px;
- 
- font-family: 'Italiana';
- font-style:normal;
- font-weight: 800;
- font-size: 64px;
- line-height: 0px;
- 
- color: #FCF9EA;
- 
- /* border: 1px solid #FCF9EA; */
- }
- 
- .Outline2{
- position: absolute;
- width: 214px;
- height: 89px;
- left: 152px;
- top: 2121px;
- 
- background: #A28598;
- }
- 
- .image1{
-    position: absolute;
-    width: 1176px;
-    height: 919px;
-    left: 147px;
-    top: 496px;
-    
-    background: url(../Images/StyledShootBTS-29.jpg);
- }
- 
- .image2{
-     /* Rectangle 28 */
- 
- 
- /* box-sizing: border-box; */
- 
- position: absolute;
- width: 529px;
- height: 428px;
- left: 635px;
- top: 1599px;
- 
- background: url(../Images/flowers.png);
- filter: drop-shadow(10px 10px 20px rgba(0, 0, 0, 0.25));
- }
- 
- 
- .image3{
-     position: absolute;
- width: 1129px;
- height: 893px;
- left: 1032px;
- top: 1798px;
- 
- background: url(../Images/image3.png);
- filter: drop-shadow(10px 10px 20px rgba(0, 0, 0, 0.25));
- }
- 
- .texture {
-     position: absolute;
- width: 684px;
- height: 232px;
- left: 147px;
- top: 2227px;
- text-align: left;
- 
- font-family: 'Cormorant Garamond';
- font-style: normal;
- font-weight: 530;
- font-size: 48px;
- line-height: 58px;
- 
- color: #000000;
- }
- 
- 
- .bloom-logo {
- 
-     /* width: 316px;
-     height: 23px; */
-     
-     width: 500px;
-     height: 23px;
- 
-     top:65 px;
-     
-     
-     font-family: 'Italiana';
-     font-style: normal;
-     font-weight: 400;
-     font-size: 57px;
-     line-height: 23px;
-     /* identical to box height, or 40% */
-     
-     display: flex;
-     align-items: center;
-     letter-spacing: -0.04em;
-     
-     color: #FFFDF1;
-     
-     /* border: 1px solid #FFFDF1; */
-     
-     /* Inside auto layout */
-     
-     flex: none;
-     order: 0;
-     flex-grow: 0;
-     }
- 
- .love{
-   
- /* position: absolute; */
- 
- width: 214px;
- height: 119px;
- left: 0px;
- top: 2126px;
- 
- 
- font-family: 'Italiana';
- font-style: normal;
- font-weight: 800;
- font-size: 64px;
- line-height: 90px;
- 
- 
- color: #FCF9EA;
- 
- border: 1px solid #FCF9EA;
- }
- 
- .believe-block {
-     position: absolute;
- width: 379px;
- height: 88px;
- left: 1407px;
- top: 2911px;
- 
- background: #A28598;
- }
- 
- .believe{
- /* position: absolute; */
- width: 380px;
- height: 119px;
- left: 1419px;
- top: 2918px;
- 
- 
- font-family: 'Italiana';
- font-style: normal;
- font-weight: 800;
- font-size: 64px;
- line-height: 90px;
- 
- color: #FCF9EA;
- 
- border: 1px solid #FCF9EA;
- }
- 
- .focus{
-position: absolute;
- width: 597px;
- height: 603px;
- left: 1409px;
- top: 3013px;
- text-align: left;
- 
- font-family: 'Cormorant Garamond';
- font-style: normal;
- font-weight: 530;
- font-size: 48px;
- line-height: 58px;
- 
- color: #000000;
- }
- 
- .sun {
- 
- box-sizing: border-box;
- 
- position: absolute;
- width: 674px;
- height: 705px;
- left: 147px;
- top: 2911px;
- 
- background: url(../Images/sun.png);
- filter: drop-shadow(10px 10px 20px rgba(0, 0, 0, 0.25));
- }
- 
- .last {
- 
- box-sizing: border-box;
- 
- position: absolute;
- width: 674px;
- height: 701px;
- left: 608px;
- top: 3288px;
- 
- background: url(../Images/image4.png);
- filter: drop-shadow(10px 10px 20px rgba(0, 0, 0, 0.25));
- }
-
- .footer {
-    position: absolute;
-width: 2328px;
-height: 237px;
-left: 0px;
-top: 4340px;
-
-background: #A28598;
+    font-weight: 500;
+    src: url(https://fonts.gstatic.com/s/italiana/v16/QldNNTtLsx4E__B0XQmWaXx0xKVu.woff2)
+        format("woff2");
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+        U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212,
+        U+2215, U+FEFF, U+FFFD;
 }
 
+/* latin */
+@font-face {
+    font-family: "Cormorant Garamond";
+    font-style: normal;
+    font-weight: 400, 500;
+    src: url(https://fonts.gstatic.com/s/cormorantgaramond/v16/co3bmX5slCNuHLi8bLeY9MK7whWMhyjYqXtKky2F7g.woff2)
+        format("woff2");
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+        U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212,
+        U+2215, U+FEFF, U+FFFD;
+}
 
+.title {
+    font-family: "Italiana";
+    font-style: normal;
+    font-weight: 400;
+    /* font-size: 128px; */
+    font-size: 5.8vw;
+    line-height: 151px;
+    text-align: center;
 
+    color: #000000;
+
+    margin-top: 2%;
+    margin-bottom: 3%;
+
+    /* border: 0.5px solid #000000; */
+}
+
+.highlight {
+    font-family: "Italiana";
+    font-style: normal;
+    font-weight: bold;
+    /* font-size: 64px; */
+    font-size: 3.2vw;
+    line-height: 75px;
+    color: #fcf9ea;
+    padding-left: 3%;
+    margin-bottom: 0%;
+    padding-top: 0%;
+    padding-bottom: 0%;
+}
+
+.desc {
+    font-family: "Cormorant Garamond";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    font-size: 2.2vw;
+    line-height: 35px;
+    letter-spacing: -0.7px;
+    color: #000000;
+    margin-top: 3%;
+}
+
+.highlightCont {
+    background-color: #a28598;
+    width: 120%;
+    /* border: 1px solid red; */
+}
+
+.introHighlight {
+}
+
+.loveHighlightCont {
+    background-color: #a28598;
+    width: 37%;
+}
+
+.believeHighlightCont {
+    width: 69%;
+    background-color: #a28598;
+}
+
+.introText {
+    width: 27%;
+}
+
+.loveText {
+    width: 30%;
+}
+
+.believeText {
+    width: 27%;
+}
+
+.aboutCont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.introCont {
+    display: flex;
+    justify-content: space-evenly;
+    width: 95%;
+    margin-bottom: 18%;
+}
+
+.loveCont {
+    display: flex;
+    justify-content: space-evenly;
+    width: 95%;
+    margin-bottom: 8%;
+}
+
+.believeCont {
+    display: flex;
+    justify-content: space-evenly;
+    width: 95%;
+    margin-bottom: 25%;
+}
+
+.introImg {
+    width: 50%;
+    /* height: auto; */
+}
+
+.loveImgs {
+    position: relative;
+    width: 48%;
+}
+
+.bouqetImg {
+    width: 50%;
+    position: absolute;
+    /* top: -300px; */
+    /* bottom: 500px; */
+    bottom: 80%;
+    /* right: 700px; */
+    right: 85%;
+    /* z-index: 1; */
+}
+
+.brideFlowersImg {
+    width: 100%;
+    /* height: 19.5%; */
+}
+
+.believeImgs {
+    position: relative;
+    width: 50%;
+}
+
+.sunsetCouple {
+    width: 68%;
+}
+
+.couple {
+    position: absolute;
+    width: 68%;
+    z-index: 1;
+    /* top: 500px; */
+    top: 40%;
+    left: 45%;
+}
+
+.weddingCouple, .brideFlowersMobile {
+    display: none;
+}
+
+@media only screen and (max-width: 835px) {
+    .aboutCont{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .introCont, .loveCont, .believeCont {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .introText {
+        width: 70%;
+    }
+
+    .loveText {
+        width: 63%;
+    }
+
+    .believeText {
+        width: 70%;
+    }
+
+    .desc {
+        font-size: 4vw;
+    }
+    
+    .introImg, .loveImgs, .believeImgs, .brideFlowersMobile {
+        width: 100%;
+    }
+
+    .bouqetImg, .couple, .sunsetCouple, .brideFlowersImg{
+        display: none;
+    }
+
+    .weddingCouple, .brideFlowersMobile {
+        display: block;
+    }
+}
