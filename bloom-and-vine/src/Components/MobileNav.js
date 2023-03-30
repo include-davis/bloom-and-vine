@@ -7,10 +7,13 @@ import React, {useState, useEffect, useRef} from 'react';
 
 function MobileNav() {
 
+  const mediaQuery = window.matchMedia('(min-width: 900px)')
+
   const [open, setOpen] = useState(false);
   const [subopen, setSubOpen] = useState(false);
   const [subopen2, setSubOpen2] = useState(false);
 
+  
   return (
     <div className="MobileNav">
       <div className='menu-container'>

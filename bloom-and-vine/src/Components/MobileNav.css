@@ -223,15 +223,14 @@ ul {
 
 }
 
-.dropdownItem a{
-  /* max-width: 100px; */
-  /* margin-left: 10px; */
+.dropdownItem a {
   transition: var(--speed);
   
 }
 
-@media(max-width: 900px) {
+@media(max-width: 1024px) {
   .menu-trigger img {
     display: flex;
   }
+  
 }

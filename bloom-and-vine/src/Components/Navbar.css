@@ -14,12 +14,12 @@
 .Logo {
   position: absolute;
 }
-.Logo .main-logo{
+.Logo .main-logo {
   text-decoration: none;
   width: 316px;
   height: 23px;
   padding-top: 48px;
-  padding-left: 56px;
+  padding-left: 0.5em;
   font-family: 'Italiana';
   font-style: normal;
   font-weight: 400;
@@ -45,7 +45,7 @@
   margin-right: auto;
   display: none;
   padding-top: 1em;
-  transition: 0.8s;
+  transition: 0.5s;
   padding-left: 1.8em;
 }
 .main-mobile-logo img {
@@ -63,27 +63,31 @@
   font-weight: 700px; 
   font-size: 25px;
   line-height: 23px;
-
   color: #FFFDF1;
   text-decoration: none;
-  
+  margin: 0 auto;
 }
 
 .Navbar ul {
   list-style-type: none;
   margin: 0 auto;
-  padding: 0 100px;
+  padding: 0 30px;
   display: inline-flex;
   float: right;
+  justify-content: center;
+
 }
 
 .Navbar ul li {
-  display: flex;
-  justify-content: space-between;
+  display: inline-block;
+  justify-content: center;
+  
   align-items: center;
-  padding: 60px 30px 0 50px;
-  height: 0px;
-  transition: transform 0.5s;
+  padding-top: 50px;
+  padding-left: 30px;
+  padding-right: 30px;
+  transition: 0.5s;
+
 }
 
 .Navbar ul li:hover {
@@ -125,7 +129,17 @@
   color: #A28598;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1150px) {
+  .Logo .main-logo {
+    font-size: 48px;
+  }
+  .Navbar ul li {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media (max-width: 1024px) {
   .Navbar ul {
     display: none;
   }

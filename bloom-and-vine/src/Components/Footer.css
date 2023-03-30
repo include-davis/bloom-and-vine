@@ -56,26 +56,31 @@
   padding-left: 56px;
 }
 .Footer ul {
+  width: fit-content;
+  height: 20px;
   position: relative;
   list-style-type: none;
+  /* padding: 0 600px;  */
+
   margin: 0 auto;
-  padding: 0 600px;
-  display: inline-flex;
-  float: right;
+  display: flex;
+  justify-content: center;
   bottom: 100px;
 }
 .Footer ul li {
   justify-content: space-between;
+  display: inline-block;
   align-items: center;
   padding: 0px 30px 0 50px;
+  margin: 0 auto;
   height: 0px;
   transition: transform 0.5s;
   font-weight: 400px; 
 }
 .Footer ul li a {
-  width: 62px;
+  width: fit-content;
   height: fit-content;
-
+  
   font-family: 'Cormorant Garamond';
   font-style: normal;
   font-size: 25px;
@@ -152,7 +157,7 @@
   right: 7.6em;
   color: #FFFDF1;
   transition: 0.4s;
-  bottom: 6em;
+  bottom: 8em;
 }
 
 .Socials img {
@@ -170,7 +175,7 @@
 .Socials {
   position: relative;
   left: 3em;
-  bottom: 6em;
+  bottom: 7.5em;
 }
 
 .heart {
@@ -179,7 +184,7 @@
 
 @media(max-width: 1750px) {
   .Footer ul {
-    padding: 0 400px; 
+    /* padding: 0 400px;  */
   }
   .Socials {
     left: 150px;
@@ -191,17 +196,53 @@
 
 @media(max-width: 1520px) {
   .Footer ul {
-    padding: 0 300px; 
+    padding-left: 100px;
+  }
+  .Footer ul li {
+    padding: 0px 30px 0 30px;
   }
   .Socials {
-    left: 200px;
+    left: 175px;
   }
   .des1 {
-    left: 1em;
+    right: 0.5em;
   }
 }
 
-@media(max-width: 1420px) {
+@media(max-width: 1390px) {
+  .Footer ul {
+    padding-left: 50px;
+  }
+  .Footer ul li a {
+    font-size: 20px;
+  }
+}
+
+@media(max-width: 1250px) {
+  .Footer ul li a {
+    font-size: 18px;
+  }
+  .Footer .Logo {
+    font-size: 48px;
+  }
+  .Footer .Description {
+    font-size: 20px;;
+  }
+}
+
+@media(max-width: 1165px)  {
+  .Footer ul li {
+    padding: 0px 20px 0 10px;
+  }
+  .Footer .Logo {
+    font-size: 45px;
+  }
+  .Footer .Description {
+    font-size: 18px;;
+  }
+}
+
+@media(max-width: 1024px) {
   .wrapper {
     padding-top: 1.5em;
     text-align: center;
@@ -240,7 +281,7 @@
     margin: 0 auto; 
     padding-top: 1em;
     left: 0;
-    padding-bottom: 0.5em;
+    padding-bottom: 2.7em;
   }
   .Footer .Socials img {
     padding: 0 3em;
