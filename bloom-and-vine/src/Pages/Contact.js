@@ -1,14 +1,35 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import './Contact.css';
 import contact from '../Images/contact-image.png';
 import scrollarrow from '../Images/scrollarrow.png';
+import emailjs from 'emailjs-com';
 
 function Contact() {
+  
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+  // function sendEmail(e) {
+  //   e.preventDefault();    //This is important, i'm not sure why, but the email won't send without it
+
+    emailjs.sendForm('service_w183yib', 'template_20fsmva', e.target, 'G6qLhG0KxlxRAH5ZE')
+      .then((result) => {
+          console.log(result.text);
+          window.location.reload()  //This is if you still want the page to reload (since e.preventDefault() cancelled that behavior) 
+      }, (error) => {
+          console.log(error.text);
+      });
+  }
+
+
+
   return (
     <div className="Contact">
 
       <div className='Leftside-Screen'>
-        <div className='contact-wrapper'>
+      <div className='contact-wrapper'>
         <div className='contact-image'>
           <img src={contact} alt='null' />
 
@@ -76,50 +97,52 @@ function Contact() {
               </div>
             </a>
           </li>
-          </ul>
+        </ul>
           </div>
         </div>
         </div>
 
       </div>
-      
+            
       <hr/>
 
       <div className='Rightside-Screen'>
         <div >
-          <form className='form-wrapper'>
+          <form className='form-wrapper' ref={form} onSubmit={sendEmail}>
             <label for="name">Name *</label>
-            <input type="text" id="name" name="name"></input>
-            <label for="name">Last Name *</label>
-            <input type="text" id="email" name="email"></input>
+            <input type="text" id="name" name="user_name"></input>
+            <label for="email">Email *</label>
+            <input type="text" id="email" name="user_email"></input>
             <label for="phone">Phone *</label>
             <input type="text" id="phone" name="phone"></input>
             <label for="date">Date of Event</label>
-            <input type="date" id="email" name="email" ></input>
+            <input type="date" id="date" name="date" ></input>
 
             <label for="subject">Subject</label>
             <select id="subject" name="subject">
               <option value="n/a"></option>
               <option value="sub1">Subject 1</option>
-              <option value="sub2">Subject 2</option>
-              <option value="sub3">Subject 3</option>
+              <option value="Booking">Booking</option>
+              <option value="Questions">Questions</option>
             </select>
+
+            
             <label for="subject">Message</label>
-            <textarea placeholder='Type message here'></textarea>
+            <textarea name="message" placeholder='Type message here'></textarea>
             <input type="submit" maxlength="4" size="4" value="Send"></input>
           
           </form>
 
           
-        </div>
+          </div>
         <div class="scroll-container">
         <a href="#top">
           <img src={scrollarrow}></img>
         </a>
         </div>
-      </div>
-      
-      
+      </div>    
+
+
     </div>
   );
 }

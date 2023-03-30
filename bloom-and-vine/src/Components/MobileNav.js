@@ -1,6 +1,6 @@
 import './MobileNav.css'
 import menu from '../Images/menu.png'
-import uparrow from '../Images/upArrow.png'
+import uparrow from '../Images/uparrow.png'
 import downarrow from '../Images/downarrow.png'
 
 import React, {useState, useEffect, useRef} from 'react';
