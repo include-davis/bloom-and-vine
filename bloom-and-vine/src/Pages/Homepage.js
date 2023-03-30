@@ -4,8 +4,7 @@ import Footer from '../Components/Footer'
 import ReviewSlider from '../Components/review-slider/ReviewSlider';
 import RedirectImages from '../Components/redirect-images/RedirectDisplay';
 import InstagramShoutout from '../Components/instagram-shoutout/InstagramShoutout';
-import InstagramPostsCarousel from '../Components/instagram-posts/InstagramPostsCarousel';
-import InstagramPost from '../Components/instagram-posts/components/InstagramPost';
+import InstagramPostsCarousel from '../Components/instagram-posts-carousel/InstagramPostsCarousel';
 import displayImg from '../Images/DISPLAY-60_cropped.jpg'
 import axios from 'axios';
 import './Homepage.css';
@@ -29,13 +28,17 @@ function Homepage() {
 
 	useEffect(() => {
 		async function fetchPostData() {
-			let data = await axios.get(QUERY_URL, options).then(res => res.data.data)
-			data = data.map((post, index)  => {
+			const data = await axios.get(QUERY_URL, options).then(res => res.data.data)
+			const curPosts = data.map((post, index) => {
 				return (
-					<InstagramPost data={post} key={index} />
-				);
+					<div className='curPost' key={index}>
+						<a href={post.urls.permalink}>
+							<img className='postImg' src={post.urls.mediaURL} loading='eager'/>
+						</a>
+					</div>
+				)
 			})
-		setPostData(data);
+		setPostData(curPosts);
 		}
 		fetchPostData();
 	}, [])
