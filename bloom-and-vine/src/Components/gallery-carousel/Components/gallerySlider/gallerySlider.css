@@ -74,4 +74,9 @@
     .button-image {
         height: 50px;
     }
+    .gallery-dot-lower, .gallery-dot-upper {
+        width: 7.38px;
+        height: 7.38px;
+    }
+    
 }
