@@ -68,7 +68,7 @@
 }
 
 /* added more gap to the gallery slider on mobile */
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 480px) {
     .gallery-slider {
         gap: 4vw;
     }

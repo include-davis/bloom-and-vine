@@ -1,7 +1,7 @@
 import { useState, useEffect, useCallback } from 'react';
 import GalleryImage from './components/galleryImage/galleryImage';
-import BackArrow from '../../../../Images/back_arrow.png'
-import ForwardArrow from '../../../../Images/forward_arrow.png'
+import BackGalleryArrow from '../../../../Images/backGalleryArrow.png'
+import ForwardGalleryArrow from '../../../../Images/forwardGalleryArrow.png'
 import './gallerySlider.css'
 
 function getGalleryDots(total, setCurImgDot, level) {
@@ -63,7 +63,7 @@ export default function GallerySlider (props) {
             <div className='gallery-slider-container'>
                 <div className='gallery-slider'>
                     <button className='gallery-event-button back-button' onClick={e => onGalleryClickHandlerMemoized(e, 'left')}>
-                        <img className='button-image' src={BackArrow} />
+                        <img className='button-image' src={BackGalleryArrow} />
                     </button>
 
                     <GalleryImage 
@@ -91,7 +91,7 @@ export default function GallerySlider (props) {
                         />
 
                     <button className='gallery-event-button forward-button' onClick={e => onGalleryClickHandlerMemoized(e, 'right')}>
-                        <img className='button-image' src={ForwardArrow} />
+                        <img className='button-image' src={ForwardGalleryArrow} />
                     </button>
                 </div>
                 <div className='current-gallery-image-dots'>
@@ -106,7 +106,7 @@ export default function GallerySlider (props) {
             <div className='gallery-slider-container'>
                 <div className='gallery-slider'>
                     <button className='gallery-event-button back-button' onClick={e => onGalleryClickHandlerMemoized(e, 'left')}>
-                        <img className='button-image' src={BackArrow} />
+                        <img className='button-image' src={BackGalleryArrow} />
                     </button>
                     <GalleryImage 
                             src={images[primaryImgIndex - 2 < 0 ? images.length - 2 + primaryImgIndex: primaryImgIndex - 2].url} 
@@ -149,7 +149,7 @@ export default function GallerySlider (props) {
                             setIndex={setPrimaryImgIndex} 
                     />
                     <button className='gallery-event-button forward-button' onClick={e => onGalleryClickHandlerMemoized(e, 'right')}>
-                        <img className='button-image' src={ForwardArrow} />
+                        <img className='button-image' src={ForwardGalleryArrow} />
                     </button>
                 </div>
                 <div className='current-gallery-image-dots'>

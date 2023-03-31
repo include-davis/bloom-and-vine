@@ -58,7 +58,7 @@
     }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 480px) {
     #bottomText{
     font-size: 1.125em;
     margin-top: 35px;

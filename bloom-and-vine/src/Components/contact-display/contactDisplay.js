@@ -1,10 +1,6 @@
+import { NavLink } from "react-router-dom";
+import topOfPageArrow from "../../Images/topOfPageArrow.png"
 import './contactDisplay.css'
-
-import { BrowserRouter as Router, Route, NavLink } from 'react-router-dom'
-import arrow from "../../Images/uparrow.png"
-
-import Wedding from '../../Images/weddingPrimary.png'
-import Wedding2 from '../../Images/weddingSecondary.png'
 
 function scrollToTop() {
     window.scrollTo({
@@ -19,20 +15,10 @@ export default function ContactDisplay () {
 	    <div>
 			<p id = "bottomText">Interested in booking for an event?</p>
             <div id = "bottomButtons">
-
-                {/* The page stops working with the navlink, should be fixed once its merged with the other pages.
-                    I replaced the NavLink with a Div to allow for testing.
-
                 <NavLink id = "contactButtonM" to="/Contact">
                     <div >Contact Us</div>
                 </NavLink>
-                */}
-
-                <div id = "contactButtonM">
-                    <div >Contact Us</div>
-                </div>
-
-                <img onClick= {scrollToTop} id = "arrowButton" src={arrow}  />
+                <img onClick= {scrollToTop} id = "arrowButton" src={topOfPageArrow}  />
             </div>
 
         </div>
