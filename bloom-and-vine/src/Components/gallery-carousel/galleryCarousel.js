@@ -15,8 +15,8 @@ import './galleryCarousel.css';
 export default function GalleryCarousel(props) {
     const { data } = props;
 
-    const upperCarousel = useMemo(() => {return (<GallerySlider data={data[0]} level={'upper'} />)}, [data]);
-    const lowerCarousel = useMemo(() => {return (<GallerySlider data={data[1]} level={'lower'} />)}, [data]);
+    const upperCarousel = useMemo(() => {return (<GallerySlider data={data[0]} level={'upper'}/>)}, [data]);
+    const lowerCarousel = useMemo(() => {return (<GallerySlider data={data[1]} level={'lower'}/>)}, [data]);
 
     return (
         <div className='gallery-carousel-container'>

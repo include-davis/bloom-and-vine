@@ -16,7 +16,8 @@ function getGalleryDots(total, setCurImgDot, level) {
     }
     
 export default function GallerySlider (props) {
-    if (!props.data) return;
+    //if (!props.data) return;
+    //this line was causing issues earlier
 
     const [primaryImgIndex, setPrimaryImgIndex] = useState(0);
     const images = props.data.images;

@@ -54,5 +54,17 @@
 @media screen and (max-width: 500px) {
     #bottomText{
     font-size: 1.125em;
+    margin-top: 35px;
+    }
+    #contactButtonM{
+        font-family: 'Cormorant Garamond';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 1.25em;
+        line-height: 24px;
+        text-align: center;
+        color: #FCF9EA;
+        height: 47px;
+        width: 138px;
     }
 }
