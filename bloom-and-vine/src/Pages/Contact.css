@@ -3,6 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&display=swap');
 
+
 .Contact {
   flex-shrink: 1;
   font-family: 'Italiana';
@@ -126,6 +127,7 @@ input[type=submit]:hover {
   line-height: 2em;
   color: #000000;
   padding-top: 2em;
+  transition: 0.2s;
 }
 .Contact ul {
   position: relative;
@@ -185,7 +187,13 @@ hr {
   display: none;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1050px) {
+  .lets-talk {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 1024px) {
   .Contact {
     display: block;
   }

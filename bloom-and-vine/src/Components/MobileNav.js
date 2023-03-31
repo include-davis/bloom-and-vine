@@ -7,10 +7,13 @@ import React, {useState, useEffect, useRef} from 'react';
 
 function MobileNav() {
 
+  const mediaQuery = window.matchMedia('(min-width: 900px)')
+
   const [open, setOpen] = useState(false);
   const [subopen, setSubOpen] = useState(false);
   const [subopen2, setSubOpen2] = useState(false);
 
+  
   return (
     <div className="MobileNav">
       <div className='menu-container'>
@@ -48,7 +51,7 @@ function MobileNav() {
             <li className='main-category'>
                 <a href='/services'>Services</a>
                 <div className='sub-menu-trigger2' onClick={()=>{setSubOpen2(!subopen2)}}>
-                  <img src={subopen? uparrow : downarrow} alt='test2'></img>
+                  <img src={subopen2? uparrow : downarrow} alt='test2'></img>
                 </div>
             </li>
             <div className={`services-menu ${subopen2? 'active' : 'inactive'}`} >

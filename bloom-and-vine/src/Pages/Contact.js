@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import './Contact.css';
 import contact from '../Images/contact-image.png';
-import scrollarrow from '../Images/scrollarrow.png';
+
 import emailjs from 'emailjs-com';
 
 function Contact() {
@@ -130,17 +130,8 @@ function Contact() {
             <input type="submit" maxlength="4" size="4" value="Send"></input>
           
           </form>
-
-          
           </div>
-        <div class="scroll-container">
-        <a href="#top">
-          <img src={scrollarrow}></img>
-        </a>
-        </div>
       </div>    
-
-
     </div>
   );
 }
