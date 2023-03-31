@@ -75,6 +75,11 @@
     .button-image {
         height: 50px;
     }
+
+    .current-gallery-image-dots {
+        margin: 1.5em 0 0 0;
+    }
+
     .gallery-dot-lower, .gallery-dot-upper {
         width: 7.38px;
         height: 7.38px;
