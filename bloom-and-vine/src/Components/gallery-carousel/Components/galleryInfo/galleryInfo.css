@@ -25,6 +25,7 @@
     font-family: 'Cormorant Garamond';
     font-size: 1.57em;
     font-weight: lighter;
+    color: rgba(0, 0, 0, 0.5);
 }
 
 .gallery-desc {
@@ -49,7 +50,6 @@
         width: 78vw;
         text-align:left;
         font-size: 1.125em;
-        color: rgba(0, 0, 0, 0.5);
         margin-bottom: 5px;
     }
     .gallery-desc {
