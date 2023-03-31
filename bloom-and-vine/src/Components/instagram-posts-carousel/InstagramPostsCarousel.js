@@ -1,6 +1,6 @@
 import { useState } from 'react'
-import ForwardArrow from '../../Images/forwardPurpleArrow.png'
-import BackArrow from '../../Images/backPurpleArrow.png'
+import ForwardArrow from '../../Images/purpleForwardArrow.png'
+import BackArrow from '../../Images/purpleBackArrow.png'
 import './InstagramPostsCarousel.css'
 
 const postsDisplayed = 3;

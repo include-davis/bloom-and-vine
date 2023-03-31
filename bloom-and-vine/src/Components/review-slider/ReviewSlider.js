@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import UserReview from './components/user-review/UserReview'
-import ForwardArrow from '../../Images/forwardPurpleArrow.png'
-import BackArrow from '../../Images/backPurpleArrow.png'
+import ForwardArrow from '../../Images/purpleForwardArrow.png'
+import BackArrow from '../../Images/purpleBackArrow.png'
 import './ReviewSlider.css'
 
 const userReviews = [
