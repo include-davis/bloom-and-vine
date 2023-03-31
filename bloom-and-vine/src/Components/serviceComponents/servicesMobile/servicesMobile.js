@@ -9,7 +9,6 @@ import funerals from "../../../Images/funerals.png"
 import classes from "../../../Images/classes.png"
 import parties from "../../../Images/parties.png"
 import customOrder from "../../../Images/customOrder.png"
-import arrow from "../../../Images/upArrow.png"
 
 function ServicesMobile() {
 

@@ -1,7 +1,7 @@
 import "./serviceMobile.css";
 import { BrowserRouter as Router, Route, NavLink } from 'react-router-dom'
 
-import backArrow from "../../../Images/back2.png"
+import backArrow from "../../../Images/whiteBackArrow.png"
 
 function ServiceDisplayMobile(props) {
 

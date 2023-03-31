@@ -9,7 +9,6 @@ import funerals from "../../../Images/funerals.png"
 import classes from "../../../Images/classes.png"
 import parties from "../../../Images/parties.png"
 import customOrder from "../../../Images/customOrder.png"
-import arrow from "../../../Images/upArrow.png"
 
 function scrollToTop(){
     window.scrollTo({
@@ -36,7 +35,6 @@ function ServiceList(props) {
                 <NavLink id = "contactButtonM"to="/Contact">
                     <div >Contact Us</div>
                 </NavLink>
-                <img onClick= {scrollToTop} id = "arrowButton" src={arrow}  />
             </div>
         </div>
     );
