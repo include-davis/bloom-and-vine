@@ -1,35 +1,59 @@
-import "./serviceMobile.css";
-import { BrowserRouter as Router, Route, NavLink } from 'react-router-dom'
-
+import { NavLink } from 'react-router-dom'
 import ServiceSquare from "./serviceSquare";
-
-import wedding from "../../../Images/weddings.png"
-import rentals from "../../../Images/rentals.png"
-import funerals from "../../../Images/funerals.png"
-import classes from "../../../Images/classes.png"
-import parties from "../../../Images/parties.png"
-import customOrder from "../../../Images/customOrder.png"
-
-function scrollToTop(){
-    window.scrollTo({
-        top: 0,
-        left: 0,
-        behavior: 'smooth'
-      });
-}
+import servicesWeddingImg from "../../../Images/servicesWeddings.jpg"
+import servicesRentalImg from "../../../Images/servicesRentals.jpg"
+import servicesFuneralImg from "../../../Images/servicesFunerals.jpg"
+import servicesClassesImg from "../../../Images/servicesClasses.jpg"
+import servicesPartiesImg from "../../../Images/servicesParties.jpg"
+import servicesCustomOrdersImg from "../../../Images/servicesCustomOrders.jpg"
+import "./serviceMobile.css";
 
 function ServiceList(props) {
   
     return (
         <div className ="mobileView">
             <h1 id="mobileHeader">Services</h1>
-            <ServiceSquare setTo = {1} setCurrentRender ={props.setCurrentRender} img = {wedding} name="Weddings"/>
-            <ServiceSquare setTo = {2} setCurrentRender ={props.setCurrentRender} img = {rentals} name="Rentals"/>
-            <ServiceSquare setTo = {3}setCurrentRender ={props.setCurrentRender} img = {funerals} name="Funerals"/>
-            <ServiceSquare setTo = {4} setCurrentRender ={props.setCurrentRender} img = {classes} name="Classes"/>
-            <ServiceSquare setTo = {5} setCurrentRender ={props.setCurrentRender} img = {parties} name="Parties"/>
-            <ServiceSquare setTo = {6} setCurrentRender ={props.setCurrentRender} img = {customOrder} name="Custom Order"/>
+            <ServiceSquare 
+                setTo = {1} 
+                setCurrentRender = {props.setCurrentRender} 
+                img = {servicesWeddingImg} 
+                name="Weddings" 
+            />
 
+            <ServiceSquare 
+                setTo = {2} 
+                setCurrentRender = {props.setCurrentRender} 
+                img = {servicesRentalImg} 
+                name="Rentals" 
+            />
+
+            <ServiceSquare 
+                setTo = {3} 
+                setCurrentRender = {props.setCurrentRender} 
+                img = {servicesFuneralImg} 
+                name="Funerals" 
+            />
+
+            <ServiceSquare 
+                setTo = {4} 
+                setCurrentRender = {props.setCurrentRender} 
+                img = {servicesClassesImg} 
+                name="Classes" 
+            />
+
+            <ServiceSquare 
+                setTo = {5} 
+                setCurrentRender = {props.setCurrentRender} 
+                img = {servicesPartiesImg} 
+                name="Parties" 
+            />
+
+            <ServiceSquare 
+                setTo = {6} 
+                setCurrentRender = {props.setCurrentRender} 
+                img = {servicesCustomOrdersImg} 
+                name="Custom Order"
+            />
             <p id = "bottomText">Interested in booking for an event?</p>
             <div id = "bottomButtons">
                 <NavLink id = "contactButtonM"to="/Contact">

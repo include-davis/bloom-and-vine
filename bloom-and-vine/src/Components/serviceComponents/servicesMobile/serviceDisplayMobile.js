@@ -1,7 +1,7 @@
+import { NavLink } from 'react-router-dom'
+import mobileBackArrow from "../../../Images/whiteBackArrow.png"
 import "./serviceMobile.css";
-import { BrowserRouter as Router, Route, NavLink } from 'react-router-dom'
 
-import backArrow from "../../../Images/whiteBackArrow.png"
 
 function ServiceDisplayMobile(props) {
 
@@ -13,24 +13,25 @@ function ServiceDisplayMobile(props) {
         <div className = "mobileView">
             <div id = "topContent">
                 <div onClick = {returnToList}>
-                    <img id ="backArrow" src={backArrow} />
+                    <img id ="backArrow" src={mobileBackArrow} />
                 </div>
-                <h1 id = "topTitle">{props.service}</h1>
+                <h1 id = "topTitle">
+                    {props.service}
+                </h1>
             </div>
-
 
             <img className= "servImgM" src={props.image} />
 
             <div id = "bottomContent">
-                <p id = "mobileServDesc">{props.description}</p>
-
+                <p id = "mobileServDesc">
+                    {props.description}
+                </p>
                 <NavLink id = "contactButtonM"to="/Contact">
-                    <div >Contact Us</div>
+                    <div>Contact Us</div>
                 </NavLink>
             </div>
 
         </div>
-        
     );
   }
   

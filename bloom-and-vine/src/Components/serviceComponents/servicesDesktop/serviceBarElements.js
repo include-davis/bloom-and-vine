@@ -5,21 +5,23 @@ function ServiceBarElm(props){
         props.setIndex(props.changeTo);
     }
 
-    if(props.name == "Custom Orders"){
-        return(
+    if (props.name == "Custom Orders") {
+        return (
             <div onClick = {changeImage} id = "barElm">
                 <img  className= "servImg" src={props.img} alt={props.name} />
-    
-                <h3 className= "servHeader2" >{props.name}</h3>
+                <h3 className= "servHeader2">
+                    {props.name}
+                </h3>
             </div>
         )
     }
-    else{
-        return(
+    else {
+        return (
             <div onClick = {changeImage}  id = "barElm">
                 <img className= "servImg" src={props.img} alt={props.name} />
-    
-                <h3 className= "servHeader" >{props.name}</h3>
+                <h3 className= "servHeader">
+                    {props.name}
+                </h3>
             </div>
         )
     }

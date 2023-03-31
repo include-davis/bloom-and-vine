@@ -11,12 +11,3 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-
-html, body, #full, #someid {
-  height: 100%;
-}
-
-#header {
-  float: left;
-  width: 100%;
-}

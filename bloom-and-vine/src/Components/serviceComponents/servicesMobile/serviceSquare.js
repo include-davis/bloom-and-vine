@@ -8,9 +8,11 @@ function ServiceSquare(props) {
   
     return (
         <div onClick = {changeRender} className = "listElmM">
-                <img className= "servImgM" src={props.img}  />
-                <h3 className = "servHeaderM">{props.name}</h3>
-            </div>
+            <img className= "servImgM" src={props.img} />
+            <h3 className = "servHeaderM">
+                {props.name}
+            </h3>
+        </div>
     );
   }
   

@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-
-.mobileView{
+.mobileView {
     display: flex;
     flex-direction: column;
     background-color: rgb(250,243,241);
 }
-#mobileHeader{
+
+#mobileHeader {
     font-family: 'Italiana';
     font-size: 2.5em;
     font-weight: 400;
@@ -16,12 +16,12 @@
     margin-left: 5vw;
 }
 
-.listElmM{
+.listElmM {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.servHeaderM{
+.servHeaderM {
     font-family: "Cormorant Garamond";
     font-style: Regular;
     font-size: 32px;
@@ -35,12 +35,16 @@
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     text-decoration: underline;
 }
-.servImgM{
+.servImgM {
     width: 100vw;
-    height: auto;
     margin-bottom: 20px;
+    aspect-ratio: 1.4;
+    object-position: 0 0;
+    object-fit: cover;
+    filter: brightness(0.7);
 }
-#bottomText{
+
+#bottomText {
     font-family: 'Cormorant Garamond';
     font-size: 1.125;
     font-weight: 500;
@@ -48,18 +52,21 @@
     letter-spacing: 0em;
     text-align: center;
 }
-#bottomButtons{
+
+#bottomButtons {
     display: flex;
     flex-direction: row;
     justify-content: center;
     margin-bottom: 50px;
 }
-#arrowButton{
+
+#arrowButton {
     width: 44.17px;
     position: absolute;
     margin-left: 80vw;
 }
-#contactButtonM{
+
+#contactButtonM {
     display: flex;
     background-color: rgba(162, 133, 152, 1);
     color: rgba(252, 249, 234, 1);
@@ -76,7 +83,8 @@
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     margin-bottom: 45px;
 }
-#topContent{
+
+#topContent {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -87,25 +95,27 @@
     font-weight: 700;
     font-size: 1.1em;
     text-align: center;
+}
 
+#topTitle {
+    margin: 0px;
+    position: absolute;
+    margin-bottom: 8px;
 }
-#topTitle{
-   margin: 0px;
-   position: absolute;
-   margin-bottom: 8px;
-}
-#backArrow{
+
+#backArrow {
     height: 20px;
     width: 9.95px;
     margin-right: 80vw;
 }
 
-#bottomContent{
+#bottomContent {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-#mobileServDesc{
+
+#mobileServDesc {
     font-family: 'Cormorant Garamond';
     font-size: 1.125em;
     font-weight: 500;
