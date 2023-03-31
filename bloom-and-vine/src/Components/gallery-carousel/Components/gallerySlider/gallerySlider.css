@@ -66,4 +66,7 @@
     .gallery-slider {
         gap: 4vw;
     }
+    .button-image {
+        height: 50px;
+    }
 }

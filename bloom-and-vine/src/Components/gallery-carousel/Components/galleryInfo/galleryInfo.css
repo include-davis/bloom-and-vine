@@ -51,6 +51,7 @@
         text-align:left;
         font-size: 1.125em;
         color: rgba(0, 0, 0, 0.5);
+        margin-bottom: 5px;
     }
     .gallery-desc {
         width: 78vw;

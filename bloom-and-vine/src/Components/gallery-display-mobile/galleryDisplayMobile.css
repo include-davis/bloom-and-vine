@@ -68,6 +68,7 @@ the backarrow button and other elements.
    margin: 0px;
    position: absolute;
    margin-bottom: 8px;
+   font-size: 1.75em;
 }
 #backArrow{
     height: 20px;

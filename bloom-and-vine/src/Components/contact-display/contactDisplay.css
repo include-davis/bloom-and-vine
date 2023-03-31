@@ -67,4 +67,12 @@
         height: 47px;
         width: 138px;
     }
+    #arrowButton{
+        width: 44.17px;
+        position: absolute;
+        margin-left: 80vw;
+        margin-top: 0px;
+        height: 45.33px;
+        width: 44.17px;
+    }
 }
