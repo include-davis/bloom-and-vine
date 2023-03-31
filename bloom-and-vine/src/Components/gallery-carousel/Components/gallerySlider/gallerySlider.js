@@ -18,25 +18,6 @@ function getGalleryDots(total, setCurImgDot, level) {
 let drag = 0;
 
 export default function GallerySlider (props) {
-    //if (!props.data) return;
-    //this line was causing issues earlier
-
-    const mouseDownCoords = (e) => {
-        drag = e.clientX;
-    };
-
-    const checkIfDrag = (e) => {
-        const mouseUp = e.clientX;
-        console.log(mouseUp)
-        if (mouseUp < drag + 5) {
-            primaryImgIndex + 1 < images.length ? setPrimaryImgIndex(prevIndex => prevIndex + 1) : setPrimaryImgIndex(0);
-        }
-        
-        else if (mouseUp > drag - 5) {
-            primaryImgIndex - 1 >= 0 ? setPrimaryImgIndex(prevIndex => prevIndex - 1) : setPrimaryImgIndex(images.length - 1);
-        }
-    };
-
     const [primaryImgIndex, setPrimaryImgIndex] = useState(0);
     const images = props.data.images;
     const level = props.level;
@@ -122,7 +103,7 @@ export default function GallerySlider (props) {
     /*below is the default return for the desktop view */
     else {
         return (
-            <div className='gallery-slider-container' onMouseDown={mouseDownCoords} onMouseUp={checkIfDrag}>
+            <div className='gallery-slider-container'>
                 <div className='gallery-slider'>
                     <button className='gallery-event-button back-button' onClick={e => onGalleryClickHandlerMemoized(e, 'left')}>
                         <img className='button-image' src={BackArrow} />
