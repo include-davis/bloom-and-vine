@@ -26,6 +26,11 @@ Most of these classes were taken from the desktop view of the carousel
     align-items: center;
     justify-content: center;
     margin-bottom: 20px;
+    transition: all .2s ease-in-out; 
+    cursor: pointer;
+}
+.categoryBox:hover { 
+    transform: scale(1.05); 
 }
 
 .categoryImg {
@@ -33,6 +38,7 @@ Most of these classes were taken from the desktop view of the carousel
     height: 260px;
     filter: brightness(60%);
 }
+
 
 .categoryText {
     position: absolute;
@@ -68,9 +74,16 @@ the backarrow button and other elements.
    margin: 0px;
    position: absolute;
    margin-bottom: 8px;
+   font-size: 1.75em;
 }
 #backArrow{
     height: 20px;
     width: 9.95px;
     margin-right: 80vw;
+    transition: all .2s ease-in-out; 
+    cursor: pointer;
 }
+#backArrow:hover { 
+    transform: scale(1.2); 
+}
+

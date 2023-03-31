@@ -18,7 +18,8 @@ function getGalleryDots(total, setCurImgDot, level) {
 let drag = 0;
 
 export default function GallerySlider (props) {
-    if (!props.data) return;
+    //if (!props.data) return;
+    //this line was causing issues earlier
 
     const mouseDownCoords = (e) => {
         drag = e.clientX;

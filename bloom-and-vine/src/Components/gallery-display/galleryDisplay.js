@@ -41,7 +41,6 @@ export default function GalleryDisplay () {
             return (getData(category));
         })).then((res) => {
             setGallery(res)
-            console.log(res)
         });
     }, [])
 

@@ -19,6 +19,7 @@
     position: absolute;
     margin-left: 90vw;
     margin-top: 60px;
+    cursor: pointer;
 }
 #contactButtonM{
     display: flex;
@@ -37,6 +38,7 @@
     font-style: bold;
     text-decoration: none;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
 }
 
 @media screen and (max-width: 1250px) {
@@ -54,5 +56,25 @@
 @media screen and (max-width: 500px) {
     #bottomText{
     font-size: 1.125em;
+    margin-top: 35px;
+    }
+    #contactButtonM{
+        font-family: 'Cormorant Garamond';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 1.25em;
+        line-height: 24px;
+        text-align: center;
+        color: #FCF9EA;
+        height: 47px;
+        width: 138px;
+    }
+    #arrowButton{
+        width: 44.17px;
+        position: absolute;
+        margin-left: 80vw;
+        margin-top: 0px;
+        height: 45.33px;
+        width: 44.17px;
     }
 }

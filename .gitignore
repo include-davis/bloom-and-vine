@@ -1,2 +1,3 @@
 .env
 .env.local
+bloom-and-vine/.vercel/project.json
