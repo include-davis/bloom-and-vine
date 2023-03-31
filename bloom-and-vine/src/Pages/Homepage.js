@@ -5,7 +5,7 @@ import ReviewSlider from '../Components/review-slider/ReviewSlider';
 import RedirectImages from '../Components/redirect-images/RedirectDisplay';
 import InstagramShoutout from '../Components/instagram-shoutout/InstagramShoutout';
 import InstagramPostsCarousel from '../Components/instagram-posts-carousel/InstagramPostsCarousel';
-import displayImg from '../Images/DISPLAY-60_cropped.jpg'
+import frontDisplayImg from '../Images/homepage_front_display.jpg'
 import axios from 'axios';
 import './Homepage.css';
 
@@ -39,7 +39,7 @@ function Homepage() {
 			<Navbar />
 
 			<div className='front-display'>
-				<img className="front-image" src={displayImg}/>
+				<img className="front-image" src={frontDisplayImg}/>
 				<div className='front-text-container'>
 					<p className='front-text'>Bloom & Vine</p>
 				</div>
