@@ -47,16 +47,16 @@ export default function GalleryDisplay () {
     return (
 	    <div className='gallery-display-container'>
             <div className='gallery-category-container'>
-                <button className={`gallery-category ${galleryIndex === 0 ? 'active' : 'inactive'}`} onClick={() => setGalleryIndex(0)}>
+                <button className={`gallery-category ${galleryIndex === 0 ? 'active-category' : 'inactive-category'}`} onClick={() => setGalleryIndex(0)}>
                     Weddings
                 </button>
-                <button className={`gallery-category ${galleryIndex === 1 ? 'active' : 'inactive'}`} onClick={() => setGalleryIndex(1)}>
+                <button className={`gallery-category ${galleryIndex === 1 ? 'active-category' : 'inactive-category'}`} onClick={() => setGalleryIndex(1)}>
                     Parties
                 </button>
-                <button className={`gallery-category ${galleryIndex === 2 ? 'active' : 'inactive'}`} onClick={() => setGalleryIndex(2)}>
+                <button className={`gallery-category ${galleryIndex === 2 ? 'active-category' : 'inactive-category'}`} onClick={() => setGalleryIndex(2)}>
                     Flowers
                 </button>
-                <button className={`gallery-category ${galleryIndex === 3 ? 'active' : 'inactive'}`} onClick={() => setGalleryIndex(3)}>
+                <button className={`gallery-category ${galleryIndex === 3 ? 'active-category' : 'inactive-category'}`} onClick={() => setGalleryIndex(3)}>
                     Films
                 </button>
             </div>
