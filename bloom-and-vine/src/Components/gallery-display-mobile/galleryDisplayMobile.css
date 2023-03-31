@@ -1,0 +1,76 @@
+#GallMobHeader {
+    font-family: 'Italiana';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 47px;
+    color: #000000;
+    text-align: left;
+    margin-left: 21px;
+    margin-bottom: 24px;
+    margin-top: 24px;
+}
+
+#categoryList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/*
+Most of these classes were taken from the desktop view of the carousel
+*/
+.categoryBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.categoryImg {
+    width: 100vw;
+    height: 260px;
+    filter: brightness(60%);
+}
+
+.categoryText {
+    position: absolute;
+    font-family: 'Cormorant Garamond';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    text-align: center;
+    text-decoration-line: underline;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+/* 
+the following IDs are taken from my services mobile page to style 
+the backarrow button and other elements.
+*/
+#topContent{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    font-family: "Cormorant Garamond";
+    font-weight: 700;
+    font-size: 1.1em;
+    text-align: center;
+}
+#topTitle{
+   margin: 0px;
+   position: absolute;
+   margin-bottom: 8px;
+}
+#backArrow{
+    height: 20px;
+    width: 9.95px;
+    margin-right: 80vw;
+}

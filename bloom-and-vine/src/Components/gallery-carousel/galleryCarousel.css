@@ -1,0 +1,15 @@
+.gallery-carousel-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 100%;
+}
+
+.divider {
+    width: 60vw;
+    height: 0;
+
+    border: 1px solid #C4C4C4;
+    margin: 4em 0 0 0;
+}

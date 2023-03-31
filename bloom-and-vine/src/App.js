@@ -1,25 +1,39 @@
-import logo from './Images/logo.svg';
-import './App.css';
-import { BrowserRouter, Routes, Route } from "react-router-dom"
+import React from 'react'
+import { BrowserRouter as Router, Routes, Route} from "react-router-dom"
+import Navbar from './Components/Navbar';
+import Footer from './Components/Footer';
+import Homepage from './Pages/Homepage'
+import Gallery from './Pages/Gallery'
+import Services from './Pages/Services'
+import About from './Pages/About'
+import Contact from './Pages/Contact';
+import MobileNav from './Components/MobileNav';
+import scrollarrow from './Images/scrollarrow.png';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
+      
+      <>
+      <Navbar />
+      <Routes>
+        <Route exact path='/Home' element={< Homepage />}></Route>
+        <Route exact path='/Gallery' element={< Gallery />}></Route>
+        <Route exact path='/Services' element={< Services />}></Route>
+        <Route exact path='/About' element={< About />}></Route>
+        <Route exact path='/Contact' element={< Contact />}></Route>
+      </Routes>
+
+      <div class="scroll-container">
+        <a href="#top">
+          <img src={scrollarrow}></img>
         </a>
-      </header>
-    </div>
+      </div>
+
+      <Footer/>
+      <MobileNav/>
+    
+      </>
+    
   );
 }
 
