@@ -53,18 +53,8 @@ body {
 
     color: #FFFDF1;
 
-    /* Text Shadow experimentation */
-
-    /* color: transparent;
-    background-color: white;
-    background-clip: text;
-    text-shadow: 0px 0px 0px white; */
-
-    /* border: 1px solid #FFFDF1; */
 }
 
-
-/* Change height to vw? */
 .review-display {
     width: 100%;
     height: 100%;
@@ -101,6 +91,7 @@ body {
     width: 100%;
     margin: 1.4em 0 6.44em 0;
 }
+
 
 @media screen and (max-width: 1024px) {
     .review-display {

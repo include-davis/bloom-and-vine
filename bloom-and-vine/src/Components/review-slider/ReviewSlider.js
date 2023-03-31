@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import UserReview from './components/user-review/UserReview'
-import ForwardArrow from '../../Images/forward_arrow.png'
-import BackArrow from '../../Images/back_arrow.png'
+import ForwardArrow from '../../Images/forwardPurpleArrow.png'
+import BackArrow from '../../Images/backPurpleArrow.png'
 import './ReviewSlider.css'
 
 const userReviews = [
@@ -58,7 +58,6 @@ export default function ReviewSlider() {
     const [curReviewIndex, setCurReviewIndex] = useState(0);
     const reviewDots = getReviewDots(userReviews.length, setCurReviewIndex);
 
-    // Logic: Click left or right --> Increment/Decrement Index --> Display different review
     const reviewButtonHandler = (e, button) => {
         e.preventDefault();
     

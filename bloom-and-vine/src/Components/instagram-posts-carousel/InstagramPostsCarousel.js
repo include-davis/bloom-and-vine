@@ -1,6 +1,6 @@
 import { useState } from 'react'
-import ForwardArrow from '../../Images/forward_arrow.png'
-import BackArrow from '../../Images/back_arrow.png'
+import ForwardArrow from '../../Images/forwardPurpleArrow.png'
+import BackArrow from '../../Images/backPurpleArrow.png'
 import './InstagramPostsCarousel.css'
 
 const postsDisplayed = 3;
@@ -12,7 +12,7 @@ export default function InstagramPostsCarousel (props) {
     const curPosts = props.data.map((post, index) => {
         return (
             <div className='curPost' key={index}>
-                <a className={`${window.innerWidth <= 480 ? index === centerPostIndex ? 'active' : 'inactive' : ''}`}href={post.urls.permalink}>
+                <a className={`${window.innerWidth <= 480 ? index === centerPostIndex ? 'active' : 'inactive' : ''}`} href={post.urls.permalink}>
                     <img className='postImg' src={post.urls.mediaURL} loading='eager'/>
                 </a>
             </div>
@@ -45,7 +45,7 @@ export default function InstagramPostsCarousel (props) {
         }
     }
 
-    const onClickHandler = (e, button) => {
+    const onCarouselClickHandler = (e, button) => {
         e.preventDefault();
     
         if (button === 'forward') {
@@ -59,7 +59,7 @@ export default function InstagramPostsCarousel (props) {
     return (
         <div className='instagram-posts-container'>
             <div className='current-posts-display'>
-                <button className='backward-posts-button' onClick={e => onClickHandler(e, 'back')}>
+                <button className='backward-posts-button' onClick={e => onCarouselClickHandler(e, 'back')}>
                     <img className='back-button' src={BackArrow} />
                 </button>
                 <div className='current-posts-wrapper' onTouchStart={touchStartHandler} onTouchMove={touchMoveHandler} onTouchEnd={touchEndHandler}>
@@ -69,7 +69,7 @@ export default function InstagramPostsCarousel (props) {
                         {window.innerWidth <= 480 && curPosts[0]}
                     </div>
                 </div>
-                <button className='forward-posts-button' onClick={e => onClickHandler(e, 'forward')}>
+                <button className='forward-posts-button' onClick={e => onCarouselClickHandler(e, 'forward')}>
                     <img className='forward-button' src={ForwardArrow} />
                 </button>
             </div>
