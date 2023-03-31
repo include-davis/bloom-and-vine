@@ -99,7 +99,7 @@ body {
 
 .instagram-posts-display {
     width: 100%;
-    margin: 2.5% 0 3.63% 0;
+    margin: 1.4em 0 6.44em 0;
 }
 
 @media screen and (max-width: 1024px) {
@@ -127,6 +127,6 @@ body {
     }
 
     .instagram-posts-display {
-        margin: 10.71vw 0 10.71vw 0;
+        margin: 2.813em 0 4em 0;
     }
 }
