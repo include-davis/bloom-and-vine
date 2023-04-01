@@ -1,9 +1,3 @@
-html {
-  scroll-behavior: smooth;
-  height: fit-content;
-  /* overflow-y: hidden; */
-}
-
 .App {
   text-align: center;
 }
@@ -21,7 +15,7 @@ html {
 
 .App-header {
   background-color: #282c34;
-  min-height: calc(100vh - 400px);
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
