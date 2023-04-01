@@ -1,11 +1,11 @@
 import './Homepage.css';
 
-// Put equal spacing between img, reviews, & instagram shoutout (DONE)
-
-// Indication that redirect has been clicked (darkened image)
-
 function Homepage() {
-
+  return (
+    <div className="Homepage">
+      
+    </div>
+  );
 }
 
 export default Homepage;
