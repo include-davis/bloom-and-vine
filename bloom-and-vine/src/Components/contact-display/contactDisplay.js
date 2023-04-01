@@ -1,14 +1,6 @@
 import { NavLink } from "react-router-dom";
-import topOfPageArrow from "../../Images/topOfPageArrow.png"
+import ScrollToTopButton from "../scroll-to-top-button/scrollToTop";
 import './contactDisplay.css'
-
-function scrollToTop() {
-    window.scrollTo({
-        top: 0,
-        left: 0,
-        behavior: 'smooth'
-      });
-}
 
 export default function ContactDisplay () {
     return (
@@ -18,7 +10,7 @@ export default function ContactDisplay () {
                 <NavLink id = "contactButtonM" to="/Contact">
                     <div >Contact Us</div>
                 </NavLink>
-                <img onClick= {scrollToTop} id = "arrowButton" src={topOfPageArrow}  />
+                <ScrollToTopButton />
             </div>
 
         </div>
