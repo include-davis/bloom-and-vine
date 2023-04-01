@@ -1,7 +1,7 @@
 import './contactDisplay.css'
 
 import { BrowserRouter as Router, Route, NavLink } from 'react-router-dom'
-import arrow from "../../Images/uparrow.png"
+import arrow from "../../Images/whiteUpArrow.png"
 
 import Wedding from '../../Images/weddingPrimary.png'
 import Wedding2 from '../../Images/weddingSecondary.png'
