@@ -7,6 +7,8 @@
     width: 100vw;
     height: 175px;
     background-color: rgb(221,204,209);
+    /* justify-content: center; Alternative gap version */ 
+    /* gap: 2vw; */
 }
 
 #barElm {
@@ -29,7 +31,7 @@
     max-height: 140px;
     aspect-ratio: 1;
     object-fit: cover;
-    object-position: center;
+    object-position: 0 0;
     filter: brightness(0.5);
 }
 
