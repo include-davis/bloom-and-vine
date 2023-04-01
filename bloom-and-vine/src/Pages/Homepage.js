@@ -54,7 +54,7 @@ function Homepage() {
 				{postData && <InstagramPostsCarousel data={postData} />}
 			</div>
 
-			<div className='scroll-to-top-container'>
+			<div className='scroll-to-top-container-homepage'>
 				<ScrollToTopButton />
 			</div>
 			
