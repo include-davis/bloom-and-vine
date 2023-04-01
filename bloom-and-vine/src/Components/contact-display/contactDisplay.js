@@ -10,8 +10,8 @@ export default function ContactDisplay () {
                 <NavLink id = "contactButtonM" to="/Contact">
                     <div >Contact Us</div>
                 </NavLink>
-                <ScrollToTopButton />
             </div>
+            <ScrollToTopButton />
 
         </div>
     );
