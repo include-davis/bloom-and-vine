@@ -5,7 +5,7 @@ import RedirectImages from '../Components/redirect-images/RedirectDisplay';
 import InstagramShoutout from '../Components/instagram-shoutout/InstagramShoutout';
 import InstagramPostsCarousel from '../Components/instagram-posts-carousel/InstagramPostsCarousel';
 import homepageFrontDisplay from '../Images/homepageFrontDisplay.jpg'
-import topOfPageArrow from '../Images/topOfPageArrow.png'
+import ScrollToTopButton from '../Components/scroll-to-top-button/scrollToTop';
 import './Homepage.css';
 
 const options = {
@@ -14,14 +14,6 @@ const options = {
     headers: {
         'Content-Type': 'application/json',
     }
-}
-
-function scrollToTop() {
-    window.scrollTo({
-        top: 0,
-        left: 0,
-        behavior: 'smooth'
-	});
 }
 
 const QUERY_URL = `/api/instagram-posts`
@@ -63,7 +55,7 @@ function Homepage() {
 			</div>
 
 			<div className='scroll-to-top-container'>
-				<img onClick= {scrollToTop} id = "arrowButton" src={topOfPageArrow}  />
+				<ScrollToTopButton />
 			</div>
 			
 		</div>

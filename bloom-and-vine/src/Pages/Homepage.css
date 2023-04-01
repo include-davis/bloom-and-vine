@@ -89,18 +89,11 @@ body {
 
 .instagram-posts-display {
     width: 100%;
-    margin: 2.4em 0 3.44em 0;
+    margin: 2.4em 0 0 0;
 }
 
 .scroll-to-top-container {
     width: 100%;
-}
-
-#arrowButton {
-    width: 4vw;
-    position: absolute;
-    margin-left: 93vw;
-    cursor: pointer;
 }
 
 @media screen and (max-width: 1024px) {
@@ -110,7 +103,7 @@ body {
 }
 
 @media screen and (max-width: 480px) {
-    .front-display{
+    .front-display {
         height: 15em;
     }
 
@@ -129,5 +122,9 @@ body {
 
     .instagram-posts-display {
         margin: 2.813em 0 4em 0;
+    }
+
+    .scroll-to-top-container {
+        display: none;
     }
 }
