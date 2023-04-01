@@ -97,7 +97,7 @@ function Contact() {
 			</div>
 		</div>
 				
-		{/* <hr/> */}
+		<hr/>
 
 		<div className='Rightside-Screen'>
 			<div>
