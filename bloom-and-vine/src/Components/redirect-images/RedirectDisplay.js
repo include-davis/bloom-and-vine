@@ -1,8 +1,8 @@
 import RedirectImage from './components/redirect-image/RedirectImage'
-import GalleryImg from '../../Images/galleryRedirect.jpg'
-import ServicesImg from '../../Images/servicesRedirect.jpg'
-import AboutImg from '../../Images/aboutRedirect.jpg'
-import ContactImg from '../../Images/contactRedirect.jpg'
+import GalleryImg from '../../Images/gallery.png'
+import ServicesImg from '../../Images/services.png'
+import AboutImg from '../../Images/about.png'
+import ContactImg from '../../Images/contact.png'
 import './RedirectDisplay.css'
 
 export default function RedirectDisplay() {
