@@ -6,7 +6,6 @@ import brideFlowers from "../Images/brideFlowers.png";
 import sunsetCouple from "../Images/sunsetCouple.png";
 import couple from "../Images/couple.png";
 import weddingCouple from "../Images/weddingCouple.png";
-import ScrollToTopButton from "../Components/scroll-to-top-button/scrollToTop";
 
 function About(props) {
     document.body.style = "background: #faf0ef;";
@@ -85,9 +84,6 @@ function About(props) {
                     </p>
                 </div>
             </section>
-            <div className="scroll-to-top-container">
-                <ScrollToTopButton />
-            </div>
         </article>
     );
 }
