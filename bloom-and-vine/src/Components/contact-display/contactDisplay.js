@@ -12,7 +12,6 @@ export default function ContactDisplay () {
                 </NavLink>
             </div>
             <ScrollToTopButton />
-
         </div>
     );
 }
