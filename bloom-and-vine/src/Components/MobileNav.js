@@ -16,7 +16,7 @@ function MobileNav() {
 			<div className={`dropdown-menu ${open ? 'active' : 'inactive'}`} >
 				<ul>
 					<li className='main-category'>
-						<a href='/Home'>Home</a>
+						<a href='/'>Home</a>
 					</li>
 
 					<li className='main-category'>
