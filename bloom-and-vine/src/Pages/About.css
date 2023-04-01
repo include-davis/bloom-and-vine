@@ -161,10 +161,6 @@
     display: none;
 }
 
-.scroll-to-top-container {
-    width: 100%;
-}
-
 @media only screen and (max-width: 835px) {
     .aboutCont{
         display: flex;
@@ -239,9 +235,5 @@
 
     .weddingCouple, .brideFlowersMobile {
         display: block;
-    }
-
-    .scroll-to-top-container {
-        display: none;
     }
 }

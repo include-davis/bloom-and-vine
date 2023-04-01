@@ -3,352 +3,379 @@
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap");
 
 .Footer {
-  display: flex;
-  position: relative;
-  width: 100vw;
-  margin: 0;
-  height: 15em;
-  background: #A28598;
-  flex-direction: column;
-  overflow: hidden;
+	display: flex;
+	position: relative;
+	margin: 0;
+	height: 15em;
+	background: #A28598;
+	flex-direction: column;
+	overflow: hidden;
 }
 
 .wrapper {
-  background: #A28598;
+	background: #A28598;
 }
 
 .Footer .Logo {
-  position: relative;
-  /* Bloom & Vine */
-  width: 316px;
-  align-items: center;
-  height: 24px;
-  padding-top: 48px;
-  padding-left: 56px;
-  font-family: 'Italiana';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 57px;
-  line-height: 23px;
+	position: relative;
+	/* Bloom & Vine */
+	width: 316px;
+	align-items: center;
+	height: 24px;
+	padding-top: 48px;
+	padding-left: 56px;
+	font-family: 'Italiana';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 57px;
+	line-height: 23px;
   
-  display: flex;
-  /* align-items: center; */
-  letter-spacing: -0.04em;
+	display: flex;
+	/* align-items: center; */
+	letter-spacing: -0.04em;
 
-  color: #FFFDF1;
-  transition: 0.3s;
+	color: #FFFDF1;
+	transition: 0.3s;
 }
+
 .Footer .Description {
-  position: relative;
-  width: 320px;
-  height: 75px;
-  left: 0px;
-  transition: 0.4s;
-  font-family: 'Cormorant Garamond';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 23px;
-  line-height: 25px;
-  text-align: left;
-  letter-spacing: -0.01em;
-  color: #FFFDF1;
-  padding-top: 30px;
-  padding-left: 56px;
+	position: relative;
+	width: 320px;
+	height: 75px;
+	left: 0px;
+	transition: 0.4s;
+	font-family: 'Cormorant Garamond';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 23px;
+	line-height: 25px;
+	text-align: left;
+	letter-spacing: -0.01em;
+	color: #FFFDF1;
+	padding-top: 30px;
+	padding-left: 56px;
 }
+
 .Footer ul {
-  width: fit-content;
-  height: 20px;
-  position: relative;
-  list-style-type: none;
-  /* padding: 0 600px;  */
+	width: fit-content;
+	height: 20px;
+	position: relative;
+	list-style-type: none;
+	/* padding: 0 600px;  */
 
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  bottom: 100px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	bottom: 100px;
 }
+
 .Footer ul li {
-  justify-content: space-between;
-  display: inline-block;
-  align-items: center;
-  padding: 0px 30px 0 50px;
-  margin: 0 auto;
-  height: 0px;
-  transition: transform 0.5s;
-  font-weight: 400px; 
+	justify-content: space-between;
+	display: inline-block;
+	align-items: center;
+	padding: 0px 30px 0 50px;
+	margin: 0 auto;
+	height: 0px;
+	transition: transform 0.5s;
+	font-weight: 400px; 
 }
-.Footer ul li a {
-  width: fit-content;
-  height: fit-content;
-  
-  font-family: 'Cormorant Garamond';
-  font-style: normal;
-  font-size: 25px;
-  line-height: 23px;
 
-  color: #FFFDF1;
-  text-decoration: none;
+.Footer ul li a {
+	width: fit-content;
+	height: fit-content;
+	
+	font-family: 'Cormorant Garamond';
+	font-style: normal;
+	font-size: 25px;
+	line-height: 23px;
+
+	color: #FFFDF1;
+	text-decoration: none;
 }
 
 .Footer ul li:hover {
-  text-decoration: underline;
-  text-decoration-color: white;
-  transform: translateY(-2px);
+	text-decoration: underline;
+	text-decoration-color: white;
+	transform: translateY(-2px);
 }
 
 .Facebook {
-  position: relative;
-  float: right;
-  bottom: 40px;
-  right: 400px;
-  transition: 0.6s;
+	position: relative;
+	float: right;
+	bottom: 40px;
+	right: 400px;
+	transition: 0.6s;
 }
 
 .Facebook:hover {
-  transform: translateY(-5px);
+	transform: translateY(-5px);
 }
 
 .Instagram {
-  position: relative;
-  float: right;
-  bottom: 40px;
-  right: 375px;
-  transition: 0.6s;
+	position: relative;
+	float: right;
+	bottom: 40px;
+	right: 375px;
+	transition: 0.6s;
 }
 
 .Instagram:hover {
-  transform: translateY(-5px);
+	transform: translateY(-5px);
 }
 
 .Mail {
-  position: relative;
-  float: right;
-  bottom: 40px;
-  right: 350px;
-  transition: 0.6s;
+	position: relative;
+	float: right;
+	bottom: 40px;
+	right: 350px;
+	transition: 0.6s;
 }
 
 .Mail:hover {
-  transform: translateY(-5px);
+	transform: translateY(-5px);
 }
 
 .Pinterest {
-  position: relative;
-  float: right;
-  bottom: 40px;
-  right: 325px;
-  transition: 0.6s;
+	position: relative;
+	float: right;
+	bottom: 40px;
+	right: 325px;
+	transition: 0.6s;
 }
 
 .Pinterest:hover {
-  transform: translateY(-5px);
+	transform: translateY(-5px);
 }
 
 .des1, .des1 b {
-  position: relative;
-  float: right;
-  width: 13em;
-  height: fit-content;
-  font-family: 'Cormorant Garamond';
-  font-style: lighter;
-  font-size: 17px;
-  line-height: 22px;
-  align-items: center;
-  right: 7.6em;
-  color: #FFFDF1;
-  transition: 0.4s;
-  bottom: 8em;
+	position: relative;
+	float: right;
+	width: 13em;
+	height: fit-content;
+	font-family: 'Cormorant Garamond';
+	font-style: lighter;
+	font-size: 17px;
+	line-height: 22px;
+	align-items: center;
+	right: 7.6em;
+	color: #FFFDF1;
+	transition: 0.4s;
+	bottom: 8em;
 }
 
 .Socials img {
-  width: 20px;
+	width: 20px;
 }
 
 .Socials .Facebook img {
-  width: 12px;
+	width: 12px;
 }
 
 .Socials .Pinterest img {
-  width: 16px;
+	width: 16px;
 }
 
 .Socials {
-  position: relative;
-  left: 3em;
-  bottom: 7.5em;
+	position: relative;
+	left: 3em;
+	bottom: 7.5em;
 }
 
 .heart {
-  margin-right: 5px;
+	margin-right: 5px;
 }
 
 @media(max-width: 1750px) {
-  .Footer ul {
-    /* padding: 0 400px;  */
-  }
-  .Socials {
-    left: 150px;
-  }
-  .des1 {
-    right: 1.8em;
-  }
+	.Footer ul {
+	/* padding: 0 400px;  */
+	}
+
+	.Socials {
+		left: 150px;
+	}
+
+	.des1 {
+		right: 1.8em;
+	}
 }
 
 @media(max-width: 1520px) {
-  .Footer ul {
-    padding-left: 100px;
-  }
-  .Footer ul li {
-    padding: 0px 30px 0 30px;
-  }
-  .Socials {
-    left: 175px;
-  }
-  .des1 {
-    right: 0.5em;
-  }
+	.Footer ul {
+		padding-left: 100px;
+	}
+
+	.Footer ul li {
+		padding: 0px 30px 0 30px;
+	}
+
+	.Socials {
+		left: 175px;
+	}
+
+	.des1 {
+		right: 0.5em;
+	}
 }
 
 @media(max-width: 1390px) {
-  .Footer ul {
-    padding-left: 50px;
-  }
-  .Footer ul li a {
-    font-size: 20px;
-  }
+	.Footer ul {
+		padding-left: 50px;
+	}
+
+	.Footer ul li a {
+		font-size: 20px;
+	}
 }
 
 @media(max-width: 1250px) {
-  .Footer ul li a {
-    font-size: 18px;
-  }
-  .Footer .Logo {
-    font-size: 48px;
-  }
-  .Footer .Description {
-    font-size: 20px;;
-  }
+	.Footer ul li a {
+		font-size: 18px;
+	}
+
+	.Footer .Logo {
+		font-size: 48px;
+	}
+
+	.Footer .Description {
+		font-size: 20px;;
+	}
 }
 
 @media(max-width: 1165px)  {
-  .Footer ul li {
-    padding: 0px 20px 0 10px;
-  }
-  .Footer .Logo {
-    font-size: 45px;
-  }
-  .Footer .Description {
-    font-size: 18px;;
-  }
+	.Footer ul li {
+		padding: 0px 20px 0 10px;
+	}
+
+	.Footer .Logo {
+		font-size: 45px;
+	}
+
+	.Footer .Description {
+		font-size: 18px;;
+	}
 }
 
 @media(max-width: 1024px) {
-  .wrapper {
-    padding-top: 1.5em;
-    text-align: center;
-  }
-  .Footer .Logo {
-    font-size: 2.8em;
-    width: fit-content;
-    position: relative;
-    padding: 0;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    padding-bottom: 0.5em;
-    padding-left: 0;
-  }
-  .Footer .Description {
-    position: relative;
-    width: 90%;
-    max-width: 24em;
-    height: 75px;
-    justify-content: left;
-    text-align: center;
-    color: #FFFDF1;
-    padding-top: 5px;
-    margin: auto;
-    padding-left: 0;
-    font-size: 1.4em;
-  }
-  .Footer ul {
-    display: none;
-  }
-  .Footer .Socials {
-    width: fit-content;
-    height: fit-content;
-    top: 1em;
-    margin: 0 auto; 
-    padding-top: 1em;
-    left: 0;
-    padding-bottom: 2.7em;
-  }
-  .Footer .Socials img {
-    padding: 0 3em;
-    width: 30px
-  }
-  .Socials .Facebook img {
-    width: 16px;
-  }
-  .Socials .Pinterest img {
-    width: 20px;
-  }
-  .Footer ul {
-    display: none;
-  }
-  .Facebook, .Pinterest, .Instagram, .Mail {
-    right: 0;
-    left: 0;
-  }
-  .des1 {
-    float: none;
-    max-width: 24em;
-    width: 90%;
-    overflow: hidden;
-    white-space:normal;
-    width: auto;
-    height: 75px;
-    margin: auto;
-    margin-top: 7em;
-    right: 0;
-    left: 0;
-  }
-  .heart {
-    left: 37vw; 
-    float: none;
-    top: 42px;
-  }
+	.wrapper {
+		padding-top: 1.5em;
+		text-align: center;
+	}
 
-  .Socials img {
-    padding-top: 0.5em; 
-    margin: auto;
-  }
+	.Footer .Logo {
+		font-size: 2.8em;
+		width: fit-content;
+		position: relative;
+		padding: 0;
+		margin: 0 auto;
+		display: flex;
+		align-items: center;
+		padding-bottom: 0.5em;
+		padding-left: 0;
+	}
+
+	.Footer .Description {
+		position: relative;
+		width: 90%;
+		max-width: 24em;
+		height: 75px;
+		justify-content: left;
+		text-align: center;
+		color: #FFFDF1;
+		padding-top: 5px;
+		margin: auto;
+		padding-left: 0;
+		font-size: 1.4em;
+	}
+
+	.Footer ul {
+		display: none;
+	}
+
+	.Footer .Socials {
+		width: fit-content;
+		height: fit-content;
+		top: 1em;
+		margin: 0 auto; 
+		padding-top: 1em;
+		left: 0;
+		padding-bottom: 2.7em;
+	}
+
+	.Footer .Socials img {
+		padding: 0 3em;
+		width: 30px
+	}
+
+	.Socials .Facebook img {
+		width: 16px;
+	}
+
+	.Socials .Pinterest img {
+		width: 20px;
+	}
+
+	.Footer ul {
+		display: none;
+	}
+
+	.Facebook, .Pinterest, .Instagram, .Mail {
+		right: 0;
+		left: 0;
+	}
+
+	.des1 {
+		float: none;
+		max-width: 24em;
+		width: 90%;
+		overflow: hidden;
+		white-space:normal;
+		width: auto;
+		height: 75px;
+		margin: auto;
+		margin-top: 7em;
+		right: 0;
+		left: 0;
+	}
+
+	.heart {
+		left: 37vw; 
+		float: none;
+		top: 42px;
+	}
+
+	.Socials img {
+		padding-top: 0.5em; 
+		margin: auto;
+	}
 }
 
 @media (max-width: 900px) {
-  .Footer .Description {
-    font-size: 1.3em;
-  }
-  .Footer .des1 {
-    font-size: 13px;  
-  }
+	.Footer .Description {
+		font-size: 1.3em;
+	}
+
+	.Footer .des1 {
+		font-size: 13px;  
+	}
 }
 
 @media (max-width: 600px) {
-  .Footer .Description {
-    font-size: 1.1em;
-    width: 95%;
-  }
-  .Footer .Socials img {
-    padding: 1em 1.5em;
-  }
-  .des1 {
-    padding-top: 1em;
-  }
+	.Footer .Description {
+		font-size: 1.1em;
+		width: 95%;
+	}
+
+	.Footer .Socials img {
+		padding: 1em 1.5em;
+	}
+
+	.des1 {
+		padding-top: 1em;
+	}
 }
 
 @media (max-width: 300px) {
-  .Footer .Description {
-    font-size: 1em;
-  }
+	.Footer .Description {
+		font-size: 1em;
+	}
 }
