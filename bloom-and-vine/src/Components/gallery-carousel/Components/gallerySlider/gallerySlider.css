@@ -67,6 +67,27 @@
     transform: scale(1.2);
 }
 
+@media screen and (max-width: 1440px) {
+    .gallery-primary-image {
+        min-width: 35vw;
+        max-width: 35vw;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .gallery-primary-image {
+        min-width: 40vw;
+        max-width: 40vw;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .gallery-primary-image {
+        min-width: 60vw;
+        max-width: 60vw;
+    }
+}
+
 /* added more gap to the gallery slider on mobile */
 @media screen and (max-width: 480px) {
     .gallery-slider {
