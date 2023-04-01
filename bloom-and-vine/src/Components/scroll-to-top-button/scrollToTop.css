@@ -1,8 +1,12 @@
 .scroll-to-top-button {
     width: 4vw;
-    position: absolute;
     margin: 3.75em 0 1.875em 93vw;
     cursor: pointer;
+    transition: 0.7s
+}
+
+.scroll-to-top-button:hover {
+    transform: scale(1.2);
 }
 
 @media screen and (max-width: 500px) {
