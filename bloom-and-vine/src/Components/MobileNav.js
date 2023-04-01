@@ -21,11 +21,11 @@ function MobileNav() {
 			<div className={`dropdown-menu ${open ? 'active' : 'inactive'}`} >
 				<ul>
 					<li className='main-category'>
-						<a href='/home'>Home</a>
+						<a href='/Home'>Home</a>
 					</li>
 
 					<li className='main-category'>
-						<a href='/gallery'>Gallery</a>
+						<a href='/Gallery'>Gallery</a>
 						<div className='sub-menu-trigger' onClick={()=>{setSubOpen(!subopen)}  }>
 							<img src={subopen ? menuCollapseArrow : menuExpandArrow} alt='test'></img>
 						</div>
@@ -33,21 +33,21 @@ function MobileNav() {
 
 					<div className={`gallery-menu ${subopen ? 'active' : 'inactive'}`} >
 						<li className='subcategory'>
-							<a href='/gallery/Weddings'>Weddings</a>
+							<a href='/Gallery/Weddings'>Weddings</a>
 						</li>
 						<li className='subcategory'>
-							<a href='/gallery/Parties'>Parties</a>
+							<a href='/Gallery/Parties'>Parties</a>
 						</li>
 						<li className='subcategory'>
-							<a href='/gallery/Flowers'>Flowers</a>
+							<a href='/Gallery/Flowers'>Flowers</a>
 						</li>
 						<li className='subcategory'>
-							<a href='/gallery/Flowers'>Films</a>
+							<a href='/Gallery/Flowers'>Films</a>
 						</li>
 					</div>
 
 					<li className='main-category'>
-						<a href='/services'>Services</a>
+						<a href='/Services'>Services</a>
 						<div className='sub-menu-trigger2' onClick={()=>{setSubOpen2(!subopen2)}}>
 							<img src={subopen2 ? menuCollapseArrow : menuExpandArrow} alt='test2'></img>
 						</div>
@@ -55,31 +55,31 @@ function MobileNav() {
 
 					<div className={`services-menu ${subopen2? 'active' : 'inactive'}`} >
 						<li className='subcategory'>
-							<a href='/services/Wedding'>Wedding</a>
+							<a href='/Services/Wedding'>Wedding</a>
 						</li>
 						<li className='subcategory'>
-							<a href='/services/Rentals'>Rentals</a>
+							<a href='/Services/Rentals'>Rentals</a>
 						</li>
 						<li className='subcategory'>
-							<a href='/services/Funerals'>Funerals</a>
+							<a href='/Services/Funerals'>Funerals</a>
 						</li>
 						<li className='subcategory'>
-							<a href='/services/Classes'>Classes</a>
+							<a href='/Services/Classes'>Classes</a>
 						</li>
 						<li className='subcategory'>
-							<a href='/services/Parties'>Parties</a>
+							<a href='/Services/Parties'>Parties</a>
 						</li>
 						<li className='subcategory'>
-							<a href='/services/Custom-Order'>Custom Order</a>
+							<a href='/Services/Custom-Order'>Custom Order</a>
 						</li>
 					</div>
 
 					<li className='main-category'>
-						<a href='/about'>About</a>
+						<a href='/About'>About</a>
 					</li>
 
 					<li className='main-category'>
-						<a href='/contact'>Contact</a> 
+						<a href='/Contact'>Contact</a> 
 					</li>
 				</ul>
 			</div>
