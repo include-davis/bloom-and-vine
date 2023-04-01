@@ -13,7 +13,6 @@
 	height: fit-content;
 	overflow: hidden;
 	display: flex;
-	background-color: #FAF1EF;
 }
 
 .Rightside-Screen {
@@ -123,9 +122,11 @@ input[type=submit]:hover {
 }
 
 .contact-image img {
-	width: 60%; 
-	margin: 0 auto;
-	display: block;
+    width: 60%;
+    margin: 0 auto;
+    display: block;
+    aspect-ratio: 0.8;
+    object-fit: cover;
 }
 
 .lets-talk {
