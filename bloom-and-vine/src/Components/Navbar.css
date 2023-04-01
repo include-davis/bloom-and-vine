@@ -3,161 +3,172 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&display=swap');
 
 .Navbar {
-  position: relative;
-  width: 100vw;
-  height: 112px;
-  background: #A28598;
-  top: 0;
-  margin: 0;
-  overflow: hidden;
+	position: relative;
+	width: 100vw;
+	height: 112px;
+	background: #A28598;
+	top: 0;
+	margin: 0;
+	overflow: hidden;
 }
-.Logo {
-  position: absolute;
-}
-.Logo .main-logo {
-  text-decoration: none;
-  width: 316px;
-  height: 23px;
-  padding-top: 48px;
-  padding-left: 0.5em;
-  font-family: 'Italiana';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 57px;
-  line-height: 23px;
-  display: flex;
-  align-items: center;
-  letter-spacing: -0.04em;
-  color: #FFFDF1;
-  transition: 0.8s;
-}
-.Logo .main-logo:hover {
-  transform: scale(1.03);
-}
-.mobile-logo {
-  position: relative;
-}
-.main-mobile-logo{
-  text-decoration: none;
-  width: fit-content;
-  height: fit-content;
-  margin-left: auto;
-  margin-right: auto;
-  display: none;
-  padding-top: 1em;
-  transition: 0.5s;
-  padding-left: 1.8em;
-}
-.main-mobile-logo img {
-  width: 4em;
-}
-.Logo .mobile-main-logo:hover {
-  transform: scale(1.03);
-}
-.Navbar ul li a {
-  width: 62px;
-  height: 23px;
 
-  font-family: 'Cormorant Garamond';
-  font-style: normal;
-  font-weight: 700px; 
-  font-size: 25px;
-  line-height: 23px;
-  color: #FFFDF1;
-  text-decoration: none;
-  margin: 0 auto;
+.Logo {
+	position: absolute;
+}
+
+.Logo .main-logo {
+	text-decoration: none;
+	width: 316px;
+	height: 23px;
+	padding-top: 48px;
+	padding-left: 0.5em;
+	font-family: 'Italiana';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 57px;
+	line-height: 23px;
+	display: flex;
+	align-items: center;
+	letter-spacing: -0.04em;
+	color: #FFFDF1;
+	transition: 0.8s;
+}
+
+.Logo .main-logo:hover {
+	transform: scale(1.03);
+}
+
+.mobile-logo {
+	position: relative;
+}
+
+.main-mobile-logo{
+	text-decoration: none;
+	width: fit-content;
+	height: fit-content;
+	margin-left: auto;
+	margin-right: auto;
+	display: none;
+	padding-top: 1em;
+	transition: 0.5s;
+	padding-left: 1.8em;
+}
+
+.main-mobile-logo img {
+	width: 4em;
+}
+
+.Logo .mobile-main-logo:hover {
+	transform: scale(1.03);
+}
+
+.Navbar ul li a {
+	width: 62px;
+	height: 23px;
+
+	font-family: 'Cormorant Garamond';
+	font-style: normal;
+	font-weight: 700px; 
+	font-size: 25px;
+	line-height: 23px;
+	color: #FFFDF1;
+	text-decoration: none;
+	margin: 0 auto;
 }
 
 .Navbar ul {
-  list-style-type: none;
-  margin: 0 auto;
-  padding: 0 30px;
-  display: inline-flex;
-  float: right;
-  justify-content: center;
-
+	list-style-type: none;
+	margin: 0 auto;
+	padding: 0 30px;
+	display: inline-flex;
+	float: right;
+	justify-content: center;
 }
 
 .Navbar ul li {
-  display: inline-block;
-  justify-content: center;
-  
-  align-items: center;
-  padding-top: 50px;
-  padding-left: 30px;
-  padding-right: 30px;
-  transition: 0.5s;
-
+	display: inline-block;
+	justify-content: center;
+	
+	align-items: center;
+	padding-top: 50px;
+	padding-left: 30px;
+	padding-right: 30px;
+	transition: 0.5s;
 }
 
 .Navbar ul li:hover {
-  text-decoration: underline;
-  text-decoration-color: white;
-  transform: translateY(-2px);
+	text-decoration: underline;
+	text-decoration-color: white;
+	transform: translateY(-2px);
 }
 
 .Navbar .Contact-Button {
-  display: none;
-  position: relative;
-  line-height: 42px;
+	display: none;
+	position: relative;
+	line-height: 42px;
 
-  float: right;
-  max-width: 7em;
-  width: 20vw;
-  right: 1em;
-  bottom: 3.7em;
+	float: right;
+	max-width: 7em;
+	width: 20vw;
+	right: 1em;
+	bottom: 3.7em;
 
-  background: white;
-  border: none;
-  border-radius: 10px;
+	background: white;
+	border: none;
+	border-radius: 10px;
 
-  justify-content: center;
-  
-  transition: 0.4s;
-  box-shadow: 0 8px 8px -4px  rgb(69, 69, 69);
+	justify-content: center;
+	
+	transition: 0.4s;
+	box-shadow: 0 8px 8px -4px  rgb(69, 69, 69);
 }
 
 .Navbar .Contact-Button:hover {
-  transform: translateY(-4px);
+	transform: translateY(-4px);
 }
 
 .Navbar .Contact-Button a {
-  font-family: 'Cormorant Garamond';
-  font-weight: 700;
-  
-  font-size: min(1.7em, 5vw);
-  color: #A28598;
+	font-family: 'Cormorant Garamond';
+	font-weight: 700;
+	
+	font-size: min(1.7em, 5vw);
+	color: #A28598;
 }
 
 @media (max-width: 1150px) {
-  .Logo .main-logo {
-    font-size: 48px;
-  }
-  .Navbar ul li {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
+	.Logo .main-logo {
+		font-size: 48px;
+	}
+
+	.Navbar ul li {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
 }
 
 @media (max-width: 1024px) {
-  .Navbar ul {
-    display: none;
-  }
-  .Navbar .Logo {
-    display: none;
-  }
-  .Navbar .main-mobile-logo {
-    display: flex;
-  }
-  .MobileNav {
-    display: flex;
-  }
-  .Navbar .Contact-Button {
-    display: flex;
-  }
-  .Navbar ul li:hover {
-    text-decoration: none;
-    transform: translateY(0px);
-  }
+  	.Navbar ul {
+   		display: none;
+  	}
 
+	.Navbar .Logo {
+		display: none;
+  	}
+
+	.Navbar .main-mobile-logo {
+		display: flex;
+	}
+
+	.MobileNav {
+		display: flex;
+	}
+
+	.Navbar .Contact-Button {
+		display: flex;
+	}
+
+	.Navbar ul li:hover {
+		text-decoration: none;
+		transform: translateY(0px);
+	}
 }
