@@ -1,0 +1,77 @@
+.instagram-shoutout-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+}
+
+.instagram-shoutout {
+    position: relative;
+    
+    font-family: 'Cormorant Garamond';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 3.5vw;
+    line-height: 5.37vw;
+    text-align: center;
+
+    height: 100%;
+    margin: 0 0 2% 0;
+    color: #000000;
+}
+
+.instagram-tag {
+    position: relative;
+    height: 100%;
+    padding: 1.3% 2%;
+
+    font-family: 'Cormorant Garamond';
+    font-style: italic;
+    font-weight: bold;
+    font-size: 2.89vw;
+    text-align: center;
+    text-decoration: none;
+    line-height: 2.76vw;
+
+    border: 1px rgba(220, 204, 209, 1) solid;
+    border-radius: 15px;
+    box-shadow: 0.25em 0.25em 0.25em rgb(0 0 0 / 25%);
+    background: rgba(162, 133, 152, 0.19);
+    color: rgba(162, 133, 152, 1);
+    transition: 0.8s;
+}
+
+.instagram-tag:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.instagram-tag:active {
+    filter: brightness(75%);
+    color: #A28598;
+}
+
+@media screen and (max-width: 1024px) {
+    .instagram-shoutout {
+        width: 100%;
+        font-size: 4.33vw;
+    }
+
+    .instagram-tag {
+        font-size: 3.87vw;
+        padding: 2.2% 2.9%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .instagram-shoutout {
+        width: 100%;
+        font-size: 6.78vw;
+    }
+
+    .instagram-tag {
+        font-size: 5.33vw;
+        padding: 3% 2% 3% 2%;
+    }
+}
