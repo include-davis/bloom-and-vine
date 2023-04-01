@@ -24,7 +24,9 @@
 
 .servImg {
     width: 14vw;
-    height: 85%;
+    height: 14vw;
+    max-width: 223px;
+    max-height: 140px;
     aspect-ratio: 1;
     object-fit: cover;
     object-position: center;
@@ -72,7 +74,7 @@
     }
 }
 
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 870px) {
     .servHeader {
         font-size: 1.325em;
     }
