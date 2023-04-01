@@ -89,7 +89,11 @@ body {
 
 .instagram-posts-display {
     width: 100%;
-    margin: 1.4em 0 6.44em 0;
+    margin: 1.4em 0 3.44em 0;
+}
+
+.scroll-to-top-container {
+    width: 100%;
 }
 
 

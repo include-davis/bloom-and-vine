@@ -4,6 +4,7 @@ import ReviewSlider from '../Components/review-slider/ReviewSlider';
 import RedirectImages from '../Components/redirect-images/RedirectDisplay';
 import InstagramShoutout from '../Components/instagram-shoutout/InstagramShoutout';
 import InstagramPostsCarousel from '../Components/instagram-posts-carousel/InstagramPostsCarousel';
+import ScrollToTopButton from '../Components/scroll-to-top-button/scrollToTopButton';
 import homepageFrontDisplay from '../Images/homepageFrontDisplay.jpg'
 import './Homepage.css';
 
@@ -51,6 +52,10 @@ function Homepage() {
 		
 			<div className='instagram-posts-display'>
 				{postData && <InstagramPostsCarousel data={postData} />}
+			</div>
+
+			<div className='scroll-to-top-container'>
+				<ScrollToTopButton />
 			</div>
 		</div>
   	);
