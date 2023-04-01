@@ -5,11 +5,13 @@
 .Navbar {
 	position: relative;
 	width: 100vw;
+	/* width: 100%; */
 	height: 112px;
 	background: #A28598;
 	top: 0;
 	margin: 0;
 	overflow: hidden;
+	/* border: 1px solid red; */
 }
 
 .Logo {
@@ -17,6 +19,7 @@
 }
 
 .Logo .main-logo {
+	/* border: 1px solid purple; */
 	text-decoration: none;
 	width: 316px;
 	height: 23px;
@@ -74,6 +77,7 @@
 	color: #FFFDF1;
 	text-decoration: none;
 	margin: 0 auto;
+	/* border: 1px solid blue; */
 }
 
 .Navbar ul {
@@ -103,6 +107,7 @@
 }
 
 .Navbar .Contact-Button {
+	border: 1px solid blue;
 	display: none;
 	position: relative;
 	line-height: 42px;

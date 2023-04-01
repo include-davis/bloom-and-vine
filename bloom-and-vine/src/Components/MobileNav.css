@@ -9,6 +9,7 @@
 	width: 100%;
 	max-height:100%;
 	overflow: hidden;
+	display:none;
 }
 
 .dropdown-menu {
@@ -89,7 +90,6 @@
 	border-top: 1px solid white;
 	background: #A28598;
 	left: 10px;
-	width: 100vw;
 	font-family: 'Cormorant Garamond';
 	font-style: normal;
 	font-weight: 700;
@@ -105,7 +105,7 @@
 	padding: 20px 0;
 	background: #A28598;
 	left: 10px;
-	width: 100vw;
+	/* width: 100vw; */
 	font-family: 'Cormorant Garamond';
 	font-style: normal;
 	font-weight: 400;
@@ -156,6 +156,9 @@ ul {
 }
 
 @media(max-width: 1024px) {
+	.MobileNav {
+		display: block;
+	}
 	.menu-trigger img {
 		display: flex;
 	}
