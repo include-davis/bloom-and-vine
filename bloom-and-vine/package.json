@@ -7,11 +7,15 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "axios": "^0.27.2",
+    "dotenv": "^16.0.3",
+    "emailjs": "^4.0.1",
+    "emailjs-com": "^3.2.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-icons": "^4.7.1",
     "react-router-dom": "^6.7.0",
-    "react-scripts": "^5.0.1",
-    "vercel": "^28.15.3",
+    "react-scripts": "5.0.1",
+    "vercel": "^28.18.3",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -37,5 +41,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "eslint": "^8.37.0",
+    "eslint-plugin-react": "^7.32.2"
   }
 }

@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Italiana&display=swap');
+
+#bottomText{
+    font-family: 'Cormorant Garamond';
+    font-size: 2.5em;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+#bottomButtons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+#arrowButton{
+    width: 44.17px;
+    position: absolute;
+    margin-left: 90vw;
+    margin-top: 60px;
+}
+#contactButtonM{
+    display: flex;
+    background-color: rgba(162, 133, 152, 1);
+    color: rgba(252, 249, 234, 1);
+    font-family: "Italiana";
+    font-size: 2.5em;
+    font-weight: 400;
+    width: 15vw;
+    min-width: 138px;
+    max-width: 300px;
+    height: 75px;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    font-style: bold;
+    text-decoration: none;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+@media screen and (max-width: 1250px) {
+    #contactButtonM{
+    font-size: 2em;
+    }
+}
+@media screen and (max-width: 1010px) {
+    #contactButtonM{
+    font-size: 1.7em;
+    height: 65px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #bottomText{
+    font-size: 1.125em;
+    }
+}
