@@ -4,6 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&display=swap');
 
 .Contact {
+	background: #FAF1EF;
 	flex-shrink: 1;
 	font-family: 'Italiana';
 	flex-wrap: nowrap;
