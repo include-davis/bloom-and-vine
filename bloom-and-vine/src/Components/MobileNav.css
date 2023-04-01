@@ -11,7 +11,7 @@
 	overflow: hidden;
 }
 
-.dropdown-menu{
+.dropdown-menu {
 	height: fit-content;
 	position: absolute;
 	top: 100px;
@@ -19,43 +19,7 @@
 	transition: var(--speed) ease;
 }
 
-.sub-menu-trigger {
-	cursor: pointer;
-	padding-right: 6em;
-	float: right;
-	width: fit-content;
-	top: 10px;
-	transition: var(--speed) ease;
-}
-
-.sub-menu-trigger img {
-	width: 30px;
-}
-
-.sub-menu-trigger.inactive{
-	transform: translateY(-20px);
-	transition: var(--speed) ease;
-}
-
-.sub-menu-trigger.active {
-	transform: translateY(10px);
-	transition: var(--speed) ease;
-}
-
-.sub-menu-trigger2 {
-	cursor: pointer;
-	padding-right: 6em;
-	float: right;
-	width: fit-content;
-	top: 10px;
-	transition: var(--speed) ease;
-}
-
-.sub-menu-trigger2 img {
-	width: 30px;
-}
-
-.gallery-menu::before{
+.gallery-menu::before {
 	content: '';
 	position: absolute;
 	top: -5px;
@@ -67,7 +31,7 @@
 	transition: max-height 0.15s ease-out;
 }
 
-.services-menu.active{
+.services-menu.active {
 	opacity: 1;
 	visibility: visible;
 	max-height: 500px;
@@ -75,42 +39,7 @@
 	width: 100vw;
 }
 
-.services-menu.inactive{
-	opacity: 0;
-	max-height: 0;
-	visibility: hidden;
-	transform: translateY(-20px);
-	transition: 0.3s;
-}
-.services-menu::before{
-	content: '';
-	position: absolute;
-	top: -5px;
-	right: 20px;
-	max-height: 0;
-	height: 20px;
-	width: 20px;
-	background: var(--secondary-bg);
-	transition: max-height 0.15s ease-out;
-}
-
-.gallery-menu.active{
-	opacity: 1;
-	visibility: visible;
-	max-height: 500px;
-	transition: max-height var(--speed) ease;
-	width: 100vw;
-}
-
-.gallery-menu.inactive{
-	opacity: 0;
-	max-height: 0;
-	visibility: hidden;
-	transform: translateY(-20px);
-	transition: 0.3s;
-}
-
-.dropdown-menu::before{
+.dropdown-menu::before {
 	content: '';
 	position: absolute;
 	top: -5px;
@@ -122,7 +51,7 @@
 	transition: var(--speed) ease;
 }
 
-.dropdown-menu.active{
+.dropdown-menu.active {
 	opacity: 1;
 	visibility: visible;
 	transform: translateY(0);
@@ -131,14 +60,14 @@
 	box-shadow: 0 0 0 9999px rgba(0,0,0,.5);
 }
 
-.dropdown-menu.inactive{
+.dropdown-menu.inactive {
 	opacity: 0;
 	visibility: hidden;
 	transform: translateY(-20px);
 	transition: var(--speed) ease;
 }
 
-.menu-trigger img{
+.menu-trigger img {
 	display: none;
 	height: fit-content;
 	position: absolute;

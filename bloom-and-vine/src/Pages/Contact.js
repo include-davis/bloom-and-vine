@@ -23,7 +23,6 @@ function Contact() {
 
   return (
 	<div className="Contact">
-
 		<div className='Leftside-Screen'>
 	  	<div className='contact-wrapper'>
 			<div className='contact-image'>
@@ -96,9 +95,9 @@ function Contact() {
 			</div>
 			</div>
 		</div>
-				
-		<hr/>
 
+		<hr />
+				
 		<div className='Rightside-Screen'>
 			<div>
 			<form className='form-wrapper' ref={form} onSubmit={sendEmail}>
@@ -124,7 +123,7 @@ function Contact() {
 				<input type="submit" maxlength="4" size="4" value="Send"></input>
 			</form>
 			</div>
-		</div>    
+		</div>
 	</div>
   );
 }
