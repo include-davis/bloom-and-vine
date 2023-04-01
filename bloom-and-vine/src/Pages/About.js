@@ -85,7 +85,7 @@ function About(props) {
                     </p>
                 </div>
             </section>
-            <div className="scroll-to-top-container">
+            <div className="scroll-to-top-container-about">
                 <ScrollToTopButton />
             </div>
         </article>

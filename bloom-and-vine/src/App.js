@@ -8,14 +8,14 @@ import Contact from './Pages/Contact';
 function App() {
   return (
     <div className="App">
-      <Routes>
-        <Route exact path='/' element={<Homepage />} />
-        <Route exact path='/Gallery' element={<Gallery />} />
-        <Route exact path='/Services' element={<Services />} />
-        <Route exact path='/About' element={<About />} />
-        <Route exact path='/Contact' element={<Contact />} />
-        <Route path="*" element={<div>error</div>} />
-      </Routes>
+		<Routes>
+			<Route exact path='/' element={<Homepage />} />
+			<Route exact path='/Gallery' element={<Gallery />} />
+			<Route exact path='/Services' element={<Services />} />
+			<Route exact path='/About' element={<About />} />
+			<Route exact path='/Contact' element={<Contact />} />
+			<Route path="*" element={<div>error</div>} />
+		</Routes>
     </div>
   );
 }
