@@ -17,8 +17,8 @@ function Services() {
       </div>
     );
   }
-  else{
-    return(
+  else {
+    return (
       <ServicesMobile/>
     );
   }
