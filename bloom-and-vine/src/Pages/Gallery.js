@@ -16,7 +16,6 @@ const Gallery = () => {
 
         <div className="gallery-display-mobile">
           <GalleryDisplayMobile />
-          <GalleryDisplayMobile />
         </div>
         <div className="contact-display-mobile">
           <ContactDisplay />
