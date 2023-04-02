@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from 'react-helmet';
 import "./About.css";
 import bekah from "../Images/bekah.jpg";
 import bouqet from "../Images/bouqet.png";
@@ -12,6 +13,10 @@ function About(props) {
     document.body.style = "background: #faf0ef;";
     return (
         <article className="aboutCont">
+            <Helmet>
+                <title>Bloom & Vine | About</title>
+            </Helmet>
+
             {/* Header */}
             <h1 className="title">Get to Know Me!</h1>
 

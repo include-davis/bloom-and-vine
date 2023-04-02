@@ -1,4 +1,5 @@
 import { useRef } from "react";
+import { Helmet } from "react-helmet";
 import contactImg from "../Images/contact.png";
 import emailjs from "emailjs-com";
 import "./Contact.css";
@@ -30,6 +31,10 @@ function Contact() {
 
   return (
     <div className="Contact">
+      <Helmet>
+        <title>Bloom & Vine | Contact Us</title>
+      </Helmet>
+
       <div className="Leftside-Screen">
         <div className="contact-wrapper">
           <div className="contact-image">
