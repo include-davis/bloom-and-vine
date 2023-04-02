@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const SEARCH_LIMIT = 20
+const SEARCH_LIMIT = 10
 const QUERY_FIELDS = 'id, username, caption, media_type, media_url, thumbnail_url, permalink, timestamp'
 
 async function getAPIKey() {
