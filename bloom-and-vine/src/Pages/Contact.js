@@ -195,10 +195,6 @@ function Contact() {
           </form>
         </div>
       </div>
-
-      {/* <div className="scroll-to-top-container-contact">
-			<ScrollToTopButton />
-		</div> */}
     </div>
   );
 }
