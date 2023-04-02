@@ -2,7 +2,7 @@
     width: 4vw;
     margin: 3.75em 0 1.875em 93vw;
     cursor: pointer;
-    transition: 0.7s
+    transition: 0.7s;
 }
 
 .scroll-to-top-button:hover {
