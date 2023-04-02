@@ -2,14 +2,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&family=Old+Standard+TT&display=swap");
 
-body {
-    background-color: #FAF1EF;
-}
-
 .Homepage {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: #FAF1EF;
 }
 
 .front-display {
@@ -53,14 +50,6 @@ body {
 
     color: #FFFDF1;
 
-    /* Text Shadow experimentation */
-
-    /* color: transparent;
-    background-color: white;
-    background-clip: text;
-    text-shadow: 0px 0px 0px white; */
-
-    /* border: 1px solid #FFFDF1; */
 }
 
 
@@ -99,7 +88,11 @@ body {
 
 .instagram-posts-display {
     width: 100%;
-    margin: 2.5% 0 3.63% 0;
+    margin: 2.4em 0 0 0;
+}
+
+.scroll-to-top-container-homepage {
+    width: 100%;
 }
 
 @media screen and (max-width: 1024px) {
@@ -109,7 +102,7 @@ body {
 }
 
 @media screen and (max-width: 480px) {
-    .front-display{
+    .front-display {
         height: 15em;
     }
 
@@ -124,5 +117,13 @@ body {
 
     .instagram-shoutout-display {
         margin: 0;
+    }
+
+    .instagram-posts-display {
+        margin: 2.813em 0 4em 0;
+    }
+
+    .scroll-to-top-container-homepage {
+        display: none;
     }
 }
