@@ -1,31 +1,26 @@
-/* .gallery-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-} */
-
 .gallery-primary-image {
     height: 448px;
     object-fit: cover;
     min-width: 25vw;
     max-width: 25vw;
+    cursor: pointer;
 }
 
 .gallery-secondary-image {
     filter: opacity(0.5);
     width: 16vw;
     height: 375px;
-    object-fit: cover
+    object-fit: cover;
+    cursor: pointer;
 }
 
 .gallery-tertiary-image {
     filter: opacity(0.5);
     width: 14vw;
     height: 321px;
-    object-fit: cover
+    object-fit: cover;
+    cursor: pointer;
 }
-
-
 
 /*added different classes to be used on mobile */
 .gallery-primary-image-mobile {

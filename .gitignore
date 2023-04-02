@@ -1,4 +1,5 @@
 .env
 .env.local
+bloom-and-vine/.vercel/project.json
 node_modules
 .vercel

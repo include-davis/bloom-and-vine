@@ -1,14 +1,10 @@
-import { useState, useEffect } from 'react'
-import axios from 'axios'
-
-import wedding from '../../Images/weddingPrimary.png'
-import backArrow from '../../Images/backArrowGallery.png'
-
+import { useState, useEffect, useMemo } from 'react'
 import GallerySlider from '../gallery-carousel/Components/gallerySlider/gallerySlider'
 import GalleryInfo from '../gallery-carousel/Components/galleryInfo/galleryInfo'
-
+import mobileGalleryImage from '../../Images/mobileGalleryImage.png'
+import mobileBackGalleryArrow from '../../Images/mobileBackGalleryArrow.png'
+import axios from 'axios'
 import './galleryDisplayMobile.css'
-
 
 const options = {
     method: 'GET',
@@ -70,35 +66,38 @@ export default function GalleryDisplayMobile () {
     }
 
 
+    const upperCarousel = useMemo(() => {return (gallery && <GallerySlider data={gallery[galleryIndex][0]} level={'upper'} />)}, [gallery]);
+    const lowerCarousel = useMemo(() => {return (gallery && <GallerySlider data={gallery[galleryIndex][1]} level={'lower'} />)}, [gallery]);
+
     // returns the two carousels to be displayed when the user wants to view a set of images based on category
     if (displayPictures) {
-        return(
+        return (
             <div>
                 <div id = "topContent">
                     <div onClick = {() => setDisplayPictures(false)}>
-                        <img id = "backArrow" src={backArrow} alt="backArrow"/>
+                        <img id = "backArrow" src={mobileBackGalleryArrow} alt="backArrow"/>
                     </div>
                     <h1 id = "topTitle">{galleryTitles[galleryIndex]}</h1>
                 </div>
 
                 {gallery && <GalleryInfo data={gallery[galleryIndex][0]} level={'upper'} />}
-                {gallery && <GallerySlider data={gallery[galleryIndex][0]} level={'upper'} />}
+                {gallery && upperCarousel}
 
-                {gallery && <GalleryInfo data={gallery[galleryIndex][0]} level={'upper'} />}
-                {gallery && <GallerySlider data={gallery[galleryIndex][0]} level={'lower'} />}
+                {gallery && <GalleryInfo data={gallery[galleryIndex][1]} level={'lower'} />}
+                {gallery && lowerCarousel}
             </div>
         )
     }
     // returns the list of categories that the user can click on to learn more about
     else {
-        return(
-            <div >
+        return (
+            <div>
                 <h1 id = "GallMobHeader">Gallery</h1>
                 <div id = "categoryList">
-                    <GalleryCategorySelect src = {wedding} text = "Weddings" index = {0}  />
-                    <GalleryCategorySelect src = {wedding} text = "Parties" index = {1} />
-                    <GalleryCategorySelect src = {wedding} text = "Flowers" index = {2} />
-                    <GalleryCategorySelect src = {wedding} text = "Films" index = {3} />
+                    <GalleryCategorySelect src = {mobileGalleryImage} text = "Weddings" index = {0}  />
+                    <GalleryCategorySelect src = {mobileGalleryImage} text = "Parties" index = {1} />
+                    <GalleryCategorySelect src = {mobileGalleryImage} text = "Flowers" index = {2} />
+                    <GalleryCategorySelect src = {mobileGalleryImage} text = "Films" index = {3} />
                 </div>
             </div>
         )
