@@ -236,4 +236,8 @@
     .weddingCouple, .brideFlowersMobile {
         display: block;
     }
+
+    .scroll-to-top-container-about {
+        display: none;
+    }
 }

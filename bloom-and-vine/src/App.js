@@ -16,18 +16,19 @@ function App() {
       <>
       <Navbar />
       <Routes>
-        <Route exact path='/Home' element={< Homepage />}></Route>
+        <Route exact path='/' element={< Homepage />}></Route>
         <Route exact path='/Gallery' element={< Gallery />}></Route>
         <Route exact path='/Services' element={< Services />}></Route>
         <Route exact path='/About' element={< About />}></Route>
         <Route exact path='/Contact' element={< Contact />}></Route>
+        <Route path="*" element={<div>error</div>} />
       </Routes>
 
-      <div class="scroll-container">
+      {/* <div class="scroll-container">
         <a href="#top">
           <img src={scrollarrow}></img>
         </a>
-      </div>
+      </div> */}
 
       <Footer/>
       <MobileNav/>
