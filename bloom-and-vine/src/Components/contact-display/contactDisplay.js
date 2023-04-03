@@ -1,4 +1,3 @@
-import { NavLink } from "react-router-dom";
 import ScrollToTopButton from "../scroll-to-top-button/scrollToTop";
 import './contactDisplay.css'
 
@@ -7,9 +6,9 @@ export default function ContactDisplay () {
 	    <div>
 			<p id = "bottomText">Interested in booking for an event?</p>
             <div id = "bottomButtons">
-                <NavLink id = "contactButtonM" to="/Contact">
+                <a id = "contactButtonM" href="/Contact">
                     <div >Contact Us</div>
-                </NavLink>
+                </a>
             </div>
             <ScrollToTopButton />
         </div>
