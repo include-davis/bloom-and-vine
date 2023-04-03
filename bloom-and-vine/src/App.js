@@ -13,19 +13,19 @@ function App() {
   return (
       
       <>
-
       <Navbar />
-        <Routes>
-          <Route exact path='/' element={<Homepage />}></Route>
-          <Route exact path='/Gallery' element={<Gallery />}></Route>
-          <Route exact path='/Services' element={<Services />}></Route>
-          <Route exact path='/About' element={<About />}></Route>
-          <Route exact path='/Contact' element={<Contact />}></Route>
-          <Route path="*" element={<div>error</div>} />
-        </Routes>
+      <Routes>
+        <Route exact path='/' element={< Homepage />}></Route>
+        <Route exact path='/Gallery' element={< Gallery />}></Route>
+        <Route exact path='/Services' element={< Services />}></Route>
+        <Route exact path='/About' element={< About />}></Route>
+        <Route exact path='/Contact' element={< Contact />}></Route>
+        <Route path="*" element={<div>error</div>} />
+      </Routes>
+
       <Footer/>
       <MobileNav/>
-
+    
       </>
     
   );
