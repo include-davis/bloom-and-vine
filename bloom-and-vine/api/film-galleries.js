@@ -1,7 +1,16 @@
 import axios from "axios"
 
 const dataType = "film-galleries"
-
+function getImageUrl(img) {
+    const formats = img.formats
+    if (formats.large) {
+        return formats.large.url
+    } else if(formats.medium) {
+        return formats.medium.url
+    } else {
+        return img.url
+    }
+}
 export default async function handler(req, res) {
     try {
         const body = await axios.get(`${process.env.STRAPI_BASE_URL}/api/${dataType}?populate=*`, {
@@ -22,7 +31,7 @@ export default async function handler(req, res) {
                         description: eventAtts.Description,
                         images: eventAtts.Images.data.map((img) => {
                             return {
-                                url: `${process.env.STRAPI_BASE_URL}${img.attributes.url}`,
+                                url: `${process.env.STRAPI_BASE_URL}${getImageUrl(img.attributes)}`,
                                 altText: img.attributes.alternativeText,
                             }
                         }),
