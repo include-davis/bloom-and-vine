@@ -36,7 +36,7 @@ export default async function handler(req, res) {
                             'caption': post.caption,
                             'urls': {
                                 'permalink': post.permalink,
-                                'mediaURL': post.media_url,
+                                'mediaURL': post.media_type === 'VIDEO' ? post.thumbnail_url : post.media_url,
                                 'thumbnailURL': post.media_type == 'VIDEO' ? post.thumbnail_url : null,
                             },
                             'postInfo': {
