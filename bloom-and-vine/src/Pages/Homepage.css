@@ -15,7 +15,7 @@
 }
 
 .front-image {
-    width: 100%;
+    width: 100vw;
     height: 100%;
     aspect-ratio: 2.2;
     object-fit: cover;
@@ -57,7 +57,7 @@
 .review-display {
     width: 100%;
     height: 100%;
-    
+
     max-width: 123.75em;
     margin: 6% 0 4% 0;
 }
