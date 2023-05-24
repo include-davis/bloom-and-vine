@@ -13,3 +13,8 @@
     border: 1px solid #C4C4C4;
     margin: 4em 0 0 0;
 }
+
+.upper-gallery-carousel,
+.lower-gallery-carousel {
+    width: 100%;
+}

@@ -21,21 +21,23 @@
 /*
 Most of these classes were taken from the desktop view of the carousel
 */
-.categoryBox{
+.categoryBox {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 20px;
-    transition: all .2s ease-in-out; 
+    transition: all .2s ease-in-out;
     cursor: pointer;
 }
-.categoryBox:hover { 
-    transform: scale(1.05); 
+
+.categoryBox:hover {
+    transform: scale(1.05);
 }
 
 .categoryImg {
     width: 100vw;
     height: 260px;
+    object-fit: cover;
     filter: brightness(60%);
 }
 
@@ -58,7 +60,7 @@ Most of these classes were taken from the desktop view of the carousel
 the following IDs are taken from my services mobile page to style 
 the backarrow button and other elements.
 */
-#topContent{
+#topContent {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -70,20 +72,22 @@ the backarrow button and other elements.
     font-size: 1.1em;
     text-align: center;
 }
-#topTitle{
-   margin: 0px;
-   position: absolute;
-   margin-bottom: 8px;
-   font-size: 1.75em;
+
+#topTitle {
+    margin: 0px;
+    position: absolute;
+    margin-bottom: 8px;
+    font-size: 1.75em;
 }
-#backArrow{
+
+#backArrow {
     height: 20px;
     width: 9.95px;
     margin-right: 80vw;
-    transition: all .2s ease-in-out; 
+    transition: all .2s ease-in-out;
     cursor: pointer;
 }
-#backArrow:hover { 
-    transform: scale(1.2); 
-}
 
+#backArrow:hover {
+    transform: scale(1.2);
+}

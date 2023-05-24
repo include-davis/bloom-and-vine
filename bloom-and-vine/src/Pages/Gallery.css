@@ -12,6 +12,8 @@ body {
     justify-content: center;
 }
 
-.gallery-display {
+.gallery-display,
+.gallery-display-mobile {
     width: 100%;
+    overflow: hidden;
 }
