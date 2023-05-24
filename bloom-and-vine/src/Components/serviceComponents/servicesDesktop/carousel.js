@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom'
 import servicesWeddingImg from "../../../Images/servicesWeddings.jpg"
 import servicesRentalImg from "../../../Images/servicesRentals.jpg"
 import servicesFuneralImg from "../../../Images/servicesFunerals.jpg"
@@ -83,9 +84,9 @@ const ServicesCarousel = (props) =>{
 										{images[props.index].description}
 									</p>
                         		</div>
-                        	<a id = "contactButton" href="/Contact">
+                        	<NavLink id = "contactButton"to="/Contact">
                         		<div >Contact Us</div>
-                        	</a>
+                        	</NavLink>
                     	</div>
                     	<img id = "actualImg" src= {images[props.index].src} alt= {images[props.index].description} ></img>
                 	<img className="arrow" src={rightArrow} onClick= {nextImage} />

@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom'
 import ServiceSquare from "./serviceSquare";
 import servicesWeddingImg from "../../../Images/servicesWeddings.jpg"
 import servicesRentalImg from "../../../Images/servicesRentals.jpg"
@@ -55,9 +56,9 @@ function ServiceList(props) {
             />
             <p id = "bottomText">Interested in booking for an event?</p>
             <div id = "bottomButtons">
-                <a id = "contactButtonM" href="/Contact">
+                <NavLink id = "contactButtonM"to="/Contact">
                     <div >Contact Us</div>
-                </a>
+                </NavLink>
             </div>
         </div>
     );

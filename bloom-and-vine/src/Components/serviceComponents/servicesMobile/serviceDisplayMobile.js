@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom'
 import mobileBackArrow from "../../../Images/whiteBackArrow.png"
 import "./serviceMobile.css";
 
@@ -25,9 +26,9 @@ function ServiceDisplayMobile(props) {
                 <p id = "mobileServDesc">
                     {props.description}
                 </p>
-                <a id = "contactButtonM" href="/Contact">
+                <NavLink id = "contactButtonM"to="/Contact">
                     <div>Contact Us</div>
-                </a>
+                </NavLink>
             </div>
 
         </div>
