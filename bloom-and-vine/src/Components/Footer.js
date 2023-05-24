@@ -1,13 +1,8 @@
 import facebookLogo from '../Images/facebookLogo.png'
-import mailLogo from '../Images/mailLogo.png'
 import pinterestLogo from '../Images/pinterestLogo.png'
 import instagramLogo from '../Images/instagramLogo.png'
+import mailLogo from '../Images/mailLogo.png'
 import './Footer.css';
-import facebook from '../Images/facebook.png'
-import mail from '../Images/mail.png'
-import pinterest from '../Images/pinterest.png'
-import instagram from '../Images/instagram.png'
-import React from 'react'
 
 function Footer() {
 	return (
