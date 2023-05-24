@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom'
 import './RedirectImage.css'
 
 export default function RedirectImage(props) {
@@ -10,9 +11,9 @@ export default function RedirectImage(props) {
                     {redirect}
                 </p>
             </div>
-            <a href={`/${redirect}`}>
+            <NavLink to={`/${redirect}`}>
                 <img className='image-redirect' src={img} loading='eager'/>
-            </a>
+            </NavLink>
         </div>
     )
 }
