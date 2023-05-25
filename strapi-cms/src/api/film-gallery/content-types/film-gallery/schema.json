@@ -4,7 +4,8 @@
   "info": {
     "singularName": "film-gallery",
     "pluralName": "film-galleries",
-    "displayName": "Film Gallery"
+    "displayName": "Film Gallery",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -21,14 +22,18 @@
       "type": "date"
     },
     "Images": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
+    },
+    "VideoUrl": {
+      "type": "string"
     }
   }
 }
