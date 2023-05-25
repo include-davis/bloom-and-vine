@@ -18,7 +18,7 @@
 .front-image {
     width: 100vw;
     height: 100%;
-    max-height: calc(100% - 112px);
+    max-height: calc(100vh - 112px);
     aspect-ratio: 2.2;
     object-fit: cover;
 }
