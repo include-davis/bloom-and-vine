@@ -1,33 +1,37 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
+import { Link } from 'react-router-dom';
+
 import { Helmet } from "react-helmet";
 import contactImg from "../Images/contact.png";
 import emailjs from "emailjs-com";
 import "./Contact.css";
 import ScrollToTopButton from "../Components/scroll-to-top-button/scrollToTop";
+import ConfirmationModal from "../Components/confirmation-modal/ConfirmationModal";
+
 
 function Contact() {
   const form = useRef();
+  const [pending, setPending] = useState(false);
+  const [endState, setEndState] = useState(null);
 
-  const sendEmail = (e) => {
-    e.preventDefault();
-
-    emailjs
-      .sendForm(
-        "service_w183yib",
-        "template_20fsmva",
-        form.current,
-        "G6qLhG0KxlxRAH5ZE"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-          window.location.reload(); // This is if you still want the page to reload (since e.preventDefault() cancelled that behavior)
-        },
-        (error) => {
-          console.log(error.text);
+  const onSubmitHandler= (event)=> {
+    setPending(true);
+    event.preventDefault()
+    const data = new FormData(event.target);
+    const values = Object.fromEntries(data.entries())
+    fetch('/api/contact.js', {
+        method: "POST",
+        body: JSON.stringify(values)
+    }).then(async res => {
+        const resData = await res.json()
+        if (resData.ok === true) {
+            setEndState("confirmed");
+        } else {
+            setEndState("failed");
         }
-      );
-  };
+        setPending(false);
+    })
+}
 
   return (
     <div className="Contact">
@@ -176,30 +180,43 @@ function Contact() {
 
       <div className="Rightside-Screen">
         <div>
-          <form className="form-wrapper" ref={form} onSubmit={sendEmail}>
+          <form className="form-wrapper" ref={form} onSubmit={onSubmitHandler}>
             <label for="name">Name *</label>
-            <input type="text" id="name" name="user_name"></input>
+            <input type="text" id="name" name="user_name" required></input>
             <label for="email">Email *</label>
-            <input type="text" id="email" name="user_email"></input>
+            <input type="email" id="email" name="user_email" required></input>
             <label for="phone">Phone *</label>
-            <input type="text" id="phone" name="phone"></input>
+            <input type="text" id="phone" name="phone" required></input>
             <label for="date">Date of Event</label>
             <input type="date" id="date" name="date"></input>
 
-            <label for="subject">Subject</label>
-            <select id="subject" name="subject">
+            <label for="subject">Subject *</label>
+            <select id="subject" name="subject" required>
               <option value="n/a"></option>
-              <option value="sub1">Subject 1</option>
               <option value="Booking">Booking</option>
               <option value="Questions">Questions</option>
             </select>
 
-            <label for="subject">Message</label>
-            <textarea name="message" placeholder="Type message here"></textarea>
+            <label for="subject">Message *</label>
+            <textarea name="message" placeholder="Type message here" required></textarea>
             <input type="submit" maxlength="4" size="4" value="Send"></input>
           </form>
         </div>
       </div>
+      <ConfirmationModal pending={pending} endState={endState}>
+                <div style={{
+                    display: "flex",
+                    flexDirection: "column",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    marginTop: "auto",
+                    marginBottom: "auto"
+                }}>
+                    <h2>Thank You For Your Message!</h2>
+                    <p style={{color: "var(--gray600", marginBottom: "48px"}} className='p-large'>We will get back to you shortly.</p>
+                    <Link style={{width: "70%", textAlign: "center"}} to="/"><button className="confirmation-button">Got It</button></Link>
+                </div>
+            </ConfirmationModal>
     </div>
   );
 }

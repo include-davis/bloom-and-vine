@@ -36,7 +36,8 @@
 }
 
 .form-wrapper {
-	font-family: 'Cormorant Garamond', serif;;
+	font-family: 'Cormorant Garamond', serif;
+	;
 	position: relative;
 	max-width: 100%;
 	width: 30vw;
@@ -50,7 +51,11 @@
 	margin: auto;
 }
 
-input[type=text], select, textarea {
+input[type=text],
+input[type=email],
+input[type=phone],
+select,
+textarea {
 	width: inherit;
 	font-family: 'Cormorant Garamond', serif;
 	display: flex;
@@ -60,6 +65,7 @@ input[type=text], select, textarea {
 	font-size: 20px;
 	font-weight: 300;
 	padding-left: 0.5em;
+	padding-right: 0.5em;
 	box-sizing: border-box
 }
 
@@ -67,14 +73,16 @@ input[type=date] {
 	font-family: 'Cormorant Garamond', serif;
 	display: block;
 	padding-left: 0.5em;
+	padding-right: 0.5em;
 	width: inherit;
 	height: 2.3em;
 	border: 2px solid #000000;
 	border-radius: 10px;
 	font-size: 20px;
 	font-weight: 300;
-	box-sizing:border-box
+	box-sizing: border-box
 }
+
 
 ::placeholder {
 	text-decoration-color: lightgrey;
@@ -83,6 +91,7 @@ input[type=date] {
 textarea {
 	width: inherit;
 	height: 19em;
+	padding: 0.5em;
 }
 
 input[type=submit] {
@@ -122,11 +131,11 @@ input[type=submit]:hover {
 }
 
 .contact-image img {
-    width: 60%;
-    margin: 0 auto;
-    display: block;
-    aspect-ratio: 0.8;
-    object-fit: cover;
+	width: 60%;
+	margin: 0 auto;
+	display: block;
+	aspect-ratio: 0.8;
+	object-fit: cover;
 }
 
 .lets-talk {
@@ -160,7 +169,7 @@ input[type=submit]:hover {
 }
 
 .Contact ul li:hover {
-  	transform: translateY(-4px);
+	transform: translateY(-4px);
 }
 
 .Contact ul li a {
@@ -171,11 +180,11 @@ input[type=submit]:hover {
 }
 
 html {
-  	scroll-behavior:smooth;
+	scroll-behavior: smooth;
 }
 
 body {
-  	position: relative;
+	position: relative;
 }
 
 .section {
@@ -197,21 +206,21 @@ body {
 }
 
 .scroll-container:hover {
-  	transform: translateY(-3px);
+	transform: translateY(-3px);
 }
 
 .scroll-container img {
-  	width: 4vw;
+	width: 4vw;
 }
 
 hr {
-  	display: none;
+	display: none;
 }
 
 @media (max-width: 1050px) {
 	.lets-talk {
 		font-size: 20px;
-  	}
+	}
 }
 
 @media (max-width: 1024px) {
@@ -251,7 +260,7 @@ hr {
 		padding-bottom: 2em;
 	}
 
-	hr {  
+	hr {
 		display: flex;
 		width: 80vw;
 		border-top: 2px solid darkgrey;
@@ -271,19 +280,22 @@ hr {
 		padding-top: 25px;
 		line-height: 60px;
 	}
-	
+
 	input[type=submit] {
-		position:static;
+		position: static;
 		display: block;
 		float: none;
-		margin: 0 auto; 
+		margin: 0 auto;
 		margin-top: 2em;
 		margin-bottom: 2em;
 		text-align: center;
 		font-weight: 700;
 	}
 
-	input[type=text], input[type=date], select, textarea {
+	input[type=text],
+	input[type=date],
+	select,
+	textarea {
 		background: none;
 		border-radius: 5px;
 		border: 3px solid #000000;
