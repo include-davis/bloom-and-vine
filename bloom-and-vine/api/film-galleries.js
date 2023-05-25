@@ -35,6 +35,7 @@ export default async function handler(req, res) {
                                 altText: img.attributes.alternativeText,
                             }
                         }) : [],
+                        VideoUrl: eventAtts.VideoUrl,
                         createdAt: eventAtts.createdAt,
                         updatedAt: eventAtts.updatedAt,
                         publishedAt: eventAtts.publishedAt,    

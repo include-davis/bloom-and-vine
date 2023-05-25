@@ -11,7 +11,8 @@
 
 .front-display {
     position: relative;
-    height: auto
+    height: auto;
+    max-height: calc(100vh - 112px);
 }
 
 .front-image {

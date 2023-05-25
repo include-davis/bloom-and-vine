@@ -21,7 +21,7 @@ export default function GallerySlider (props) {
     const [primaryImgIndex, setPrimaryImgIndex] = useState(0);
     const images = props.data.images;
     const level = props.level;
-    const vidDisplay = images.length === 0;
+    const vidDisplay = props.data?.VideoUrl
 
     const galleryDots = getGalleryDots(images.length, setPrimaryImgIndex, level);
     const width = window.innerWidth;
@@ -69,7 +69,7 @@ export default function GallerySlider (props) {
                     <iframe 
                         width="100%" 
                         height="100%" 
-                        src="https://player.vimeo.com/video/436506805?h=2d1b9e561a&color=000000&title=0&byline=0&portrait=0" 
+                        src={props.data.VideoUrl} 
                         title="YouTube video player" 
                         frameborder="0" 
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
