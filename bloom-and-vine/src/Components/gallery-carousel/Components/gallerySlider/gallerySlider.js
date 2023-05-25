@@ -21,7 +21,8 @@ export default function GallerySlider (props) {
     const [primaryImgIndex, setPrimaryImgIndex] = useState(0);
     const images = props.data.images;
     const level = props.level;
-    
+    const vidDisplay = images.length === 0;
+
     const galleryDots = getGalleryDots(images.length, setPrimaryImgIndex, level);
     const width = window.innerWidth;
 
@@ -42,11 +43,14 @@ export default function GallerySlider (props) {
         const inactiveDots = document.querySelectorAll(`.gallery-dot-${level}:not(:nth-child(${curIndex}))`)
         const curDot = document.querySelector(`.gallery-dot-${level}:nth-child(${curIndex})`)
         
-        for (let i = 0; i < inactiveDots.length; i++) {
-            inactiveDots[i].style.backgroundColor = "#D9D9D9";
+        if (inactiveDots) {
+            for (let i = 0; i < inactiveDots.length; i++) {
+                inactiveDots[i].style.backgroundColor = "#D9D9D9";
+            }
         }
-        
-        curDot.style.backgroundColor = "#A28598";
+        if (curDot) {
+            curDot.style.backgroundColor = "#A28598";
+        }
     }, [primaryImgIndex]);
 
     useEffect(() => {
@@ -58,6 +62,23 @@ export default function GallerySlider (props) {
     }, [primaryImgIndex])
 
     /*the mobile view displays only three gallery images as opposed to the usual 5, but it still works with 5 images at a time */
+    if (vidDisplay) {
+        return (
+            <div className='video-container'>
+                <div className='video-div'>
+                    <iframe 
+                        width="100%" 
+                        height="100%" 
+                        src="https://player.vimeo.com/video/436506805?h=2d1b9e561a&color=000000&title=0&byline=0&portrait=0" 
+                        title="YouTube video player" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+        )
+    }
     if (width <= 500){
         return (
             <div className='gallery-slider-container'>

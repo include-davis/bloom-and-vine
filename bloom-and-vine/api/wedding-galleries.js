@@ -22,6 +22,7 @@ export default async function handler(req, res) {
         })
         if (body.data.data) {
             const events = body.data.data;
+            console.log(events)
             res.json({
                 success: true,
                 data: events.map((eventRaw) => {
@@ -30,12 +31,12 @@ export default async function handler(req, res) {
                         title: eventAtts.Title,
                         date: eventAtts.Date,
                         description: eventAtts.Description,
-                        images: eventAtts.Images.data.map((img) => {
+                        images: eventAtts.Images.data? eventAtts.Images.data.map((img) => {
                             return {
                                 url: `${process.env.STRAPI_BASE_URL}${getImageUrl(img.attributes)}`,
                                 altText: img.attributes.alternativeText,
                             }
-                        }),
+                        }) : [],
                         createdAt: eventAtts.createdAt,
                         updatedAt: eventAtts.updatedAt,
                         publishedAt: eventAtts.publishedAt,    
