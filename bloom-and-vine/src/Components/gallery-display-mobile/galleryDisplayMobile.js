@@ -79,11 +79,11 @@ export default function GalleryDisplayMobile () {
                     <h1 id = "topTitle">{galleryTitles[galleryIndex]}</h1>
                 </div>
 
-                {gallery && <GalleryInfo data={gallery[galleryIndex][0]} level={'upper'} />}
-                {gallery && upperCarousel}
+                {gallery && gallery[galleryIndex].length >= 1 && <GalleryInfo data={gallery[galleryIndex][0]} level={'upper'} />}
+                {gallery && gallery[galleryIndex].length >= 1 && upperCarousel}
 
-                {gallery && <GalleryInfo data={gallery[galleryIndex][1]} level={'lower'} />}
-                {gallery && lowerCarousel}
+                {gallery && gallery[galleryIndex].length >= 2 && <GalleryInfo data={gallery[galleryIndex][1]} level={'lower'} />}
+                {gallery && gallery[galleryIndex].length >= 2 && lowerCarousel}
             </div>
         )
     }

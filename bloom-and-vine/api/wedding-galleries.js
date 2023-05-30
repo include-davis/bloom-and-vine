@@ -22,7 +22,6 @@ export default async function handler(req, res) {
         })
         if (body.data.data) {
             const events = body.data.data;
-            console.log(events)
             res.json({
                 success: true,
                 data: events.map((eventRaw) => {
