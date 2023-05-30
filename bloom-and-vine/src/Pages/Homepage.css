@@ -21,6 +21,7 @@
     max-height: calc(100vh - 112px);
     aspect-ratio: 2.2;
     object-fit: cover;
+    object-position: top;
 }
 
 .front-text-container {
