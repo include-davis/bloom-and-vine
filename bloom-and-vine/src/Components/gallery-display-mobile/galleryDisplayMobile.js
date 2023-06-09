@@ -78,7 +78,8 @@ export default function GalleryDisplayMobile () {
                 </div>
 
                 {gallery && gallery[galleryIndex] && gallery[galleryIndex].map((content, index) => {
-                    return (<div id={index}>
+                    return (<div className="" id={index}>
+                        <div style={{marginTop: "3em"}}></div>
                         <GalleryInfo data={content} level={`${index}`} />
                         <GallerySlider data={content} level={`${index}`} />
                     </div>)

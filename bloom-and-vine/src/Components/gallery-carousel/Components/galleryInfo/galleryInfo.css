@@ -41,22 +41,24 @@
     .upper {
         margin: 1.72em 0 2em 0;
     }
+
     .gallery-title {
         font-size: 2.5em;
         width: 78vw;
-        text-align:left;
+        text-align: left;
     }
+
     .gallery-date {
         width: 78vw;
-        text-align:left;
+        text-align: left;
         font-size: 1.125em;
         margin-bottom: 5px;
     }
+
     .gallery-desc {
         width: 78vw;
         text-align: left;
         font-size: 1.125em;
-        height: 64px;
         line-height: 22px;
     }
 }
