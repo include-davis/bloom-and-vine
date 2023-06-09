@@ -8,7 +8,7 @@ function getGalleryDots(total, setCurImgDot, level) {
     let dot_display = [];
     for (let i = 0; i < total; i++) {
         dot_display.push(
-            <div className={`gallery-dot-${level}`} key={i} onClick={() => setCurImgDot(i)}></div>
+            <div className={`gallery-dot gallery-dot-${level}`} key={i} onClick={() => setCurImgDot(i)}></div>
             );
         }
         
@@ -86,7 +86,7 @@ export default function GallerySlider (props) {
                     <button className='gallery-event-button back-button' onClick={e => onGalleryClickHandlerMemoized(e, 'left')}>
                         <img className='button-image' src={BackGalleryArrow} />
                     </button>
-
+                    {images[primaryImgIndex - 1 < 0 ? images.length - 1 + primaryImgIndex: primaryImgIndex - 1] &&
                     <GalleryImage 
                             src={images[primaryImgIndex - 1 < 0 ? images.length - 1 + primaryImgIndex: primaryImgIndex - 1].url} 
                             altText={images[primaryImgIndex - 1 < 0 ? images.length - 1 + primaryImgIndex: primaryImgIndex - 1].altText} 
@@ -94,6 +94,8 @@ export default function GallerySlider (props) {
                             index={primaryImgIndex - 1 < 0 ? images.length - 1 + primaryImgIndex: primaryImgIndex - 1}
                             setIndex={setPrimaryImgIndex} 
                         />
+                    }
+                    { images[primaryImgIndex] &&
 
                     <GalleryImage 
                             src={images[primaryImgIndex].url} 
@@ -102,7 +104,8 @@ export default function GallerySlider (props) {
                             index={primaryImgIndex} 
                             setIndex={setPrimaryImgIndex} 
                         />
-                    
+                    }
+                    {images[primaryImgIndex + 1 > images.length - 1 ? primaryImgIndex + 1 - images.length : primaryImgIndex + 1] &&
                     <GalleryImage 
                             src={images[primaryImgIndex + 1 > images.length - 1 ? primaryImgIndex + 1 - images.length : primaryImgIndex + 1].url} 
                             altText={images[primaryImgIndex + 1 > images.length - 1 ? primaryImgIndex + 1 - images.length : primaryImgIndex + 1].altText} 
@@ -110,7 +113,7 @@ export default function GallerySlider (props) {
                             index={primaryImgIndex + 1 > images.length - 1 ? primaryImgIndex + 1 - images.length : primaryImgIndex + 1}
                             setIndex={setPrimaryImgIndex} 
                         />
-
+                    }
                     <button className='gallery-event-button forward-button' onClick={e => onGalleryClickHandlerMemoized(e, 'right')}>
                         <img className='button-image' src={ForwardGalleryArrow} />
                     </button>
@@ -129,6 +132,7 @@ export default function GallerySlider (props) {
                     <button className='gallery-event-button back-button' onClick={e => onGalleryClickHandlerMemoized(e, 'left')}>
                         <img className='button-image' src={BackGalleryArrow} />
                     </button>
+                    {images[primaryImgIndex - 2 < 0 ? images.length - 2 + primaryImgIndex: primaryImgIndex - 2] && 
                     <GalleryImage 
                             src={images[primaryImgIndex - 2 < 0 ? images.length - 2 + primaryImgIndex: primaryImgIndex - 2].url} 
                             altText={images[primaryImgIndex - 2 < 0 ? images.length - 2 + primaryImgIndex: primaryImgIndex - 2].altText} 
@@ -137,7 +141,8 @@ export default function GallerySlider (props) {
                             setIndex={setPrimaryImgIndex}
                     
                     />
-
+                    }
+                    {images[primaryImgIndex - 1 < 0 ? images.length - 1 + primaryImgIndex: primaryImgIndex - 1] &&
                     <GalleryImage 
                             src={images[primaryImgIndex - 1 < 0 ? images.length - 1 + primaryImgIndex: primaryImgIndex - 1].url} 
                             altText={images[primaryImgIndex - 1 < 0 ? images.length - 1 + primaryImgIndex: primaryImgIndex - 1].altText} 
@@ -145,7 +150,8 @@ export default function GallerySlider (props) {
                             index={primaryImgIndex - 1 < 0 ? images.length - 1 + primaryImgIndex: primaryImgIndex - 1}
                             setIndex={setPrimaryImgIndex} 
                     />
-
+                    }
+                    {images[primaryImgIndex] &&
                     <GalleryImage 
                             src={images[primaryImgIndex].url} 
                             altText={images[primaryImgIndex].altText} 
@@ -153,7 +159,8 @@ export default function GallerySlider (props) {
                             index={primaryImgIndex}
                             setIndex={setPrimaryImgIndex}  
                     />
-                    
+                    }
+                    { images[primaryImgIndex + 1 > images.length - 1 ? primaryImgIndex + 1 - images.length : primaryImgIndex + 1] &&
                     <GalleryImage 
                             src={images[primaryImgIndex + 1 > images.length - 1 ? primaryImgIndex + 1 - images.length : primaryImgIndex + 1].url} 
                             altText={images[primaryImgIndex + 1 > images.length - 1 ? primaryImgIndex + 1 - images.length : primaryImgIndex + 1].altText} 
@@ -161,7 +168,8 @@ export default function GallerySlider (props) {
                             index={primaryImgIndex + 1 > images.length - 1 ? primaryImgIndex + 1 - images.length : primaryImgIndex + 1}
                             setIndex={setPrimaryImgIndex}  
                     />
-
+                    }
+                    {images[primaryImgIndex + 2 > images.length - 1 ? primaryImgIndex + 2 - images.length : primaryImgIndex + 2] &&
                     <GalleryImage 
                             src={images[primaryImgIndex + 2 > images.length - 1 ? primaryImgIndex + 2 - images.length : primaryImgIndex + 2].url} 
                             altText={images[primaryImgIndex + 2 > images.length - 1 ? primaryImgIndex + 2 - images.length : primaryImgIndex + 2].altText} 
@@ -169,6 +177,7 @@ export default function GallerySlider (props) {
                             index={primaryImgIndex + 2 > images.length - 1 ? primaryImgIndex + 2 - images.length : primaryImgIndex + 2} 
                             setIndex={setPrimaryImgIndex} 
                     />
+                    }
                     <button className='gallery-event-button forward-button' onClick={e => onGalleryClickHandlerMemoized(e, 'right')}>
                         <img className='button-image' src={ForwardGalleryArrow} />
                     </button>

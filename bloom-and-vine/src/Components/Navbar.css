@@ -19,7 +19,6 @@
 .Logo .main-logo {
 	/* border: 1px solid purple; */
 	text-decoration: none;
-	width: 316px;
 	height: 23px;
 	padding-top: 48px;
 	padding-left: 0.5em;
@@ -43,7 +42,7 @@
 	position: relative;
 }
 
-.main-mobile-logo{
+.main-mobile-logo {
 	text-decoration: none;
 	width: fit-content;
 	height: fit-content;
@@ -69,7 +68,7 @@
 
 	font-family: 'Cormorant Garamond';
 	font-style: normal;
-	font-weight: 700px; 
+	font-weight: 700px;
 	font-size: 25px;
 	line-height: 23px;
 	color: #FFFDF1;
@@ -90,7 +89,7 @@
 .Navbar ul li {
 	display: inline-block;
 	justify-content: center;
-	
+
 	align-items: center;
 	padding-top: 50px;
 	padding-left: 30px;
@@ -121,9 +120,9 @@
 	border-radius: 10px;
 
 	justify-content: center;
-	
+
 	transition: 0.4s;
-	box-shadow: 0 8px 8px -4px  rgb(69, 69, 69);
+	box-shadow: 0 8px 8px -4px rgb(69, 69, 69);
 }
 
 .Navbar .Contact-Button:hover {
@@ -133,7 +132,7 @@
 .Navbar .Contact-Button a {
 	font-family: 'Cormorant Garamond';
 	font-weight: 700;
-	
+
 	font-size: min(1.7em, 5vw);
 	color: #A28598;
 }
@@ -150,13 +149,13 @@
 }
 
 @media (max-width: 1024px) {
-  	.Navbar ul {
-   		display: none;
-  	}
+	.Navbar ul {
+		display: none;
+	}
 
 	.Navbar .Logo {
 		display: none;
-  	}
+	}
 
 	.Navbar .main-mobile-logo {
 		display: flex;

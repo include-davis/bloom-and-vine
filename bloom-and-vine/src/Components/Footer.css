@@ -18,8 +18,7 @@
 
 .Footer .Logo {
 	position: relative;
-	/* Bloom & Vine */
-	width: 316px;
+	/* Bloom and Vine */
 	align-items: center;
 	height: 24px;
 	padding-top: 48px;
@@ -29,7 +28,7 @@
 	font-weight: 400;
 	font-size: 57px;
 	line-height: 23px;
-  
+
 	display: flex;
 	/* align-items: center; */
 	letter-spacing: -0.04em;
@@ -77,13 +76,13 @@
 	margin: 0 auto;
 	height: 0px;
 	transition: transform 0.5s;
-	font-weight: 400px; 
+	font-weight: 400px;
 }
 
 .Footer ul li a {
 	width: fit-content;
 	height: fit-content;
-	
+
 	font-family: 'Cormorant Garamond';
 	font-style: normal;
 	font-size: 25px;
@@ -147,7 +146,8 @@
 	transform: translateY(-5px);
 }
 
-.des1, .des1 b {
+.des1,
+.des1 b {
 	position: relative;
 	float: right;
 	width: 13em;
@@ -187,7 +187,7 @@
 
 @media(max-width: 1750px) {
 	.Footer ul {
-	/* padding: 0 400px;  */
+		/* padding: 0 400px;  */
 	}
 
 	.Socials {
@@ -237,11 +237,12 @@
 	}
 
 	.Footer .Description {
-		font-size: 20px;;
+		font-size: 20px;
+		;
 	}
 }
 
-@media(max-width: 1165px)  {
+@media(max-width: 1165px) {
 	.Footer ul li {
 		padding: 0px 20px 0 10px;
 	}
@@ -251,7 +252,8 @@
 	}
 
 	.Footer .Description {
-		font-size: 18px;;
+		font-size: 18px;
+		;
 	}
 }
 
@@ -295,7 +297,7 @@
 		width: fit-content;
 		height: fit-content;
 		top: 1em;
-		margin: 0 auto; 
+		margin: 0 auto;
 		padding-top: 1em;
 		left: 0;
 		padding-bottom: 2.7em;
@@ -318,7 +320,10 @@
 		display: none;
 	}
 
-	.Facebook, .Pinterest, .Instagram, .Mail {
+	.Facebook,
+	.Pinterest,
+	.Instagram,
+	.Mail {
 		right: 0;
 		left: 0;
 	}
@@ -328,7 +333,7 @@
 		max-width: 24em;
 		width: 90%;
 		overflow: hidden;
-		white-space:normal;
+		white-space: normal;
 		width: auto;
 		height: 75px;
 		margin: auto;
@@ -338,13 +343,13 @@
 	}
 
 	.heart {
-		left: 37vw; 
+		left: 37vw;
 		float: none;
 		top: 42px;
 	}
 
 	.Socials img {
-		padding-top: 0.5em; 
+		padding-top: 0.5em;
 		margin: auto;
 	}
 }
@@ -355,7 +360,7 @@
 	}
 
 	.Footer .des1 {
-		font-size: 13px;  
+		font-size: 13px;
 	}
 }
 

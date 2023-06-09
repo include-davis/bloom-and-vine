@@ -13,7 +13,7 @@ function Services() {
     return (
       <div className="Services">
         <Helmet>
-          <title>Bloom & Vine | Services</title>
+          <title>Bloom and Vine | Services</title>
         </Helmet>
 
         <ServiceBarList index={index} setIndex={setIndex} />
@@ -24,7 +24,7 @@ function Services() {
     return (
       <div>
         <Helmet>
-          <title>Bloom & Vine | Services</title>
+          <title>Bloom and Vine | Services</title>
         </Helmet>
         <ServicesMobile />
       </div>

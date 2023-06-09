@@ -7,12 +7,12 @@ function Navbar() {
     <nav className="Navbar">
 		<div className='Logo'>
 			<a href='/' className='main-logo'>
-				Bloom & Vine
+				Bloom and Vine
 			</a>
 		</div>
 		<div className='mobile-logo'>
 			<a href='/' className='main-mobile-logo'>
-				<img src={mobileBVLogo} alt='Bloom & Vine' />
+				<img src={mobileBVLogo} alt='Bloom and Vine' />
 			</a>
 		</div>
 

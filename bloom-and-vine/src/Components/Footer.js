@@ -14,7 +14,7 @@ function Footer() {
 		<div className="Footer">
 			<div className='wrapper'>
 				<div className='Logo'>
-					<p>Bloom & Vine</p>
+					<p>Bloom and Vine</p>
 				</div>
 
 				<p className='Description'>

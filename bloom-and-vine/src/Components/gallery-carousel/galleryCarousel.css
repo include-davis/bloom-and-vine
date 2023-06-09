@@ -17,4 +17,10 @@
 .upper-gallery-carousel,
 .lower-gallery-carousel {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 4em;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4em;
 }

@@ -36,7 +36,7 @@ function Contact() {
   return (
     <div className="Contact">
       <Helmet>
-        <title>Bloom & Vine | Contact Us</title>
+        <title>Bloom and Vine | Contact Us</title>
       </Helmet>
 
       <div className="Leftside-Screen">

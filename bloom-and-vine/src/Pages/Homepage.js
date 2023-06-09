@@ -35,13 +35,13 @@ function Homepage() {
   return (
     <div className="Homepage">
       <Helmet>
-        <title>Bloom & Vine</title>
+        <title>Bloom and Vine</title>
       </Helmet>
 
       <div className="front-display">
         <img className="front-image" src={homepageFrontDisplay} />
         <div className="front-text-container">
-          <p className="front-text">Bloom & Vine</p>
+          <p className="front-text">Bloom and Vine</p>
         </div>
       </div>
 

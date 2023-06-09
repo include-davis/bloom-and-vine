@@ -65,8 +65,6 @@ export default function GalleryDisplayMobile () {
         )
     }
 
-    const upperCarousel = useMemo(() => {return (gallery && <GallerySlider data={gallery[galleryIndex][0]} level={'upper'} />)}, [gallery, galleryIndex]);
-    const lowerCarousel = useMemo(() => {return (gallery && <GallerySlider data={gallery[galleryIndex][1]} level={'lower'} />)}, [gallery, galleryIndex]);
 
     // returns the two carousels to be displayed when the user wants to view a set of images based on category
     if (displayPictures) {
@@ -79,11 +77,12 @@ export default function GalleryDisplayMobile () {
                     <h1 id = "topTitle">{galleryTitles[galleryIndex]}</h1>
                 </div>
 
-                {gallery && gallery[galleryIndex].length >= 1 && <GalleryInfo data={gallery[galleryIndex][0]} level={'upper'} />}
-                {gallery && gallery[galleryIndex].length >= 1 && upperCarousel}
-
-                {gallery && gallery[galleryIndex].length >= 2 && <GalleryInfo data={gallery[galleryIndex][1]} level={'lower'} />}
-                {gallery && gallery[galleryIndex].length >= 2 && lowerCarousel}
+                {gallery && gallery[galleryIndex] && gallery[galleryIndex].map((content, index) => {
+                    return (<div id={index}>
+                        <GalleryInfo data={content} level={`${index}`} />
+                        <GallerySlider data={content} level={`${index}`} />
+                    </div>)
+                })}
             </div>
         )
     }

@@ -14,7 +14,7 @@ function About(props) {
     return (
         <article className="aboutCont">
             <Helmet>
-                <title>Bloom & Vine | About</title>
+                <title>Bloom and Vine | About</title>
             </Helmet>
 
             {/* Header */}

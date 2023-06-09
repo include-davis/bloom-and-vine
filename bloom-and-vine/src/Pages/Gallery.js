@@ -18,7 +18,7 @@ const Gallery = () => {
     return (
       <div className="Gallery">
         <Helmet>
-          <title>Bloom & Vine | Gallery</title>
+          <title>Bloom and Vine | Gallery</title>
         </Helmet>
 
         <div className="gallery-display-mobile">
@@ -33,7 +33,7 @@ const Gallery = () => {
     return (
       <div className="Gallery">
         <Helmet>
-          <title>Bloom & Vine | Gallery</title>
+          <title>Bloom and Vine | Gallery</title>
         </Helmet>
 
         <div className="gallery-display">
