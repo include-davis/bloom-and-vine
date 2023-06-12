@@ -1,7 +1,12 @@
 import { useState, useEffect, useMemo } from 'react'
 import GallerySlider from '../gallery-carousel/Components/gallerySlider/gallerySlider'
 import GalleryInfo from '../gallery-carousel/Components/galleryInfo/galleryInfo'
-import mobileGalleryImage from '../../Images/mobileGalleryImage.png'
+import weddingsImage from '../../Images/mobile_gallery/weddings.png'
+import filmsImage from '../../Images/mobile_gallery/films.jpg'
+import partiesImage from '../../Images/mobile_gallery/parties.jpg'
+import flowersImage from '../../Images/mobile_gallery/flowers.jpg'
+
+
 import mobileBackGalleryArrow from '../../Images/mobileBackGalleryArrow.png'
 import axios from 'axios'
 import './galleryDisplayMobile.css'
@@ -78,7 +83,7 @@ export default function GalleryDisplayMobile () {
                 </div>
 
                 {gallery && gallery[galleryIndex] && gallery[galleryIndex].map((content, index) => {
-                    return (<div className="" id={index}>
+                    return (<div style={{paddingBottom: "4px"}} id={index}>
                         <div style={{marginTop: "3em"}}></div>
                         <GalleryInfo data={content} level={`${index}`} />
                         <GallerySlider data={content} level={`${index}`} />
@@ -93,10 +98,10 @@ export default function GalleryDisplayMobile () {
             <div>
                 <h1 id = "GallMobHeader">Gallery</h1>
                 <div id = "categoryList">
-                    <GalleryCategorySelect src = {mobileGalleryImage} text = "Weddings" index = {0}  />
-                    <GalleryCategorySelect src = {mobileGalleryImage} text = "Parties" index = {1} />
-                    <GalleryCategorySelect src = {mobileGalleryImage} text = "Flowers" index = {2} />
-                    <GalleryCategorySelect src = {mobileGalleryImage} text = "Films" index = {3} />
+                    <GalleryCategorySelect src = {weddingsImage} text = "Weddings" index = {0}  />
+                    <GalleryCategorySelect src = {partiesImage} text = "Parties" index = {1} />
+                    <GalleryCategorySelect src = {flowersImage} text = "Flowers" index = {2} />
+                    <GalleryCategorySelect src = {filmsImage} text = "Films" index = {3} />
                 </div>
             </div>
         )

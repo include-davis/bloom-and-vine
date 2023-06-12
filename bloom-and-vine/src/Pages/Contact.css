@@ -37,7 +37,6 @@
 
 .form-wrapper {
 	font-family: 'Cormorant Garamond', serif;
-	;
 	position: relative;
 	max-width: 100%;
 	width: 30vw;
@@ -268,8 +267,8 @@ hr {
 
 	.form-wrapper {
 		max-width: 100%;
-		left: 15vw;
-		width: 70vw;
+		left: 10vw;
+		width: 80vw;
 	}
 
 	textarea {
