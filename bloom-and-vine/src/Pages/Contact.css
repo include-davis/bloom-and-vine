@@ -5,49 +5,38 @@
 
 .Contact {
 	background: #FAF1EF;
-	flex-shrink: 1;
 	font-family: 'Italiana';
-	flex-wrap: nowrap;
-	margin: 0 auto;
-	width: fit-content;
+	width: 100%;
 	height: fit-content;
-	overflow: hidden;
 	display: flex;
 }
 
 .Rightside-Screen {
-	flex-wrap: wrap;
-	width: 50vw;
-	height: 83em;
-	position: relative;
+	width: 56%;
 	display: flex;
-	margin-left: auto;
-	margin-right: auto;
 	background: white;
+	justify-content: center;
 }
 
 .Leftside-Screen {
-	float: left;
-	position: relative;
 	background: #FAF1EF;
-	width: 50vw;
-	height: 83em;
+	width: 44%;
 	display: flex;
+}
+
+.contact-wrapper {
+	width: 100%;
 }
 
 .form-wrapper {
 	font-family: 'Cormorant Garamond', serif;
-	position: relative;
-	max-width: 100%;
-	width: 30vw;
-	text-align: left;
-	left: 10vw;
-	height: fit-content;
+	width: 100%;
 	line-height: 70px;
 	font-weight: 700;
 	font-size: 22px;
 	padding-top: 50px;
-	margin: auto;
+	padding-left: 48px;
+	padding-right: 48px;
 }
 
 input[type=text],
@@ -94,7 +83,6 @@ textarea {
 }
 
 input[type=submit] {
-	position: relative;
 	width: 6.2em;
 	height: 2.5em;
 	background: #A28598;
@@ -105,10 +93,10 @@ input[type=submit] {
 	font-weight: 300;
 	font-size: 30px;
 	line-height: 42px;
-	top: 3em;
 	float: right;
 	transition: 0.4s;
 	box-shadow: 5px 5px 5px grey;
+	margin: 64px 0;
 }
 
 /* When moving the mouse over the submit button, add a darker green color */

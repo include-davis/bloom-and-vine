@@ -2,10 +2,8 @@ import { useRef, useState } from "react";
 import { Link } from 'react-router-dom';
 
 import { Helmet } from "react-helmet";
-import contactImg from "../Images/contact.png";
-import emailjs from "emailjs-com";
+import contactImg from "../Images/contact-image.jpg";
 import "./Contact.css";
-import ScrollToTopButton from "../Components/scroll-to-top-button/scrollToTop";
 import ConfirmationModal from "../Components/confirmation-modal/ConfirmationModal";
 
 
@@ -179,7 +177,6 @@ function Contact() {
       <hr />
 
       <div className="Rightside-Screen">
-        <div>
           <form className="form-wrapper" ref={form} onSubmit={onSubmitHandler}>
             <label for="name">Name *</label>
             <input type="text" id="name" name="user_name" required></input>
@@ -202,7 +199,6 @@ function Contact() {
             <input type="submit" maxlength="4" size="4" value="Send"></input>
           </form>
         </div>
-      </div>
       <ConfirmationModal pending={pending} endState={endState}>
                 <div style={{
                     display: "flex",
