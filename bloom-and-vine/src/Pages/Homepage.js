@@ -5,7 +5,7 @@ import ReviewSlider from "../Components/review-slider/ReviewSlider";
 import RedirectImages from "../Components/redirect-images/RedirectDisplay";
 import InstagramShoutout from "../Components/instagram-shoutout/InstagramShoutout";
 import InstagramPostsCarousel from "../Components/instagram-posts-carousel/InstagramPostsCarousel";
-import homepageFrontDisplay from "../Images/homepageFrontDisplay.jpg";
+import homepageFrontDisplay from "../Images/homepageFrontDisplayNew.jpg";
 import ScrollToTopButton from "../Components/scroll-to-top-button/scrollToTop";
 import "./Homepage.css";
 

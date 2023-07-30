@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import GalleryCarousel from '../gallery-carousel/galleryCarousel'
+import { Oval } from 'react-loader-spinner'
 import axios from 'axios'
 import './galleryDisplay.css'
 
@@ -54,7 +55,23 @@ export default function GalleryDisplay () {
                     Films
                 </button>
             </div>
-			{gallery && <GalleryCarousel data={gallery[galleryIndex]} />}
+			{gallery ?
+                <GalleryCarousel data={gallery[galleryIndex]} /> :
+                <div style={{paddingTop: 30}}>
+                    <Oval
+                        height={65}
+                        width={65}
+                        color="#A28598"
+                        wrapperStyle={{display: "flex", "justify-content": "center"}}
+                        wrapperClass=""
+                        visible={true}
+                        ariaLabel='oval-loading'
+                        secondaryColor="#E9DDDE"
+                        strokeWidth={4}
+                        strokeWidthSecondary={4}
+                    />
+                </div>
+            }
         </div>
     )
 }

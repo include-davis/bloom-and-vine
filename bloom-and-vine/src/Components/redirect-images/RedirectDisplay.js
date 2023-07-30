@@ -2,7 +2,7 @@ import RedirectImage from './components/redirect-image/RedirectImage'
 import GalleryImg from '../../Images/gallery.png'
 import ServicesImg from '../../Images/services.png'
 import AboutImg from '../../Images/about.png'
-import ContactImg from '../../Images/contact.png'
+import ContactImg from '../../Images/contact-image.jpg'
 import './RedirectDisplay.css'
 
 export default function RedirectDisplay() {
