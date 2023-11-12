@@ -31,7 +31,7 @@ export default async function handler(req, res) {
                         description: eventAtts.Description,
                         images: eventAtts.Images.data? eventAtts.Images.data.map((img) => {
                             return {
-                                url: `${process.env.STRAPI_BASE_URL}${getImageUrl(img.attributes)}`,
+                                url: getImageUrl(img.attributes),
                                 altText: img.attributes.alternativeText,
                             }
                         }) : [],
