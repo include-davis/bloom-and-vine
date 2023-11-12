@@ -14,6 +14,7 @@ function getImageUrl(img) {
 
 export default async function handler(req, res) {
     try {
+        console.log(`${process.env.STRAPI_BASE_URL}/api/${dataType}?populate=*`)
         const body = await axios.get(`${process.env.STRAPI_BASE_URL}/api/${dataType}?populate=*`, {
             headers: {
                 Authorization:
@@ -32,7 +33,7 @@ export default async function handler(req, res) {
                         description: eventAtts.Description,
                         images: eventAtts.Images.data? eventAtts.Images.data.map((img) => {
                             return {
-                                url: `${process.env.STRAPI_BASE_URL}${getImageUrl(img.attributes)}`,
+                                url: getImageUrl(img.attributes),
                                 altText: img.attributes.alternativeText,
                             }
                         }) : [],
