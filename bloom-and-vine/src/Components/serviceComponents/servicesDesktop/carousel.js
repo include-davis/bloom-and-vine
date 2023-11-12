@@ -36,13 +36,13 @@ const ServicesCarousel = (props) =>{
     	{
     		service: "Weddings",
         	src: servicesWeddingImg,
-     	   	description: "Need a hand on your special day? We offer a variety of wedding services ranging from making beautiful bouquets to DIYing wedding centerpieces! Our flowers are sourced from local farms and are hand chosen to cater to you and your vision. You can count on us to make your wedding unforgettable. Let’s get in touch!"
+     	   	description: "We offer a wide range of services to best fit your budget and vision, from start to finish design to teaching you how to DIY your own wedding florals. Many of our flowers are sourced from local farms and hand chosen to make your floral pieces truly unique. You can count on us to make your wedding unforgettable. Let’s get in touch!"
    	 		},
 
     	{
         	service: "Rentals",
         	src: servicesRentalImg,
-     	   	description: "Interested in renting homemade decor pieces for a special event? Contact us for more information about our available rentals and we’ll reach back to you shortly! Let us help you find the piece that will make your event shine even brighter!"
+     	   	description: "Interested in renting decor pieces for a special event? Contact us for more information about our available containers, candles and decor pieces."
    	 		},
 
     	{
@@ -54,19 +54,19 @@ const ServicesCarousel = (props) =>{
     	{
         	service: "Classes",
         	src: servicesClassesImg,
-     	   	description: " Interested in learning how to DIY your own decor pieces? We offer a variety of classes that range from DIYing centerpieces to arranging flowers like a professional! No matter your experience, we’ll help you every step of the way toward achieving your creative goals. "
+     	   	description: "Interested in learning how to DIY your own event or personal florals? Want to host a truly memorable party with floral design as the activity?  We offer a variety of classes from DIY centerpiece creation to European hand tied bouquet techniques. No matter your experience, we’ll help you every step of the way toward achieving your creative goals."
    	 		},
 
     	{
         	service: "Parties",
         	src: servicesPartiesImg,
-     	   	description: "Looking to plan the party of your dreams? Chat with us and we’ll gladly help you bring your party plans to life! Whether you need help with organizing a party you already had in mind or with planning a party from step one, we’ll make sure you are 100% satisfied! "
+     	   	description: "Looking to plan the party of your dreams? Want to host a flower arranging class at your place? Chat with us and we’ll gladly help you bring your plans to life."
    	 		},
 
     	{
         	service: "Custom Orders",
         	src: servicesCustomOrdersImg,
-        	description: "Need help with planning something that goes beyond our other services? We are always open to making custom orders to help you bring your dreams to reality! Contact us and let us know about your vision so we can best help you achieve it! "
+        	description: "Need something personalized for delivery? Have a novel request for your event? We are here for all the ideas you've got."
     	}
     ];
 
